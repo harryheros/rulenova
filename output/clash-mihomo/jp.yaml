@@ -1,6 +1,6 @@
 # RuleNova — Japan
 # Format: Clash/Mihomo YAML rule-provider
-# Generated: 2026-05-25T14:23:59Z
+# Generated: 2026-05-25T14:33:05Z
 payload:
   - DOMAIN-SUFFIX,amazon.co.jp
   - DOMAIN-SUFFIX,ameba.jp

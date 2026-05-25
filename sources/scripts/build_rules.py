@@ -151,12 +151,12 @@ def write_shadowrocket(out_dir: Path, region: str,
 def write_quanx(out_dir: Path, region: str,
                 domains: list[str], cidrs: list[str],
                 generated_at: str) -> Path:
-    """Quantumult X filter list. No action — user assigns in config."""
+    """Quantumult X remote filter list. No action — user assigns via force-policy."""
     lines = [_header(region, "Quantumult X", generated_at)]
     for d in domains:
-        lines.append(f"host-suffix, {d}")
+        lines.append(f"host-suffix, {d}, reject")
     for cidr in cidrs:
-        lines.append(f"ip-cidr, {cidr}")
+        lines.append(f"ip-cidr, {cidr}, reject")
     path = out_dir / f"{region.lower()}.conf"
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return path

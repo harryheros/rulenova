@@ -1,0 +1,37 @@
+# RuleNova — Macau
+# Variant  : ip
+# Format   : Surge RULE-SET
+# Generated: 2026-05-25T16:56:42Z
+# Source   : https://github.com/harryheros/rulenova
+#
+
+IP-CIDR,103.115.140.0/22,no-resolve
+IP-CIDR,103.143.92.0/23,no-resolve
+IP-CIDR,103.192.44.0/22,no-resolve
+IP-CIDR,103.233.188.0/22,no-resolve
+IP-CIDR,103.237.100.0/22,no-resolve
+IP-CIDR,103.237.124.0/22,no-resolve
+IP-CIDR,103.240.56.0/23,no-resolve
+IP-CIDR,103.5.218.0/23,no-resolve
+IP-CIDR,103.88.176.0/22,no-resolve
+IP-CIDR,103.96.60.0/22,no-resolve
+IP-CIDR,113.52.64.0/18,no-resolve
+IP-CIDR,116.193.8.0/21,no-resolve
+IP-CIDR,122.100.128.0/17,no-resolve
+IP-CIDR,123.253.200.0/22,no-resolve
+IP-CIDR,125.31.0.0/18,no-resolve
+IP-CIDR,161.64.0.0/16,no-resolve
+IP-CIDR,163.53.244.0/22,no-resolve
+IP-CIDR,180.94.128.0/18,no-resolve
+IP-CIDR,182.93.0.0/18,no-resolve
+IP-CIDR,202.174.0.0/22,no-resolve
+IP-CIDR,202.175.0.0/17,no-resolve
+IP-CIDR,202.175.160.0/19,no-resolve
+IP-CIDR,202.75.248.0/22,no-resolve
+IP-CIDR,202.86.128.0/18,no-resolve
+IP-CIDR,27.109.128.0/17,no-resolve
+IP-CIDR,43.247.24.0/22,no-resolve
+IP-CIDR,45.123.200.0/22,no-resolve
+IP-CIDR,45.64.20.0/22,no-resolve
+IP-CIDR,60.246.0.0/16,no-resolve
+IP-CIDR,74.119.64.0/21,no-resolve

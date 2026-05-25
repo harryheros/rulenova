@@ -4,8 +4,3 @@ __pycache__/
 .venv/
 .ruff_cache/
 .mypy_cache/
-
-# Build artifacts
-output/
-*.pyc
-.DS_Store

@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""test_offline.py — RuleNova offline unit tests"""
+"""Offline tests for RuleNova writers and cleaners."""
+
+from __future__ import annotations
 
 import json
 import sys
@@ -8,127 +10,124 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_rules import (
-    write_clash, write_clash_yaml, write_surge,
-    write_shadowrocket, write_quanx, write_singbox,
-    REGIONS, POLICY_CHINA, POLICY_GLOBAL, REGION_POLICY,
+from build_rules import (  # noqa: E402
+    POLICY_CHINA,
+    POLICY_GLOBAL,
+    REGIONS,
+    REGION_POLICY,
+    clean_cidr,
+    clean_domain,
+    write_clash_text,
+    write_clash_yaml,
+    write_loon,
+    write_quanx,
+    write_shadowrocket,
+    write_singbox,
+    write_surge,
 )
 
 SAMPLE_DOMAINS = ["example.com", "test.org"]
-SAMPLE_CIDRS   = ["1.2.3.0/24", "10.0.0.0/8"]
-GENERATED_AT   = "2026-01-01T00:00:00Z"
+SAMPLE_CIDRS = ["1.2.3.0/24", "10.0.0.0/8"]
+GENERATED_AT = "2026-01-01T00:00:00Z"
 
 
-class TestPolicyNames(unittest.TestCase):
-    """Policy name must appear in every rule line."""
-    def setUp(self):
+def rule_lines(path: Path) -> list[str]:
+    return [line for line in path.read_text(encoding="utf-8").splitlines() if line.strip() and not line.startswith("#")]
+
+
+class WriterCase(unittest.TestCase):
+    def setUp(self) -> None:
         self.tmp = tempfile.TemporaryDirectory()
         self.out = Path(self.tmp.name)
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         self.tmp.cleanup()
 
-    def test_clash_china_policy(self):
-        p = write_clash(self.out, "china", "China", POLICY_CHINA,
-                        SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
-        rules = [l for l in p.read_text().splitlines() if not l.startswith("#") and l]
-        self.assertTrue(all(f",{POLICY_CHINA}" in l for l in rules))
 
-    def test_clash_global_policy(self):
-        p = write_clash(self.out, "global", "Global", POLICY_GLOBAL,
-                        SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
-        rules = [l for l in p.read_text().splitlines() if not l.startswith("#") and l]
-        self.assertTrue(all(f",{POLICY_GLOBAL}" in l for l in rules))
+class TestCleaners(unittest.TestCase):
+    def test_clean_domain_plain_and_client_rules(self) -> None:
+        self.assertEqual(clean_domain(".Example.COM"), "example.com")
+        self.assertEqual(clean_domain("DOMAIN-SUFFIX,Example.COM,Proxy"), "example.com")
+        self.assertEqual(clean_domain("host-suffix, example.org, China"), "example.org")
+        self.assertIsNone(clean_domain("IP-CIDR,1.2.3.0/24"))
+        self.assertIsNone(clean_domain("bad domain.com"))
 
-    def test_surge_policy(self):
-        p = write_surge(self.out, "china", "China", POLICY_CHINA,
-                        SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
-        rules = [l for l in p.read_text().splitlines() if not l.startswith("#") and l]
-        self.assertTrue(all(f",{POLICY_CHINA}" in l for l in rules))
-
-    def test_shadowrocket_policy(self):
-        p = write_shadowrocket(self.out, "china", "China", POLICY_CHINA,
-                               SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
-        rules = [l for l in p.read_text().splitlines() if not l.startswith("#") and l]
-        self.assertTrue(all(POLICY_CHINA in l for l in rules))
-
-    def test_quanx_policy(self):
-        p = write_quanx(self.out, "china", "China", POLICY_CHINA,
-                        SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
-        rules = [l for l in p.read_text().splitlines() if not l.startswith("#") and l]
-        self.assertTrue(all(POLICY_CHINA in l for l in rules))
-
-    def test_singbox_policy_in_metadata(self):
-        p = write_singbox(self.out, "china", "China", POLICY_CHINA,
-                          SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
-        data = json.loads(p.read_text())
-        self.assertEqual(data["metadata"]["policy"], POLICY_CHINA)
+    def test_clean_cidr_plain_and_client_rules(self) -> None:
+        self.assertEqual(clean_cidr("1.2.3.4/24"), "1.2.3.0/24")
+        self.assertEqual(clean_cidr("IP-CIDR, 10.0.0.0/8, no-resolve"), "10.0.0.0/8")
+        self.assertEqual(clean_cidr("IP-CIDR6, 2001:db8::/32, no-resolve"), "2001:db8::/32")
+        self.assertIsNone(clean_cidr("example.com"))
 
 
-class TestFormatContent(unittest.TestCase):
-    def setUp(self):
-        self.tmp = tempfile.TemporaryDirectory()
-        self.out = Path(self.tmp.name)
+class TestClashProviderFormats(WriterCase):
+    def test_combined_classical_has_no_policy(self) -> None:
+        path = write_clash_text(self.out, "china", "China", POLICY_CHINA, SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
+        lines = rule_lines(path)
+        self.assertIn("DOMAIN-SUFFIX,example.com", lines)
+        self.assertIn("IP-CIDR,1.2.3.0/24,no-resolve", lines)
+        self.assertFalse(any(POLICY_CHINA in line for line in lines))
 
-    def tearDown(self):
-        self.tmp.cleanup()
+    def test_domain_variant_is_plain_domain_provider(self) -> None:
+        path = write_clash_text(self.out, "china-domain", "China", POLICY_CHINA, SAMPLE_DOMAINS, [], GENERATED_AT, "domain")
+        self.assertEqual(rule_lines(path), SAMPLE_DOMAINS)
 
-    def test_clash_yaml_payload(self):
-        p = write_clash_yaml(self.out, "china", "China", POLICY_CHINA,
-                             SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
-        self.assertIn("payload:", p.read_text())
+    def test_ip_variant_is_plain_cidr_provider(self) -> None:
+        path = write_clash_yaml(self.out, "china-ip", "China", POLICY_CHINA, [], SAMPLE_CIDRS, GENERATED_AT, "ip")
+        text = path.read_text(encoding="utf-8")
+        self.assertIn('  - "1.2.3.0/24"', text)
+        self.assertIn("payload:", text)
 
-    def test_singbox_structure(self):
-        p = write_singbox(self.out, "china", "China", POLICY_CHINA,
-                          SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
-        data = json.loads(p.read_text())
+
+class TestClientPolicyFormats(WriterCase):
+    def assert_policy_in_all_rules(self, writer, ext: str) -> None:
+        path = writer(self.out, "china", "China", POLICY_CHINA, SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
+        self.assertEqual(path.suffix, ext)
+        self.assertTrue(all(POLICY_CHINA in line for line in rule_lines(path)))
+
+    def test_surge_ruleset_has_no_embedded_policy(self) -> None:
+        path = write_surge(self.out, "china", "China", POLICY_CHINA, SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
+        lines = rule_lines(path)
+        self.assertIn("DOMAIN-SUFFIX,example.com", lines)
+        self.assertIn("IP-CIDR,1.2.3.0/24,no-resolve", lines)
+        self.assertFalse(any(POLICY_CHINA in line for line in lines))
+
+    def test_shadowrocket_policy(self) -> None:
+        self.assert_policy_in_all_rules(write_shadowrocket, ".conf")
+
+    def test_quanx_policy(self) -> None:
+        self.assert_policy_in_all_rules(write_quanx, ".conf")
+
+    def test_loon_policy(self) -> None:
+        self.assert_policy_in_all_rules(write_loon, ".list")
+
+
+class TestSingBox(WriterCase):
+    def test_singbox_combined_structure(self) -> None:
+        path = write_singbox(self.out, "china", "China", POLICY_CHINA, SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
+        data = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(data["version"], 2)
+        self.assertEqual(data["metadata"]["suggested_policy"], POLICY_CHINA)
         self.assertEqual(data["rules"][0]["domain_suffix"], SAMPLE_DOMAINS)
         self.assertEqual(data["rules"][0]["ip_cidr"], SAMPLE_CIDRS)
 
+    def test_singbox_domain_only(self) -> None:
+        path = write_singbox(self.out, "china-domain", "China", POLICY_CHINA, SAMPLE_DOMAINS, [], GENERATED_AT, "domain")
+        data = json.loads(path.read_text(encoding="utf-8"))
+        self.assertIn("domain_suffix", data["rules"][0])
+        self.assertNotIn("ip_cidr", data["rules"][0])
 
-class TestFilenames(unittest.TestCase):
-    def setUp(self):
-        self.tmp = tempfile.TemporaryDirectory()
-        self.out = Path(self.tmp.name)
 
-    def tearDown(self):
-        self.tmp.cleanup()
-
-    def test_combined_filenames(self):
-        for name, policy, label in [
-            ("china",  POLICY_CHINA,  "China"),
-            ("global", POLICY_GLOBAL, "Global"),
-        ]:
-            for writer, ext in [
-                (write_clash,        ".list"),
-                (write_clash_yaml,   ".yaml"),
-                (write_surge,        ".list"),
-                (write_shadowrocket, ".conf"),
-                (write_quanx,        ".conf"),
-                (write_singbox,      ".json"),
-            ]:
-                p = writer(self.out, name, label, policy,
-                            SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
-                self.assertEqual(p.name, f"{name}{ext}")
-
-    def test_region_filenames(self):
-        for region in REGIONS:
-            policy = REGION_POLICY[region]
-            for writer, ext in [
-                (write_clash,        ".list"),
-                (write_surge,        ".list"),
-                (write_singbox,      ".json"),
-            ]:
-                p = writer(self.out, region.lower(), region, policy,
-                            SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
-                self.assertEqual(p.name, f"{region.lower()}{ext}")
+class TestNames(unittest.TestCase):
+    def test_policy_names_are_short(self) -> None:
+        self.assertEqual(POLICY_CHINA, "China")
+        self.assertEqual(POLICY_GLOBAL, "Global")
+        self.assertEqual(REGION_POLICY["HK"], "HK")
+        self.assertTrue(all(len(REGION_POLICY[region]) <= 6 for region in REGIONS))
 
 
 if __name__ == "__main__":
-    loader = unittest.TestLoader()
-    suite  = loader.loadTestsFromModule(sys.modules[__name__])
     runner = unittest.TextTestRunner(verbosity=2)
-    result = runner.run(suite)
+    result = runner.run(unittest.defaultTestLoader.loadTestsFromModule(sys.modules[__name__]))
     if result.wasSuccessful():
         print("\nAll offline tests passed.")
     sys.exit(0 if result.wasSuccessful() else 1)

@@ -1,6 +1,6 @@
 # RuleNova — Singapore
 # Format: Clash/Mihomo YAML rule-provider
-# Generated: 2026-05-25T14:11:53Z
+# Generated: 2026-05-25T14:23:59Z
 payload:
   - DOMAIN-SUFFIX,263.net
   - DOMAIN-SUFFIX,3171688.com

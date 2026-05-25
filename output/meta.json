@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "project": "rulenova",
-  "generated_at": "2026-05-25T14:11:53Z",
+  "generated_at": "2026-05-25T14:23:59Z",
   "regions": {
     "CN": {
       "domains": 3356,
@@ -32,15 +32,11 @@
       "cidrs": 1615
     }
   },
-  "formats": {
-    "no_action": [
-      "clash-mihomo",
-      "surge",
-      "sing-box"
-    ],
-    "with_action": [
-      "shadowrocket",
-      "quantumult-x"
-    ]
-  }
+  "formats": [
+    "clash-mihomo",
+    "surge",
+    "sing-box",
+    "shadowrocket",
+    "quantumult-x"
+  ]
 }

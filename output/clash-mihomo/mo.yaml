@@ -1,6 +1,6 @@
 # RuleNova — Macau
 # Format: Clash/Mihomo YAML rule-provider
-# Generated: 2026-05-25T14:11:53Z
+# Generated: 2026-05-25T14:23:59Z
 payload:
   - DOMAIN-SUFFIX,abm.org.mo
   - DOMAIN-SUFFIX,al.gov.mo

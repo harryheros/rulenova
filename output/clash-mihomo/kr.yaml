@@ -1,6 +1,6 @@
 # RuleNova — South Korea
 # Format: Clash/Mihomo YAML rule-provider
-# Generated: 2026-05-25T14:11:53Z
+# Generated: 2026-05-25T14:23:59Z
 payload:
   - DOMAIN-SUFFIX,11st.co.kr
   - DOMAIN-SUFFIX,afreecatv.com

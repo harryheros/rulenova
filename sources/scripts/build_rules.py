@@ -60,45 +60,36 @@ def fetch_text(url: str) -> list[str]:
             if l.strip() and not l.strip().startswith("#")]
 
 
-def _header(region: str, intent: str, fmt: str, domains: list, cidrs: list,
-            generated_at: str) -> str:
-    name = REGION_NAMES.get(region, region)
-    return (
-        f"# RuleNova — {name} ({intent.upper()})\n"
-        f"# Format   : {fmt}\n"
+# ── Format writers ───────────────────────────────────────────────────────────
+
+def write_clash(out_dir: Path, region: str,
+                domains: list[str], cidrs: list[str],
+                generated_at: str) -> Path:
+    """
+    Clash rule-set provider format (classical text). No action — user decides.
+    """
+    lines = [
+        f"# RuleNova — {REGION_NAMES.get(region, region)}\n"
+        f"# Format   : Clash/Mihomo\n"
         f"# Domains  : {len(domains)}\n"
         f"# CIDRs    : {len(cidrs)}\n"
         f"# Generated: {generated_at}\n"
         f"# Source   : https://github.com/harryheros/rulenova\n"
         f"#\n"
-    )
-
-
-# ── Clash / Mihomo ───────────────────────────────────────────────────────────
-
-def write_clash(out_dir: Path, region: str, intent: str,
-                domains: list[str], cidrs: list[str],
-                generated_at: str, action: str) -> Path:
-    """
-    Clash rule-set provider format (classical text).
-    DOMAIN-SUFFIX for apex/subdomains, IP-CIDR for CIDRs.
-    """
-    lines = [_header(region, intent, "Clash/Mihomo", domains, cidrs, generated_at)]
+    ]
     for d in domains:
         lines.append(f"DOMAIN-SUFFIX,{d}")
     for cidr in cidrs:
         lines.append(f"IP-CIDR,{cidr},no-resolve")
-    path = out_dir / f"{region.lower()}_{intent}.list"
+    path = out_dir / f"{region.lower()}.list"
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return path
 
 
-def write_clash_yaml(out_dir: Path, region: str, intent: str,
+def write_clash_yaml(out_dir: Path, region: str,
                      domains: list[str], cidrs: list[str],
-                     generated_at: str, action: str) -> Path:
-    """
-    Clash rule-set provider YAML format (for rule-providers).
-    """
+                     generated_at: str) -> Path:
+    """Clash rule-set provider YAML format. No action."""
     rules = []
     for d in domains:
         rules.append(f"  - DOMAIN-SUFFIX,{d}")
@@ -106,90 +97,101 @@ def write_clash_yaml(out_dir: Path, region: str, intent: str,
         rules.append(f"  - IP-CIDR,{cidr},no-resolve")
 
     content = (
-        f"# RuleNova — {REGION_NAMES.get(region, region)} ({intent.upper()})\n"
+        f"# RuleNova — {REGION_NAMES.get(region, region)}\n"
         f"# Format: Clash/Mihomo YAML rule-provider\n"
         f"# Generated: {generated_at}\n"
         f"payload:\n"
         + "\n".join(rules) + "\n"
     )
-    path = out_dir / f"{region.lower()}_{intent}.yaml"
+    path = out_dir / f"{region.lower()}.yaml"
     path.write_text(content, encoding="utf-8")
     return path
 
 
-# ── Surge ────────────────────────────────────────────────────────────────────
-
-def write_surge(out_dir: Path, region: str, intent: str,
+def write_surge(out_dir: Path, region: str,
                 domains: list[str], cidrs: list[str],
-                generated_at: str, action: str) -> Path:
-    lines = [_header(region, intent, "Surge", domains, cidrs, generated_at)]
+                generated_at: str) -> Path:
+    """Surge rule list. No action — user assigns in config."""
+    lines = [
+        f"# RuleNova — {REGION_NAMES.get(region, region)}\n"
+        f"# Format   : Surge\n"
+        f"# Domains  : {len(domains)}\n"
+        f"# CIDRs    : {len(cidrs)}\n"
+        f"# Generated: {generated_at}\n"
+        f"# Source   : https://github.com/harryheros/rulenova\n"
+        f"#\n"
+    ]
     for d in domains:
-        lines.append(f".{d}")           # Surge: leading dot = suffix match
+        lines.append(f".{d}")
     for cidr in cidrs:
         lines.append(cidr)
-    path = out_dir / f"{region.lower()}_{intent}.list"
+    path = out_dir / f"{region.lower()}.list"
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return path
 
-
-# ── Shadowrocket ─────────────────────────────────────────────────────────────
 
 def write_shadowrocket(out_dir: Path, region: str, intent: str,
                        domains: list[str], cidrs: list[str],
                        generated_at: str, action: str) -> Path:
     """
-    Shadowrocket rule list format.
-    DOMAIN-SUFFIX for domains, IP-CIDR for CIDRs.
+    Shadowrocket rule list. Requires action in format — outputs direct + proxy.
     """
-    lines = [_header(region, intent, "Shadowrocket", domains, cidrs, generated_at)]
+    lines = [
+        f"# RuleNova — {REGION_NAMES.get(region, region)} ({intent.upper()})\n"
+        f"# Format   : Shadowrocket\n"
+        f"# Domains  : {len(domains)}\n"
+        f"# CIDRs    : {len(cidrs)}\n"
+        f"# Generated: {generated_at}\n"
+        f"# Source   : https://github.com/harryheros/rulenova\n"
+        f"#\n"
+    ]
     for d in domains:
         lines.append(f"DOMAIN-SUFFIX,{d},{action}")
     for cidr in cidrs:
         lines.append(f"IP-CIDR,{cidr},{action}")
-    path = out_dir / f"{region.lower()}_{intent}.conf"
+    path = out_dir / f"{region.lower()}.conf"
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return path
 
-
-# ── Quantumult X ─────────────────────────────────────────────────────────────
 
 def write_quanx(out_dir: Path, region: str, intent: str,
                 domains: list[str], cidrs: list[str],
                 generated_at: str, action: str) -> Path:
     """
-    Quantumult X filter list format.
-    host-suffix for domains, ip-cidr for CIDRs.
+    Quantumult X filter list. Requires action in format — outputs direct + proxy.
     """
-    lines = [_header(region, intent, "Quantumult X", domains, cidrs, generated_at)]
+    lines = [
+        f"# RuleNova — {REGION_NAMES.get(region, region)} ({intent.upper()})\n"
+        f"# Format   : Quantumult X\n"
+        f"# Domains  : {len(domains)}\n"
+        f"# CIDRs    : {len(cidrs)}\n"
+        f"# Generated: {generated_at}\n"
+        f"# Source   : https://github.com/harryheros/rulenova\n"
+        f"#\n"
+    ]
     qx_action = "direct" if action == "DIRECT" else f"proxy,tag={region}"
     for d in domains:
         lines.append(f"host-suffix, {d}, {qx_action}")
     for cidr in cidrs:
         lines.append(f"ip-cidr, {cidr}, {qx_action}")
-    path = out_dir / f"{region.lower()}_{intent}.conf"
+    path = out_dir / f"{region.lower()}.conf"
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return path
 
 
-# ── sing-box ─────────────────────────────────────────────────────────────────
-
-def write_singbox(out_dir: Path, region: str, intent: str,
+def write_singbox(out_dir: Path, region: str,
                   domains: list[str], cidrs: list[str],
-                  generated_at: str, action: str) -> Path:
-    """
-    sing-box rule-set source format (JSON).
-    """
+                  generated_at: str) -> Path:
+    """sing-box rule-set source format. No action."""
     rule = {
         "version": 2,
         "metadata": {
-            "region":     region,
+            "region":      region,
             "region_name": REGION_NAMES.get(region, region),
-            "intent":     intent,
-            "action":     action,
-            "generated":  generated_at,
-            "domains":    len(domains),
-            "cidrs":      len(cidrs),
-            "source":     "https://github.com/harryheros/rulenova",
+            "generated":   generated_at,
+            "domains":     len(domains),
+            "cidrs":       len(cidrs),
+            "source":      "https://github.com/harryheros/rulenova",
         },
         "rules": [
             {
@@ -198,7 +200,7 @@ def write_singbox(out_dir: Path, region: str, intent: str,
             }
         ],
     }
-    path = out_dir / f"{region.lower()}_{intent}.json"
+    path = out_dir / f"{region.lower()}.json"
     path.write_text(json.dumps(rule, indent=2, ensure_ascii=False) + "\n",
                     encoding="utf-8")
     return path
@@ -212,8 +214,10 @@ def write_meta(repo_root: Path, stats: dict, generated_at: str) -> None:
         "project":        "rulenova",
         "generated_at":   generated_at,
         "regions":        stats,
-        "formats":        ["clash-mihomo", "surge", "shadowrocket", "quantumult-x", "sing-box"],
-        "intents":        ["direct", "proxy"],
+        "formats": {
+            "no_action":  ["clash-mihomo", "surge", "sing-box"],
+            "with_action": ["shadowrocket", "quantumult-x"],
+        },
     }
     out = repo_root / "output" / "meta.json"
     out.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n",
@@ -241,19 +245,23 @@ INTENT_ACTION = {
     "proxy":  "PROXY",
 }
 
-FORMAT_WRITERS = {
-    "clash-mihomo":  (write_clash, write_clash_yaml),
-    "surge":         (write_surge,),
-    "shadowrocket":  (write_shadowrocket,),
-    "quantumult-x":  (write_quanx,),
-    "sing-box":      (write_singbox,),
+# Formats that output a single no-action file per region
+NO_ACTION_FORMATS = {
+    "clash-mihomo": (write_clash, write_clash_yaml),
+    "surge":        (write_surge,),
+    "sing-box":     (write_singbox,),
+}
+
+# Formats that require action in the rule syntax → output direct + proxy
+ACTION_FORMATS = {
+    "shadowrocket": write_shadowrocket,
+    "quantumult-x": write_quanx,
 }
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="RuleNova build script")
-    parser.add_argument("--repo-root", default=None,
-                        help="Path to repo root (default: parent of this script)")
+    parser.add_argument("--repo-root", default=None)
     args = parser.parse_args()
 
     repo_root = Path(args.repo_root) if args.repo_root else \
@@ -270,7 +278,6 @@ def main() -> int:
     for region in REGIONS:
         log.info(f"\n── {region} ({REGION_NAMES[region]}) ──")
 
-        # Fetch upstream data
         try:
             domains = fetch_text(
                 f"{DOMAINNOVA_BASE}/domains_{region.lower()}.txt")
@@ -279,8 +286,7 @@ def main() -> int:
             domains = []
 
         try:
-            cidrs = fetch_text(
-                f"{IPNOVA_BASE}/{region}.txt")
+            cidrs = fetch_text(f"{IPNOVA_BASE}/{region}.txt")
         except Exception as e:
             log.error(f"  Failed to fetch CIDRs for {region}: {e}")
             cidrs = []
@@ -288,14 +294,22 @@ def main() -> int:
         log.info(f"  domains={len(domains)}, cidrs={len(cidrs)}")
         stats[region] = {"domains": len(domains), "cidrs": len(cidrs)}
 
-        for intent, action in INTENT_ACTION.items():
-            for fmt, writers in FORMAT_WRITERS.items():
+        # No-action formats: one file per region
+        for fmt, writers in NO_ACTION_FORMATS.items():
+            fmt_dir = out_root / fmt
+            fmt_dir.mkdir(parents=True, exist_ok=True)
+            for writer in writers:
+                path = writer(fmt_dir, region, domains, cidrs, generated_at)
+                log.info(f"  [{fmt}] {path.name}")
+
+        # Action formats: direct + proxy per region
+        for fmt, writer in ACTION_FORMATS.items():
+            for intent, action in INTENT_ACTION.items():
                 fmt_dir = out_root / fmt / intent
                 fmt_dir.mkdir(parents=True, exist_ok=True)
-                for writer in writers:
-                    path = writer(fmt_dir, region, intent,
-                                  domains, cidrs, generated_at, action)
-                    log.info(f"  [{fmt}/{intent}] {path.name}")
+                path = writer(fmt_dir, region, intent,
+                              domains, cidrs, generated_at, action)
+                log.info(f"  [{fmt}/{intent}] {path.name}")
 
     write_meta(repo_root, stats, generated_at)
     write_checksums(repo_root)

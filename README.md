@@ -11,20 +11,15 @@ Automated proxy rule sets for CN/HK/TW/MO/JP/KR/SG, generated weekly from
 
 ## Formats
 
-| Format | Files |
-|---|---|
-| Clash / Mihomo | `output/clash-mihomo/{direct,proxy}/{region}_{intent}.list` + `.yaml` |
-| Surge | `output/surge/{direct,proxy}/{region}_{intent}.list` |
-| Shadowrocket | `output/shadowrocket/{direct,proxy}/{region}_{intent}.conf` |
-| Quantumult X | `output/quantumult-x/{direct,proxy}/{region}_{intent}.conf` |
-| sing-box | `output/sing-box/{direct,proxy}/{region}_{intent}.json` |
+| Format | Action | Files |
+|---|---|---|
+| Clash / Mihomo | user-defined | `output/clash-mihomo/{region}.list` + `.yaml` |
+| Surge | user-defined | `output/surge/{region}.list` |
+| sing-box | user-defined | `output/sing-box/{region}.json` |
+| Shadowrocket | built-in | `output/shadowrocket/{direct,proxy}/{region}.conf` |
+| Quantumult X | built-in | `output/quantumult-x/{direct,proxy}/{region}.conf` |
 
-## Intents
-
-- **direct** — matched traffic → `DIRECT`, everything else → proxy.
-  Typical use: mainland users routing CN traffic locally.
-- **proxy** — matched traffic → regional proxy group, everything else → default.
-  Typical use: multi-region users routing HK/JP/SG to corresponding landing nodes.
+Clash, Surge and sing-box rule sets carry no action — you assign `DIRECT`, `PROXY`, or any policy group in your own config. Shadowrocket and Quantumult X require action in the rule syntax, so both `direct` and `proxy` variants are provided.
 
 ## Regions
 
@@ -33,23 +28,29 @@ Automated proxy rule sets for CN/HK/TW/MO/JP/KR/SG, generated weekly from
 ## Raw URLs
 
 ```
-# Clash (list)
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/clash-mihomo/direct/cn_direct.list
+# Clash / Mihomo (list)
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/clash-mihomo/cn.list
 
-# Clash (yaml rule-provider)
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/clash-mihomo/direct/cn_direct.yaml
+# Clash / Mihomo (yaml rule-provider)
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/clash-mihomo/cn.yaml
 
 # Surge
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/surge/direct/cn_direct.list
-
-# Shadowrocket
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/shadowrocket/direct/cn_direct.conf
-
-# Quantumult X
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/quantumult-x/direct/cn_direct.conf
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/surge/cn.list
 
 # sing-box
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/sing-box/direct/cn_direct.json
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/sing-box/cn.json
+
+# Shadowrocket (direct)
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/shadowrocket/direct/cn.conf
+
+# Shadowrocket (proxy)
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/shadowrocket/proxy/cn.conf
+
+# Quantumult X (direct)
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/quantumult-x/direct/cn.conf
+
+# Quantumult X (proxy)
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/quantumult-x/proxy/cn.conf
 ```
 
 ## Update schedule

@@ -18,25 +18,25 @@ ROOT     = Path(__file__).resolve().parent.parent.parent
 OUT_DIR  = ROOT / "output"
 
 REGIONS  = ["CN", "HK", "TW", "MO", "JP", "KR", "SG"]
-FORMATS  = ["clash-mihomo", "surge", "shadowrocket", "quantumult-x", "sing-box"]
 INTENTS  = ["direct", "proxy"]
 
 # Minimum rule count per region (domains + CIDRs combined).
-# Values are set conservatively below current actuals to catch catastrophic
-# fetch failures, not minor weekly fluctuations:
-#   CN ~3350 domains + ~5490 CIDRs, HK ~165 + ~2470, etc.
 MIN_LINES: dict[str, int] = {
     "CN": 3000, "HK": 100, "TW": 100, "MO": 20,
     "JP": 100,  "KR": 100, "SG": 100,
 }
 
-# Expected file extensions per format
-FMT_EXTS: dict[str, list[str]] = {
-    "clash-mihomo":  [".list", ".yaml"],
-    "surge":         [".list"],
-    "shadowrocket":  [".conf"],
-    "quantumult-x":  [".conf"],
-    "sing-box":      [".json"],
+# No-action formats: single file per region under output/{fmt}/{region}.ext
+NO_ACTION_FMT_EXTS: dict[str, list[str]] = {
+    "clash-mihomo": [".list", ".yaml"],
+    "surge":        [".list"],
+    "sing-box":     [".json"],
+}
+
+# Action formats: output/{fmt}/{intent}/{region}.ext
+ACTION_FMT_EXT: dict[str, str] = {
+    "shadowrocket": ".conf",
+    "quantumult-x": ".conf",
 }
 
 errors: list[str] = []
@@ -65,18 +65,28 @@ def count_rule_lines(path: Path) -> int:
 def validate_files() -> None:
     for region in REGIONS:
         min_lines = MIN_LINES.get(region, 10)
-        for fmt in FORMATS:
+        # No-action formats
+        for fmt, exts in NO_ACTION_FMT_EXTS.items():
+            for ext in exts:
+                path = OUT_DIR / fmt / f"{region.lower()}{ext}"
+                if not check_file_exists(path):
+                    continue
+                count = count_rule_lines(path)
+                if count < min_lines:
+                    errors.append(
+                        f"TOO_SMALL: {path.relative_to(ROOT)} "
+                        f"({count} rules, expected >= {min_lines})")
+        # Action formats
+        for fmt, ext in ACTION_FMT_EXT.items():
             for intent in INTENTS:
-                for ext in FMT_EXTS[fmt]:
-                    fname = f"{region.lower()}_{intent}{ext}"
-                    path  = OUT_DIR / fmt / intent / fname
-                    if not check_file_exists(path):
-                        continue
-                    count = count_rule_lines(path)
-                    if count < min_lines:
-                        errors.append(
-                            f"TOO_SMALL: {path.relative_to(ROOT)} "
-                            f"({count} rules, expected >= {min_lines})")
+                path = OUT_DIR / fmt / intent / f"{region.lower()}{ext}"
+                if not check_file_exists(path):
+                    continue
+                count = count_rule_lines(path)
+                if count < min_lines:
+                    errors.append(
+                        f"TOO_SMALL: {path.relative_to(ROOT)} "
+                        f"({count} rules, expected >= {min_lines})")
 
 
 def validate_checksums() -> None:
@@ -124,7 +134,9 @@ def main() -> int:
             print(f"  {e}")
         return 1
 
-    total = len(REGIONS) * len(FORMATS) * len(INTENTS) * 2
+    no_action_total = len(REGIONS) * sum(len(v) for v in NO_ACTION_FMT_EXTS.values())
+    action_total    = len(REGIONS) * len(ACTION_FMT_EXT) * len(INTENTS)
+    total = no_action_total + action_total
     print(f"\n✅ All checks passed ({total} files validated)")
     return 0
 

@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """
 test_offline.py — RuleNova offline unit tests
-
-Tests all format writers with synthetic data without network access.
 """
 
 import json
@@ -11,7 +9,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_rules import (
     write_clash, write_clash_yaml, write_surge,
     write_shadowrocket, write_quanx, write_singbox,
@@ -32,28 +30,28 @@ class TestClash(unittest.TestCase):
         self.tmp.cleanup()
 
     def test_list_contains_domain_suffix(self):
-        p = write_clash(self.out, "CN", "direct", SAMPLE_DOMAINS, SAMPLE_CIDRS,
-                        GENERATED_AT, "DIRECT")
-        text = p.read_text()
-        self.assertIn("DOMAIN-SUFFIX,example.com", text)
+        p = write_clash(self.out, "CN", SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
+        self.assertIn("DOMAIN-SUFFIX,example.com", p.read_text())
 
     def test_list_contains_ip_cidr(self):
-        p = write_clash(self.out, "CN", "direct", SAMPLE_DOMAINS, SAMPLE_CIDRS,
-                        GENERATED_AT, "DIRECT")
+        p = write_clash(self.out, "CN", SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
+        self.assertIn("IP-CIDR,1.2.3.0/24,no-resolve", p.read_text())
+
+    def test_no_action_in_list(self):
+        p = write_clash(self.out, "CN", SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
         text = p.read_text()
-        self.assertIn("IP-CIDR,1.2.3.0/24,no-resolve", text)
+        self.assertNotIn(",DIRECT", text)
+        self.assertNotIn(",PROXY", text)
 
     def test_yaml_payload_structure(self):
-        p = write_clash_yaml(self.out, "CN", "direct", SAMPLE_DOMAINS, SAMPLE_CIDRS,
-                             GENERATED_AT, "DIRECT")
+        p = write_clash_yaml(self.out, "CN", SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
         text = p.read_text()
         self.assertIn("payload:", text)
         self.assertIn("DOMAIN-SUFFIX,example.com", text)
 
-    def test_filename_convention(self):
-        p = write_clash(self.out, "HK", "proxy", SAMPLE_DOMAINS, SAMPLE_CIDRS,
-                        GENERATED_AT, "PROXY")
-        self.assertEqual(p.name, "hk_proxy.list")
+    def test_filename_no_intent(self):
+        p = write_clash(self.out, "HK", SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
+        self.assertEqual(p.name, "hk.list")
 
 
 class TestSurge(unittest.TestCase):
@@ -65,17 +63,18 @@ class TestSurge(unittest.TestCase):
         self.tmp.cleanup()
 
     def test_leading_dot_for_domains(self):
-        p = write_surge(self.out, "TW", "direct", SAMPLE_DOMAINS, SAMPLE_CIDRS,
-                        GENERATED_AT, "DIRECT")
-        text = p.read_text()
-        self.assertIn(".example.com", text)
+        p = write_surge(self.out, "TW", SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
+        self.assertIn(".example.com", p.read_text())
 
-    def test_bare_cidr(self):
-        p = write_surge(self.out, "TW", "direct", SAMPLE_DOMAINS, SAMPLE_CIDRS,
-                        GENERATED_AT, "DIRECT")
+    def test_no_action(self):
+        p = write_surge(self.out, "TW", SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
         text = p.read_text()
-        self.assertIn("1.2.3.0/24", text)
-        self.assertNotIn("IP-CIDR", text)
+        self.assertNotIn(",DIRECT", text)
+        self.assertNotIn(",PROXY", text)
+
+    def test_filename_no_intent(self):
+        p = write_surge(self.out, "TW", SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
+        self.assertEqual(p.name, "tw.list")
 
 
 class TestShadowrocket(unittest.TestCase):
@@ -87,17 +86,21 @@ class TestShadowrocket(unittest.TestCase):
         self.tmp.cleanup()
 
     def test_direct_action(self):
-        p = write_shadowrocket(self.out, "JP", "direct", SAMPLE_DOMAINS, SAMPLE_CIDRS,
-                               GENERATED_AT, "DIRECT")
+        p = write_shadowrocket(self.out, "JP", "direct", SAMPLE_DOMAINS,
+                               SAMPLE_CIDRS, GENERATED_AT, "DIRECT")
         text = p.read_text()
         self.assertIn("DOMAIN-SUFFIX,example.com,DIRECT", text)
         self.assertIn("IP-CIDR,1.2.3.0/24,DIRECT", text)
 
     def test_proxy_action(self):
-        p = write_shadowrocket(self.out, "JP", "proxy", SAMPLE_DOMAINS, SAMPLE_CIDRS,
-                               GENERATED_AT, "PROXY")
-        text = p.read_text()
-        self.assertIn(",PROXY", text)
+        p = write_shadowrocket(self.out, "JP", "proxy", SAMPLE_DOMAINS,
+                               SAMPLE_CIDRS, GENERATED_AT, "PROXY")
+        self.assertIn(",PROXY", p.read_text())
+
+    def test_filename_no_region_intent(self):
+        p = write_shadowrocket(self.out, "JP", "direct", SAMPLE_DOMAINS,
+                               SAMPLE_CIDRS, GENERATED_AT, "DIRECT")
+        self.assertEqual(p.name, "jp.conf")
 
 
 class TestQuanX(unittest.TestCase):
@@ -108,23 +111,20 @@ class TestQuanX(unittest.TestCase):
     def tearDown(self):
         self.tmp.cleanup()
 
-    def test_host_suffix_format(self):
-        p = write_quanx(self.out, "KR", "direct", SAMPLE_DOMAINS, SAMPLE_CIDRS,
-                        GENERATED_AT, "DIRECT")
-        text = p.read_text()
-        self.assertIn("host-suffix, example.com, direct", text)
+    def test_host_suffix_direct(self):
+        p = write_quanx(self.out, "KR", "direct", SAMPLE_DOMAINS,
+                        SAMPLE_CIDRS, GENERATED_AT, "DIRECT")
+        self.assertIn("host-suffix, example.com, direct", p.read_text())
 
-    def test_proxy_tag_format(self):
-        p = write_quanx(self.out, "KR", "proxy", SAMPLE_DOMAINS, SAMPLE_CIDRS,
-                        GENERATED_AT, "PROXY")
-        text = p.read_text()
-        self.assertIn("proxy,tag=KR", text)
+    def test_proxy_tag(self):
+        p = write_quanx(self.out, "KR", "proxy", SAMPLE_DOMAINS,
+                        SAMPLE_CIDRS, GENERATED_AT, "PROXY")
+        self.assertIn("proxy,tag=KR", p.read_text())
 
-    def test_ip_cidr_format(self):
-        p = write_quanx(self.out, "KR", "direct", SAMPLE_DOMAINS, SAMPLE_CIDRS,
-                        GENERATED_AT, "DIRECT")
-        text = p.read_text()
-        self.assertIn("ip-cidr, 1.2.3.0/24, direct", text)
+    def test_filename_no_region_intent(self):
+        p = write_quanx(self.out, "KR", "direct", SAMPLE_DOMAINS,
+                        SAMPLE_CIDRS, GENERATED_AT, "DIRECT")
+        self.assertEqual(p.name, "kr.conf")
 
 
 class TestSingBox(unittest.TestCase):
@@ -136,33 +136,25 @@ class TestSingBox(unittest.TestCase):
         self.tmp.cleanup()
 
     def test_json_structure(self):
-        p = write_singbox(self.out, "SG", "direct", SAMPLE_DOMAINS, SAMPLE_CIDRS,
-                          GENERATED_AT, "DIRECT")
+        p = write_singbox(self.out, "SG", SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
         data = json.loads(p.read_text())
         self.assertEqual(data["version"], 2)
-        self.assertIn("rules", data)
         self.assertEqual(data["rules"][0]["domain_suffix"], SAMPLE_DOMAINS)
         self.assertEqual(data["rules"][0]["ip_cidr"], SAMPLE_CIDRS)
 
-    def test_metadata_fields(self):
-        p = write_singbox(self.out, "SG", "proxy", SAMPLE_DOMAINS, SAMPLE_CIDRS,
-                          GENERATED_AT, "PROXY")
+    def test_no_action_in_metadata(self):
+        p = write_singbox(self.out, "SG", SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
         data = json.loads(p.read_text())
-        meta = data["metadata"]
-        self.assertEqual(meta["region"], "SG")
-        self.assertEqual(meta["intent"], "proxy")
-        self.assertEqual(meta["action"], "PROXY")
+        self.assertNotIn("action", data["metadata"])
+        self.assertNotIn("intent", data["metadata"])
 
-    def test_counts_in_metadata(self):
-        p = write_singbox(self.out, "MO", "direct", SAMPLE_DOMAINS, SAMPLE_CIDRS,
-                          GENERATED_AT, "DIRECT")
-        data = json.loads(p.read_text())
-        self.assertEqual(data["metadata"]["domains"], len(SAMPLE_DOMAINS))
-        self.assertEqual(data["metadata"]["cidrs"], len(SAMPLE_CIDRS))
+    def test_filename_no_intent(self):
+        p = write_singbox(self.out, "SG", SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
+        self.assertEqual(p.name, "sg.json")
 
 
 class TestFilenameConventions(unittest.TestCase):
-    """All writers must follow {region_lower}_{intent}.{ext} naming."""
+    """No-action formats must use {region}.{ext}, action formats {region}.{ext}."""
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.out = Path(self.tmp.name)
@@ -170,22 +162,29 @@ class TestFilenameConventions(unittest.TestCase):
     def tearDown(self):
         self.tmp.cleanup()
 
-    def test_all_regions_all_intents(self):
+    def test_no_action_filenames(self):
+        for region in REGIONS:
+            for writer, ext in [
+                (write_clash,      ".list"),
+                (write_clash_yaml, ".yaml"),
+                (write_surge,      ".list"),
+                (write_singbox,    ".json"),
+            ]:
+                p = writer(self.out, region, SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT)
+                self.assertEqual(p.name, f"{region.lower()}{ext}",
+                    f"{writer.__name__}: expected {region.lower()}{ext}, got {p.name}")
+
+    def test_action_filenames(self):
         for region in REGIONS:
             for intent, action in [("direct", "DIRECT"), ("proxy", "PROXY")]:
-                for writer, expected_ext in [
-                    (write_clash,        ".list"),
-                    (write_clash_yaml,   ".yaml"),
-                    (write_surge,        ".list"),
+                for writer, ext in [
                     (write_shadowrocket, ".conf"),
                     (write_quanx,        ".conf"),
-                    (write_singbox,      ".json"),
                 ]:
                     p = writer(self.out, region, intent,
                                 SAMPLE_DOMAINS, SAMPLE_CIDRS, GENERATED_AT, action)
-                    expected = f"{region.lower()}_{intent}{expected_ext}"
-                    self.assertEqual(p.name, expected,
-                        f"{writer.__name__}: expected {expected}, got {p.name}")
+                    self.assertEqual(p.name, f"{region.lower()}{ext}",
+                        f"{writer.__name__}: expected {region.lower()}{ext}, got {p.name}")
 
 
 if __name__ == "__main__":

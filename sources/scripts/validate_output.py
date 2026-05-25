@@ -39,10 +39,7 @@ ACTION_FMT_EXT: dict[str, str] = {
     "quantumult-x": ".conf",
 }
 
-errors: list[str] = []
-
-
-def check_file_exists(path: Path) -> bool:
+def check_file_exists(path: Path, errors: list) -> bool:
     if not path.exists():
         errors.append(f"MISSING: {path.relative_to(ROOT)}")
         return False
@@ -62,25 +59,23 @@ def count_rule_lines(path: Path) -> int:
                if l.strip() and not l.strip().startswith("#"))
 
 
-def validate_files() -> None:
+def validate_files(errors: list) -> None:
     for region in REGIONS:
         min_lines = MIN_LINES.get(region, 10)
-        # No-action formats
         for fmt, exts in NO_ACTION_FMT_EXTS.items():
             for ext in exts:
                 path = OUT_DIR / fmt / f"{region.lower()}{ext}"
-                if not check_file_exists(path):
+                if not check_file_exists(path, errors):
                     continue
                 count = count_rule_lines(path)
                 if count < min_lines:
                     errors.append(
                         f"TOO_SMALL: {path.relative_to(ROOT)} "
                         f"({count} rules, expected >= {min_lines})")
-        # Action formats
         for fmt, ext in ACTION_FMT_EXT.items():
             for intent in INTENTS:
                 path = OUT_DIR / fmt / intent / f"{region.lower()}{ext}"
-                if not check_file_exists(path):
+                if not check_file_exists(path, errors):
                     continue
                 count = count_rule_lines(path)
                 if count < min_lines:
@@ -89,7 +84,7 @@ def validate_files() -> None:
                         f"({count} rules, expected >= {min_lines})")
 
 
-def validate_checksums() -> None:
+def validate_checksums(errors: list) -> None:
     ck_path = OUT_DIR / "checksums.txt"
     if not ck_path.exists():
         errors.append("MISSING: output/checksums.txt")
@@ -107,7 +102,7 @@ def validate_checksums() -> None:
             errors.append(f"CHECKSUM_MISMATCH: {rel}")
 
 
-def validate_meta() -> None:
+def validate_meta(errors: list) -> None:
     meta_path = OUT_DIR / "meta.json"
     if not meta_path.exists():
         errors.append("MISSING: output/meta.json")
@@ -124,9 +119,10 @@ def main() -> int:
     print("RuleNova output validation")
     print(f"  Output dir: {OUT_DIR}")
 
-    validate_files()
-    validate_checksums()
-    validate_meta()
+    errors: list[str] = []
+    validate_files(errors)
+    validate_checksums(errors)
+    validate_meta(errors)
 
     if errors:
         print(f"\n❌ {len(errors)} error(s):")

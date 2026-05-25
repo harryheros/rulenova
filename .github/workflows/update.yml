@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history needed for --amend to read last commit message
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -47,7 +49,7 @@ jobs:
           LAST_MSG=$(git log -1 --pretty=%s)
           if echo "$LAST_MSG" | grep -q "^sync: rulenova"; then
             # Last commit was an output commit — amend it
-            git commit --amend --no-edit --date="$(date -u '+%Y-%m-%dT%H:%M:%SZ')"
+            git commit --amend --no-edit --date="$(date -u -R)"
             git push --force-with-lease
           else
             # First output commit, or last commit was a source change — normal commit

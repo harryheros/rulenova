@@ -4,15 +4,16 @@ build_rules.py — RuleNova main build script
 
 Fetches the latest domain and IP data from domainnova and ipnova,
 then generates proxy rule sets for:
-  - Clash / Mihomo   (.yaml)
-  - Surge            (.list)
-  - Shadowrocket     (.conf)
-  - Quantumult X     (.conf)
-  - sing-box         (.json)
+  - Clash / Mihomo   (.list + .yaml)   no action — user assigns in config
+  - Surge            (.list)            no action — user assigns in config
+  - sing-box         (.json)            no action — user assigns in config
+  - Shadowrocket     (.conf)            direct + proxy variants
+  - Quantumult X     (.conf)            direct + proxy variants
 
-Two rule intents are produced for each region:
-  direct — match → DIRECT, else → PROXY  (split-tunnel, mainland users)
-  proxy  — match → regional proxy group   (multi-region landing users)
+Clash, Surge and sing-box carry no action because these formats let the user
+assign any policy group in their own configuration file. Shadowrocket and
+Quantumult X require action embedded in the rule syntax, so both direct and
+proxy variants are generated.
 
 Usage:
     python3 sources/scripts/build_rules.py [--repo-root /path/to/repo]
@@ -48,7 +49,20 @@ REGION_NAMES = {
     "SG": "Singapore",
 }
 
-# ── Format writers ───────────────────────────────────────────────────────────
+# ── Helpers ──────────────────────────────────────────────────────────────────
+
+def _header(region: str, fmt: str, generated_at: str, intent: str = "") -> str:
+    intent_str = f" ({intent.upper()})" if intent else ""
+    return (
+        f"# RuleNova — {REGION_NAMES.get(region, region)}{intent_str}\n"
+        f"# Format   : {fmt}\n"
+        f"# Generated: {generated_at}\n"
+        f"# Source   : https://github.com/harryheros/rulenova\n"
+        f"#\n"
+    )
+
+
+# ── Fetch ────────────────────────────────────────────────────────────────────
 
 def fetch_text(url: str) -> list[str]:
     """Fetch a plain-text URL and return non-empty, non-comment lines."""
@@ -61,22 +75,21 @@ def fetch_text(url: str) -> list[str]:
 
 
 # ── Format writers ───────────────────────────────────────────────────────────
+    intent_str = f" ({intent.upper()})" if intent else ""
+    return (
+        f"# RuleNova — {REGION_NAMES.get(region, region)}{intent_str}\n"
+        f"# Format   : {fmt}\n"
+        f"# Generated: {generated_at}\n"
+        f"# Source   : https://github.com/harryheros/rulenova\n"
+        f"#\n"
+    )
+
 
 def write_clash(out_dir: Path, region: str,
                 domains: list[str], cidrs: list[str],
                 generated_at: str) -> Path:
-    """
-    Clash rule-set provider format (classical text). No action — user decides.
-    """
-    lines = [
-        f"# RuleNova — {REGION_NAMES.get(region, region)}\n"
-        f"# Format   : Clash/Mihomo\n"
-        f"# Domains  : {len(domains)}\n"
-        f"# CIDRs    : {len(cidrs)}\n"
-        f"# Generated: {generated_at}\n"
-        f"# Source   : https://github.com/harryheros/rulenova\n"
-        f"#\n"
-    ]
+    """Clash rule-set provider format (classical text). No action — user decides."""
+    lines = [_header(region, "Clash/Mihomo", generated_at)]
     for d in domains:
         lines.append(f"DOMAIN-SUFFIX,{d}")
     for cidr in cidrs:
@@ -95,7 +108,6 @@ def write_clash_yaml(out_dir: Path, region: str,
         rules.append(f"  - DOMAIN-SUFFIX,{d}")
     for cidr in cidrs:
         rules.append(f"  - IP-CIDR,{cidr},no-resolve")
-
     content = (
         f"# RuleNova — {REGION_NAMES.get(region, region)}\n"
         f"# Format: Clash/Mihomo YAML rule-provider\n"
@@ -112,15 +124,7 @@ def write_surge(out_dir: Path, region: str,
                 domains: list[str], cidrs: list[str],
                 generated_at: str) -> Path:
     """Surge rule list. No action — user assigns in config."""
-    lines = [
-        f"# RuleNova — {REGION_NAMES.get(region, region)}\n"
-        f"# Format   : Surge\n"
-        f"# Domains  : {len(domains)}\n"
-        f"# CIDRs    : {len(cidrs)}\n"
-        f"# Generated: {generated_at}\n"
-        f"# Source   : https://github.com/harryheros/rulenova\n"
-        f"#\n"
-    ]
+    lines = [_header(region, "Surge", generated_at)]
     for d in domains:
         lines.append(f".{d}")
     for cidr in cidrs:
@@ -133,18 +137,8 @@ def write_surge(out_dir: Path, region: str,
 def write_shadowrocket(out_dir: Path, region: str, intent: str,
                        domains: list[str], cidrs: list[str],
                        generated_at: str, action: str) -> Path:
-    """
-    Shadowrocket rule list. Requires action in format — outputs direct + proxy.
-    """
-    lines = [
-        f"# RuleNova — {REGION_NAMES.get(region, region)} ({intent.upper()})\n"
-        f"# Format   : Shadowrocket\n"
-        f"# Domains  : {len(domains)}\n"
-        f"# CIDRs    : {len(cidrs)}\n"
-        f"# Generated: {generated_at}\n"
-        f"# Source   : https://github.com/harryheros/rulenova\n"
-        f"#\n"
-    ]
+    """Shadowrocket rule list. Requires action — outputs direct + proxy."""
+    lines = [_header(region, "Shadowrocket", generated_at, intent)]
     for d in domains:
         lines.append(f"DOMAIN-SUFFIX,{d},{action}")
     for cidr in cidrs:
@@ -157,18 +151,8 @@ def write_shadowrocket(out_dir: Path, region: str, intent: str,
 def write_quanx(out_dir: Path, region: str, intent: str,
                 domains: list[str], cidrs: list[str],
                 generated_at: str, action: str) -> Path:
-    """
-    Quantumult X filter list. Requires action in format — outputs direct + proxy.
-    """
-    lines = [
-        f"# RuleNova — {REGION_NAMES.get(region, region)} ({intent.upper()})\n"
-        f"# Format   : Quantumult X\n"
-        f"# Domains  : {len(domains)}\n"
-        f"# CIDRs    : {len(cidrs)}\n"
-        f"# Generated: {generated_at}\n"
-        f"# Source   : https://github.com/harryheros/rulenova\n"
-        f"#\n"
-    ]
+    """Quantumult X filter list. Requires action — outputs direct + proxy."""
+    lines = [_header(region, "Quantumult X", generated_at, intent)]
     qx_action = "direct" if action == "DIRECT" else f"proxy,tag={region}"
     for d in domains:
         lines.append(f"host-suffix, {d}, {qx_action}")
@@ -193,12 +177,7 @@ def write_singbox(out_dir: Path, region: str,
             "cidrs":       len(cidrs),
             "source":      "https://github.com/harryheros/rulenova",
         },
-        "rules": [
-            {
-                "domain_suffix": domains,
-                "ip_cidr":       cidrs,
-            }
-        ],
+        "rules": [{"domain_suffix": domains, "ip_cidr": cidrs}],
     }
     path = out_dir / f"{region.lower()}.json"
     path.write_text(json.dumps(rule, indent=2, ensure_ascii=False) + "\n",

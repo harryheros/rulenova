@@ -1,6 +1,6 @@
 # RuleNova — China Mainland (PROXY)
 # Format: Clash/Mihomo YAML rule-provider
-# Generated: 2026-05-25T13:38:38Z
+# Generated: 2026-05-25T13:41:18Z
 payload:
   - DOMAIN-SUFFIX,00086.net
   - DOMAIN-SUFFIX,010dh.com

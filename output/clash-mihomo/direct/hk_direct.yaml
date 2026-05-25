@@ -1,6 +1,6 @@
 # RuleNova — Hong Kong (DIRECT)
 # Format: Clash/Mihomo YAML rule-provider
-# Generated: 2026-05-25T13:38:38Z
+# Generated: 2026-05-25T13:41:18Z
 payload:
   - DOMAIN-SUFFIX,00xu.com
   - DOMAIN-SUFFIX,163.net

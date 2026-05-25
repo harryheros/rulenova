@@ -5,7 +5,7 @@
     "region_name": "China Mainland",
     "intent": "direct",
     "action": "DIRECT",
-    "generated": "2026-05-25T13:38:38Z",
+    "generated": "2026-05-25T13:41:18Z",
     "domains": 3356,
     "cidrs": 5490,
     "source": "https://github.com/harryheros/rulenova"

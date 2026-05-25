@@ -5,7 +5,7 @@
     "region_name": "South Korea",
     "intent": "direct",
     "action": "DIRECT",
-    "generated": "2026-05-25T13:38:38Z",
+    "generated": "2026-05-25T13:41:18Z",
     "domains": 165,
     "cidrs": 1043,
     "source": "https://github.com/harryheros/rulenova"

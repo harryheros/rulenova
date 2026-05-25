@@ -11,15 +11,15 @@ Automated proxy rule sets for CN/HK/TW/MO/JP/KR/SG, generated weekly from
 
 ## Formats
 
-| Format | Action | Files |
-|---|---|---|
-| Clash / Mihomo | user-defined | `output/clash-mihomo/{region}.list` + `.yaml` |
-| Surge | user-defined | `output/surge/{region}.list` |
-| sing-box | user-defined | `output/sing-box/{region}.json` |
-| Shadowrocket | built-in | `output/shadowrocket/{direct,proxy}/{region}.conf` |
-| Quantumult X | built-in | `output/quantumult-x/{direct,proxy}/{region}.conf` |
+| Format | Files |
+|---|---|
+| Clash / Mihomo | `output/clash-mihomo/{region}.list` + `.yaml` |
+| Surge | `output/surge/{region}.list` |
+| sing-box | `output/sing-box/{region}.json` |
+| Shadowrocket | `output/shadowrocket/{region}.conf` |
+| Quantumult X | `output/quantumult-x/{region}.conf` |
 
-Clash, Surge and sing-box rule sets carry no action — you assign `DIRECT`, `PROXY`, or any policy group in your own config. Shadowrocket and Quantumult X require action in the rule syntax, so both `direct` and `proxy` variants are provided.
+All rule sets carry no action. You assign `DIRECT`, `PROXY`, or any policy group in your own config file.
 
 ## Regions
 
@@ -40,17 +40,11 @@ https://raw.githubusercontent.com/harryheros/rulenova/main/output/surge/cn.list
 # sing-box
 https://raw.githubusercontent.com/harryheros/rulenova/main/output/sing-box/cn.json
 
-# Shadowrocket (direct)
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/shadowrocket/direct/cn.conf
+# Shadowrocket
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/shadowrocket/cn.conf
 
-# Shadowrocket (proxy)
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/shadowrocket/proxy/cn.conf
-
-# Quantumult X (direct)
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/quantumult-x/direct/cn.conf
-
-# Quantumult X (proxy)
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/quantumult-x/proxy/cn.conf
+# Quantumult X
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/quantumult-x/cn.conf
 ```
 
 ## Update schedule

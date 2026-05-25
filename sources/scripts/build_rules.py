@@ -134,30 +134,29 @@ def write_surge(out_dir: Path, region: str,
     return path
 
 
-def write_shadowrocket(out_dir: Path, region: str, intent: str,
+def write_shadowrocket(out_dir: Path, region: str,
                        domains: list[str], cidrs: list[str],
-                       generated_at: str, action: str) -> Path:
-    """Shadowrocket rule list. Requires action — outputs direct + proxy."""
-    lines = [_header(region, "Shadowrocket", generated_at, intent)]
+                       generated_at: str) -> Path:
+    """Shadowrocket rule list. No action — user assigns in config."""
+    lines = [_header(region, "Shadowrocket", generated_at)]
     for d in domains:
-        lines.append(f"DOMAIN-SUFFIX,{d},{action}")
+        lines.append(f"DOMAIN-SUFFIX,{d}")
     for cidr in cidrs:
-        lines.append(f"IP-CIDR,{cidr},{action}")
+        lines.append(f"IP-CIDR,{cidr},no-resolve")
     path = out_dir / f"{region.lower()}.conf"
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return path
 
 
-def write_quanx(out_dir: Path, region: str, intent: str,
+def write_quanx(out_dir: Path, region: str,
                 domains: list[str], cidrs: list[str],
-                generated_at: str, action: str) -> Path:
-    """Quantumult X filter list. Requires action — outputs direct + proxy."""
-    lines = [_header(region, "Quantumult X", generated_at, intent)]
-    qx_action = "direct" if action == "DIRECT" else f"proxy,tag={region}"
+                generated_at: str) -> Path:
+    """Quantumult X filter list. No action — user assigns in config."""
+    lines = [_header(region, "Quantumult X", generated_at)]
     for d in domains:
-        lines.append(f"host-suffix, {d}, {qx_action}")
+        lines.append(f"host-suffix, {d}")
     for cidr in cidrs:
-        lines.append(f"ip-cidr, {cidr}, {qx_action}")
+        lines.append(f"ip-cidr, {cidr}")
     path = out_dir / f"{region.lower()}.conf"
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return path
@@ -193,10 +192,7 @@ def write_meta(repo_root: Path, stats: dict, generated_at: str) -> None:
         "project":        "rulenova",
         "generated_at":   generated_at,
         "regions":        stats,
-        "formats": {
-            "no_action":  ["clash-mihomo", "surge", "sing-box"],
-            "with_action": ["shadowrocket", "quantumult-x"],
-        },
+        "formats": ["clash-mihomo", "surge", "sing-box", "shadowrocket", "quantumult-x"],
     }
     out = repo_root / "output" / "meta.json"
     out.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n",
@@ -219,22 +215,12 @@ def write_checksums(repo_root: Path) -> None:
 
 # ── Main ─────────────────────────────────────────────────────────────────────
 
-INTENT_ACTION = {
-    "direct": "DIRECT",
-    "proxy":  "PROXY",
-}
-
-# Formats that output a single no-action file per region
 NO_ACTION_FORMATS = {
-    "clash-mihomo": (write_clash, write_clash_yaml),
-    "surge":        (write_surge,),
-    "sing-box":     (write_singbox,),
-}
-
-# Formats that require action in the rule syntax → output direct + proxy
-ACTION_FORMATS = {
-    "shadowrocket": write_shadowrocket,
-    "quantumult-x": write_quanx,
+    "clash-mihomo":  (write_clash, write_clash_yaml),
+    "surge":         (write_surge,),
+    "sing-box":      (write_singbox,),
+    "shadowrocket":  (write_shadowrocket,),
+    "quantumult-x":  (write_quanx,),
 }
 
 
@@ -273,22 +259,13 @@ def main() -> int:
         log.info(f"  domains={len(domains)}, cidrs={len(cidrs)}")
         stats[region] = {"domains": len(domains), "cidrs": len(cidrs)}
 
-        # No-action formats: one file per region
+        # All formats: one file per region, no action
         for fmt, writers in NO_ACTION_FORMATS.items():
             fmt_dir = out_root / fmt
             fmt_dir.mkdir(parents=True, exist_ok=True)
             for writer in writers:
                 path = writer(fmt_dir, region, domains, cidrs, generated_at)
                 log.info(f"  [{fmt}] {path.name}")
-
-        # Action formats: direct + proxy per region
-        for fmt, writer in ACTION_FORMATS.items():
-            for intent, action in INTENT_ACTION.items():
-                fmt_dir = out_root / fmt / intent
-                fmt_dir.mkdir(parents=True, exist_ok=True)
-                path = writer(fmt_dir, region, intent,
-                              domains, cidrs, generated_at, action)
-                log.info(f"  [{fmt}/{intent}] {path.name}")
 
     write_meta(repo_root, stats, generated_at)
     write_checksums(repo_root)

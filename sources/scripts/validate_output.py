@@ -18,25 +18,19 @@ ROOT     = Path(__file__).resolve().parent.parent.parent
 OUT_DIR  = ROOT / "output"
 
 REGIONS  = ["CN", "HK", "TW", "MO", "JP", "KR", "SG"]
-INTENTS  = ["direct", "proxy"]
 
-# Minimum rule count per region (domains + CIDRs combined).
 MIN_LINES: dict[str, int] = {
     "CN": 3000, "HK": 100, "TW": 100, "MO": 20,
     "JP": 100,  "KR": 100, "SG": 100,
 }
 
-# No-action formats: single file per region under output/{fmt}/{region}.ext
-NO_ACTION_FMT_EXTS: dict[str, list[str]] = {
+# All formats: single file per region, no action, no intent subdirectory
+FMT_EXTS: dict[str, list[str]] = {
     "clash-mihomo": [".list", ".yaml"],
     "surge":        [".list"],
     "sing-box":     [".json"],
-}
-
-# Action formats: output/{fmt}/{intent}/{region}.ext
-ACTION_FMT_EXT: dict[str, str] = {
-    "shadowrocket": ".conf",
-    "quantumult-x": ".conf",
+    "shadowrocket": [".conf"],
+    "quantumult-x": [".conf"],
 }
 
 def check_file_exists(path: Path, errors: list) -> bool:
@@ -62,19 +56,9 @@ def count_rule_lines(path: Path) -> int:
 def validate_files(errors: list) -> None:
     for region in REGIONS:
         min_lines = MIN_LINES.get(region, 10)
-        for fmt, exts in NO_ACTION_FMT_EXTS.items():
+        for fmt, exts in FMT_EXTS.items():
             for ext in exts:
                 path = OUT_DIR / fmt / f"{region.lower()}{ext}"
-                if not check_file_exists(path, errors):
-                    continue
-                count = count_rule_lines(path)
-                if count < min_lines:
-                    errors.append(
-                        f"TOO_SMALL: {path.relative_to(ROOT)} "
-                        f"({count} rules, expected >= {min_lines})")
-        for fmt, ext in ACTION_FMT_EXT.items():
-            for intent in INTENTS:
-                path = OUT_DIR / fmt / intent / f"{region.lower()}{ext}"
                 if not check_file_exists(path, errors):
                     continue
                 count = count_rule_lines(path)
@@ -130,9 +114,7 @@ def main() -> int:
             print(f"  {e}")
         return 1
 
-    no_action_total = len(REGIONS) * sum(len(v) for v in NO_ACTION_FMT_EXTS.values())
-    action_total    = len(REGIONS) * len(ACTION_FMT_EXT) * len(INTENTS)
-    total = no_action_total + action_total
+    total = len(REGIONS) * sum(len(v) for v in FMT_EXTS.values())
     print(f"\n✅ All checks passed ({total} files validated)")
     return 0
 

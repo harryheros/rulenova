@@ -1,31 +1,24 @@
 #!/usr/bin/env python3
-"""
-validate_output.py — RuleNova output validation
-
-Checks:
-1. All expected output files exist
-2. File sizes are non-trivially small (>= MIN_LINES)
-3. checksums.txt matches actual file hashes
-4. meta.json counts match actual file line counts
-"""
+"""validate_output.py — RuleNova output validation"""
 
 import hashlib
 import json
 import sys
 from pathlib import Path
 
-ROOT     = Path(__file__).resolve().parent.parent.parent
-OUT_DIR  = ROOT / "output"
+ROOT    = Path(__file__).resolve().parent.parent.parent
+OUT_DIR = ROOT / "output"
 
-REGIONS  = ["CN", "HK", "TW", "MO", "JP", "KR", "SG"]
+REGIONS = ["CN", "HK", "TW", "MO", "JP", "KR", "SG"]
 
-MIN_LINES: dict[str, int] = {
+MIN_LINES = {
+    "china":  3000,
+    "global": 500,
     "CN": 3000, "HK": 100, "TW": 100, "MO": 20,
     "JP": 100,  "KR": 100, "SG": 100,
 }
 
-# All formats: single file per region, no action, no intent subdirectory
-FMT_EXTS: dict[str, list[str]] = {
+FMT_EXTS = {
     "clash-mihomo": [".list", ".yaml"],
     "surge":        [".list"],
     "sing-box":     [".json"],
@@ -33,15 +26,8 @@ FMT_EXTS: dict[str, list[str]] = {
     "quantumult-x": [".conf"],
 }
 
-def check_file_exists(path: Path, errors: list) -> bool:
-    if not path.exists():
-        errors.append(f"MISSING: {path.relative_to(ROOT)}")
-        return False
-    return True
-
 
 def count_rule_lines(path: Path) -> int:
-    """Count non-comment, non-empty lines (actual rules)."""
     if path.suffix == ".json":
         data = json.loads(path.read_text(encoding="utf-8"))
         rules = data.get("rules", [{}])[0]
@@ -54,18 +40,34 @@ def count_rule_lines(path: Path) -> int:
 
 
 def validate_files(errors: list) -> None:
-    for region in REGIONS:
-        min_lines = MIN_LINES.get(region, 10)
+    # Tier 1: china + global
+    for name in ["china", "global"]:
+        min_lines = MIN_LINES[name]
         for fmt, exts in FMT_EXTS.items():
             for ext in exts:
-                path = OUT_DIR / fmt / f"{region.lower()}{ext}"
-                if not check_file_exists(path, errors):
+                path = OUT_DIR / fmt / f"{name}{ext}"
+                if not path.exists():
+                    errors.append(f"MISSING: output/{fmt}/{name}{ext}")
                     continue
                 count = count_rule_lines(path)
                 if count < min_lines:
-                    errors.append(
-                        f"TOO_SMALL: {path.relative_to(ROOT)} "
-                        f"({count} rules, expected >= {min_lines})")
+                    errors.append(f"TOO_SMALL: output/{fmt}/{name}{ext} "
+                                  f"({count} rules, expected >= {min_lines})")
+
+    # Tier 2: per-region under regions/
+    for region in REGIONS:
+        name = region.lower()
+        min_lines = MIN_LINES.get(region, 10)
+        for fmt, exts in FMT_EXTS.items():
+            for ext in exts:
+                path = OUT_DIR / fmt / "regions" / f"{name}{ext}"
+                if not path.exists():
+                    errors.append(f"MISSING: output/{fmt}/regions/{name}{ext}")
+                    continue
+                count = count_rule_lines(path)
+                if count < min_lines:
+                    errors.append(f"TOO_SMALL: output/{fmt}/regions/{name}{ext} "
+                                  f"({count} rules, expected >= {min_lines})")
 
 
 def validate_checksums(errors: list) -> None:
@@ -93,10 +95,8 @@ def validate_meta(errors: list) -> None:
         return
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
     for region, counts in meta.get("regions", {}).items():
-        expected_domains = counts.get("domains", 0)
-        if expected_domains < MIN_LINES.get(region, 1):
-            errors.append(
-                f"META_LOW_DOMAINS: {region} has {expected_domains} domains")
+        if counts.get("domains", 0) < MIN_LINES.get(region, 1):
+            errors.append(f"META_LOW_DOMAINS: {region} has {counts.get('domains')} domains")
 
 
 def main() -> int:
@@ -114,8 +114,9 @@ def main() -> int:
             print(f"  {e}")
         return 1
 
-    total = len(REGIONS) * sum(len(v) for v in FMT_EXTS.values())
-    print(f"\n✅ All checks passed ({total} files validated)")
+    n_combined = 2 * sum(len(v) for v in FMT_EXTS.values())
+    n_regions  = len(REGIONS) * sum(len(v) for v in FMT_EXTS.values())
+    print(f"\n✅ All checks passed ({n_combined + n_regions} files validated)")
     return 0
 
 

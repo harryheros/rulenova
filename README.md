@@ -3,9 +3,28 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Update Rules](https://img.shields.io/github/actions/workflow/status/harryheros/rulenova/update.yml?label=weekly%20update)](https://github.com/harryheros/rulenova/actions/workflows/update.yml)
 
-Automated proxy rule sets for CN/HK/TW/MO/JP/KR/SG, generated weekly from
-[IPNova](https://github.com/harryheros/ipnova) (IP CIDRs) and
-[DomainNova](https://github.com/harryheros/domainnova) (domains).
+Automated proxy rule sets for Clash, Surge, Shadowrocket, Quantumult X and sing-box — built on [IPNova](https://github.com/harryheros/ipnova) and [DomainNova](https://github.com/harryheros/domainnova).
+
+---
+
+## Two tiers
+
+### Tier 1 — Combined (recommended)
+
+Two rule sets cover most users:
+
+| Rule set | Policy name | Coverage |
+|---|---|---|
+| `china` | `China` | CN domains and IPs |
+| `global` | `Global` | HK / TW / MO / JP / KR / SG merged |
+
+Add these to your client and map each policy name to your preferred proxy or direct connection. No need to touch the rule set again when you change nodes or travel.
+
+### Tier 2 — Per-region (advanced)
+
+Individual rule sets under `regions/` for users who need fine-grained control:
+
+`cn` `hk` `tw` `mo` `jp` `kr` `sg`
 
 ---
 
@@ -13,39 +32,42 @@ Automated proxy rule sets for CN/HK/TW/MO/JP/KR/SG, generated weekly from
 
 | Format | Files |
 |---|---|
-| Clash / Mihomo | `output/clash-mihomo/{region}.list` + `.yaml` |
-| Surge | `output/surge/{region}.list` |
-| sing-box | `output/sing-box/{region}.json` |
-| Shadowrocket | `output/shadowrocket/{region}.conf` |
-| Quantumult X | `output/quantumult-x/{region}.conf` |
+| Clash / Mihomo | `output/clash-mihomo/china.list` + `.yaml` |
+| Surge | `output/surge/china.list` |
+| sing-box | `output/sing-box/china.json` |
+| Shadowrocket | `output/shadowrocket/china.conf` |
+| Quantumult X | `output/quantumult-x/china.conf` |
 
-All rule sets carry no action. You assign `DIRECT`, `PROXY`, or any policy group in your own config file.
-
-## Regions
-
-`CN` `HK` `TW` `MO` `JP` `KR` `SG`
+---
 
 ## Raw URLs
 
 ```
-# Clash / Mihomo (list)
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/clash-mihomo/cn.list
+# Tier 1 — Clash / Mihomo
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/clash-mihomo/china.list
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/clash-mihomo/global.list
 
-# Clash / Mihomo (yaml rule-provider)
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/clash-mihomo/cn.yaml
+# Tier 1 — Surge
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/surge/china.list
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/surge/global.list
 
-# Surge
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/surge/cn.list
+# Tier 1 — sing-box
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/sing-box/china.json
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/sing-box/global.json
 
-# sing-box
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/sing-box/cn.json
+# Tier 1 — Shadowrocket
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/shadowrocket/china.conf
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/shadowrocket/global.conf
 
-# Shadowrocket
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/shadowrocket/cn.conf
+# Tier 1 — Quantumult X
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/quantumult-x/china.conf
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/quantumult-x/global.conf
 
-# Quantumult X
-https://raw.githubusercontent.com/harryheros/rulenova/main/output/quantumult-x/cn.conf
+# Tier 2 — per-region (example: HK)
+https://raw.githubusercontent.com/harryheros/rulenova/main/output/clash-mihomo/regions/hk.list
 ```
+
+---
 
 ## Update schedule
 

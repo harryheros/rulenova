@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "project": "rulenova",
+  "generated_at": "2026-05-25T13:38:38Z",
+  "regions": {
+    "CN": {
+      "domains": 3356,
+      "cidrs": 5490
+    },
+    "HK": {
+      "domains": 172,
+      "cidrs": 2509
+    },
+    "TW": {
+      "domains": 170,
+      "cidrs": 750
+    },
+    "MO": {
+      "domains": 111,
+      "cidrs": 30
+    },
+    "JP": {
+      "domains": 163,
+      "cidrs": 3194
+    },
+    "KR": {
+      "domains": 165,
+      "cidrs": 1043
+    },
+    "SG": {
+      "domains": 136,
+      "cidrs": 1615
+    }
+  },
+  "formats": [
+    "clash-mihomo",
+    "surge",
+    "shadowrocket",
+    "quantumult-x",
+    "sing-box"
+  ],
+  "intents": [
+    "direct",
+    "proxy"
+  ]
+}

@@ -2,7 +2,7 @@
 # Variant  : ip
 # Format   : Loon
 # Policy   : HK
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-05-26T09:20:49Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -123,7 +123,6 @@ IP-CIDR,103.126.92.0/22,HK,no-resolve
 IP-CIDR,103.127.128.0/24,HK,no-resolve
 IP-CIDR,103.127.24.0/22,HK,no-resolve
 IP-CIDR,103.127.240.0/22,HK,no-resolve
-IP-CIDR,103.127.248.0/22,HK,no-resolve
 IP-CIDR,103.127.80.0/22,HK,no-resolve
 IP-CIDR,103.129.252.0/22,HK,no-resolve
 IP-CIDR,103.129.52.0/22,HK,no-resolve
@@ -1479,6 +1478,7 @@ IP-CIDR,189.75.144.0/20,HK,no-resolve
 IP-CIDR,191.1.0.0/16,HK,no-resolve
 IP-CIDR,191.214.0.0/16,HK,no-resolve
 IP-CIDR,191.223.32.0/20,HK,no-resolve
+IP-CIDR,192.0.2.248/29,HK,no-resolve
 IP-CIDR,192.135.99.0/24,HK,no-resolve
 IP-CIDR,192.156.144.0/24,HK,no-resolve
 IP-CIDR,192.156.220.0/24,HK,no-resolve

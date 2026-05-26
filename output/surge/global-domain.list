@@ -1,7 +1,7 @@
 # RuleNova — Global (HK/TW/MO/JP/KR/SG)
 # Variant  : domain
 # Format   : Surge RULE-SET
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-05-26T09:20:49Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -143,6 +143,7 @@ DOMAIN-SUFFIX,cp.gov.mo
 DOMAIN-SUFFIX,cpc.com.tw
 DOMAIN-SUFFIX,cpf.gov.sg
 DOMAIN-SUFFIX,cpttm.org.mo
+DOMAIN-SUFFIX,cqguangren.com
 DOMAIN-SUFFIX,cqjsaq.com
 DOMAIN-SUFFIX,craer.com
 DOMAIN-SUFFIX,crcbank.com
@@ -182,7 +183,6 @@ DOMAIN-SUFFIX,dcard.tw
 DOMAIN-SUFFIX,dcinside.com
 DOMAIN-SUFFIX,dgbas.gov.tw
 DOMAIN-SUFFIX,dicj.gov.mo
-DOMAIN-SUFFIX,dididadidi.com
 DOMAIN-SUFFIX,digital.go.jp
 DOMAIN-SUFFIX,dimbuy.com
 DOMAIN-SUFFIX,directel.com.mo
@@ -255,6 +255,7 @@ DOMAIN-SUFFIX,galaxyentertainment.com
 DOMAIN-SUFFIX,galaxymacau.com
 DOMAIN-SUFFIX,gamer.com.tw
 DOMAIN-SUFFIX,gaming-inspection.gov.mo
+DOMAIN-SUFFIX,ganfeng.com
 DOMAIN-SUFFIX,gcc.edu.hk
 DOMAIN-SUFFIX,gcs.gov.mo
 DOMAIN-SUFFIX,genie.co.kr
@@ -480,7 +481,6 @@ DOMAIN-SUFFIX,lta.gov.sg
 DOMAIN-SUFFIX,ltn.com.tw
 DOMAIN-SUFFIX,lwb.gov.hk
 DOMAIN-SUFFIX,ly.gov.tw
-DOMAIN-SUFFIX,lzskqyy.com
 DOMAIN-SUFFIX,m1.com.sg
 DOMAIN-SUFFIX,macaobbs.com
 DOMAIN-SUFFIX,macaodaily.com
@@ -510,7 +510,6 @@ DOMAIN-SUFFIX,mc.icbc.com.cn
 DOMAIN-SUFFIX,mcdonalds.co.jp
 DOMAIN-SUFFIX,mclcinema.com
 DOMAIN-SUFFIX,mediatek.com
-DOMAIN-SUFFIX,meexx.xyz
 DOMAIN-SUFFIX,megabank.com.tw
 DOMAIN-SUFFIX,megabox.co.kr
 DOMAIN-SUFFIX,melon.com
@@ -558,7 +557,6 @@ DOMAIN-SUFFIX,mops.twse.com.tw
 DOMAIN-SUFFIX,motc.gov.tw
 DOMAIN-SUFFIX,mothership.sg
 DOMAIN-SUFFIX,motie.go.kr
-DOMAIN-SUFFIX,motu.art
 DOMAIN-SUFFIX,mpay.com.mo
 DOMAIN-SUFFIX,mpu.edu.mo
 DOMAIN-SUFFIX,mrt.taipei
@@ -877,7 +875,6 @@ DOMAIN-SUFFIX,winkkie.com
 DOMAIN-SUFFIX,wondershare.com.br
 DOMAIN-SUFFIX,wooribank.com
 DOMAIN-SUFFIX,www.dayspay.com.cn
-DOMAIN-SUFFIX,www.mybus.com.cn
 DOMAIN-SUFFIX,wxtyyy.com
 DOMAIN-SUFFIX,xiaohongtao.art
 DOMAIN-SUFFIX,xiecheng.com

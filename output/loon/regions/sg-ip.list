@@ -2,7 +2,7 @@
 # Variant  : ip
 # Format   : Loon
 # Policy   : SG
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-05-26T09:20:49Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -1100,6 +1100,7 @@ IP-CIDR,202.94.84.0/23,SG,no-resolve
 IP-CIDR,202.94.96.0/19,SG,no-resolve
 IP-CIDR,202.95.0.0/19,SG,no-resolve
 IP-CIDR,202.95.64.0/18,SG,no-resolve
+IP-CIDR,203.0.113.240/29,SG,no-resolve
 IP-CIDR,203.1.22.0/23,SG,no-resolve
 IP-CIDR,203.10.100.0/23,SG,no-resolve
 IP-CIDR,203.101.192.0/19,SG,no-resolve

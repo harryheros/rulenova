@@ -1,7 +1,7 @@
 # RuleNova — Hong Kong
 # Variant  : domain
 # Format   : Surge RULE-SET
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-05-26T09:20:49Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -29,6 +29,7 @@ DOMAIN-SUFFIX,citibank.com.hk
 DOMAIN-SUFFIX,cityu.edu.hk
 DOMAIN-SUFFIX,clp.com.hk
 DOMAIN-SUFFIX,cmab.gov.hk
+DOMAIN-SUFFIX,cqguangren.com
 DOMAIN-SUFFIX,crcbank.com
 DOMAIN-SUFFIX,crhk.com.hk
 DOMAIN-SUFFIX,csb.gov.hk
@@ -42,7 +43,6 @@ DOMAIN-SUFFIX,cuhkmc.hk
 DOMAIN-SUFFIX,cxexpress.com
 DOMAIN-SUFFIX,dahsing.com
 DOMAIN-SUFFIX,dbs.com.hk
-DOMAIN-SUFFIX,dididadidi.com
 DOMAIN-SUFFIX,dimbuy.com
 DOMAIN-SUFFIX,discuss.com.hk
 DOMAIN-SUFFIX,dragonfly.fm
@@ -113,9 +113,7 @@ DOMAIN-SUFFIX,lihkg.com
 DOMAIN-SUFFIX,likeji.net
 DOMAIN-SUFFIX,ln.edu.hk
 DOMAIN-SUFFIX,lwb.gov.hk
-DOMAIN-SUFFIX,lzskqyy.com
 DOMAIN-SUFFIX,mclcinema.com
-DOMAIN-SUFFIX,meexx.xyz
 DOMAIN-SUFFIX,mingpao.com
 DOMAIN-SUFFIX,mtr.com.hk
 DOMAIN-SUFFIX,mygobatv.com
@@ -165,7 +163,6 @@ DOMAIN-SUFFIX,wharf.com.hk
 DOMAIN-SUFFIX,wheelockcompany.com
 DOMAIN-SUFFIX,winglungbank.com
 DOMAIN-SUFFIX,www.dayspay.com.cn
-DOMAIN-SUFFIX,www.mybus.com.cn
 DOMAIN-SUFFIX,xiaohongtao.art
 DOMAIN-SUFFIX,xmzgxcl.com
 DOMAIN-SUFFIX,xpcha.com

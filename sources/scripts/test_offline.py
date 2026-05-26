@@ -74,8 +74,10 @@ class TestClashProviderFormats(WriterCase):
     def test_ip_variant_is_plain_cidr_provider(self) -> None:
         path = write_clash_yaml(self.out, "china-ip", "China", POLICY_CHINA, [], SAMPLE_CIDRS, GENERATED_AT, "ip")
         text = path.read_text(encoding="utf-8")
-        self.assertIn('  - "1.2.3.0/24"', text)
+        self.assertIn("  - 1.2.3.0/24", text)
         self.assertIn("payload:", text)
+        # No JSON-quoted scalars; payload entries must be plain YAML
+        self.assertNotIn('  - "1.2.3.0/24"', text)
 
 
 class TestClientPolicyFormats(WriterCase):
@@ -115,6 +117,60 @@ class TestSingBox(WriterCase):
         data = json.loads(path.read_text(encoding="utf-8"))
         self.assertIn("domain_suffix", data["rules"][0])
         self.assertNotIn("ip_cidr", data["rules"][0])
+
+
+class TestFetchRegionResilience(unittest.TestCase):
+    """fetch_region must isolate per-source failures and warn on high drop rates."""
+
+    def test_domain_fetch_failure_does_not_break_cidr(self) -> None:
+        import build_rules as br
+        original = br.fetch_text
+
+        def selective_fail(url: str) -> list[str]:
+            if "domains_" in url:
+                raise RuntimeError("simulated upstream failure")
+            return ["1.2.3.0/24", "10.0.0.0/8"]
+
+        br.fetch_text = selective_fail
+        try:
+            domains, cidrs = br.fetch_region("CN")
+        finally:
+            br.fetch_text = original
+        self.assertEqual(domains, [])
+        self.assertEqual(cidrs, ["1.2.3.0/24", "10.0.0.0/8"])
+
+    def test_cidr_fetch_failure_does_not_break_domain(self) -> None:
+        import build_rules as br
+        original = br.fetch_text
+
+        def selective_fail(url: str) -> list[str]:
+            if url.endswith("/CN.txt"):
+                raise RuntimeError("simulated upstream failure")
+            return ["example.com", "test.org"]
+
+        br.fetch_text = selective_fail
+        try:
+            domains, cidrs = br.fetch_region("CN")
+        finally:
+            br.fetch_text = original
+        self.assertEqual(domains, ["example.com", "test.org"])
+        self.assertEqual(cidrs, [])
+
+    def test_high_drop_rate_emits_warning(self) -> None:
+        import build_rules as br
+        import logging
+        original = br.fetch_text
+        # 10 raw items, 8 are garbage that clean_domain rejects → 80% drop
+        br.fetch_text = lambda url: (
+            ["example.com", "test.org"] + ["bad domain!"] * 8
+            if "domains_" in url else ["1.2.3.0/24"]
+        )
+        with self.assertLogs("rulenova", level="WARNING") as captured:
+            try:
+                br.fetch_region("CN")
+            finally:
+                br.fetch_text = original
+        self.assertTrue(any("dropped" in m for m in captured.output))
 
 
 class TestNames(unittest.TestCase):

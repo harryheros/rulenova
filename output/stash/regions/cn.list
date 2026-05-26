@@ -1,7 +1,7 @@
 # RuleNova — China Mainland
 # Variant  : combined
 # Format   : Clash/Mihomo/Stash text
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-05-26T09:20:49Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -97,11 +97,9 @@ DOMAIN-SUFFIX,35.com
 DOMAIN-SUFFIX,350abc.net
 DOMAIN-SUFFIX,360.cn
 DOMAIN-SUFFIX,360.com
-DOMAIN-SUFFIX,360424.com
 DOMAIN-SUFFIX,360buy.com
 DOMAIN-SUFFIX,360buyimg.com
 DOMAIN-SUFFIX,360doc.cn
-DOMAIN-SUFFIX,360doc.com
 DOMAIN-SUFFIX,360jie.com
 DOMAIN-SUFFIX,360kan.com
 DOMAIN-SUFFIX,360safe.com
@@ -343,7 +341,6 @@ DOMAIN-SUFFIX,atcrs.nwpu.edu.cn
 DOMAIN-SUFFIX,atlas.dimins.com.cn
 DOMAIN-SUFFIX,atobo.com
 DOMAIN-SUFFIX,atrie.com.cn
-DOMAIN-SUFFIX,aucanlink.com
 DOMAIN-SUFFIX,auction1.taobao.com
 DOMAIN-SUFFIX,aurogon.com
 DOMAIN-SUFFIX,authbus.com
@@ -383,7 +380,6 @@ DOMAIN-SUFFIX,bao-hulu.com
 DOMAIN-SUFFIX,baofeng.com
 DOMAIN-SUFFIX,baoge.net
 DOMAIN-SUFFIX,baomi.nwpu.edu.cn
-DOMAIN-SUFFIX,baomihua.com
 DOMAIN-SUFFIX,baoming.com
 DOMAIN-SUFFIX,baoshenggroup.com
 DOMAIN-SUFFIX,baosteel.com
@@ -502,7 +498,6 @@ DOMAIN-SUFFIX,bosera.com
 DOMAIN-SUFFIX,bosideng.com
 DOMAIN-SUFFIX,bosmarter.com
 DOMAIN-SUFFIX,bosszhipin.com
-DOMAIN-SUFFIX,boyuan-pharma.com
 DOMAIN-SUFFIX,brilliance.net.cn
 DOMAIN-SUFFIX,broadex-tech.com
 DOMAIN-SUFFIX,bscgslb.com
@@ -775,7 +770,6 @@ DOMAIN-SUFFIX,cpwlx.com
 DOMAIN-SUFFIX,cq8y4l.cn.720yun.com
 DOMAIN-SUFFIX,cqallcure.com
 DOMAIN-SUFFIX,cqdpt.com
-DOMAIN-SUFFIX,cqguangren.com
 DOMAIN-SUFFIX,cqgzdlgc.com
 DOMAIN-SUFFIX,cqjy.com
 DOMAIN-SUFFIX,cqkejufu.com
@@ -935,7 +929,6 @@ DOMAIN-SUFFIX,dns.la
 DOMAIN-SUFFIX,dnsapi.cn
 DOMAIN-SUFFIX,dnspod.cn
 DOMAIN-SUFFIX,dnspod.com
-DOMAIN-SUFFIX,dnsv1.com
 DOMAIN-SUFFIX,dnswind.net
 DOMAIN-SUFFIX,dobunkan.com
 DOMAIN-SUFFIX,doc88.com
@@ -1302,7 +1295,6 @@ DOMAIN-SUFFIX,gzlzfm.com
 DOMAIN-SUFFIX,gzyowin.com
 DOMAIN-SUFFIX,h3c.com
 DOMAIN-SUFFIX,h5.umx.art
-DOMAIN-SUFFIX,h5faner.com
 DOMAIN-SUFFIX,h5king.com
 DOMAIN-SUFFIX,h5zhifu.com
 DOMAIN-SUFFIX,haday.com.cn
@@ -1623,7 +1615,6 @@ DOMAIN-SUFFIX,jiajiaoban.com
 DOMAIN-SUFFIX,jiangsu.gov.cn
 DOMAIN-SUFFIX,jiangsucdn.a319.ottcn.com
 DOMAIN-SUFFIX,jiangxi.gov.cn
-DOMAIN-SUFFIX,jianhuasheng.com
 DOMAIN-SUFFIX,jianjiaobu.com
 DOMAIN-SUFFIX,jianshu.com
 DOMAIN-SUFFIX,jianshu.io
@@ -1835,6 +1826,7 @@ DOMAIN-SUFFIX,linuxidc.com
 DOMAIN-SUFFIX,lipton.com.cn
 DOMAIN-SUFFIX,lishi-test.com
 DOMAIN-SUFFIX,lisp123.com
+DOMAIN-SUFFIX,liunianbanxia.com
 DOMAIN-SUFFIX,liuyang.gov.cn
 DOMAIN-SUFFIX,live.news.163.com
 DOMAIN-SUFFIX,lixinpharm.com
@@ -1874,6 +1866,7 @@ DOMAIN-SUFFIX,lytlst.ggff.net
 DOMAIN-SUFFIX,lzoam.com
 DOMAIN-SUFFIX,lzsfdq.com
 DOMAIN-SUFFIX,lzsfy.com
+DOMAIN-SUFFIX,lzskqyy.com
 DOMAIN-SUFFIX,lzweidaoyou.com
 DOMAIN-SUFFIX,lzxnqt.com
 DOMAIN-SUFFIX,lzzhdq.com
@@ -2103,7 +2096,6 @@ DOMAIN-SUFFIX,nsdt.cloud
 DOMAIN-SUFFIX,nsfocus.com
 DOMAIN-SUFFIX,nsj.cpic.com.cn
 DOMAIN-SUFFIX,nssf.gov.cn
-DOMAIN-SUFFIX,nsxww.com
 DOMAIN-SUFFIX,nt-tongdong.cn
 DOMAIN-SUFFIX,ntxz.net
 DOMAIN-SUFFIX,nucc.com.cn
@@ -2310,7 +2302,6 @@ DOMAIN-SUFFIX,qzzpw.net
 DOMAIN-SUFFIX,raobee.com
 DOMAIN-SUFFIX,rbi-china.com
 DOMAIN-SUFFIX,rc0817.com
-DOMAIN-SUFFIX,rclbbs.com
 DOMAIN-SUFFIX,reachace.com
 DOMAIN-SUFFIX,reachtone.com
 DOMAIN-SUFFIX,readnovel.com
@@ -2364,7 +2355,6 @@ DOMAIN-SUFFIX,sac.net.cn
 DOMAIN-SUFFIX,safe.gov.cn
 DOMAIN-SUFFIX,safecenter.com
 DOMAIN-SUFFIX,saic-gm.com.cn
-DOMAIN-SUFFIX,saicmotor.com
 DOMAIN-SUFFIX,sailipaint.com
 DOMAIN-SUFFIX,samr.gov.cn
 DOMAIN-SUFFIX,samsrchina.com
@@ -2419,7 +2409,6 @@ DOMAIN-SUFFIX,shaanxi.gov.cn
 DOMAIN-SUFFIX,shandong.gov.cn
 DOMAIN-SUFFIX,shandonghealthcare.com
 DOMAIN-SUFFIX,shandongruyi.com
-DOMAIN-SUFFIX,shangdu.com
 DOMAIN-SUFFIX,shanghai.gov.cn
 DOMAIN-SUFFIX,shangri-la.com
 DOMAIN-SUFFIX,shangwulink.com
@@ -2955,6 +2944,7 @@ DOMAIN-SUFFIX,www.lingqi.art
 DOMAIN-SUFFIX,www.lueyang.gov.cn
 DOMAIN-SUFFIX,www.mafengwo.com
 DOMAIN-SUFFIX,www.minhe.bj.cn
+DOMAIN-SUFFIX,www.mybus.com.cn
 DOMAIN-SUFFIX,www.nwpup.com
 DOMAIN-SUFFIX,www.olay.com.cn
 DOMAIN-SUFFIX,www.otl.com.cn
@@ -3251,7 +3241,6 @@ DOMAIN-SUFFIX,zcxtapp.nwpu.edu.cn
 DOMAIN-SUFFIX,zepcc.com
 DOMAIN-SUFFIX,zetcloud.com
 DOMAIN-SUFFIX,zgam.com.cn
-DOMAIN-SUFFIX,zgbywl.com
 DOMAIN-SUFFIX,zgclease.com
 DOMAIN-SUFFIX,zggldgj.com
 DOMAIN-SUFFIX,zgjianfang.com
@@ -3323,7 +3312,6 @@ DOMAIN-SUFFIX,zmaxhotels.cc
 DOMAIN-SUFFIX,zmclearing.com
 DOMAIN-SUFFIX,zmssh.com
 DOMAIN-SUFFIX,znelc.com
-DOMAIN-SUFFIX,zokogo.com
 DOMAIN-SUFFIX,zol.com.cn
 DOMAIN-SUFFIX,zombiescat.com
 DOMAIN-SUFFIX,zongheng.com
@@ -3850,7 +3838,6 @@ IP-CIDR,103.145.98.0/23,no-resolve
 IP-CIDR,103.146.124.0/22,no-resolve
 IP-CIDR,103.146.138.0/23,no-resolve
 IP-CIDR,103.146.236.0/23,no-resolve
-IP-CIDR,103.146.252.0/23,no-resolve
 IP-CIDR,103.146.72.0/23,no-resolve
 IP-CIDR,103.146.90.0/23,no-resolve
 IP-CIDR,103.147.12.0/23,no-resolve
@@ -6487,6 +6474,7 @@ IP-CIDR,183.91.136.0/21,no-resolve
 IP-CIDR,183.91.144.0/20,no-resolve
 IP-CIDR,183.92.0.0/14,no-resolve
 IP-CIDR,188.131.128.0/17,no-resolve
+IP-CIDR,192.0.2.240/29,no-resolve
 IP-CIDR,192.102.204.0/22,no-resolve
 IP-CIDR,192.124.154.0/24,no-resolve
 IP-CIDR,192.140.128.0/21,no-resolve

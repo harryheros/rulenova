@@ -2,7 +2,7 @@
 # Variant  : domain
 # Format   : Loon
 # Policy   : HK
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-05-26T09:20:49Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -30,6 +30,7 @@ DOMAIN-SUFFIX,citibank.com.hk,HK
 DOMAIN-SUFFIX,cityu.edu.hk,HK
 DOMAIN-SUFFIX,clp.com.hk,HK
 DOMAIN-SUFFIX,cmab.gov.hk,HK
+DOMAIN-SUFFIX,cqguangren.com,HK
 DOMAIN-SUFFIX,crcbank.com,HK
 DOMAIN-SUFFIX,crhk.com.hk,HK
 DOMAIN-SUFFIX,csb.gov.hk,HK
@@ -43,7 +44,6 @@ DOMAIN-SUFFIX,cuhkmc.hk,HK
 DOMAIN-SUFFIX,cxexpress.com,HK
 DOMAIN-SUFFIX,dahsing.com,HK
 DOMAIN-SUFFIX,dbs.com.hk,HK
-DOMAIN-SUFFIX,dididadidi.com,HK
 DOMAIN-SUFFIX,dimbuy.com,HK
 DOMAIN-SUFFIX,discuss.com.hk,HK
 DOMAIN-SUFFIX,dragonfly.fm,HK
@@ -114,9 +114,7 @@ DOMAIN-SUFFIX,lihkg.com,HK
 DOMAIN-SUFFIX,likeji.net,HK
 DOMAIN-SUFFIX,ln.edu.hk,HK
 DOMAIN-SUFFIX,lwb.gov.hk,HK
-DOMAIN-SUFFIX,lzskqyy.com,HK
 DOMAIN-SUFFIX,mclcinema.com,HK
-DOMAIN-SUFFIX,meexx.xyz,HK
 DOMAIN-SUFFIX,mingpao.com,HK
 DOMAIN-SUFFIX,mtr.com.hk,HK
 DOMAIN-SUFFIX,mygobatv.com,HK
@@ -166,7 +164,6 @@ DOMAIN-SUFFIX,wharf.com.hk,HK
 DOMAIN-SUFFIX,wheelockcompany.com,HK
 DOMAIN-SUFFIX,winglungbank.com,HK
 DOMAIN-SUFFIX,www.dayspay.com.cn,HK
-DOMAIN-SUFFIX,www.mybus.com.cn,HK
 DOMAIN-SUFFIX,xiaohongtao.art,HK
 DOMAIN-SUFFIX,xmzgxcl.com,HK
 DOMAIN-SUFFIX,xpcha.com,HK

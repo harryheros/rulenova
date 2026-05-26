@@ -138,11 +138,46 @@ def fetch_text(url: str) -> list[str]:
 
 
 def fetch_region(region: str) -> tuple[list[str], list[str]]:
-    raw_domains = fetch_text(f"{DOMAINNOVA_BASE}/domains_{region.lower()}.txt")
-    raw_cidrs = fetch_text(f"{IPNOVA_BASE}/{region}.txt")
-    domains = unique_sorted([domain for domain in map(clean_domain, raw_domains) if domain])
-    cidrs = unique_sorted([cidr for cidr in map(clean_cidr, raw_cidrs) if cidr])
+    """Fetch one region's domain + CIDR data with isolated error handling.
+
+    Each upstream is fetched independently so a transient failure on one
+    source does not break the other. Cleansing drop rates above 20% emit a
+    WARNING so silent upstream format changes surface during CI rather than
+    after rules are already published.
+    """
+    try:
+        raw_domains = fetch_text(f"{DOMAINNOVA_BASE}/domains_{region.lower()}.txt")
+    except Exception as exc:
+        LOG.warning("  [%s] domain fetch failed: %s", region, exc)
+        raw_domains = []
+
+    try:
+        raw_cidrs = fetch_text(f"{IPNOVA_BASE}/{region}.txt")
+    except Exception as exc:
+        LOG.warning("  [%s] CIDR fetch failed: %s", region, exc)
+        raw_cidrs = []
+
+    domains = unique_sorted([d for d in map(clean_domain, raw_domains) if d])
+    cidrs = unique_sorted([c for c in map(clean_cidr, raw_cidrs) if c])
+
+    # Surface silent drops — if cleansing rejects >20% of upstream items,
+    # upstream format likely changed and the rule set is degrading.
+    _warn_drop_rate(region, "domains", len(raw_domains), len(domains))
+    _warn_drop_rate(region, "cidrs", len(raw_cidrs), len(cidrs))
+
     return domains, cidrs
+
+
+def _warn_drop_rate(region: str, kind: str, raw: int, kept: int) -> None:
+    if raw == 0:
+        return
+    dropped = raw - kept
+    rate = dropped / raw
+    if rate > 0.20:
+        LOG.warning(
+            "  [%s] %s: kept %d/%d (dropped %.0f%%) — upstream format may have changed",
+            region, kind, kept, raw, rate * 100,
+        )
 
 
 def write_text(path: Path, lines: list[str]) -> Path:
@@ -184,7 +219,12 @@ def write_clash_yaml(out_dir: Path, name: str, label: str, policy: str,
         f"# Generated: {generated_at}",
         "payload:",
     ]
-    lines.extend(f"  - {json.dumps(item, ensure_ascii=False)}" for item in payload)
+    # Plain YAML scalars per Clash/Mihomo provider conventions
+    # (https://wiki.metacubex.one/config/rule-providers/). Items contain only
+    # safe characters (letters, digits, dots, slashes, commas, hyphens) so
+    # quoting would be syntactically valid but visually inconsistent with
+    # ecosystem norms and may confuse older parsers.
+    lines.extend(f"  - {item}" for item in payload)
     return write_text(out_dir / f"{name}.yaml", lines)
 
 # ---------------------------------------------------------------------------

@@ -2,7 +2,7 @@
 # Variant  : domain
 # Format   : Loon
 # Policy   : SG
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-05-26T09:20:49Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -42,6 +42,7 @@ DOMAIN-SUFFIX,eyoucms.com,SG
 DOMAIN-SUFFIX,fairprice.com.sg,SG
 DOMAIN-SUFFIX,feiwan.net,SG
 DOMAIN-SUFFIX,foodpanda.sg,SG
+DOMAIN-SUFFIX,ganfeng.com,SG
 DOMAIN-SUFFIX,go.gov.sg,SG
 DOMAIN-SUFFIX,gov.sg,SG
 DOMAIN-SUFFIX,grab.com,SG
@@ -73,7 +74,6 @@ DOMAIN-SUFFIX,mof.gov.sg,SG
 DOMAIN-SUFFIX,moh.gov.sg,SG
 DOMAIN-SUFFIX,mom.gov.sg,SG
 DOMAIN-SUFFIX,mothership.sg,SG
-DOMAIN-SUFFIX,motu.art,SG
 DOMAIN-SUFFIX,msf.gov.sg,SG
 DOMAIN-SUFFIX,mti.gov.sg,SG
 DOMAIN-SUFFIX,myinfo.gov.sg,SG

@@ -1,7 +1,7 @@
 # RuleNova — Global (HK/TW/MO/JP/KR/SG)
 # Variant  : combined
 # Format   : Surge RULE-SET
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-05-26T09:20:49Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -143,6 +143,7 @@ DOMAIN-SUFFIX,cp.gov.mo
 DOMAIN-SUFFIX,cpc.com.tw
 DOMAIN-SUFFIX,cpf.gov.sg
 DOMAIN-SUFFIX,cpttm.org.mo
+DOMAIN-SUFFIX,cqguangren.com
 DOMAIN-SUFFIX,cqjsaq.com
 DOMAIN-SUFFIX,craer.com
 DOMAIN-SUFFIX,crcbank.com
@@ -182,7 +183,6 @@ DOMAIN-SUFFIX,dcard.tw
 DOMAIN-SUFFIX,dcinside.com
 DOMAIN-SUFFIX,dgbas.gov.tw
 DOMAIN-SUFFIX,dicj.gov.mo
-DOMAIN-SUFFIX,dididadidi.com
 DOMAIN-SUFFIX,digital.go.jp
 DOMAIN-SUFFIX,dimbuy.com
 DOMAIN-SUFFIX,directel.com.mo
@@ -255,6 +255,7 @@ DOMAIN-SUFFIX,galaxyentertainment.com
 DOMAIN-SUFFIX,galaxymacau.com
 DOMAIN-SUFFIX,gamer.com.tw
 DOMAIN-SUFFIX,gaming-inspection.gov.mo
+DOMAIN-SUFFIX,ganfeng.com
 DOMAIN-SUFFIX,gcc.edu.hk
 DOMAIN-SUFFIX,gcs.gov.mo
 DOMAIN-SUFFIX,genie.co.kr
@@ -480,7 +481,6 @@ DOMAIN-SUFFIX,lta.gov.sg
 DOMAIN-SUFFIX,ltn.com.tw
 DOMAIN-SUFFIX,lwb.gov.hk
 DOMAIN-SUFFIX,ly.gov.tw
-DOMAIN-SUFFIX,lzskqyy.com
 DOMAIN-SUFFIX,m1.com.sg
 DOMAIN-SUFFIX,macaobbs.com
 DOMAIN-SUFFIX,macaodaily.com
@@ -510,7 +510,6 @@ DOMAIN-SUFFIX,mc.icbc.com.cn
 DOMAIN-SUFFIX,mcdonalds.co.jp
 DOMAIN-SUFFIX,mclcinema.com
 DOMAIN-SUFFIX,mediatek.com
-DOMAIN-SUFFIX,meexx.xyz
 DOMAIN-SUFFIX,megabank.com.tw
 DOMAIN-SUFFIX,megabox.co.kr
 DOMAIN-SUFFIX,melon.com
@@ -558,7 +557,6 @@ DOMAIN-SUFFIX,mops.twse.com.tw
 DOMAIN-SUFFIX,motc.gov.tw
 DOMAIN-SUFFIX,mothership.sg
 DOMAIN-SUFFIX,motie.go.kr
-DOMAIN-SUFFIX,motu.art
 DOMAIN-SUFFIX,mpay.com.mo
 DOMAIN-SUFFIX,mpu.edu.mo
 DOMAIN-SUFFIX,mrt.taipei
@@ -877,7 +875,6 @@ DOMAIN-SUFFIX,winkkie.com
 DOMAIN-SUFFIX,wondershare.com.br
 DOMAIN-SUFFIX,wooribank.com
 DOMAIN-SUFFIX,www.dayspay.com.cn
-DOMAIN-SUFFIX,www.mybus.com.cn
 DOMAIN-SUFFIX,wxtyyy.com
 DOMAIN-SUFFIX,xiaohongtao.art
 DOMAIN-SUFFIX,xiecheng.com
@@ -1317,7 +1314,6 @@ IP-CIDR,103.127.228.0/22,no-resolve
 IP-CIDR,103.127.232.0/21,no-resolve
 IP-CIDR,103.127.24.0/22,no-resolve
 IP-CIDR,103.127.240.0/22,no-resolve
-IP-CIDR,103.127.248.0/22,no-resolve
 IP-CIDR,103.127.80.0/22,no-resolve
 IP-CIDR,103.129.136.0/22,no-resolve
 IP-CIDR,103.129.144.0/22,no-resolve
@@ -5672,6 +5668,7 @@ IP-CIDR,162.4.114.0/23,no-resolve
 IP-CIDR,162.4.116.0/23,no-resolve
 IP-CIDR,162.4.120.0/23,no-resolve
 IP-CIDR,162.4.172.0/23,no-resolve
+IP-CIDR,162.4.180.0/23,no-resolve
 IP-CIDR,162.4.26.0/23,no-resolve
 IP-CIDR,162.4.28.0/23,no-resolve
 IP-CIDR,162.4.40.0/23,no-resolve
@@ -6264,6 +6261,7 @@ IP-CIDR,191.1.0.0/16,no-resolve
 IP-CIDR,191.214.0.0/16,no-resolve
 IP-CIDR,191.223.32.0/20,no-resolve
 IP-CIDR,191.43.0.0/16,no-resolve
+IP-CIDR,192.0.2.248/29,no-resolve
 IP-CIDR,192.100.2.0/24,no-resolve
 IP-CIDR,192.104.15.0/24,no-resolve
 IP-CIDR,192.104.172.0/24,no-resolve
@@ -6499,6 +6497,8 @@ IP-CIDR,198.17.70.0/24,no-resolve
 IP-CIDR,198.180.142.0/24,no-resolve
 IP-CIDR,198.204.78.0/24,no-resolve
 IP-CIDR,198.246.223.0/24,no-resolve
+IP-CIDR,198.51.100.240/29,no-resolve
+IP-CIDR,198.51.100.248/29,no-resolve
 IP-CIDR,198.56.20.0/23,no-resolve
 IP-CIDR,198.59.162.0/23,no-resolve
 IP-CIDR,198.74.24.0/23,no-resolve
@@ -7459,6 +7459,9 @@ IP-CIDR,202.95.208.0/20,no-resolve
 IP-CIDR,202.95.248.0/23,no-resolve
 IP-CIDR,202.95.32.0/19,no-resolve
 IP-CIDR,202.95.64.0/18,no-resolve
+IP-CIDR,203.0.113.224/29,no-resolve
+IP-CIDR,203.0.113.232/29,no-resolve
+IP-CIDR,203.0.113.240/29,no-resolve
 IP-CIDR,203.0.139.0/24,no-resolve
 IP-CIDR,203.1.22.0/23,no-resolve
 IP-CIDR,203.10.100.0/23,no-resolve

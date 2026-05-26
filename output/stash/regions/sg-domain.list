@@ -1,7 +1,7 @@
 # RuleNova — Singapore
 # Variant  : domain
 # Format   : Clash/Mihomo/Stash text
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-05-26T09:20:49Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -41,6 +41,7 @@ eyoucms.com
 fairprice.com.sg
 feiwan.net
 foodpanda.sg
+ganfeng.com
 go.gov.sg
 gov.sg
 grab.com
@@ -72,7 +73,6 @@ mof.gov.sg
 moh.gov.sg
 mom.gov.sg
 mothership.sg
-motu.art
 msf.gov.sg
 mti.gov.sg
 myinfo.gov.sg

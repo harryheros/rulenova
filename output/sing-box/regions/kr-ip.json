@@ -4,9 +4,9 @@
     "label": "South Korea",
     "variant": "ip",
     "suggested_policy": "KR",
-    "generated": "2026-05-25T16:56:42Z",
+    "generated": "2026-05-26T09:20:49Z",
     "domains": 0,
-    "cidrs": 1043,
+    "cidrs": 1044,
     "source": "https://github.com/harryheros/rulenova"
   },
   "rules": [
@@ -739,6 +739,7 @@
         "202.89.248.0/22",
         "202.90.252.0/22",
         "202.93.6.0/23",
+        "203.0.113.232/29",
         "203.100.160.0/19",
         "203.109.0.0/19",
         "203.123.192.0/19",

@@ -1,7 +1,7 @@
 # RuleNova — Singapore
 # Variant  : combined
 # Format   : Surge RULE-SET
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-05-26T09:20:49Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -41,6 +41,7 @@ DOMAIN-SUFFIX,eyoucms.com
 DOMAIN-SUFFIX,fairprice.com.sg
 DOMAIN-SUFFIX,feiwan.net
 DOMAIN-SUFFIX,foodpanda.sg
+DOMAIN-SUFFIX,ganfeng.com
 DOMAIN-SUFFIX,go.gov.sg
 DOMAIN-SUFFIX,gov.sg
 DOMAIN-SUFFIX,grab.com
@@ -72,7 +73,6 @@ DOMAIN-SUFFIX,mof.gov.sg
 DOMAIN-SUFFIX,moh.gov.sg
 DOMAIN-SUFFIX,mom.gov.sg
 DOMAIN-SUFFIX,mothership.sg
-DOMAIN-SUFFIX,motu.art
 DOMAIN-SUFFIX,msf.gov.sg
 DOMAIN-SUFFIX,mti.gov.sg
 DOMAIN-SUFFIX,myinfo.gov.sg
@@ -1235,6 +1235,7 @@ IP-CIDR,202.94.84.0/23,no-resolve
 IP-CIDR,202.94.96.0/19,no-resolve
 IP-CIDR,202.95.0.0/19,no-resolve
 IP-CIDR,202.95.64.0/18,no-resolve
+IP-CIDR,203.0.113.240/29,no-resolve
 IP-CIDR,203.1.22.0/23,no-resolve
 IP-CIDR,203.10.100.0/23,no-resolve
 IP-CIDR,203.101.192.0/19,no-resolve

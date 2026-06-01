@@ -2,13 +2,14 @@
 # Variant  : combined
 # Format   : Loon
 # Policy   : HK
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-06-01T11:43:54Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
 DOMAIN-SUFFIX,00xu.com,HK
 DOMAIN-SUFFIX,163.net,HK
 DOMAIN-SUFFIX,3hk.hk,HK
+DOMAIN-SUFFIX,48hao.net,HK
 DOMAIN-SUFFIX,aastocks.com,HK
 DOMAIN-SUFFIX,alipay.hk,HK
 DOMAIN-SUFFIX,alipayhk.com,HK
@@ -30,6 +31,7 @@ DOMAIN-SUFFIX,citibank.com.hk,HK
 DOMAIN-SUFFIX,cityu.edu.hk,HK
 DOMAIN-SUFFIX,clp.com.hk,HK
 DOMAIN-SUFFIX,cmab.gov.hk,HK
+DOMAIN-SUFFIX,cqguangren.com,HK
 DOMAIN-SUFFIX,crcbank.com,HK
 DOMAIN-SUFFIX,crhk.com.hk,HK
 DOMAIN-SUFFIX,csb.gov.hk,HK
@@ -43,7 +45,6 @@ DOMAIN-SUFFIX,cuhkmc.hk,HK
 DOMAIN-SUFFIX,cxexpress.com,HK
 DOMAIN-SUFFIX,dahsing.com,HK
 DOMAIN-SUFFIX,dbs.com.hk,HK
-DOMAIN-SUFFIX,dididadidi.com,HK
 DOMAIN-SUFFIX,dimbuy.com,HK
 DOMAIN-SUFFIX,discuss.com.hk,HK
 DOMAIN-SUFFIX,dragonfly.fm,HK
@@ -96,7 +97,6 @@ DOMAIN-SUFFIX,hongkongairlines.com,HK
 DOMAIN-SUFFIX,hongkongpost.hk,HK
 DOMAIN-SUFFIX,honstarmemory.com,HK
 DOMAIN-SUFFIX,hsbc.com.hk,HK
-DOMAIN-SUFFIX,huoche.net,HK
 DOMAIN-SUFFIX,hyab.gov.hk,HK
 DOMAIN-SUFFIX,icac.org.hk,HK
 DOMAIN-SUFFIX,info.gov.hk,HK
@@ -111,12 +111,9 @@ DOMAIN-SUFFIX,klook.com,HK
 DOMAIN-SUFFIX,lcsd.gov.hk,HK
 DOMAIN-SUFFIX,lianfengwh.com,HK
 DOMAIN-SUFFIX,lihkg.com,HK
-DOMAIN-SUFFIX,likeji.net,HK
 DOMAIN-SUFFIX,ln.edu.hk,HK
 DOMAIN-SUFFIX,lwb.gov.hk,HK
-DOMAIN-SUFFIX,lzskqyy.com,HK
 DOMAIN-SUFFIX,mclcinema.com,HK
-DOMAIN-SUFFIX,meexx.xyz,HK
 DOMAIN-SUFFIX,mingpao.com,HK
 DOMAIN-SUFFIX,mtr.com.hk,HK
 DOMAIN-SUFFIX,mygobatv.com,HK
@@ -127,7 +124,6 @@ DOMAIN-SUFFIX,octopus.com.hk,HK
 DOMAIN-SUFFIX,on.cc,HK
 DOMAIN-SUFFIX,openrice.com,HK
 DOMAIN-SUFFIX,pccw.com,HK
-DOMAIN-SUFFIX,pgyy.com,HK
 DOMAIN-SUFFIX,polyu.edu.hk,HK
 DOMAIN-SUFFIX,rthk.hk,HK
 DOMAIN-SUFFIX,sachenpharm.com,HK
@@ -147,6 +143,7 @@ DOMAIN-SUFFIX,stheadline.com,HK
 DOMAIN-SUFFIX,stpaul.org.hk,HK
 DOMAIN-SUFFIX,taizibao.com,HK
 DOMAIN-SUFFIX,takungpao.com,HK
+DOMAIN-SUFFIX,taodocs.com,HK
 DOMAIN-SUFFIX,three.com.hk,HK
 DOMAIN-SUFFIX,tmall.hk,HK
 DOMAIN-SUFFIX,tom.com,HK
@@ -166,7 +163,6 @@ DOMAIN-SUFFIX,wharf.com.hk,HK
 DOMAIN-SUFFIX,wheelockcompany.com,HK
 DOMAIN-SUFFIX,winglungbank.com,HK
 DOMAIN-SUFFIX,www.dayspay.com.cn,HK
-DOMAIN-SUFFIX,www.mybus.com.cn,HK
 DOMAIN-SUFFIX,xiaohongtao.art,HK
 DOMAIN-SUFFIX,xmzgxcl.com,HK
 DOMAIN-SUFFIX,xpcha.com,HK
@@ -174,6 +170,7 @@ DOMAIN-SUFFIX,yahoo.com.hk,HK
 DOMAIN-SUFFIX,yata.hk,HK
 DOMAIN-SUFFIX,yesstyle.com,HK
 DOMAIN-SUFFIX,ygym.org,HK
+DOMAIN-SUFFIX,yongqischool.net,HK
 DOMAIN-SUFFIX,za.group,HK
 DOMAIN-SUFFIX,zhimaruanjian.com,HK
 DOMAIN-SUFFIX,zjgqt.org,HK
@@ -686,7 +683,6 @@ IP-CIDR,103.214.164.0/22,HK,no-resolve
 IP-CIDR,103.214.172.0/22,HK,no-resolve
 IP-CIDR,103.214.32.0/22,HK,no-resolve
 IP-CIDR,103.214.41.0/24,HK,no-resolve
-IP-CIDR,103.214.56.0/24,HK,no-resolve
 IP-CIDR,103.214.64.0/22,HK,no-resolve
 IP-CIDR,103.214.76.0/22,HK,no-resolve
 IP-CIDR,103.215.0.0/22,HK,no-resolve
@@ -1651,6 +1647,7 @@ IP-CIDR,189.75.144.0/20,HK,no-resolve
 IP-CIDR,191.1.0.0/16,HK,no-resolve
 IP-CIDR,191.214.0.0/16,HK,no-resolve
 IP-CIDR,191.223.32.0/20,HK,no-resolve
+IP-CIDR,192.0.2.248/29,HK,no-resolve
 IP-CIDR,192.135.99.0/24,HK,no-resolve
 IP-CIDR,192.156.144.0/24,HK,no-resolve
 IP-CIDR,192.156.220.0/24,HK,no-resolve

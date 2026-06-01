@@ -2,7 +2,7 @@
 # Variant  : combined
 # Format   : Loon
 # Policy   : China
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-06-01T11:43:54Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -98,11 +98,9 @@ DOMAIN-SUFFIX,35.com,China
 DOMAIN-SUFFIX,350abc.net,China
 DOMAIN-SUFFIX,360.cn,China
 DOMAIN-SUFFIX,360.com,China
-DOMAIN-SUFFIX,360424.com,China
 DOMAIN-SUFFIX,360buy.com,China
 DOMAIN-SUFFIX,360buyimg.com,China
 DOMAIN-SUFFIX,360doc.cn,China
-DOMAIN-SUFFIX,360doc.com,China
 DOMAIN-SUFFIX,360jie.com,China
 DOMAIN-SUFFIX,360kan.com,China
 DOMAIN-SUFFIX,360safe.com,China
@@ -120,7 +118,6 @@ DOMAIN-SUFFIX,4007051668.com,China
 DOMAIN-SUFFIX,41wan.com,China
 DOMAIN-SUFFIX,4399.com,China
 DOMAIN-SUFFIX,441lsh.cn.720yun.com,China
-DOMAIN-SUFFIX,48hao.net,China
 DOMAIN-SUFFIX,500fd.com,China
 DOMAIN-SUFFIX,51.la,China
 DOMAIN-SUFFIX,51cto.com,China
@@ -267,7 +264,6 @@ DOMAIN-SUFFIX,alicdngslb.com,China
 DOMAIN-SUFFIX,alidns.com,China
 DOMAIN-SUFFIX,aliexpress.com,China
 DOMAIN-SUFFIX,alihuahua.com,China
-DOMAIN-SUFFIX,alili.tech,China
 DOMAIN-SUFFIX,alimama.com,China
 DOMAIN-SUFFIX,alimebot.taobao.com,China
 DOMAIN-SUFFIX,alipay.com,China
@@ -344,7 +340,6 @@ DOMAIN-SUFFIX,atcrs.nwpu.edu.cn,China
 DOMAIN-SUFFIX,atlas.dimins.com.cn,China
 DOMAIN-SUFFIX,atobo.com,China
 DOMAIN-SUFFIX,atrie.com.cn,China
-DOMAIN-SUFFIX,aucanlink.com,China
 DOMAIN-SUFFIX,auction1.taobao.com,China
 DOMAIN-SUFFIX,aurogon.com,China
 DOMAIN-SUFFIX,authbus.com,China
@@ -384,7 +379,6 @@ DOMAIN-SUFFIX,bao-hulu.com,China
 DOMAIN-SUFFIX,baofeng.com,China
 DOMAIN-SUFFIX,baoge.net,China
 DOMAIN-SUFFIX,baomi.nwpu.edu.cn,China
-DOMAIN-SUFFIX,baomihua.com,China
 DOMAIN-SUFFIX,baoming.com,China
 DOMAIN-SUFFIX,baoshenggroup.com,China
 DOMAIN-SUFFIX,baosteel.com,China
@@ -776,7 +770,6 @@ DOMAIN-SUFFIX,cpwlx.com,China
 DOMAIN-SUFFIX,cq8y4l.cn.720yun.com,China
 DOMAIN-SUFFIX,cqallcure.com,China
 DOMAIN-SUFFIX,cqdpt.com,China
-DOMAIN-SUFFIX,cqguangren.com,China
 DOMAIN-SUFFIX,cqgzdlgc.com,China
 DOMAIN-SUFFIX,cqjy.com,China
 DOMAIN-SUFFIX,cqkejufu.com,China
@@ -1156,7 +1149,6 @@ DOMAIN-SUFFIX,gdatacube.net,China
 DOMAIN-SUFFIX,gddata.net,China
 DOMAIN-SUFFIX,gdefair.com,China
 DOMAIN-SUFFIX,gdganhua.com,China
-DOMAIN-SUFFIX,gdgwyw.com,China
 DOMAIN-SUFFIX,gdhuarui.cn.720yun.com,China
 DOMAIN-SUFFIX,gdjlfood.com,China
 DOMAIN-SUFFIX,gdkailin.com,China
@@ -1303,7 +1295,6 @@ DOMAIN-SUFFIX,gzlzfm.com,China
 DOMAIN-SUFFIX,gzyowin.com,China
 DOMAIN-SUFFIX,h3c.com,China
 DOMAIN-SUFFIX,h5.umx.art,China
-DOMAIN-SUFFIX,h5faner.com,China
 DOMAIN-SUFFIX,h5king.com,China
 DOMAIN-SUFFIX,h5zhifu.com,China
 DOMAIN-SUFFIX,haday.com.cn,China
@@ -1745,7 +1736,6 @@ DOMAIN-SUFFIX,kinggoo.com,China
 DOMAIN-SUFFIX,kinglong.com.cn,China
 DOMAIN-SUFFIX,kingsoft.com,China
 DOMAIN-SUFFIX,kingsunedu.com,China
-DOMAIN-SUFFIX,kjw.cc,China
 DOMAIN-SUFFIX,kkdaxue.com,China
 DOMAIN-SUFFIX,kkh-global.com,China
 DOMAIN-SUFFIX,kmc.itrus.com.cn,China
@@ -1836,6 +1826,7 @@ DOMAIN-SUFFIX,linuxidc.com,China
 DOMAIN-SUFFIX,lipton.com.cn,China
 DOMAIN-SUFFIX,lishi-test.com,China
 DOMAIN-SUFFIX,lisp123.com,China
+DOMAIN-SUFFIX,liunianbanxia.com,China
 DOMAIN-SUFFIX,liuyang.gov.cn,China
 DOMAIN-SUFFIX,live.news.163.com,China
 DOMAIN-SUFFIX,lixinpharm.com,China
@@ -1875,6 +1866,7 @@ DOMAIN-SUFFIX,lytlst.ggff.net,China
 DOMAIN-SUFFIX,lzoam.com,China
 DOMAIN-SUFFIX,lzsfdq.com,China
 DOMAIN-SUFFIX,lzsfy.com,China
+DOMAIN-SUFFIX,lzskqyy.com,China
 DOMAIN-SUFFIX,lzweidaoyou.com,China
 DOMAIN-SUFFIX,lzxnqt.com,China
 DOMAIN-SUFFIX,lzzhdq.com,China
@@ -2104,7 +2096,6 @@ DOMAIN-SUFFIX,nsdt.cloud,China
 DOMAIN-SUFFIX,nsfocus.com,China
 DOMAIN-SUFFIX,nsj.cpic.com.cn,China
 DOMAIN-SUFFIX,nssf.gov.cn,China
-DOMAIN-SUFFIX,nsxww.com,China
 DOMAIN-SUFFIX,nt-tongdong.cn,China
 DOMAIN-SUFFIX,ntxz.net,China
 DOMAIN-SUFFIX,nucc.com.cn,China
@@ -2193,7 +2184,6 @@ DOMAIN-SUFFIX,perfma.net,China
 DOMAIN-SUFFIX,personpsy.org,China
 DOMAIN-SUFFIX,peterjxl.com,China
 DOMAIN-SUFFIX,petrochina.com.cn,China
-DOMAIN-SUFFIX,petroren.com,China
 DOMAIN-SUFFIX,pgyer.com,China
 DOMAIN-SUFFIX,pgyidc.com,China
 DOMAIN-SUFFIX,pharscin.com,China
@@ -2365,7 +2355,6 @@ DOMAIN-SUFFIX,sac.net.cn,China
 DOMAIN-SUFFIX,safe.gov.cn,China
 DOMAIN-SUFFIX,safecenter.com,China
 DOMAIN-SUFFIX,saic-gm.com.cn,China
-DOMAIN-SUFFIX,saicmotor.com,China
 DOMAIN-SUFFIX,sailipaint.com,China
 DOMAIN-SUFFIX,samr.gov.cn,China
 DOMAIN-SUFFIX,samsrchina.com,China
@@ -2420,7 +2409,6 @@ DOMAIN-SUFFIX,shaanxi.gov.cn,China
 DOMAIN-SUFFIX,shandong.gov.cn,China
 DOMAIN-SUFFIX,shandonghealthcare.com,China
 DOMAIN-SUFFIX,shandongruyi.com,China
-DOMAIN-SUFFIX,shangdu.com,China
 DOMAIN-SUFFIX,shanghai.gov.cn,China
 DOMAIN-SUFFIX,shangri-la.com,China
 DOMAIN-SUFFIX,shangwulink.com,China
@@ -2612,7 +2600,6 @@ DOMAIN-SUFFIX,tangmingint.com,China
 DOMAIN-SUFFIX,tanx.com,China
 DOMAIN-SUFFIX,taobao.com,China
 DOMAIN-SUFFIX,taobao.net,China
-DOMAIN-SUFFIX,taodocs.com,China
 DOMAIN-SUFFIX,taoke.com,China
 DOMAIN-SUFFIX,taopiaopiao.com,China
 DOMAIN-SUFFIX,taosaas.com,China
@@ -2956,6 +2943,7 @@ DOMAIN-SUFFIX,www.lingqi.art,China
 DOMAIN-SUFFIX,www.lueyang.gov.cn,China
 DOMAIN-SUFFIX,www.mafengwo.com,China
 DOMAIN-SUFFIX,www.minhe.bj.cn,China
+DOMAIN-SUFFIX,www.mybus.com.cn,China
 DOMAIN-SUFFIX,www.nwpup.com,China
 DOMAIN-SUFFIX,www.olay.com.cn,China
 DOMAIN-SUFFIX,www.otl.com.cn,China
@@ -3172,10 +3160,8 @@ DOMAIN-SUFFIX,yocajr.com,China
 DOMAIN-SUFFIX,yodao.com,China
 DOMAIN-SUFFIX,yoho.cn,China
 DOMAIN-SUFFIX,yohobuy.com,China
-DOMAIN-SUFFIX,yongqischool.net,China
 DOMAIN-SUFFIX,yongridt.com,China
 DOMAIN-SUFFIX,youdao.com,China
-DOMAIN-SUFFIX,youfangou.com,China
 DOMAIN-SUFFIX,youjiao.com,China
 DOMAIN-SUFFIX,youjiaxiao.com,China
 DOMAIN-SUFFIX,youku.com,China
@@ -3198,7 +3184,6 @@ DOMAIN-SUFFIX,yuandi.com,China
 DOMAIN-SUFFIX,yuandian.club,China
 DOMAIN-SUFFIX,yuanfudao.com,China
 DOMAIN-SUFFIX,yuanfudaoschool.com,China
-DOMAIN-SUFFIX,yubaike.com,China
 DOMAIN-SUFFIX,yuelongchina.com,China
 DOMAIN-SUFFIX,yueserve.com,China
 DOMAIN-SUFFIX,yuetu.tech,China
@@ -3252,7 +3237,6 @@ DOMAIN-SUFFIX,zcxtapp.nwpu.edu.cn,China
 DOMAIN-SUFFIX,zepcc.com,China
 DOMAIN-SUFFIX,zetcloud.com,China
 DOMAIN-SUFFIX,zgam.com.cn,China
-DOMAIN-SUFFIX,zgbywl.com,China
 DOMAIN-SUFFIX,zgclease.com,China
 DOMAIN-SUFFIX,zggldgj.com,China
 DOMAIN-SUFFIX,zgjianfang.com,China
@@ -3851,7 +3835,6 @@ IP-CIDR,103.145.98.0/23,China,no-resolve
 IP-CIDR,103.146.124.0/22,China,no-resolve
 IP-CIDR,103.146.138.0/23,China,no-resolve
 IP-CIDR,103.146.236.0/23,China,no-resolve
-IP-CIDR,103.146.252.0/23,China,no-resolve
 IP-CIDR,103.146.72.0/23,China,no-resolve
 IP-CIDR,103.146.90.0/23,China,no-resolve
 IP-CIDR,103.147.12.0/23,China,no-resolve
@@ -6303,6 +6286,7 @@ IP-CIDR,162.105.0.0/16,China,no-resolve
 IP-CIDR,162.14.0.0/16,China,no-resolve
 IP-CIDR,162.4.136.0/23,China,no-resolve
 IP-CIDR,162.4.168.0/23,China,no-resolve
+IP-CIDR,162.4.198.0/23,China,no-resolve
 IP-CIDR,162.4.54.0/23,China,no-resolve
 IP-CIDR,163.0.0.0/16,China,no-resolve
 IP-CIDR,163.125.0.0/16,China,no-resolve
@@ -6488,6 +6472,7 @@ IP-CIDR,183.91.136.0/21,China,no-resolve
 IP-CIDR,183.91.144.0/20,China,no-resolve
 IP-CIDR,183.92.0.0/14,China,no-resolve
 IP-CIDR,188.131.128.0/17,China,no-resolve
+IP-CIDR,192.0.2.240/29,China,no-resolve
 IP-CIDR,192.102.204.0/22,China,no-resolve
 IP-CIDR,192.124.154.0/24,China,no-resolve
 IP-CIDR,192.140.128.0/21,China,no-resolve

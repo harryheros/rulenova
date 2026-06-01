@@ -2,7 +2,7 @@
 # Variant  : combined
 # Format   : Loon
 # Policy   : TW
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-06-01T11:43:54Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -696,6 +696,7 @@ IP-CIDR,192.83.192.0/22,TW,no-resolve
 IP-CIDR,192.83.196.0/24,TW,no-resolve
 IP-CIDR,193.149.158.0/23,TW,no-resolve
 IP-CIDR,193.149.166.0/23,TW,no-resolve
+IP-CIDR,198.51.100.240/29,TW,no-resolve
 IP-CIDR,2.58.240.0/22,TW,no-resolve
 IP-CIDR,202.12.76.0/22,TW,no-resolve
 IP-CIDR,202.123.124.0/22,TW,no-resolve

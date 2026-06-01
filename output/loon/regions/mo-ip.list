@@ -2,7 +2,7 @@
 # Variant  : ip
 # Format   : Loon
 # Policy   : MO
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-06-01T11:43:54Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -25,6 +25,7 @@ IP-CIDR,161.64.0.0/16,MO,no-resolve
 IP-CIDR,163.53.244.0/22,MO,no-resolve
 IP-CIDR,180.94.128.0/18,MO,no-resolve
 IP-CIDR,182.93.0.0/18,MO,no-resolve
+IP-CIDR,198.51.100.248/29,MO,no-resolve
 IP-CIDR,202.174.0.0/22,MO,no-resolve
 IP-CIDR,202.175.0.0/17,MO,no-resolve
 IP-CIDR,202.175.160.0/19,MO,no-resolve

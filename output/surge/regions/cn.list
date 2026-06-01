@@ -1,7 +1,7 @@
 # RuleNova — China Mainland
 # Variant  : combined
 # Format   : Surge RULE-SET
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-06-01T11:43:54Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -97,11 +97,9 @@ DOMAIN-SUFFIX,35.com
 DOMAIN-SUFFIX,350abc.net
 DOMAIN-SUFFIX,360.cn
 DOMAIN-SUFFIX,360.com
-DOMAIN-SUFFIX,360424.com
 DOMAIN-SUFFIX,360buy.com
 DOMAIN-SUFFIX,360buyimg.com
 DOMAIN-SUFFIX,360doc.cn
-DOMAIN-SUFFIX,360doc.com
 DOMAIN-SUFFIX,360jie.com
 DOMAIN-SUFFIX,360kan.com
 DOMAIN-SUFFIX,360safe.com
@@ -119,7 +117,6 @@ DOMAIN-SUFFIX,4007051668.com
 DOMAIN-SUFFIX,41wan.com
 DOMAIN-SUFFIX,4399.com
 DOMAIN-SUFFIX,441lsh.cn.720yun.com
-DOMAIN-SUFFIX,48hao.net
 DOMAIN-SUFFIX,500fd.com
 DOMAIN-SUFFIX,51.la
 DOMAIN-SUFFIX,51cto.com
@@ -266,7 +263,6 @@ DOMAIN-SUFFIX,alicdngslb.com
 DOMAIN-SUFFIX,alidns.com
 DOMAIN-SUFFIX,aliexpress.com
 DOMAIN-SUFFIX,alihuahua.com
-DOMAIN-SUFFIX,alili.tech
 DOMAIN-SUFFIX,alimama.com
 DOMAIN-SUFFIX,alimebot.taobao.com
 DOMAIN-SUFFIX,alipay.com
@@ -343,7 +339,6 @@ DOMAIN-SUFFIX,atcrs.nwpu.edu.cn
 DOMAIN-SUFFIX,atlas.dimins.com.cn
 DOMAIN-SUFFIX,atobo.com
 DOMAIN-SUFFIX,atrie.com.cn
-DOMAIN-SUFFIX,aucanlink.com
 DOMAIN-SUFFIX,auction1.taobao.com
 DOMAIN-SUFFIX,aurogon.com
 DOMAIN-SUFFIX,authbus.com
@@ -383,7 +378,6 @@ DOMAIN-SUFFIX,bao-hulu.com
 DOMAIN-SUFFIX,baofeng.com
 DOMAIN-SUFFIX,baoge.net
 DOMAIN-SUFFIX,baomi.nwpu.edu.cn
-DOMAIN-SUFFIX,baomihua.com
 DOMAIN-SUFFIX,baoming.com
 DOMAIN-SUFFIX,baoshenggroup.com
 DOMAIN-SUFFIX,baosteel.com
@@ -775,7 +769,6 @@ DOMAIN-SUFFIX,cpwlx.com
 DOMAIN-SUFFIX,cq8y4l.cn.720yun.com
 DOMAIN-SUFFIX,cqallcure.com
 DOMAIN-SUFFIX,cqdpt.com
-DOMAIN-SUFFIX,cqguangren.com
 DOMAIN-SUFFIX,cqgzdlgc.com
 DOMAIN-SUFFIX,cqjy.com
 DOMAIN-SUFFIX,cqkejufu.com
@@ -1155,7 +1148,6 @@ DOMAIN-SUFFIX,gdatacube.net
 DOMAIN-SUFFIX,gddata.net
 DOMAIN-SUFFIX,gdefair.com
 DOMAIN-SUFFIX,gdganhua.com
-DOMAIN-SUFFIX,gdgwyw.com
 DOMAIN-SUFFIX,gdhuarui.cn.720yun.com
 DOMAIN-SUFFIX,gdjlfood.com
 DOMAIN-SUFFIX,gdkailin.com
@@ -1302,7 +1294,6 @@ DOMAIN-SUFFIX,gzlzfm.com
 DOMAIN-SUFFIX,gzyowin.com
 DOMAIN-SUFFIX,h3c.com
 DOMAIN-SUFFIX,h5.umx.art
-DOMAIN-SUFFIX,h5faner.com
 DOMAIN-SUFFIX,h5king.com
 DOMAIN-SUFFIX,h5zhifu.com
 DOMAIN-SUFFIX,haday.com.cn
@@ -1744,7 +1735,6 @@ DOMAIN-SUFFIX,kinggoo.com
 DOMAIN-SUFFIX,kinglong.com.cn
 DOMAIN-SUFFIX,kingsoft.com
 DOMAIN-SUFFIX,kingsunedu.com
-DOMAIN-SUFFIX,kjw.cc
 DOMAIN-SUFFIX,kkdaxue.com
 DOMAIN-SUFFIX,kkh-global.com
 DOMAIN-SUFFIX,kmc.itrus.com.cn
@@ -1835,6 +1825,7 @@ DOMAIN-SUFFIX,linuxidc.com
 DOMAIN-SUFFIX,lipton.com.cn
 DOMAIN-SUFFIX,lishi-test.com
 DOMAIN-SUFFIX,lisp123.com
+DOMAIN-SUFFIX,liunianbanxia.com
 DOMAIN-SUFFIX,liuyang.gov.cn
 DOMAIN-SUFFIX,live.news.163.com
 DOMAIN-SUFFIX,lixinpharm.com
@@ -1874,6 +1865,7 @@ DOMAIN-SUFFIX,lytlst.ggff.net
 DOMAIN-SUFFIX,lzoam.com
 DOMAIN-SUFFIX,lzsfdq.com
 DOMAIN-SUFFIX,lzsfy.com
+DOMAIN-SUFFIX,lzskqyy.com
 DOMAIN-SUFFIX,lzweidaoyou.com
 DOMAIN-SUFFIX,lzxnqt.com
 DOMAIN-SUFFIX,lzzhdq.com
@@ -2103,7 +2095,6 @@ DOMAIN-SUFFIX,nsdt.cloud
 DOMAIN-SUFFIX,nsfocus.com
 DOMAIN-SUFFIX,nsj.cpic.com.cn
 DOMAIN-SUFFIX,nssf.gov.cn
-DOMAIN-SUFFIX,nsxww.com
 DOMAIN-SUFFIX,nt-tongdong.cn
 DOMAIN-SUFFIX,ntxz.net
 DOMAIN-SUFFIX,nucc.com.cn
@@ -2192,7 +2183,6 @@ DOMAIN-SUFFIX,perfma.net
 DOMAIN-SUFFIX,personpsy.org
 DOMAIN-SUFFIX,peterjxl.com
 DOMAIN-SUFFIX,petrochina.com.cn
-DOMAIN-SUFFIX,petroren.com
 DOMAIN-SUFFIX,pgyer.com
 DOMAIN-SUFFIX,pgyidc.com
 DOMAIN-SUFFIX,pharscin.com
@@ -2364,7 +2354,6 @@ DOMAIN-SUFFIX,sac.net.cn
 DOMAIN-SUFFIX,safe.gov.cn
 DOMAIN-SUFFIX,safecenter.com
 DOMAIN-SUFFIX,saic-gm.com.cn
-DOMAIN-SUFFIX,saicmotor.com
 DOMAIN-SUFFIX,sailipaint.com
 DOMAIN-SUFFIX,samr.gov.cn
 DOMAIN-SUFFIX,samsrchina.com
@@ -2419,7 +2408,6 @@ DOMAIN-SUFFIX,shaanxi.gov.cn
 DOMAIN-SUFFIX,shandong.gov.cn
 DOMAIN-SUFFIX,shandonghealthcare.com
 DOMAIN-SUFFIX,shandongruyi.com
-DOMAIN-SUFFIX,shangdu.com
 DOMAIN-SUFFIX,shanghai.gov.cn
 DOMAIN-SUFFIX,shangri-la.com
 DOMAIN-SUFFIX,shangwulink.com
@@ -2611,7 +2599,6 @@ DOMAIN-SUFFIX,tangmingint.com
 DOMAIN-SUFFIX,tanx.com
 DOMAIN-SUFFIX,taobao.com
 DOMAIN-SUFFIX,taobao.net
-DOMAIN-SUFFIX,taodocs.com
 DOMAIN-SUFFIX,taoke.com
 DOMAIN-SUFFIX,taopiaopiao.com
 DOMAIN-SUFFIX,taosaas.com
@@ -2955,6 +2942,7 @@ DOMAIN-SUFFIX,www.lingqi.art
 DOMAIN-SUFFIX,www.lueyang.gov.cn
 DOMAIN-SUFFIX,www.mafengwo.com
 DOMAIN-SUFFIX,www.minhe.bj.cn
+DOMAIN-SUFFIX,www.mybus.com.cn
 DOMAIN-SUFFIX,www.nwpup.com
 DOMAIN-SUFFIX,www.olay.com.cn
 DOMAIN-SUFFIX,www.otl.com.cn
@@ -3171,10 +3159,8 @@ DOMAIN-SUFFIX,yocajr.com
 DOMAIN-SUFFIX,yodao.com
 DOMAIN-SUFFIX,yoho.cn
 DOMAIN-SUFFIX,yohobuy.com
-DOMAIN-SUFFIX,yongqischool.net
 DOMAIN-SUFFIX,yongridt.com
 DOMAIN-SUFFIX,youdao.com
-DOMAIN-SUFFIX,youfangou.com
 DOMAIN-SUFFIX,youjiao.com
 DOMAIN-SUFFIX,youjiaxiao.com
 DOMAIN-SUFFIX,youku.com
@@ -3197,7 +3183,6 @@ DOMAIN-SUFFIX,yuandi.com
 DOMAIN-SUFFIX,yuandian.club
 DOMAIN-SUFFIX,yuanfudao.com
 DOMAIN-SUFFIX,yuanfudaoschool.com
-DOMAIN-SUFFIX,yubaike.com
 DOMAIN-SUFFIX,yuelongchina.com
 DOMAIN-SUFFIX,yueserve.com
 DOMAIN-SUFFIX,yuetu.tech
@@ -3251,7 +3236,6 @@ DOMAIN-SUFFIX,zcxtapp.nwpu.edu.cn
 DOMAIN-SUFFIX,zepcc.com
 DOMAIN-SUFFIX,zetcloud.com
 DOMAIN-SUFFIX,zgam.com.cn
-DOMAIN-SUFFIX,zgbywl.com
 DOMAIN-SUFFIX,zgclease.com
 DOMAIN-SUFFIX,zggldgj.com
 DOMAIN-SUFFIX,zgjianfang.com
@@ -3850,7 +3834,6 @@ IP-CIDR,103.145.98.0/23,no-resolve
 IP-CIDR,103.146.124.0/22,no-resolve
 IP-CIDR,103.146.138.0/23,no-resolve
 IP-CIDR,103.146.236.0/23,no-resolve
-IP-CIDR,103.146.252.0/23,no-resolve
 IP-CIDR,103.146.72.0/23,no-resolve
 IP-CIDR,103.146.90.0/23,no-resolve
 IP-CIDR,103.147.12.0/23,no-resolve
@@ -6302,6 +6285,7 @@ IP-CIDR,162.105.0.0/16,no-resolve
 IP-CIDR,162.14.0.0/16,no-resolve
 IP-CIDR,162.4.136.0/23,no-resolve
 IP-CIDR,162.4.168.0/23,no-resolve
+IP-CIDR,162.4.198.0/23,no-resolve
 IP-CIDR,162.4.54.0/23,no-resolve
 IP-CIDR,163.0.0.0/16,no-resolve
 IP-CIDR,163.125.0.0/16,no-resolve
@@ -6487,6 +6471,7 @@ IP-CIDR,183.91.136.0/21,no-resolve
 IP-CIDR,183.91.144.0/20,no-resolve
 IP-CIDR,183.92.0.0/14,no-resolve
 IP-CIDR,188.131.128.0/17,no-resolve
+IP-CIDR,192.0.2.240/29,no-resolve
 IP-CIDR,192.102.204.0/22,no-resolve
 IP-CIDR,192.124.154.0/24,no-resolve
 IP-CIDR,192.140.128.0/21,no-resolve

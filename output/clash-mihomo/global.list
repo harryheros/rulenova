@@ -1,7 +1,7 @@
 # RuleNova — Global (HK/TW/MO/JP/KR/SG)
 # Variant  : combined
 # Format   : Clash/Mihomo/Stash text
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-06-01T11:43:54Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -15,6 +15,7 @@ DOMAIN-SUFFIX,3171688.com
 DOMAIN-SUFFIX,321009.com
 DOMAIN-SUFFIX,333.com
 DOMAIN-SUFFIX,3hk.hk
+DOMAIN-SUFFIX,48hao.net
 DOMAIN-SUFFIX,518.com.tw
 DOMAIN-SUFFIX,51credit.com
 DOMAIN-SUFFIX,591.com.tw
@@ -33,6 +34,7 @@ DOMAIN-SUFFIX,airport.kr
 DOMAIN-SUFFIX,akmall.com
 DOMAIN-SUFFIX,al.gov.mo
 DOMAIN-SUFFIX,aladin.co.kr
+DOMAIN-SUFFIX,alili.tech
 DOMAIN-SUFFIX,alipay.hk
 DOMAIN-SUFFIX,alipayhk.com
 DOMAIN-SUFFIX,amazon.co.jp
@@ -143,6 +145,7 @@ DOMAIN-SUFFIX,cp.gov.mo
 DOMAIN-SUFFIX,cpc.com.tw
 DOMAIN-SUFFIX,cpf.gov.sg
 DOMAIN-SUFFIX,cpttm.org.mo
+DOMAIN-SUFFIX,cqguangren.com
 DOMAIN-SUFFIX,cqjsaq.com
 DOMAIN-SUFFIX,craer.com
 DOMAIN-SUFFIX,crcbank.com
@@ -182,7 +185,6 @@ DOMAIN-SUFFIX,dcard.tw
 DOMAIN-SUFFIX,dcinside.com
 DOMAIN-SUFFIX,dgbas.gov.tw
 DOMAIN-SUFFIX,dicj.gov.mo
-DOMAIN-SUFFIX,dididadidi.com
 DOMAIN-SUFFIX,digital.go.jp
 DOMAIN-SUFFIX,dimbuy.com
 DOMAIN-SUFFIX,directel.com.mo
@@ -341,7 +343,6 @@ DOMAIN-SUFFIX,hsbc.com.hk
 DOMAIN-SUFFIX,hsinchu.gov.tw
 DOMAIN-SUFFIX,hsrjtk.com
 DOMAIN-SUFFIX,hualien.gov.tw
-DOMAIN-SUFFIX,huoche.net
 DOMAIN-SUFFIX,hyab.gov.hk
 DOMAIN-SUFFIX,hybecorp.com
 DOMAIN-SUFFIX,hyundai.com
@@ -437,6 +438,7 @@ DOMAIN-SUFFIX,kinmen.gov.tw
 DOMAIN-SUFFIX,kisa.or.kr
 DOMAIN-SUFFIX,kist.re.kr
 DOMAIN-SUFFIX,kjc.edu.mo
+DOMAIN-SUFFIX,kjw.cc
 DOMAIN-SUFFIX,kkbox.com
 DOMAIN-SUFFIX,kkday.com
 DOMAIN-SUFFIX,kktix.com
@@ -464,7 +466,6 @@ DOMAIN-SUFFIX,lge.co.kr
 DOMAIN-SUFFIX,lguplus.com
 DOMAIN-SUFFIX,lianfengwh.com
 DOMAIN-SUFFIX,lihkg.com
-DOMAIN-SUFFIX,likeji.net
 DOMAIN-SUFFIX,line.me
 DOMAIN-SUFFIX,linebank.com.tw
 DOMAIN-SUFFIX,liontravel.com
@@ -480,7 +481,6 @@ DOMAIN-SUFFIX,lta.gov.sg
 DOMAIN-SUFFIX,ltn.com.tw
 DOMAIN-SUFFIX,lwb.gov.hk
 DOMAIN-SUFFIX,ly.gov.tw
-DOMAIN-SUFFIX,lzskqyy.com
 DOMAIN-SUFFIX,m1.com.sg
 DOMAIN-SUFFIX,macaobbs.com
 DOMAIN-SUFFIX,macaodaily.com
@@ -510,7 +510,6 @@ DOMAIN-SUFFIX,mc.icbc.com.cn
 DOMAIN-SUFFIX,mcdonalds.co.jp
 DOMAIN-SUFFIX,mclcinema.com
 DOMAIN-SUFFIX,mediatek.com
-DOMAIN-SUFFIX,meexx.xyz
 DOMAIN-SUFFIX,megabank.com.tw
 DOMAIN-SUFFIX,megabox.co.kr
 DOMAIN-SUFFIX,melon.com
@@ -558,7 +557,6 @@ DOMAIN-SUFFIX,mops.twse.com.tw
 DOMAIN-SUFFIX,motc.gov.tw
 DOMAIN-SUFFIX,mothership.sg
 DOMAIN-SUFFIX,motie.go.kr
-DOMAIN-SUFFIX,motu.art
 DOMAIN-SUFFIX,mpay.com.mo
 DOMAIN-SUFFIX,mpu.edu.mo
 DOMAIN-SUFFIX,mrt.taipei
@@ -650,7 +648,6 @@ DOMAIN-SUFFIX,pccw.com
 DOMAIN-SUFFIX,pchome.com.tw
 DOMAIN-SUFFIX,pcstore.com.tw
 DOMAIN-SUFFIX,penghu.gov.tw
-DOMAIN-SUFFIX,pgyy.com
 DOMAIN-SUFFIX,pingtung.gov.tw
 DOMAIN-SUFFIX,pixnet.net
 DOMAIN-SUFFIX,pj39800.com
@@ -789,6 +786,7 @@ DOMAIN-SUFFIX,taizibao.com
 DOMAIN-SUFFIX,takashimaya.co.jp
 DOMAIN-SUFFIX,takungpao.com
 DOMAIN-SUFFIX,tami.org.tw
+DOMAIN-SUFFIX,taodocs.com
 DOMAIN-SUFFIX,taoyuan-airport.com
 DOMAIN-SUFFIX,taoyuan.gov.tw
 DOMAIN-SUFFIX,tcb-bank.com.tw
@@ -877,7 +875,6 @@ DOMAIN-SUFFIX,winkkie.com
 DOMAIN-SUFFIX,wondershare.com.br
 DOMAIN-SUFFIX,wooribank.com
 DOMAIN-SUFFIX,www.dayspay.com.cn
-DOMAIN-SUFFIX,www.mybus.com.cn
 DOMAIN-SUFFIX,wxtyyy.com
 DOMAIN-SUFFIX,xiaohongtao.art
 DOMAIN-SUFFIX,xiecheng.com
@@ -903,11 +900,13 @@ DOMAIN-SUFFIX,ymobile.jp
 DOMAIN-SUFFIX,yna.co.kr
 DOMAIN-SUFFIX,yodobashi.com
 DOMAIN-SUFFIX,yomiuri.co.jp
+DOMAIN-SUFFIX,yongqischool.net
 DOMAIN-SUFFIX,yonsei.ac.kr
 DOMAIN-SUFFIX,youbike.com.tw
 DOMAIN-SUFFIX,youhaosoft.com
 DOMAIN-SUFFIX,yp.mo
 DOMAIN-SUFFIX,yuantabank.com.tw
+DOMAIN-SUFFIX,yubaike.com
 DOMAIN-SUFFIX,yuelvxing.com
 DOMAIN-SUFFIX,yuncha.com
 DOMAIN-SUFFIX,yunlin.gov.tw
@@ -2296,7 +2295,6 @@ IP-CIDR,103.214.24.0/22,no-resolve
 IP-CIDR,103.214.252.0/22,no-resolve
 IP-CIDR,103.214.32.0/22,no-resolve
 IP-CIDR,103.214.41.0/24,no-resolve
-IP-CIDR,103.214.56.0/24,no-resolve
 IP-CIDR,103.214.64.0/22,no-resolve
 IP-CIDR,103.214.72.0/22,no-resolve
 IP-CIDR,103.214.76.0/22,no-resolve
@@ -5672,6 +5670,8 @@ IP-CIDR,162.4.114.0/23,no-resolve
 IP-CIDR,162.4.116.0/23,no-resolve
 IP-CIDR,162.4.120.0/23,no-resolve
 IP-CIDR,162.4.172.0/23,no-resolve
+IP-CIDR,162.4.180.0/23,no-resolve
+IP-CIDR,162.4.194.0/23,no-resolve
 IP-CIDR,162.4.26.0/23,no-resolve
 IP-CIDR,162.4.28.0/23,no-resolve
 IP-CIDR,162.4.40.0/23,no-resolve
@@ -6264,6 +6264,7 @@ IP-CIDR,191.1.0.0/16,no-resolve
 IP-CIDR,191.214.0.0/16,no-resolve
 IP-CIDR,191.223.32.0/20,no-resolve
 IP-CIDR,191.43.0.0/16,no-resolve
+IP-CIDR,192.0.2.248/29,no-resolve
 IP-CIDR,192.100.2.0/24,no-resolve
 IP-CIDR,192.104.15.0/24,no-resolve
 IP-CIDR,192.104.172.0/24,no-resolve
@@ -6499,6 +6500,8 @@ IP-CIDR,198.17.70.0/24,no-resolve
 IP-CIDR,198.180.142.0/24,no-resolve
 IP-CIDR,198.204.78.0/24,no-resolve
 IP-CIDR,198.246.223.0/24,no-resolve
+IP-CIDR,198.51.100.240/29,no-resolve
+IP-CIDR,198.51.100.248/29,no-resolve
 IP-CIDR,198.56.20.0/23,no-resolve
 IP-CIDR,198.59.162.0/23,no-resolve
 IP-CIDR,198.74.24.0/23,no-resolve
@@ -7459,6 +7462,9 @@ IP-CIDR,202.95.208.0/20,no-resolve
 IP-CIDR,202.95.248.0/23,no-resolve
 IP-CIDR,202.95.32.0/19,no-resolve
 IP-CIDR,202.95.64.0/18,no-resolve
+IP-CIDR,203.0.113.224/29,no-resolve
+IP-CIDR,203.0.113.232/29,no-resolve
+IP-CIDR,203.0.113.240/29,no-resolve
 IP-CIDR,203.0.139.0/24,no-resolve
 IP-CIDR,203.1.22.0/23,no-resolve
 IP-CIDR,203.10.100.0/23,no-resolve

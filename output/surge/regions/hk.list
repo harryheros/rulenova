@@ -1,13 +1,14 @@
 # RuleNova — Hong Kong
 # Variant  : combined
 # Format   : Surge RULE-SET
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-06-01T11:43:54Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
 DOMAIN-SUFFIX,00xu.com
 DOMAIN-SUFFIX,163.net
 DOMAIN-SUFFIX,3hk.hk
+DOMAIN-SUFFIX,48hao.net
 DOMAIN-SUFFIX,aastocks.com
 DOMAIN-SUFFIX,alipay.hk
 DOMAIN-SUFFIX,alipayhk.com
@@ -29,6 +30,7 @@ DOMAIN-SUFFIX,citibank.com.hk
 DOMAIN-SUFFIX,cityu.edu.hk
 DOMAIN-SUFFIX,clp.com.hk
 DOMAIN-SUFFIX,cmab.gov.hk
+DOMAIN-SUFFIX,cqguangren.com
 DOMAIN-SUFFIX,crcbank.com
 DOMAIN-SUFFIX,crhk.com.hk
 DOMAIN-SUFFIX,csb.gov.hk
@@ -42,7 +44,6 @@ DOMAIN-SUFFIX,cuhkmc.hk
 DOMAIN-SUFFIX,cxexpress.com
 DOMAIN-SUFFIX,dahsing.com
 DOMAIN-SUFFIX,dbs.com.hk
-DOMAIN-SUFFIX,dididadidi.com
 DOMAIN-SUFFIX,dimbuy.com
 DOMAIN-SUFFIX,discuss.com.hk
 DOMAIN-SUFFIX,dragonfly.fm
@@ -95,7 +96,6 @@ DOMAIN-SUFFIX,hongkongairlines.com
 DOMAIN-SUFFIX,hongkongpost.hk
 DOMAIN-SUFFIX,honstarmemory.com
 DOMAIN-SUFFIX,hsbc.com.hk
-DOMAIN-SUFFIX,huoche.net
 DOMAIN-SUFFIX,hyab.gov.hk
 DOMAIN-SUFFIX,icac.org.hk
 DOMAIN-SUFFIX,info.gov.hk
@@ -110,12 +110,9 @@ DOMAIN-SUFFIX,klook.com
 DOMAIN-SUFFIX,lcsd.gov.hk
 DOMAIN-SUFFIX,lianfengwh.com
 DOMAIN-SUFFIX,lihkg.com
-DOMAIN-SUFFIX,likeji.net
 DOMAIN-SUFFIX,ln.edu.hk
 DOMAIN-SUFFIX,lwb.gov.hk
-DOMAIN-SUFFIX,lzskqyy.com
 DOMAIN-SUFFIX,mclcinema.com
-DOMAIN-SUFFIX,meexx.xyz
 DOMAIN-SUFFIX,mingpao.com
 DOMAIN-SUFFIX,mtr.com.hk
 DOMAIN-SUFFIX,mygobatv.com
@@ -126,7 +123,6 @@ DOMAIN-SUFFIX,octopus.com.hk
 DOMAIN-SUFFIX,on.cc
 DOMAIN-SUFFIX,openrice.com
 DOMAIN-SUFFIX,pccw.com
-DOMAIN-SUFFIX,pgyy.com
 DOMAIN-SUFFIX,polyu.edu.hk
 DOMAIN-SUFFIX,rthk.hk
 DOMAIN-SUFFIX,sachenpharm.com
@@ -146,6 +142,7 @@ DOMAIN-SUFFIX,stheadline.com
 DOMAIN-SUFFIX,stpaul.org.hk
 DOMAIN-SUFFIX,taizibao.com
 DOMAIN-SUFFIX,takungpao.com
+DOMAIN-SUFFIX,taodocs.com
 DOMAIN-SUFFIX,three.com.hk
 DOMAIN-SUFFIX,tmall.hk
 DOMAIN-SUFFIX,tom.com
@@ -165,7 +162,6 @@ DOMAIN-SUFFIX,wharf.com.hk
 DOMAIN-SUFFIX,wheelockcompany.com
 DOMAIN-SUFFIX,winglungbank.com
 DOMAIN-SUFFIX,www.dayspay.com.cn
-DOMAIN-SUFFIX,www.mybus.com.cn
 DOMAIN-SUFFIX,xiaohongtao.art
 DOMAIN-SUFFIX,xmzgxcl.com
 DOMAIN-SUFFIX,xpcha.com
@@ -173,6 +169,7 @@ DOMAIN-SUFFIX,yahoo.com.hk
 DOMAIN-SUFFIX,yata.hk
 DOMAIN-SUFFIX,yesstyle.com
 DOMAIN-SUFFIX,ygym.org
+DOMAIN-SUFFIX,yongqischool.net
 DOMAIN-SUFFIX,za.group
 DOMAIN-SUFFIX,zhimaruanjian.com
 DOMAIN-SUFFIX,zjgqt.org
@@ -685,7 +682,6 @@ IP-CIDR,103.214.164.0/22,no-resolve
 IP-CIDR,103.214.172.0/22,no-resolve
 IP-CIDR,103.214.32.0/22,no-resolve
 IP-CIDR,103.214.41.0/24,no-resolve
-IP-CIDR,103.214.56.0/24,no-resolve
 IP-CIDR,103.214.64.0/22,no-resolve
 IP-CIDR,103.214.76.0/22,no-resolve
 IP-CIDR,103.215.0.0/22,no-resolve
@@ -1650,6 +1646,7 @@ IP-CIDR,189.75.144.0/20,no-resolve
 IP-CIDR,191.1.0.0/16,no-resolve
 IP-CIDR,191.214.0.0/16,no-resolve
 IP-CIDR,191.223.32.0/20,no-resolve
+IP-CIDR,192.0.2.248/29,no-resolve
 IP-CIDR,192.135.99.0/24,no-resolve
 IP-CIDR,192.156.144.0/24,no-resolve
 IP-CIDR,192.156.220.0/24,no-resolve

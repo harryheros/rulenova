@@ -2,7 +2,7 @@
 # Variant  : domain
 # Format   : Loon
 # Policy   : Global
-# Generated: 2026-05-25T16:56:42Z
+# Generated: 2026-06-01T11:43:54Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -16,6 +16,7 @@ DOMAIN-SUFFIX,3171688.com,Global
 DOMAIN-SUFFIX,321009.com,Global
 DOMAIN-SUFFIX,333.com,Global
 DOMAIN-SUFFIX,3hk.hk,Global
+DOMAIN-SUFFIX,48hao.net,Global
 DOMAIN-SUFFIX,518.com.tw,Global
 DOMAIN-SUFFIX,51credit.com,Global
 DOMAIN-SUFFIX,591.com.tw,Global
@@ -34,6 +35,7 @@ DOMAIN-SUFFIX,airport.kr,Global
 DOMAIN-SUFFIX,akmall.com,Global
 DOMAIN-SUFFIX,al.gov.mo,Global
 DOMAIN-SUFFIX,aladin.co.kr,Global
+DOMAIN-SUFFIX,alili.tech,Global
 DOMAIN-SUFFIX,alipay.hk,Global
 DOMAIN-SUFFIX,alipayhk.com,Global
 DOMAIN-SUFFIX,amazon.co.jp,Global
@@ -144,6 +146,7 @@ DOMAIN-SUFFIX,cp.gov.mo,Global
 DOMAIN-SUFFIX,cpc.com.tw,Global
 DOMAIN-SUFFIX,cpf.gov.sg,Global
 DOMAIN-SUFFIX,cpttm.org.mo,Global
+DOMAIN-SUFFIX,cqguangren.com,Global
 DOMAIN-SUFFIX,cqjsaq.com,Global
 DOMAIN-SUFFIX,craer.com,Global
 DOMAIN-SUFFIX,crcbank.com,Global
@@ -183,7 +186,6 @@ DOMAIN-SUFFIX,dcard.tw,Global
 DOMAIN-SUFFIX,dcinside.com,Global
 DOMAIN-SUFFIX,dgbas.gov.tw,Global
 DOMAIN-SUFFIX,dicj.gov.mo,Global
-DOMAIN-SUFFIX,dididadidi.com,Global
 DOMAIN-SUFFIX,digital.go.jp,Global
 DOMAIN-SUFFIX,dimbuy.com,Global
 DOMAIN-SUFFIX,directel.com.mo,Global
@@ -342,7 +344,6 @@ DOMAIN-SUFFIX,hsbc.com.hk,Global
 DOMAIN-SUFFIX,hsinchu.gov.tw,Global
 DOMAIN-SUFFIX,hsrjtk.com,Global
 DOMAIN-SUFFIX,hualien.gov.tw,Global
-DOMAIN-SUFFIX,huoche.net,Global
 DOMAIN-SUFFIX,hyab.gov.hk,Global
 DOMAIN-SUFFIX,hybecorp.com,Global
 DOMAIN-SUFFIX,hyundai.com,Global
@@ -438,6 +439,7 @@ DOMAIN-SUFFIX,kinmen.gov.tw,Global
 DOMAIN-SUFFIX,kisa.or.kr,Global
 DOMAIN-SUFFIX,kist.re.kr,Global
 DOMAIN-SUFFIX,kjc.edu.mo,Global
+DOMAIN-SUFFIX,kjw.cc,Global
 DOMAIN-SUFFIX,kkbox.com,Global
 DOMAIN-SUFFIX,kkday.com,Global
 DOMAIN-SUFFIX,kktix.com,Global
@@ -465,7 +467,6 @@ DOMAIN-SUFFIX,lge.co.kr,Global
 DOMAIN-SUFFIX,lguplus.com,Global
 DOMAIN-SUFFIX,lianfengwh.com,Global
 DOMAIN-SUFFIX,lihkg.com,Global
-DOMAIN-SUFFIX,likeji.net,Global
 DOMAIN-SUFFIX,line.me,Global
 DOMAIN-SUFFIX,linebank.com.tw,Global
 DOMAIN-SUFFIX,liontravel.com,Global
@@ -481,7 +482,6 @@ DOMAIN-SUFFIX,lta.gov.sg,Global
 DOMAIN-SUFFIX,ltn.com.tw,Global
 DOMAIN-SUFFIX,lwb.gov.hk,Global
 DOMAIN-SUFFIX,ly.gov.tw,Global
-DOMAIN-SUFFIX,lzskqyy.com,Global
 DOMAIN-SUFFIX,m1.com.sg,Global
 DOMAIN-SUFFIX,macaobbs.com,Global
 DOMAIN-SUFFIX,macaodaily.com,Global
@@ -511,7 +511,6 @@ DOMAIN-SUFFIX,mc.icbc.com.cn,Global
 DOMAIN-SUFFIX,mcdonalds.co.jp,Global
 DOMAIN-SUFFIX,mclcinema.com,Global
 DOMAIN-SUFFIX,mediatek.com,Global
-DOMAIN-SUFFIX,meexx.xyz,Global
 DOMAIN-SUFFIX,megabank.com.tw,Global
 DOMAIN-SUFFIX,megabox.co.kr,Global
 DOMAIN-SUFFIX,melon.com,Global
@@ -559,7 +558,6 @@ DOMAIN-SUFFIX,mops.twse.com.tw,Global
 DOMAIN-SUFFIX,motc.gov.tw,Global
 DOMAIN-SUFFIX,mothership.sg,Global
 DOMAIN-SUFFIX,motie.go.kr,Global
-DOMAIN-SUFFIX,motu.art,Global
 DOMAIN-SUFFIX,mpay.com.mo,Global
 DOMAIN-SUFFIX,mpu.edu.mo,Global
 DOMAIN-SUFFIX,mrt.taipei,Global
@@ -651,7 +649,6 @@ DOMAIN-SUFFIX,pccw.com,Global
 DOMAIN-SUFFIX,pchome.com.tw,Global
 DOMAIN-SUFFIX,pcstore.com.tw,Global
 DOMAIN-SUFFIX,penghu.gov.tw,Global
-DOMAIN-SUFFIX,pgyy.com,Global
 DOMAIN-SUFFIX,pingtung.gov.tw,Global
 DOMAIN-SUFFIX,pixnet.net,Global
 DOMAIN-SUFFIX,pj39800.com,Global
@@ -790,6 +787,7 @@ DOMAIN-SUFFIX,taizibao.com,Global
 DOMAIN-SUFFIX,takashimaya.co.jp,Global
 DOMAIN-SUFFIX,takungpao.com,Global
 DOMAIN-SUFFIX,tami.org.tw,Global
+DOMAIN-SUFFIX,taodocs.com,Global
 DOMAIN-SUFFIX,taoyuan-airport.com,Global
 DOMAIN-SUFFIX,taoyuan.gov.tw,Global
 DOMAIN-SUFFIX,tcb-bank.com.tw,Global
@@ -878,7 +876,6 @@ DOMAIN-SUFFIX,winkkie.com,Global
 DOMAIN-SUFFIX,wondershare.com.br,Global
 DOMAIN-SUFFIX,wooribank.com,Global
 DOMAIN-SUFFIX,www.dayspay.com.cn,Global
-DOMAIN-SUFFIX,www.mybus.com.cn,Global
 DOMAIN-SUFFIX,wxtyyy.com,Global
 DOMAIN-SUFFIX,xiaohongtao.art,Global
 DOMAIN-SUFFIX,xiecheng.com,Global
@@ -904,11 +901,13 @@ DOMAIN-SUFFIX,ymobile.jp,Global
 DOMAIN-SUFFIX,yna.co.kr,Global
 DOMAIN-SUFFIX,yodobashi.com,Global
 DOMAIN-SUFFIX,yomiuri.co.jp,Global
+DOMAIN-SUFFIX,yongqischool.net,Global
 DOMAIN-SUFFIX,yonsei.ac.kr,Global
 DOMAIN-SUFFIX,youbike.com.tw,Global
 DOMAIN-SUFFIX,youhaosoft.com,Global
 DOMAIN-SUFFIX,yp.mo,Global
 DOMAIN-SUFFIX,yuantabank.com.tw,Global
+DOMAIN-SUFFIX,yubaike.com,Global
 DOMAIN-SUFFIX,yuelvxing.com,Global
 DOMAIN-SUFFIX,yuncha.com,Global
 DOMAIN-SUFFIX,yunlin.gov.tw,Global

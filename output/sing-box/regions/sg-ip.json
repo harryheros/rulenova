@@ -4,9 +4,9 @@
     "label": "Singapore",
     "variant": "ip",
     "suggested_policy": "SG",
-    "generated": "2026-05-25T16:56:42Z",
+    "generated": "2026-06-01T11:43:54Z",
     "domains": 0,
-    "cidrs": 1615,
+    "cidrs": 1616,
     "source": "https://github.com/harryheros/rulenova"
   },
   "rules": [
@@ -1106,6 +1106,7 @@
         "202.94.96.0/19",
         "202.95.0.0/19",
         "202.95.64.0/18",
+        "203.0.113.240/29",
         "203.1.22.0/23",
         "203.10.100.0/23",
         "203.101.192.0/19",

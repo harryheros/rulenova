@@ -280,6 +280,16 @@ Every Monday 06:00 UTC — 4 hours after IPNova and DomainNova complete their we
 
 ---
 
+## Positioning
+
+RuleNova is a downstream compatibility project within the Nova infrastructure toolkit.
+
+IPNova and DomainNova are general-purpose infrastructure intelligence datasets. RuleNova demonstrates one possible routing-rule application built from those public datasets.
+
+The upstream datasets remain independent of any specific routing client, policy model, or deployment environment.
+
+---
+
 ## License
 
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — Attribution-NonCommercial-ShareAlike.

@@ -3,7 +3,9 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Update Rules](https://img.shields.io/github/actions/workflow/status/harryheros/rulenova/update.yml?label=weekly%20update)](https://github.com/harryheros/rulenova/actions/workflows/update.yml)
 
-RuleNova is a clean, lightweight routing rule set for Clash / Mihomo, Stash, Surge, Shadowrocket, Quantumult X, Loon and sing-box — built on [IPNova](https://github.com/harryheros/ipnova) and [DomainNova](https://github.com/harryheros/domainnova).
+RuleNova is a lightweight routing-rule generation project that transforms infrastructure attribution datasets into client-specific routing rule formats.
+
+RuleNova generates outputs for Clash / Mihomo, Stash, Surge, Shadowrocket, Quantumult X, Loon and sing-box using public dataset outputs from [IPNova](https://github.com/harryheros/ipnova) and [DomainNova](https://github.com/harryheros/domainnova).
 
 The core design is simple:
 

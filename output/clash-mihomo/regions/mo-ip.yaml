@@ -1,7 +1,7 @@
 # RuleNova — Macau
 # Variant: ip
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-06-01T11:43:54Z
+# Generated: 2026-07-01T08:27:38Z
 payload:
   - 103.115.140.0/22
   - 103.143.92.0/23

@@ -1,7 +1,7 @@
 # RuleNova — South Korea
 # Variant  : combined
 # Format   : Clash/Mihomo/Stash text
-# Generated: 2026-06-01T11:43:54Z
+# Generated: 2026-07-01T08:27:38Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -733,6 +733,7 @@ IP-CIDR,160.202.160.0/22,no-resolve
 IP-CIDR,160.202.172.0/22,no-resolve
 IP-CIDR,160.202.176.0/22,no-resolve
 IP-CIDR,160.22.155.0/24,no-resolve
+IP-CIDR,160.236.41.0/24,no-resolve
 IP-CIDR,160.250.152.0/22,no-resolve
 IP-CIDR,160.30.106.0/23,no-resolve
 IP-CIDR,160.30.229.0/24,no-resolve
@@ -748,7 +749,6 @@ IP-CIDR,163.152.0.0/16,no-resolve
 IP-CIDR,163.180.0.0/16,no-resolve
 IP-CIDR,163.213.0.0/16,no-resolve
 IP-CIDR,163.222.0.0/16,no-resolve
-IP-CIDR,163.223.162.0/23,no-resolve
 IP-CIDR,163.223.94.0/23,no-resolve
 IP-CIDR,163.229.0.0/16,no-resolve
 IP-CIDR,163.239.0.0/16,no-resolve
@@ -983,7 +983,17 @@ IP-CIDR,210.96.0.0/11,no-resolve
 IP-CIDR,211.104.0.0/13,no-resolve
 IP-CIDR,211.112.0.0/13,no-resolve
 IP-CIDR,211.168.0.0/13,no-resolve
-IP-CIDR,211.176.0.0/13,no-resolve
+IP-CIDR,211.176.0.0/14,no-resolve
+IP-CIDR,211.180.0.0/16,no-resolve
+IP-CIDR,211.181.0.0/17,no-resolve
+IP-CIDR,211.181.128.0/19,no-resolve
+IP-CIDR,211.181.160.0/20,no-resolve
+IP-CIDR,211.181.176.0/21,no-resolve
+IP-CIDR,211.181.184.0/23,no-resolve
+IP-CIDR,211.181.186.0/24,no-resolve
+IP-CIDR,211.181.188.0/22,no-resolve
+IP-CIDR,211.181.192.0/18,no-resolve
+IP-CIDR,211.182.0.0/15,no-resolve
 IP-CIDR,211.184.0.0/14,no-resolve
 IP-CIDR,211.188.0.0/20,no-resolve
 IP-CIDR,211.188.128.0/17,no-resolve
@@ -1131,9 +1141,7 @@ IP-CIDR,45.64.140.0/22,no-resolve
 IP-CIDR,45.64.144.0/22,no-resolve
 IP-CIDR,45.64.152.0/22,no-resolve
 IP-CIDR,45.64.172.0/22,no-resolve
-IP-CIDR,47.80.0.0/18,no-resolve
-IP-CIDR,47.80.128.0/17,no-resolve
-IP-CIDR,47.87.224.0/22,no-resolve
+IP-CIDR,47.80.128.0/18,no-resolve
 IP-CIDR,49.1.0.0/16,no-resolve
 IP-CIDR,49.128.192.0/19,no-resolve
 IP-CIDR,49.142.0.0/16,no-resolve
@@ -1214,3 +1222,4 @@ IP-CIDR,61.80.0.0/14,no-resolve
 IP-CIDR,61.84.0.0/15,no-resolve
 IP-CIDR,61.96.0.0/12,no-resolve
 IP-CIDR,64.188.32.0/20,no-resolve
+IP-CIDR,91.240.89.0/24,no-resolve

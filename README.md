@@ -275,7 +275,7 @@ Every Monday 06:00 UTC — 4 hours after IPNova and DomainNova complete their we
 
 - Rule sets are generated from allocation-based data, not real-time traffic analysis.
 - IP rules reflect RIR assignment and BGP data, not precise service ownership.
-- Domain rules are curated for proxy routing accuracy, not exhaustive coverage.
+- Domain rules are curated for geo-classification accuracy, not exhaustive coverage.
 - HK / TW / MO / JP / KR / SG are intentionally separated from CN and merged into `global` for simple mode.
 
 ---

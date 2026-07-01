@@ -1,7 +1,7 @@
 # RuleNova — Japan
 # Variant: domain
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-06-01T11:43:54Z
+# Generated: 2026-07-01T08:27:38Z
 payload:
   - amazon.co.jp
   - ameba.jp
@@ -24,7 +24,6 @@ payload:
   - city.osaka.lg.jp
   - city.sapporo.jp
   - city.yokohama.lg.jp
-  - cnswds.com
   - conoha.jp
   - court.go.jp
   - daiso-sangyo.co.jp
@@ -93,6 +92,7 @@ payload:
   - mod.go.jp
   - mofa.go.jp
   - muji.com
+  - music.163.com
   - navitime.co.jp
   - nayuki.com
   - nec.co.jp

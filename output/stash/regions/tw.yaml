@@ -1,7 +1,7 @@
 # RuleNova — Taiwan
 # Variant: combined
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-06-01T11:43:54Z
+# Generated: 2026-07-01T08:27:38Z
 payload:
   - DOMAIN-SUFFIX,104.com.tw
   - DOMAIN-SUFFIX,1111.com.tw
@@ -428,7 +428,6 @@ payload:
   - IP-CIDR,103.37.36.0/22,no-resolve
   - IP-CIDR,103.37.4.0/23,no-resolve
   - IP-CIDR,103.38.146.0/23,no-resolve
-  - IP-CIDR,103.39.34.0/23,no-resolve
   - IP-CIDR,103.4.104.0/22,no-resolve
   - IP-CIDR,103.42.112.0/23,no-resolve
   - IP-CIDR,103.42.144.0/21,no-resolve
@@ -629,6 +628,7 @@ payload:
   - IP-CIDR,161.248.44.0/23,no-resolve
   - IP-CIDR,162.4.116.0/23,no-resolve
   - IP-CIDR,162.4.120.0/23,no-resolve
+  - IP-CIDR,162.4.236.0/23,no-resolve
   - IP-CIDR,162.4.92.0/24,no-resolve
   - IP-CIDR,163.128.120.0/23,no-resolve
   - IP-CIDR,163.128.172.0/23,no-resolve

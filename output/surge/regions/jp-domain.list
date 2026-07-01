@@ -1,7 +1,7 @@
 # RuleNova — Japan
 # Variant  : domain
 # Format   : Surge RULE-SET
-# Generated: 2026-06-01T11:43:54Z
+# Generated: 2026-07-01T08:27:38Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -26,7 +26,6 @@ DOMAIN-SUFFIX,city.nagoya.lg.jp
 DOMAIN-SUFFIX,city.osaka.lg.jp
 DOMAIN-SUFFIX,city.sapporo.jp
 DOMAIN-SUFFIX,city.yokohama.lg.jp
-DOMAIN-SUFFIX,cnswds.com
 DOMAIN-SUFFIX,conoha.jp
 DOMAIN-SUFFIX,court.go.jp
 DOMAIN-SUFFIX,daiso-sangyo.co.jp
@@ -95,6 +94,7 @@ DOMAIN-SUFFIX,mlit.go.jp
 DOMAIN-SUFFIX,mod.go.jp
 DOMAIN-SUFFIX,mofa.go.jp
 DOMAIN-SUFFIX,muji.com
+DOMAIN-SUFFIX,music.163.com
 DOMAIN-SUFFIX,navitime.co.jp
 DOMAIN-SUFFIX,nayuki.com
 DOMAIN-SUFFIX,nec.co.jp

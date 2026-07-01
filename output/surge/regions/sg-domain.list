@@ -1,36 +1,34 @@
 # RuleNova — Singapore
 # Variant  : domain
 # Format   : Surge RULE-SET
-# Generated: 2026-06-01T11:43:54Z
+# Generated: 2026-07-01T08:27:38Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
+DOMAIN-SUFFIX,13cr.com
+DOMAIN-SUFFIX,17qzx.com
 DOMAIN-SUFFIX,263.net
 DOMAIN-SUFFIX,3171688.com
 DOMAIN-SUFFIX,321009.com
-DOMAIN-SUFFIX,333.com
 DOMAIN-SUFFIX,51credit.com
 DOMAIN-SUFFIX,6xw.com
 DOMAIN-SUFFIX,8world.com
 DOMAIN-SUFFIX,99.co
 DOMAIN-SUFFIX,acra.gov.sg
 DOMAIN-SUFFIX,aicoin.com
-DOMAIN-SUFFIX,alili.tech
-DOMAIN-SUFFIX,bh568.com
+DOMAIN-SUFFIX,bianminwang.com
 DOMAIN-SUFFIX,biohyalux.com
+DOMAIN-SUFFIX,booyu-import.com
 DOMAIN-SUFFIX,caas.gov.sg
 DOMAIN-SUFFIX,carousell.com
 DOMAIN-SUFFIX,carousell.sg
 DOMAIN-SUFFIX,changiairport.com
 DOMAIN-SUFFIX,channelnewsasia.com
-DOMAIN-SUFFIX,china-shimo.com
 DOMAIN-SUFFIX,coldstorage.com.sg
 DOMAIN-SUFFIX,comfortdelgro.com
 DOMAIN-SUFFIX,cpf.gov.sg
 DOMAIN-SUFFIX,cqjsaq.com
-DOMAIN-SUFFIX,craer.com
 DOMAIN-SUFFIX,csa.gov.sg
-DOMAIN-SUFFIX,ctrip.co.id
 DOMAIN-SUFFIX,ctsho.com
 DOMAIN-SUFFIX,czxiu.com
 DOMAIN-SUFFIX,dbs.com.sg
@@ -39,8 +37,8 @@ DOMAIN-SUFFIX,e-tecsun.com
 DOMAIN-SUFFIX,edb.gov.sg
 DOMAIN-SUFFIX,enterprise.gov.sg
 DOMAIN-SUFFIX,eyoucms.com
+DOMAIN-SUFFIX,fadior.cc
 DOMAIN-SUFFIX,fairprice.com.sg
-DOMAIN-SUFFIX,feiwan.net
 DOMAIN-SUFFIX,foodpanda.sg
 DOMAIN-SUFFIX,go.gov.sg
 DOMAIN-SUFFIX,gov.sg
@@ -51,7 +49,6 @@ DOMAIN-SUFFIX,gxykjd.com
 DOMAIN-SUFFIX,haibowh.com
 DOMAIN-SUFFIX,haoranbio.com
 DOMAIN-SUFFIX,hdb.gov.sg
-DOMAIN-SUFFIX,hongkongdaily.net
 DOMAIN-SUFFIX,hsrjtk.com
 DOMAIN-SUFFIX,ica.gov.sg
 DOMAIN-SUFFIX,imda.gov.sg
@@ -60,8 +57,10 @@ DOMAIN-SUFFIX,izhangan.com
 DOMAIN-SUFFIX,jobstreet.com.sg
 DOMAIN-SUFFIX,jslvzhigu.com
 DOMAIN-SUFFIX,judiciary.gov.sg
+DOMAIN-SUFFIX,kaniuquan.com
 DOMAIN-SUFFIX,kjw.cc
 DOMAIN-SUFFIX,lazada.sg
+DOMAIN-SUFFIX,longzhu.com
 DOMAIN-SUFFIX,lta.gov.sg
 DOMAIN-SUFFIX,m1.com.sg
 DOMAIN-SUFFIX,mas.gov.sg
@@ -79,7 +78,6 @@ DOMAIN-SUFFIX,mti.gov.sg
 DOMAIN-SUFFIX,myinfo.gov.sg
 DOMAIN-SUFFIX,nea.gov.sg
 DOMAIN-SUFFIX,ngacn.cc
-DOMAIN-SUFFIX,nsiqoaks.com
 DOMAIN-SUFFIX,ntu.edu.sg
 DOMAIN-SUFFIX,nuomiphp.com
 DOMAIN-SUFFIX,nus.edu.sg
@@ -110,6 +108,7 @@ DOMAIN-SUFFIX,sistic.com.sg
 DOMAIN-SUFFIX,sit.edu.sg
 DOMAIN-SUFFIX,smrt.com.sg
 DOMAIN-SUFFIX,smu.edu.sg
+DOMAIN-SUFFIX,sogou.com
 DOMAIN-SUFFIX,souche.com
 DOMAIN-SUFFIX,spgroup.com.sg
 DOMAIN-SUFFIX,starhub.com
@@ -124,17 +123,13 @@ DOMAIN-SUFFIX,uhouzz.com
 DOMAIN-SUFFIX,ulife.com
 DOMAIN-SUFFIX,uob.com.sg
 DOMAIN-SUFFIX,ura.gov.sg
-DOMAIN-SUFFIX,ustarl.com
 DOMAIN-SUFFIX,visitsingapore.com
-DOMAIN-SUFFIX,weifengchina.com
 DOMAIN-SUFFIX,weixinyunduan.com
 DOMAIN-SUFFIX,wellcee.com
 DOMAIN-SUFFIX,winkkie.com
-DOMAIN-SUFFIX,wondershare.com.br
 DOMAIN-SUFFIX,wxtyyy.com
 DOMAIN-SUFFIX,xiecheng.com
 DOMAIN-SUFFIX,xn--fiqs8sr9ge7eb4b28vo92a.com
-DOMAIN-SUFFIX,youhaosoft.com
 DOMAIN-SUFFIX,yubaike.com
 DOMAIN-SUFFIX,yuelvxing.com
 DOMAIN-SUFFIX,yywt.online

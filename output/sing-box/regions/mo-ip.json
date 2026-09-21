@@ -4,7 +4,7 @@
     "label": "Macau",
     "variant": "ip",
     "suggested_policy": "MO",
-    "generated": "2026-06-01T11:43:54Z",
+    "generated": "2026-09-21T12:23:11Z",
     "domains": 0,
     "cidrs": 31,
     "source": "https://github.com/harryheros/rulenova"

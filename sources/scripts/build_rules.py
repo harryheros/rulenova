@@ -23,6 +23,8 @@ import logging
 import re
 import shutil
 import sys
+import time
+import urllib.error
 import urllib.request
 from collections.abc import Callable
 from pathlib import Path
@@ -129,12 +131,29 @@ def clean_cidr(line: str) -> str | None:
         return None
 
 
+FETCH_ATTEMPTS = 3
+
+
 def fetch_text(url: str) -> list[str]:
+    """Download a text file; retries transient errors (not 4xx) with backoff."""
     LOG.info("  Fetching %s", url)
-    req = urllib.request.Request(url, headers={"User-Agent": "rulenova/1.0"})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        text = resp.read().decode("utf-8")
-    return [line for line in (strip_comment(x) for x in text.splitlines()) if line]
+    req = urllib.request.Request(
+        url, headers={"User-Agent": "rulenova (+https://github.com/harryheros/rulenova)"})
+    for attempt in range(1, FETCH_ATTEMPTS + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                text = resp.read().decode("utf-8")
+            return [line for line in (strip_comment(x) for x in text.splitlines()) if line]
+        except urllib.error.HTTPError as exc:
+            if 400 <= exc.code < 500 and exc.code != 429:
+                raise
+            last = exc
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            last = exc
+        if attempt < FETCH_ATTEMPTS:
+            LOG.info("  retry %d/%d after: %s", attempt, FETCH_ATTEMPTS - 1, last)
+            time.sleep(5 * attempt)
+    raise last
 
 
 def fetch_region(region: str) -> tuple[list[str], list[str]]:
@@ -377,16 +396,55 @@ def write_checksums(repo_root: Path) -> None:
     LOG.info("Wrote %s (%d files)", ck_path, len(lines))
 
 
-def build(repo_root: Path, *, keep_output: bool = False) -> None:
+# A region may lose at most this fraction of its domains or CIDRs compared
+# with the previously published build before the build is refused.
+MAX_SHRINK = 0.5
+
+
+class ShrinkGuardError(RuntimeError):
+    """Raised when fetched data collapsed compared with the last build."""
+
+
+def load_previous_stats(out_root: Path) -> dict[str, dict[str, int]]:
+    meta_path = out_root / "meta.json"
+    try:
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        regions = meta.get("regions") or {}
+        return {k: v for k, v in regions.items() if isinstance(v, dict)}
+    except (OSError, ValueError):
+        return {}
+
+
+def check_shrink(previous: dict[str, dict[str, int]],
+                 current: dict[str, dict[str, int]],
+                 max_shrink: float = MAX_SHRINK) -> list[str]:
+    """Return human-readable problems where a region collapsed.
+
+    fetch_region() deliberately tolerates a failed upstream (so one bad
+    source doesn't break the other), and v2.1 then deleted output/ and
+    published whatever came back. A failed or truncated download of
+    ipnova/domainnova therefore shipped rule sets with the IP or domain
+    half missing, as long as a handful of entries remained. This gate runs
+    after fetching and *before* output/ is touched.
+    """
+    problems = []
+    for region in REGIONS:
+        prev = previous.get(region) or {}
+        cur = current.get(region) or {}
+        for kind in ("domains", "cidrs"):
+            before, now = int(prev.get(kind, 0) or 0), int(cur.get(kind, 0) or 0)
+            if before > 0 and now < before * (1 - max_shrink):
+                problems.append(f"{region} {kind}: {before} -> {now}")
+    return problems
+
+
+def build(repo_root: Path, *, keep_output: bool = False,
+          allow_shrink: bool = False) -> None:
     out_root = repo_root / "output"
     generated_at = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     LOG.info("RuleNova build — %s", generated_at)
     LOG.info("Repo root: %s", repo_root)
-
-    if out_root.exists() and not keep_output:
-        shutil.rmtree(out_root)
-    out_root.mkdir(parents=True, exist_ok=True)
 
     all_domains: dict[str, list[str]] = {}
     all_cidrs: dict[str, list[str]] = {}
@@ -399,6 +457,20 @@ def build(repo_root: Path, *, keep_output: bool = False) -> None:
         all_cidrs[region] = cidrs
         stats[region] = {"domains": len(domains), "cidrs": len(cidrs)}
         LOG.info("  domains=%d, cidrs=%d", len(domains), len(cidrs))
+
+    # Publish gate: compare with the last good build *before* touching output/.
+    problems = check_shrink(load_previous_stats(out_root), stats)
+    if problems:
+        msg = ("upstream data collapsed compared with the last published build "
+               f"(> {MAX_SHRINK:.0%} drop): " + "; ".join(problems))
+        if not allow_shrink:
+            raise ShrinkGuardError(msg + " — output/ left unchanged. "
+                                         "Re-run with --allow-shrink if this is intended.")
+        LOG.warning("%s (continuing: --allow-shrink)", msg)
+
+    if out_root.exists() and not keep_output:
+        shutil.rmtree(out_root)
+    out_root.mkdir(parents=True, exist_ok=True)
 
     LOG.info("\n── Tier 1: China / Global ──")
     write_ruleset(out_root, "china", "China Mainland", POLICY_CHINA,
@@ -424,13 +496,20 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build RuleNova rule outputs")
     parser.add_argument("--repo-root", type=Path, default=None)
     parser.add_argument("--keep-output", action="store_true", help="Do not delete output before writing new files")
+    parser.add_argument("--allow-shrink", action="store_true",
+                        help=f"Publish even if a region lost more than {MAX_SHRINK:.0%} of its entries")
     return parser.parse_args(argv)
 
 
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(sys.argv[1:] if argv is None else argv)
     repo_root = args.repo_root or Path(__file__).resolve().parents[2]
-    build(repo_root.resolve(), keep_output=args.keep_output)
+    try:
+        build(repo_root.resolve(), keep_output=args.keep_output,
+              allow_shrink=args.allow_shrink)
+    except ShrinkGuardError as exc:
+        LOG.error("Build refused: %s", exc)
+        return 1
     return 0
 
 

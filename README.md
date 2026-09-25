@@ -264,6 +264,8 @@ python3 sources/scripts/validate_output.py
 
 Every Monday 06:00 UTC — 4 hours after IPNova and DomainNova complete their weekly update.
 
+Before anything in `output/` is replaced, the new data is compared with the last published build. If any region lost more than 50% of its domains or CIDRs — typically a failed or truncated upstream download — the build is refused and the previous rules stay online. An intended large change can be published with `--allow-shrink` (or the `allow_shrink` input of a manual workflow run).
+
 ## Data sources
 
 - Domains: [DomainNova](https://github.com/harryheros/domainnova) `dist/domains_{region}.txt`

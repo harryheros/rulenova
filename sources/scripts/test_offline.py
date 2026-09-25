@@ -173,6 +173,80 @@ class TestFetchRegionResilience(unittest.TestCase):
         self.assertTrue(any("dropped" in m for m in captured.output))
 
 
+class TestShrinkGuard(unittest.TestCase):
+    """The build must not publish when upstream data collapsed (v2.2)."""
+
+    PREV = {r: {"domains": 100, "cidrs": 1000} for r in REGIONS}
+
+    def test_normal_fluctuation_passes(self) -> None:
+        import build_rules as br
+        cur = {r: {"domains": 95, "cidrs": 980} for r in REGIONS}
+        self.assertEqual(br.check_shrink(self.PREV, cur), [])
+
+    def test_collapse_detected(self) -> None:
+        import build_rules as br
+        cur = {r: dict(v) for r, v in self.PREV.items()}
+        cur["HK"]["cidrs"] = 0          # failed ipnova download
+        cur["CN"]["domains"] = 40       # truncated domainnova file
+        problems = br.check_shrink(self.PREV, cur)
+        self.assertEqual(len(problems), 2)
+        self.assertTrue(any("HK cidrs" in p for p in problems))
+
+    def test_first_build_has_no_baseline(self) -> None:
+        import build_rules as br
+        self.assertEqual(br.check_shrink({}, {r: {"domains": 0, "cidrs": 0} for r in REGIONS}), [])
+
+    def _fake_build(self, root: Path, per_region: tuple[int, int], allow: bool = False) -> None:
+        import build_rules as br
+        n_dom, n_cidr = per_region
+        original = br.fetch_region
+        br.fetch_region = lambda region: (
+            [f"d{i}.{region.lower()}-example.com" for i in range(n_dom)],
+            [f"10.{i // 256}.{i % 256}.0/24" for i in range(n_cidr)],
+        )
+        try:
+            br.build(root, allow_shrink=allow)
+        finally:
+            br.fetch_region = original
+
+    def test_build_refuses_and_keeps_last_good_output(self) -> None:
+        import logging
+        import build_rules as br
+        logging.disable(logging.CRITICAL)
+        try:
+            with tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                self._fake_build(root, (20, 40))
+                before = (root / "output" / "checksums.txt").read_text()
+                with self.assertRaises(br.ShrinkGuardError):
+                    self._fake_build(root, (20, 0))       # all CIDR downloads failed
+                self.assertEqual((root / "output" / "checksums.txt").read_text(), before)
+                self._fake_build(root, (20, 0), allow=True)  # explicit override
+                meta = json.loads((root / "output" / "meta.json").read_text())
+                self.assertEqual(meta["regions"]["CN"]["cidrs"], 0)
+        finally:
+            logging.disable(logging.NOTSET)
+
+    def test_fetch_text_does_not_retry_404(self) -> None:
+        import urllib.error
+        import urllib.request
+        import build_rules as br
+        calls = []
+
+        def fake(req, timeout=None):
+            calls.append(1)
+            raise urllib.error.HTTPError(req.full_url, 404, "nf", {}, None)
+
+        original = urllib.request.urlopen
+        urllib.request.urlopen = fake
+        try:
+            with self.assertRaises(urllib.error.HTTPError):
+                br.fetch_text("https://example.invalid/x.txt")
+        finally:
+            urllib.request.urlopen = original
+        self.assertEqual(len(calls), 1)
+
+
 class TestNames(unittest.TestCase):
     def test_policy_names_are_short(self) -> None:
         self.assertEqual(POLICY_CHINA, "China")

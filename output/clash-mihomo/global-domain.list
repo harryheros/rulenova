@@ -1,7 +1,7 @@
 # RuleNova — Global (HK/TW/MO/JP/KR/SG)
 # Variant  : domain
 # Format   : Clash/Mihomo/Stash text
-# Generated: 2026-09-21T12:23:11Z
+# Generated: 2026-09-25T13:30:02Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -22,6 +22,7 @@
 7-11.com.tw
 7-eleven.com.tw
 8world.com
+985900.com
 99.co
 99166.com
 aastocks.com
@@ -60,12 +61,15 @@ banksalad.com
 bastillepost.com
 bcc.com.tw
 bcm.com.mo
+beileimaoedu.com
+bh568.com
 bhc.co.kr
 bianminwang.com
 biccamera.com
 bigbigchannel.com.hk
 biohyalux.com
 bk.mufg.jp
+blueskystudy.com
 bnext.com.tw
 bnm.com.mo
 bnu.com.mo
@@ -94,6 +98,7 @@ cathaybk.com.tw
 cathaylife.com.tw
 cathaypacific.com
 cbc.gov.tw
+cbiec.net
 ccac.org.mo
 cd.gov.mo
 cedb.gov.hk
@@ -144,6 +149,7 @@ cpc.com.tw
 cpf.gov.sg
 cpttm.org.mo
 cqjsaq.com
+craer.com
 crcbank.com
 crhk.com.hk
 csa.gov.sg
@@ -166,7 +172,6 @@ cwb.gov.tw
 cxexpress.com
 cyberctm.com
 cycg.gov.tw
-czxiu.com
 daangn.com
 daegu.go.kr
 daejeon.go.kr
@@ -178,8 +183,8 @@ dbs.com.hk
 dbs.com.sg
 dcard.tw
 dcinside.com
+dedeadmin.com
 dgbas.gov.tw
-diagram.jd.com
 dicj.gov.mo
 digital.go.jp
 dimbuy.com
@@ -190,6 +195,7 @@ dmm.com
 docomo.ne.jp
 donga.com
 doosan.com
+dragonfly.fm
 dsal.gov.mo
 dsat.gov.mo
 dsedj.gov.mo
@@ -221,10 +227,10 @@ ettoday.net
 exmoo.com
 ey.gov.tw
 eyoucms.com
-fadior.cc
 fairprice.com.sg
 family.com.tw
 familymart.com.tw
+fanuc.com.cn
 fastretailing.com
 fdct.gov.mo
 fetnet.net
@@ -325,9 +331,11 @@ hkt.com
 hktvmall.com
 hku.hk
 hl.gov.tw
+hngwzk.com
 homeplus.co.kr
 honda.co.jp
 hongkongairlines.com
+hongkongdaily.net
 hongkongpost.hk
 hsbc.com.hk
 hsinchu.gov.tw
@@ -353,6 +361,7 @@ ifp.gov.mo
 iftm.edu.mo
 ilc.gov.tw
 imda.gov.sg
+imgbed.link
 immigration.gov.tw
 incheon.go.kr
 incheonairport.kr
@@ -365,28 +374,28 @@ ipm.edu.mo
 iras.gov.sg
 isct.ac.jp
 isd.gov.hk
-item.m.jd.com
 iusm.edu.mo
+iydu.net
 izhangan.com
 jal.co.jp
 japan.go.jp
 japanpost.jp
 jardines.com
 jasso.go.jp
-jcap.m.jd.com
 jcb.co.jp
 jcci.or.jp
 jd.hk
-jdme.jd.com
 jetro.go.jp
 jftc.go.jp
+jianhuasheng.com
+jiequ.art
 jma.go.jp
+jmi.jd.com
 job853.com
 jobkorea.co.kr
 jobsdb.com
 jobstreet.com.sg
 joongang.co.kr
-joyspace.jd.com
 jp-bank.japanpost.jp
 jpix.ad.jp
 jpnap.net
@@ -398,6 +407,7 @@ jr-odekake.net
 jreast.co.jp
 jrkyushu.co.jp
 jslvzhigu.com
+jszlgjg.com
 jtb.co.jp
 jtbc.co.kr
 judicial.gov.tw
@@ -408,7 +418,6 @@ kakao.com
 kakaobank.com
 kakaot.com
 kakaotalk.com
-kaniuquan.com
 kantei.go.jp
 kaohsiung.gov.tw
 kbanknow.com
@@ -462,7 +471,6 @@ lihkg.com
 line.me
 linebank.com.tw
 liontravel.com
-list.jd.com
 livedoor.jp
 ln.edu.hk
 lolipop.jp
@@ -496,7 +504,7 @@ macaupost.gov.mo
 macautourism.gov.mo
 maff.go.jp
 mainichi.jp
-mars.jd.com
+mapi.m.jd.com
 mas.gov.sg
 mastvnet.com
 matsu.gov.tw
@@ -515,6 +523,7 @@ metro.tokyo.lg.jp
 mext.go.jp
 mfa.gov.sg
 mfood.mo
+mggtech.vip
 mgto.gov.mo
 mha.gov.sg
 mhlw.go.jp
@@ -566,7 +575,6 @@ mtel.mo
 mti.gov.sg
 mtr.com.hk
 muji.com
-music.163.com
 musinsa.com
 must.edu.mo
 myfone.com.tw
@@ -602,6 +610,7 @@ nintendo.co.jp
 nipponexpress.com
 nissen.co.jp
 nitori-net.jp
+nnsqr.com
 nomura.co.jp
 nonghyup.com
 nownews.com
@@ -661,7 +670,6 @@ pref.kanagawa.jp
 pref.osaka.lg.jp
 pref.saitama.lg.jp
 president.gov.tw
-pro.m.jd.com
 propertyguru.com.sg
 psa.sg
 psc.go.jp
@@ -672,6 +680,7 @@ pub.gov.sg
 qgwzjs.com
 qoo10.sg
 quanta.com.tw
+quzhuanxiang.com
 rakuten.co.jp
 reconstruction.go.jp
 resona-gr.co.jp
@@ -712,6 +721,7 @@ sfu.edu.hk
 sgix.sg
 sgnic.sg
 sgx.com
+sh1011.com
 shinhan.com
 shinsegae.com
 shopee.sg
@@ -743,7 +753,6 @@ smtown.com
 smu.edu.sg
 snu.ac.kr
 softbank.jp
-sogou.com
 sony.co.jp
 sooplive.co.kr
 souche.com
@@ -762,7 +771,9 @@ stpaul.org.hk
 straitstimes.com
 streetdirectory.com
 stsp.gov.tw
+suiyifa.com
 suntory.co.jp
+sunyuejiao.xyz
 sutd.edu.sg
 suumo.jp
 t-cat.com.tw
@@ -860,17 +871,18 @@ wheelockcompany.com
 winglungbank.com
 winkkie.com
 wooribank.com
-wxtyyy.com
+wp.jun2020.com
+www.sunyuejiao.xyz
 xiecheng.com
 xmzgxcl.com
 xn--fiqs8sr9ge7eb4b28vo92a.com
-xpcha.com
 xserver.ne.jp
 yahoo.co.jp
 yahoo.com.hk
 yahoo.com.tw
 yamada-denki.jp
 yanolja.com
+yaozhizhu.com
 yata.hk
 yes123.com.tw
 yes24.com
@@ -878,6 +890,7 @@ yesstyle.com
 ygentertainment.com
 ygfamily.com
 ygselect.com
+ygym.org
 yilan.gov.tw
 ymobile.jp
 yna.co.kr
@@ -885,17 +898,21 @@ yodobashi.com
 yomiuri.co.jp
 yonsei.ac.kr
 youbike.com.tw
+yovyuan.com
 yp.mo
 yuantabank.com.tw
-yubaike.com
 yuelvxing.com
 yuncha.com
 yunlin.gov.tw
 yywt.online
 za.group
 zaobao.com.sg
-zjlib.com
+zgbywl.com
+zgwlwx.com
+zhjxwh.com
+zjgqt.org
 zkzbkj.com
+zoofon.com
 zozo.jp
 zshandsome.com
 zxkq022.com

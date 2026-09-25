@@ -1,7 +1,7 @@
 # RuleNova — Global (HK/TW/MO/JP/KR/SG)
 # Variant  : domain
 # Format   : Surge RULE-SET
-# Generated: 2026-09-21T12:23:11Z
+# Generated: 2026-09-25T13:30:02Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -22,6 +22,7 @@ DOMAIN-SUFFIX,6xw.com
 DOMAIN-SUFFIX,7-11.com.tw
 DOMAIN-SUFFIX,7-eleven.com.tw
 DOMAIN-SUFFIX,8world.com
+DOMAIN-SUFFIX,985900.com
 DOMAIN-SUFFIX,99.co
 DOMAIN-SUFFIX,99166.com
 DOMAIN-SUFFIX,aastocks.com
@@ -60,12 +61,15 @@ DOMAIN-SUFFIX,banksalad.com
 DOMAIN-SUFFIX,bastillepost.com
 DOMAIN-SUFFIX,bcc.com.tw
 DOMAIN-SUFFIX,bcm.com.mo
+DOMAIN-SUFFIX,beileimaoedu.com
+DOMAIN-SUFFIX,bh568.com
 DOMAIN-SUFFIX,bhc.co.kr
 DOMAIN-SUFFIX,bianminwang.com
 DOMAIN-SUFFIX,biccamera.com
 DOMAIN-SUFFIX,bigbigchannel.com.hk
 DOMAIN-SUFFIX,biohyalux.com
 DOMAIN-SUFFIX,bk.mufg.jp
+DOMAIN-SUFFIX,blueskystudy.com
 DOMAIN-SUFFIX,bnext.com.tw
 DOMAIN-SUFFIX,bnm.com.mo
 DOMAIN-SUFFIX,bnu.com.mo
@@ -94,6 +98,7 @@ DOMAIN-SUFFIX,cathaybk.com.tw
 DOMAIN-SUFFIX,cathaylife.com.tw
 DOMAIN-SUFFIX,cathaypacific.com
 DOMAIN-SUFFIX,cbc.gov.tw
+DOMAIN-SUFFIX,cbiec.net
 DOMAIN-SUFFIX,ccac.org.mo
 DOMAIN-SUFFIX,cd.gov.mo
 DOMAIN-SUFFIX,cedb.gov.hk
@@ -144,6 +149,7 @@ DOMAIN-SUFFIX,cpc.com.tw
 DOMAIN-SUFFIX,cpf.gov.sg
 DOMAIN-SUFFIX,cpttm.org.mo
 DOMAIN-SUFFIX,cqjsaq.com
+DOMAIN-SUFFIX,craer.com
 DOMAIN-SUFFIX,crcbank.com
 DOMAIN-SUFFIX,crhk.com.hk
 DOMAIN-SUFFIX,csa.gov.sg
@@ -166,7 +172,6 @@ DOMAIN-SUFFIX,cwb.gov.tw
 DOMAIN-SUFFIX,cxexpress.com
 DOMAIN-SUFFIX,cyberctm.com
 DOMAIN-SUFFIX,cycg.gov.tw
-DOMAIN-SUFFIX,czxiu.com
 DOMAIN-SUFFIX,daangn.com
 DOMAIN-SUFFIX,daegu.go.kr
 DOMAIN-SUFFIX,daejeon.go.kr
@@ -178,8 +183,8 @@ DOMAIN-SUFFIX,dbs.com.hk
 DOMAIN-SUFFIX,dbs.com.sg
 DOMAIN-SUFFIX,dcard.tw
 DOMAIN-SUFFIX,dcinside.com
+DOMAIN-SUFFIX,dedeadmin.com
 DOMAIN-SUFFIX,dgbas.gov.tw
-DOMAIN-SUFFIX,diagram.jd.com
 DOMAIN-SUFFIX,dicj.gov.mo
 DOMAIN-SUFFIX,digital.go.jp
 DOMAIN-SUFFIX,dimbuy.com
@@ -190,6 +195,7 @@ DOMAIN-SUFFIX,dmm.com
 DOMAIN-SUFFIX,docomo.ne.jp
 DOMAIN-SUFFIX,donga.com
 DOMAIN-SUFFIX,doosan.com
+DOMAIN-SUFFIX,dragonfly.fm
 DOMAIN-SUFFIX,dsal.gov.mo
 DOMAIN-SUFFIX,dsat.gov.mo
 DOMAIN-SUFFIX,dsedj.gov.mo
@@ -221,10 +227,10 @@ DOMAIN-SUFFIX,ettoday.net
 DOMAIN-SUFFIX,exmoo.com
 DOMAIN-SUFFIX,ey.gov.tw
 DOMAIN-SUFFIX,eyoucms.com
-DOMAIN-SUFFIX,fadior.cc
 DOMAIN-SUFFIX,fairprice.com.sg
 DOMAIN-SUFFIX,family.com.tw
 DOMAIN-SUFFIX,familymart.com.tw
+DOMAIN-SUFFIX,fanuc.com.cn
 DOMAIN-SUFFIX,fastretailing.com
 DOMAIN-SUFFIX,fdct.gov.mo
 DOMAIN-SUFFIX,fetnet.net
@@ -325,9 +331,11 @@ DOMAIN-SUFFIX,hkt.com
 DOMAIN-SUFFIX,hktvmall.com
 DOMAIN-SUFFIX,hku.hk
 DOMAIN-SUFFIX,hl.gov.tw
+DOMAIN-SUFFIX,hngwzk.com
 DOMAIN-SUFFIX,homeplus.co.kr
 DOMAIN-SUFFIX,honda.co.jp
 DOMAIN-SUFFIX,hongkongairlines.com
+DOMAIN-SUFFIX,hongkongdaily.net
 DOMAIN-SUFFIX,hongkongpost.hk
 DOMAIN-SUFFIX,hsbc.com.hk
 DOMAIN-SUFFIX,hsinchu.gov.tw
@@ -353,6 +361,7 @@ DOMAIN-SUFFIX,ifp.gov.mo
 DOMAIN-SUFFIX,iftm.edu.mo
 DOMAIN-SUFFIX,ilc.gov.tw
 DOMAIN-SUFFIX,imda.gov.sg
+DOMAIN-SUFFIX,imgbed.link
 DOMAIN-SUFFIX,immigration.gov.tw
 DOMAIN-SUFFIX,incheon.go.kr
 DOMAIN-SUFFIX,incheonairport.kr
@@ -365,28 +374,28 @@ DOMAIN-SUFFIX,ipm.edu.mo
 DOMAIN-SUFFIX,iras.gov.sg
 DOMAIN-SUFFIX,isct.ac.jp
 DOMAIN-SUFFIX,isd.gov.hk
-DOMAIN-SUFFIX,item.m.jd.com
 DOMAIN-SUFFIX,iusm.edu.mo
+DOMAIN-SUFFIX,iydu.net
 DOMAIN-SUFFIX,izhangan.com
 DOMAIN-SUFFIX,jal.co.jp
 DOMAIN-SUFFIX,japan.go.jp
 DOMAIN-SUFFIX,japanpost.jp
 DOMAIN-SUFFIX,jardines.com
 DOMAIN-SUFFIX,jasso.go.jp
-DOMAIN-SUFFIX,jcap.m.jd.com
 DOMAIN-SUFFIX,jcb.co.jp
 DOMAIN-SUFFIX,jcci.or.jp
 DOMAIN-SUFFIX,jd.hk
-DOMAIN-SUFFIX,jdme.jd.com
 DOMAIN-SUFFIX,jetro.go.jp
 DOMAIN-SUFFIX,jftc.go.jp
+DOMAIN-SUFFIX,jianhuasheng.com
+DOMAIN-SUFFIX,jiequ.art
 DOMAIN-SUFFIX,jma.go.jp
+DOMAIN-SUFFIX,jmi.jd.com
 DOMAIN-SUFFIX,job853.com
 DOMAIN-SUFFIX,jobkorea.co.kr
 DOMAIN-SUFFIX,jobsdb.com
 DOMAIN-SUFFIX,jobstreet.com.sg
 DOMAIN-SUFFIX,joongang.co.kr
-DOMAIN-SUFFIX,joyspace.jd.com
 DOMAIN-SUFFIX,jp-bank.japanpost.jp
 DOMAIN-SUFFIX,jpix.ad.jp
 DOMAIN-SUFFIX,jpnap.net
@@ -398,6 +407,7 @@ DOMAIN-SUFFIX,jr-odekake.net
 DOMAIN-SUFFIX,jreast.co.jp
 DOMAIN-SUFFIX,jrkyushu.co.jp
 DOMAIN-SUFFIX,jslvzhigu.com
+DOMAIN-SUFFIX,jszlgjg.com
 DOMAIN-SUFFIX,jtb.co.jp
 DOMAIN-SUFFIX,jtbc.co.kr
 DOMAIN-SUFFIX,judicial.gov.tw
@@ -408,7 +418,6 @@ DOMAIN-SUFFIX,kakao.com
 DOMAIN-SUFFIX,kakaobank.com
 DOMAIN-SUFFIX,kakaot.com
 DOMAIN-SUFFIX,kakaotalk.com
-DOMAIN-SUFFIX,kaniuquan.com
 DOMAIN-SUFFIX,kantei.go.jp
 DOMAIN-SUFFIX,kaohsiung.gov.tw
 DOMAIN-SUFFIX,kbanknow.com
@@ -462,7 +471,6 @@ DOMAIN-SUFFIX,lihkg.com
 DOMAIN-SUFFIX,line.me
 DOMAIN-SUFFIX,linebank.com.tw
 DOMAIN-SUFFIX,liontravel.com
-DOMAIN-SUFFIX,list.jd.com
 DOMAIN-SUFFIX,livedoor.jp
 DOMAIN-SUFFIX,ln.edu.hk
 DOMAIN-SUFFIX,lolipop.jp
@@ -496,7 +504,7 @@ DOMAIN-SUFFIX,macaupost.gov.mo
 DOMAIN-SUFFIX,macautourism.gov.mo
 DOMAIN-SUFFIX,maff.go.jp
 DOMAIN-SUFFIX,mainichi.jp
-DOMAIN-SUFFIX,mars.jd.com
+DOMAIN-SUFFIX,mapi.m.jd.com
 DOMAIN-SUFFIX,mas.gov.sg
 DOMAIN-SUFFIX,mastvnet.com
 DOMAIN-SUFFIX,matsu.gov.tw
@@ -515,6 +523,7 @@ DOMAIN-SUFFIX,metro.tokyo.lg.jp
 DOMAIN-SUFFIX,mext.go.jp
 DOMAIN-SUFFIX,mfa.gov.sg
 DOMAIN-SUFFIX,mfood.mo
+DOMAIN-SUFFIX,mggtech.vip
 DOMAIN-SUFFIX,mgto.gov.mo
 DOMAIN-SUFFIX,mha.gov.sg
 DOMAIN-SUFFIX,mhlw.go.jp
@@ -566,7 +575,6 @@ DOMAIN-SUFFIX,mtel.mo
 DOMAIN-SUFFIX,mti.gov.sg
 DOMAIN-SUFFIX,mtr.com.hk
 DOMAIN-SUFFIX,muji.com
-DOMAIN-SUFFIX,music.163.com
 DOMAIN-SUFFIX,musinsa.com
 DOMAIN-SUFFIX,must.edu.mo
 DOMAIN-SUFFIX,myfone.com.tw
@@ -602,6 +610,7 @@ DOMAIN-SUFFIX,nintendo.co.jp
 DOMAIN-SUFFIX,nipponexpress.com
 DOMAIN-SUFFIX,nissen.co.jp
 DOMAIN-SUFFIX,nitori-net.jp
+DOMAIN-SUFFIX,nnsqr.com
 DOMAIN-SUFFIX,nomura.co.jp
 DOMAIN-SUFFIX,nonghyup.com
 DOMAIN-SUFFIX,nownews.com
@@ -661,7 +670,6 @@ DOMAIN-SUFFIX,pref.kanagawa.jp
 DOMAIN-SUFFIX,pref.osaka.lg.jp
 DOMAIN-SUFFIX,pref.saitama.lg.jp
 DOMAIN-SUFFIX,president.gov.tw
-DOMAIN-SUFFIX,pro.m.jd.com
 DOMAIN-SUFFIX,propertyguru.com.sg
 DOMAIN-SUFFIX,psa.sg
 DOMAIN-SUFFIX,psc.go.jp
@@ -672,6 +680,7 @@ DOMAIN-SUFFIX,pub.gov.sg
 DOMAIN-SUFFIX,qgwzjs.com
 DOMAIN-SUFFIX,qoo10.sg
 DOMAIN-SUFFIX,quanta.com.tw
+DOMAIN-SUFFIX,quzhuanxiang.com
 DOMAIN-SUFFIX,rakuten.co.jp
 DOMAIN-SUFFIX,reconstruction.go.jp
 DOMAIN-SUFFIX,resona-gr.co.jp
@@ -712,6 +721,7 @@ DOMAIN-SUFFIX,sfu.edu.hk
 DOMAIN-SUFFIX,sgix.sg
 DOMAIN-SUFFIX,sgnic.sg
 DOMAIN-SUFFIX,sgx.com
+DOMAIN-SUFFIX,sh1011.com
 DOMAIN-SUFFIX,shinhan.com
 DOMAIN-SUFFIX,shinsegae.com
 DOMAIN-SUFFIX,shopee.sg
@@ -743,7 +753,6 @@ DOMAIN-SUFFIX,smtown.com
 DOMAIN-SUFFIX,smu.edu.sg
 DOMAIN-SUFFIX,snu.ac.kr
 DOMAIN-SUFFIX,softbank.jp
-DOMAIN-SUFFIX,sogou.com
 DOMAIN-SUFFIX,sony.co.jp
 DOMAIN-SUFFIX,sooplive.co.kr
 DOMAIN-SUFFIX,souche.com
@@ -762,7 +771,9 @@ DOMAIN-SUFFIX,stpaul.org.hk
 DOMAIN-SUFFIX,straitstimes.com
 DOMAIN-SUFFIX,streetdirectory.com
 DOMAIN-SUFFIX,stsp.gov.tw
+DOMAIN-SUFFIX,suiyifa.com
 DOMAIN-SUFFIX,suntory.co.jp
+DOMAIN-SUFFIX,sunyuejiao.xyz
 DOMAIN-SUFFIX,sutd.edu.sg
 DOMAIN-SUFFIX,suumo.jp
 DOMAIN-SUFFIX,t-cat.com.tw
@@ -860,17 +871,18 @@ DOMAIN-SUFFIX,wheelockcompany.com
 DOMAIN-SUFFIX,winglungbank.com
 DOMAIN-SUFFIX,winkkie.com
 DOMAIN-SUFFIX,wooribank.com
-DOMAIN-SUFFIX,wxtyyy.com
+DOMAIN-SUFFIX,wp.jun2020.com
+DOMAIN-SUFFIX,www.sunyuejiao.xyz
 DOMAIN-SUFFIX,xiecheng.com
 DOMAIN-SUFFIX,xmzgxcl.com
 DOMAIN-SUFFIX,xn--fiqs8sr9ge7eb4b28vo92a.com
-DOMAIN-SUFFIX,xpcha.com
 DOMAIN-SUFFIX,xserver.ne.jp
 DOMAIN-SUFFIX,yahoo.co.jp
 DOMAIN-SUFFIX,yahoo.com.hk
 DOMAIN-SUFFIX,yahoo.com.tw
 DOMAIN-SUFFIX,yamada-denki.jp
 DOMAIN-SUFFIX,yanolja.com
+DOMAIN-SUFFIX,yaozhizhu.com
 DOMAIN-SUFFIX,yata.hk
 DOMAIN-SUFFIX,yes123.com.tw
 DOMAIN-SUFFIX,yes24.com
@@ -878,6 +890,7 @@ DOMAIN-SUFFIX,yesstyle.com
 DOMAIN-SUFFIX,ygentertainment.com
 DOMAIN-SUFFIX,ygfamily.com
 DOMAIN-SUFFIX,ygselect.com
+DOMAIN-SUFFIX,ygym.org
 DOMAIN-SUFFIX,yilan.gov.tw
 DOMAIN-SUFFIX,ymobile.jp
 DOMAIN-SUFFIX,yna.co.kr
@@ -885,17 +898,21 @@ DOMAIN-SUFFIX,yodobashi.com
 DOMAIN-SUFFIX,yomiuri.co.jp
 DOMAIN-SUFFIX,yonsei.ac.kr
 DOMAIN-SUFFIX,youbike.com.tw
+DOMAIN-SUFFIX,yovyuan.com
 DOMAIN-SUFFIX,yp.mo
 DOMAIN-SUFFIX,yuantabank.com.tw
-DOMAIN-SUFFIX,yubaike.com
 DOMAIN-SUFFIX,yuelvxing.com
 DOMAIN-SUFFIX,yuncha.com
 DOMAIN-SUFFIX,yunlin.gov.tw
 DOMAIN-SUFFIX,yywt.online
 DOMAIN-SUFFIX,za.group
 DOMAIN-SUFFIX,zaobao.com.sg
-DOMAIN-SUFFIX,zjlib.com
+DOMAIN-SUFFIX,zgbywl.com
+DOMAIN-SUFFIX,zgwlwx.com
+DOMAIN-SUFFIX,zhjxwh.com
+DOMAIN-SUFFIX,zjgqt.org
 DOMAIN-SUFFIX,zkzbkj.com
+DOMAIN-SUFFIX,zoofon.com
 DOMAIN-SUFFIX,zozo.jp
 DOMAIN-SUFFIX,zshandsome.com
 DOMAIN-SUFFIX,zxkq022.com

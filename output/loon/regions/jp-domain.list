@@ -2,7 +2,7 @@
 # Variant  : domain
 # Format   : Loon
 # Policy   : JP
-# Generated: 2026-09-21T12:23:11Z
+# Generated: 2026-09-25T13:30:02Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -95,7 +95,6 @@ DOMAIN-SUFFIX,mlit.go.jp,JP
 DOMAIN-SUFFIX,mod.go.jp,JP
 DOMAIN-SUFFIX,mofa.go.jp,JP
 DOMAIN-SUFFIX,muji.com,JP
-DOMAIN-SUFFIX,music.163.com,JP
 DOMAIN-SUFFIX,navitime.co.jp,JP
 DOMAIN-SUFFIX,nayuki.com,JP
 DOMAIN-SUFFIX,nec.co.jp,JP

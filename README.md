@@ -285,10 +285,10 @@ The script understands three APIs — switch the URL without changing the script
 | API URL | Free limit (per exit IP) | Notes |
 |---------|--------------------------|-------|
 | `https://api.ip.sb/geoip` | 100 requests / minute | **Recommended**: HTTPS, recovers within a minute |
-| `http://ip-api.com/json/?lang=zh-CN` | 45 requests / minute, 1 h block if exceeded | HTTP only; Chinese place names |
+| `http://ip-api.com/json/` | 45 requests / minute, 1 h block if exceeded | HTTP only |
 | `https://ipwho.is/` | 1,000 requests / day, 24 h block if exceeded | Not recommended for shared nodes |
 
-The script is served through jsDelivr, which is far more reachable from mainland China than raw.githubusercontent.com — important because Quantumult X fetches it before any proxy is up. The geo data comes from the respective API providers; their free tiers are for non-commercial use.
+The script is served through jsDelivr, which is reachable in many networks where raw.githubusercontent.com is blocked or slow — important because Quantumult X fetches it before any proxy is up. The geo data comes from the respective API providers; their free tiers are for non-commercial use.
 
 ## Update schedule
 

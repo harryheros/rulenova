@@ -41,6 +41,27 @@ const CASES = [
 ];
 
 let failed = 0;
+
+// 0. Syntax must be plain ES5. Quantumult X's engine rejects parts of modern
+//    syntax (arrow functions, template literals, spread, ...), and a script
+//    it cannot parse never runs — the result is simply blank. Node accepts all
+//    of it, so behaviour tests alone cannot catch this. Uses the acorn parser
+//    bundled with Node.
+const { execFileSync } = require("child_process");
+for (const file of ["GeoCheck.js", "Probe.js"]) {
+  const full = path.join(__dirname, file);
+  if (!fs.existsSync(full)) continue;
+  try {
+    execFileSync(process.execPath, ["--expose-internals", "-e",
+      'const acorn = require("internal/deps/acorn/acorn/dist/acorn");' +
+      'acorn.parse(require("fs").readFileSync(process.argv[1], "utf8"), { ecmaVersion: 5 });',
+      full], { stdio: "pipe" });
+  } catch (e) {
+    failed++;
+    const msg = String(e.stderr || e.message).split("\n").find((l) => /SyntaxError|reserved|Unexpected/.test(l)) || e.message;
+    console.log(`FAIL ${file}: not plain ES5 — ${msg.trim()}`);
+  }
+}
 function runIn(ctx, name, resp, check, label) {
   let out = null, calls = 0;
   if (resp === undefined) delete ctx.$response; else ctx.$response = resp;

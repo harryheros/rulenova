@@ -260,6 +260,36 @@ python3 sources/scripts/validate_output.py
 
 ---
 
+## Quantumult X: node location check (GeoCheck)
+
+Shows each node's exit country, city, ISP and ASN in Quantumult X. Add to the `[general]` section:
+
+```ini
+geo_location_checker=https://api.ip.sb/geoip, https://cdn.jsdelivr.net/gh/harryheros/rulenova@main/extras/quantumult-x/GeoCheck.js
+```
+
+**Why another geo script?** The lookup is sent *through* each node, from the node's exit IP — which airport nodes share between many users. Free geo APIs limit requests per IP, so on popular nodes other scripts often show nothing, which looks exactly like a dead node. GeoCheck treats any answer from the API as proof the node works:
+
+| API answer | GeoCheck shows |
+|------------|----------------|
+| Location data | Flag, country, city · ISP (details: IP, ASN, time zone) |
+| Rate limited (HTTP 429 / quota) | ✅ Node OK · Geo service rate-limited |
+| No location for this IP | ✅ Node OK · No location data |
+| Unreadable answer (e.g. an error page) | ✅ Node OK · Invalid geo data |
+| No HTTP response at all | ❌ No response |
+
+"Node OK" is only shown when an HTTP response actually came back through the node.
+
+The script understands three APIs — switch the URL without changing the script:
+
+| API URL | Free limit (per exit IP) | Notes |
+|---------|--------------------------|-------|
+| `https://api.ip.sb/geoip` | 100 requests / minute | **Recommended**: HTTPS, recovers within a minute |
+| `http://ip-api.com/json/?lang=zh-CN` | 45 requests / minute, 1 h block if exceeded | HTTP only; Chinese place names |
+| `https://ipwho.is/` | 1,000 requests / day, 24 h block if exceeded | Not recommended for shared nodes |
+
+The script is served through jsDelivr, which is far more reachable from mainland China than raw.githubusercontent.com — important because Quantumult X fetches it before any proxy is up. The geo data comes from the respective API providers; their free tiers are for non-commercial use.
+
 ## Update schedule
 
 Every Monday 06:00 UTC — 4 hours after IPNova and DomainNova complete their weekly update.

@@ -192,14 +192,20 @@ function main(status, body) {
 
   if (g) {
     const country = g.country || g.cc || TEXT.unknown;
-    const place = clean(g.region, g.city);
-    const where =
-      place && place.toLowerCase() !== String(country).toLowerCase() ? place : "";
     const who = provider(g) || TEXT.unknown;
 
+    // The title is the most visible line in the node list, so it shows the
+    // most distinguishing information: the city (or region). Several nodes
+    // in one country (Los Angeles / San Jose / Seattle) would otherwise all
+    // read "United States". City-states (Hong Kong, Singapore, Macau) where
+    // the city equals the country show the country once.
+    const place = String(g.city || g.region || "").trim();
+    const sameAsCountry =
+      !place || place.toLowerCase() === String(country).toLowerCase();
+
     $done({
-      title: `${flag(g.cc)} ${country}`,
-      subtitle: where ? `${where} · ${who}` : who,
+      title: `${flag(g.cc)} ${sameAsCountry ? country : place}`,
+      subtitle: sameAsCountry ? who : `${country} · ${who}`,
       ip: g.ip || "",
       description: [
         `${TEXT.ok} ✅`,

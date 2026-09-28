@@ -30,14 +30,35 @@
  */
 
 /*
- * Everything runs inside one function scope (IIFE). Quantumult X can
- * evaluate this script repeatedly in the SAME JavaScript context — once per
- * node. Top-level `const`/`let` would then throw "Identifier has already
- * been declared" from the second node on, the script would stop before
- * $done(), and those nodes would show nothing.
+ * Everything runs inside one function scope (IIFE), so no names leak into
+ * the global scope. This is defensive: an engine that re-evaluated the
+ * script in a shared context would otherwise hit "Identifier has already
+ * been declared" on top-level const/let.
  */
 (function () {
 "use strict";
+
+  const VERSION = "1.2.0";
+
+
+  // Diagnostics go to the Quantumult X log, so a report of "nothing is
+
+  // shown" can be traced even when no result is displayed.
+
+  function log(msg) {
+
+    try {
+
+      if (typeof console !== "undefined" && console.log) {
+
+        console.log(`[GeoCheck ${VERSION}] ${msg}`);
+
+      }
+
+    } catch (e) {}
+
+  }
+
 
   const TEXT = {
     ok: "Node OK",
@@ -225,6 +246,7 @@
           g.asn ? `ASN: ${asnText(g.asn)} ${g.org || ""}`.trim() : "",
           g.tz ? `Time zone: ${g.tz}` : "",
           `API: ${g.source}`,
+          `GeoCheck ${VERSION}`,
         ]
           .filter(Boolean)
           .join("\n"),
@@ -242,6 +264,7 @@
         description: [
           kind === "limited" ? TEXT.limitedHint : TEXT.refusedHint,
           httpLine(status),
+          `GeoCheck ${VERSION}`,
         ]
           .filter(Boolean)
           .join("\n"),
@@ -255,7 +278,7 @@
       title: `✅ ${TEXT.ok}`,
       subtitle: TEXT.badData,
       ip: "",
-      description: [TEXT.badDataHint, httpLine(status)].filter(Boolean).join("\n"),
+      description: [TEXT.badDataHint, httpLine(status), `GeoCheck ${VERSION}`].filter(Boolean).join("\n"),
     });
   }
 
@@ -264,7 +287,8 @@
       title: `❌ ${TEXT.noResponse}`,
       subtitle: TEXT.noResponse,
       ip: "",
-      description: TEXT.noResponseHint,
+      description: `${TEXT.noResponseHint}
+GeoCheck ${VERSION}`,
     });
   }
 
@@ -272,17 +296,31 @@
   // actually arrived (status > 0); without one, the node may really be down.
   const STATUS = Number((typeof $response !== "undefined" && $response && $response.statusCode) || 0);
 
+  log(
+
+    "status=" + STATUS + " body=" +
+
+      (typeof $response !== "undefined" && $response && $response.body
+
+        ? String($response.body).slice(0, 160)
+
+        : "(none)")
+
+  );
+
+
   if (!STATUS) {
     noResponse();
   } else {
     try {
       main(STATUS, $response.body);
     } catch (e) {
+      log(`error: ${e && e.stack ? e.stack : e}`);
       $done({
         title: `✅ ${TEXT.ok}`,
         subtitle: TEXT.badData,
         ip: "",
-        description: [TEXT.badDataHint, httpLine(STATUS), String(e)]
+        description: [TEXT.badDataHint, httpLine(STATUS), String(e), `GeoCheck ${VERSION}`]
           .filter(Boolean)
           .join("\n"),
       });

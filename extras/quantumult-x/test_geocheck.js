@@ -2,9 +2,8 @@
 /*
  * Tests for GeoCheck.js — run with: node extras/quantumult-x/test_geocheck.js
  *
- * Covers every response type AND repeated evaluation in one shared JS
- * context (Quantumult X runs the script once per node in the same engine;
- * the v1 script crashed there from the second node on and showed nothing).
+ * Covers every response type, and repeated evaluation in one shared JS
+ * context (defensive: the script must not depend on a fresh global scope).
  */
 const fs = require("fs"), vm = require("vm"), path = require("path");
 const src = fs.readFileSync(path.join(__dirname, "GeoCheck.js"), "utf8");

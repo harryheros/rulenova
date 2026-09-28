@@ -1,7 +1,7 @@
 # RuleNova — South Korea
 # Variant: ip
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-09-28T09:43:56Z
+# Generated: 2026-09-28T13:20:14Z
 payload:
   - 1.11.0.0/16
   - 1.16.0.0/14

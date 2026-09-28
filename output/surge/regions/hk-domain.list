@@ -1,14 +1,13 @@
 # RuleNova — Hong Kong
 # Variant  : domain
 # Format   : Surge RULE-SET
-# Generated: 2026-09-25T13:30:02Z
+# Generated: 2026-09-28T09:43:56Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
 DOMAIN-SUFFIX,163.net
 DOMAIN-SUFFIX,321009.com
 DOMAIN-SUFFIX,3hk.hk
-DOMAIN-SUFFIX,985900.com
 DOMAIN-SUFFIX,99166.com
 DOMAIN-SUFFIX,aastocks.com
 DOMAIN-SUFFIX,alipay.hk
@@ -45,11 +44,14 @@ DOMAIN-SUFFIX,ctgoodjobs.hk
 DOMAIN-SUFFIX,cuhk.edu.hk
 DOMAIN-SUFFIX,cuhkmc.hk
 DOMAIN-SUFFIX,cxexpress.com
+DOMAIN-SUFFIX,cyflscb.com
 DOMAIN-SUFFIX,dahsing.com
 DOMAIN-SUFFIX,dbs.com.hk
+DOMAIN-SUFFIX,diagram.jd.com
 DOMAIN-SUFFIX,dimbuy.com
 DOMAIN-SUFFIX,discuss.com.hk
 DOMAIN-SUFFIX,dragonfly.fm
+DOMAIN-SUFFIX,dtstudyclub.cn
 DOMAIN-SUFFIX,edb.gov.hk
 DOMAIN-SUFFIX,eduhk.hk
 DOMAIN-SUFFIX,fanuc.com.cn
@@ -103,20 +105,24 @@ DOMAIN-SUFFIX,hyab.gov.hk
 DOMAIN-SUFFIX,icac.org.hk
 DOMAIN-SUFFIX,info.gov.hk
 DOMAIN-SUFFIX,isd.gov.hk
+DOMAIN-SUFFIX,item.m.jd.com
 DOMAIN-SUFFIX,jardines.com
+DOMAIN-SUFFIX,jcap.m.jd.com
 DOMAIN-SUFFIX,jd.hk
+DOMAIN-SUFFIX,jdme.jd.com
 DOMAIN-SUFFIX,jianhuasheng.com
 DOMAIN-SUFFIX,jiequ.art
-DOMAIN-SUFFIX,jmi.jd.com
 DOMAIN-SUFFIX,job853.com
 DOMAIN-SUFFIX,jobsdb.com
+DOMAIN-SUFFIX,joyspace.jd.com
 DOMAIN-SUFFIX,jszlgjg.com
 DOMAIN-SUFFIX,klook.com
 DOMAIN-SUFFIX,lcsd.gov.hk
 DOMAIN-SUFFIX,lihkg.com
+DOMAIN-SUFFIX,list.jd.com
 DOMAIN-SUFFIX,ln.edu.hk
 DOMAIN-SUFFIX,lwb.gov.hk
-DOMAIN-SUFFIX,mapi.m.jd.com
+DOMAIN-SUFFIX,mars.jd.com
 DOMAIN-SUFFIX,mclcinema.com
 DOMAIN-SUFFIX,mggtech.vip
 DOMAIN-SUFFIX,mingpao.com
@@ -130,6 +136,7 @@ DOMAIN-SUFFIX,on.cc
 DOMAIN-SUFFIX,openrice.com
 DOMAIN-SUFFIX,pccw.com
 DOMAIN-SUFFIX,polyu.edu.hk
+DOMAIN-SUFFIX,pro.m.jd.com
 DOMAIN-SUFFIX,rthk.hk
 DOMAIN-SUFFIX,sb.gov.hk
 DOMAIN-SUFFIX,sc.com
@@ -143,7 +150,6 @@ DOMAIN-SUFFIX,staticfile.org
 DOMAIN-SUFFIX,sth.org.hk
 DOMAIN-SUFFIX,stheadline.com
 DOMAIN-SUFFIX,stpaul.org.hk
-DOMAIN-SUFFIX,sunyuejiao.xyz
 DOMAIN-SUFFIX,takungpao.com
 DOMAIN-SUFFIX,three.com.hk
 DOMAIN-SUFFIX,tmall.hk
@@ -161,7 +167,6 @@ DOMAIN-SUFFIX,westkowloon.hk
 DOMAIN-SUFFIX,wharf.com.hk
 DOMAIN-SUFFIX,wheelockcompany.com
 DOMAIN-SUFFIX,winglungbank.com
-DOMAIN-SUFFIX,www.sunyuejiao.xyz
 DOMAIN-SUFFIX,xmzgxcl.com
 DOMAIN-SUFFIX,yahoo.com.hk
 DOMAIN-SUFFIX,yata.hk

@@ -1,7 +1,7 @@
 # RuleNova — Singapore
 # Variant: combined
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-09-25T13:30:02Z
+# Generated: 2026-09-28T09:43:56Z
 payload:
   - DOMAIN-SUFFIX,13cr.com
   - DOMAIN-SUFFIX,17qzx.com
@@ -21,6 +21,7 @@ payload:
   - DOMAIN-SUFFIX,caas.gov.sg
   - DOMAIN-SUFFIX,carousell.com
   - DOMAIN-SUFFIX,carousell.sg
+  - DOMAIN-SUFFIX,changfengsteeltube.com
   - DOMAIN-SUFFIX,changiairport.com
   - DOMAIN-SUFFIX,channelnewsasia.com
   - DOMAIN-SUFFIX,coldstorage.com.sg
@@ -127,7 +128,6 @@ payload:
   - DOMAIN-SUFFIX,weixinyunduan.com
   - DOMAIN-SUFFIX,wellcee.com
   - DOMAIN-SUFFIX,winkkie.com
-  - DOMAIN-SUFFIX,wp.jun2020.com
   - DOMAIN-SUFFIX,xiecheng.com
   - DOMAIN-SUFFIX,xn--fiqs8sr9ge7eb4b28vo92a.com
   - DOMAIN-SUFFIX,yaozhizhu.com

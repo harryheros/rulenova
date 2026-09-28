@@ -2,7 +2,7 @@
 # Variant  : domain
 # Format   : Loon
 # Policy   : SG
-# Generated: 2026-09-25T13:30:02Z
+# Generated: 2026-09-28T09:43:56Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -24,6 +24,7 @@ DOMAIN-SUFFIX,booyu-import.com,SG
 DOMAIN-SUFFIX,caas.gov.sg,SG
 DOMAIN-SUFFIX,carousell.com,SG
 DOMAIN-SUFFIX,carousell.sg,SG
+DOMAIN-SUFFIX,changfengsteeltube.com,SG
 DOMAIN-SUFFIX,changiairport.com,SG
 DOMAIN-SUFFIX,channelnewsasia.com,SG
 DOMAIN-SUFFIX,coldstorage.com.sg,SG
@@ -130,7 +131,6 @@ DOMAIN-SUFFIX,visitsingapore.com,SG
 DOMAIN-SUFFIX,weixinyunduan.com,SG
 DOMAIN-SUFFIX,wellcee.com,SG
 DOMAIN-SUFFIX,winkkie.com,SG
-DOMAIN-SUFFIX,wp.jun2020.com,SG
 DOMAIN-SUFFIX,xiecheng.com,SG
 DOMAIN-SUFFIX,xn--fiqs8sr9ge7eb4b28vo92a.com,SG
 DOMAIN-SUFFIX,yaozhizhu.com,SG

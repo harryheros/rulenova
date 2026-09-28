@@ -1,7 +1,7 @@
 # RuleNova — Japan
 # Variant: ip
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-09-25T13:30:02Z
+# Generated: 2026-09-28T09:43:56Z
 payload:
   - 1.0.16.0/20
   - 1.0.64.0/18

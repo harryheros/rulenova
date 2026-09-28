@@ -1,7 +1,7 @@
 # RuleNova — Global (HK/TW/MO/JP/KR/SG)
 # Variant: domain
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-09-25T13:30:02Z
+# Generated: 2026-09-28T09:43:56Z
 payload:
   - 104.com.tw
   - 1111.com.tw
@@ -20,7 +20,6 @@ payload:
   - 7-11.com.tw
   - 7-eleven.com.tw
   - 8world.com
-  - 985900.com
   - 99.co
   - 99166.com
   - aastocks.com
@@ -107,6 +106,7 @@ payload:
   - ces.gov.mo
   - cfm.gov.mo
   - cgv.co.kr
+  - changfengsteeltube.com
   - changhua.gov.tw
   - changiairport.com
   - channelnewsasia.com
@@ -170,6 +170,7 @@ payload:
   - cxexpress.com
   - cyberctm.com
   - cycg.gov.tw
+  - cyflscb.com
   - daangn.com
   - daegu.go.kr
   - daejeon.go.kr
@@ -183,6 +184,7 @@ payload:
   - dcinside.com
   - dedeadmin.com
   - dgbas.gov.tw
+  - diagram.jd.com
   - dicj.gov.mo
   - digital.go.jp
   - dimbuy.com
@@ -203,6 +205,7 @@ payload:
   - dsscu.gov.mo
   - dssopt.gov.mo
   - dst.gov.mo
+  - dtstudyclub.cn
   - e-bill.com.tw
   - e-gov.go.jp
   - e-gov.mo
@@ -372,6 +375,7 @@ payload:
   - iras.gov.sg
   - isct.ac.jp
   - isd.gov.hk
+  - item.m.jd.com
   - iusm.edu.mo
   - iydu.net
   - izhangan.com
@@ -380,20 +384,22 @@ payload:
   - japanpost.jp
   - jardines.com
   - jasso.go.jp
+  - jcap.m.jd.com
   - jcb.co.jp
   - jcci.or.jp
   - jd.hk
+  - jdme.jd.com
   - jetro.go.jp
   - jftc.go.jp
   - jianhuasheng.com
   - jiequ.art
   - jma.go.jp
-  - jmi.jd.com
   - job853.com
   - jobkorea.co.kr
   - jobsdb.com
   - jobstreet.com.sg
   - joongang.co.kr
+  - joyspace.jd.com
   - jp-bank.japanpost.jp
   - jpix.ad.jp
   - jpnap.net
@@ -469,6 +475,7 @@ payload:
   - line.me
   - linebank.com.tw
   - liontravel.com
+  - list.jd.com
   - livedoor.jp
   - ln.edu.hk
   - lolipop.jp
@@ -502,7 +509,7 @@ payload:
   - macautourism.gov.mo
   - maff.go.jp
   - mainichi.jp
-  - mapi.m.jd.com
+  - mars.jd.com
   - mas.gov.sg
   - mastvnet.com
   - matsu.gov.tw
@@ -573,6 +580,7 @@ payload:
   - mti.gov.sg
   - mtr.com.hk
   - muji.com
+  - music.163.com
   - musinsa.com
   - must.edu.mo
   - myfone.com.tw
@@ -668,6 +676,7 @@ payload:
   - pref.osaka.lg.jp
   - pref.saitama.lg.jp
   - president.gov.tw
+  - pro.m.jd.com
   - propertyguru.com.sg
   - psa.sg
   - psc.go.jp
@@ -771,7 +780,6 @@ payload:
   - stsp.gov.tw
   - suiyifa.com
   - suntory.co.jp
-  - sunyuejiao.xyz
   - sutd.edu.sg
   - suumo.jp
   - t-cat.com.tw
@@ -869,8 +877,6 @@ payload:
   - winglungbank.com
   - winkkie.com
   - wooribank.com
-  - wp.jun2020.com
-  - www.sunyuejiao.xyz
   - xiecheng.com
   - xmzgxcl.com
   - xn--fiqs8sr9ge7eb4b28vo92a.com

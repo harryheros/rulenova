@@ -4,9 +4,9 @@
     "label": "Global (HK/TW/MO/JP/KR/SG)",
     "variant": "ip",
     "suggested_policy": "Global",
-    "generated": "2026-09-25T13:30:02Z",
+    "generated": "2026-09-28T09:43:56Z",
     "domains": 0,
-    "cidrs": 9300,
+    "cidrs": 9301,
     "source": "https://github.com/harryheros/rulenova"
   },
   "rules": [
@@ -2664,6 +2664,7 @@
         "103.95.206.0/24",
         "103.95.215.0/24",
         "103.95.28.0/22",
+        "103.95.56.0/22",
         "103.95.64.0/22",
         "103.95.76.0/24",
         "103.96.0.0/22",

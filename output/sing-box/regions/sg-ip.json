@@ -4,7 +4,7 @@
     "label": "Singapore",
     "variant": "ip",
     "suggested_policy": "SG",
-    "generated": "2026-09-25T13:30:02Z",
+    "generated": "2026-09-28T09:43:56Z",
     "domains": 0,
     "cidrs": 1660,
     "source": "https://github.com/harryheros/rulenova"

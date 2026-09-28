@@ -1,41 +1,22 @@
 /*
- * RuleNova GeoCheck - Quantumult X geo_location_checker script
+ * RuleNova GeoCheck — Quantumult X geo_location_checker script
  * https://github.com/harryheros/rulenova
  *
  * Usage ([general] section of Quantumult X):
  *   geo_location_checker=http://ip-api.com/json/?lang=en, https://cdn.jsdelivr.net/gh/harryheros/rulenova@main/extras/quantumult-x/GeoCheck.js
  *
- * Why it is different:
- *   The lookup is sent THROUGH each node, from the node's exit IP.
- *   Shared exit IPs can cause free geo APIs to rate-limit requests,
- *   which may otherwise look exactly like a dead node.
- *
- *   GeoCheck therefore distinguishes between:
- *     - location data       when the lookup succeeds
- *     - API rate limiting   when the API answered but refused/limited
- *     - missing location    when the API answered without location data
- *     - invalid response    when the API returned an unsupported format
- *     - no response         when nothing came back at all
- *
- *   Any HTTP response from the geo service proves that the request
- *   reached the service through the current network path. Only then
- *   is the node reported as OK.
- *
- * Supported API responses (switch the URL, keep this script):
- *   http://ip-api.com/json/    recommended - best city coverage, 45 requests/min per IP
- *   https://api.ip.sb/geoip    HTTPS, 100 requests/min per IP, often no city data
+ * Supported API responses:
+ *   http://ip-api.com/json/    recommended — best city coverage, 45 requests/min per IP
+ *   https://api.ip.sb/geoip    HTTPS, 100 requests/min per IP
  *   https://ipwho.is/          1,000 requests/day per IP
- *
- * Compatibility: written in plain ES5 (var, function, string concatenation).
- * Quantumult X's script engine rejects parts of modern syntax; a script it
- * cannot parse never runs at all, which shows up as a blank result.
- * test_geocheck.js enforces ES5 syntax.
  *
  * License: same as the RuleNova repository.
  */
 
 (function () {
-  var VERSION = "1.4.0";
+  "use strict";
+
+  var VERSION = "1.5.0";
 
   var TEXT = {
     ok: "Node OK",
@@ -54,7 +35,6 @@
     unknown: "Unknown"
   };
 
-  // Diagnostics go to the Quantumult X log.
   function log(msg) {
     try {
       if (typeof console !== "undefined" && console.log) {
@@ -75,15 +55,22 @@
     return haystack.indexOf(needle) !== -1;
   }
 
-  // Country code -> flag emoji, built from UTF-16 surrogate pairs
-  // (regional indicator symbols U+1F1E6.. = 0xD83C 0xDDE6..).
+  /*
+   * 安全生成國旗 Emoji：
+   * 優先使用原生 String.fromCodePoint，若不支援或異常則降級為文字標籤 [SG]，
+   * 避免原生 UI 橋接層因代理對解析失敗而觸發全空白崩潰。
+   */
   function flag(cc) {
     var c = str(cc).toUpperCase();
-    if (!/^[A-Z]{2}$/.test(c)) return "\uD83C\uDFF3\uFE0F"; // white flag
-    return (
-      String.fromCharCode(0xd83c, 0xdde6 + c.charCodeAt(0) - 65) +
-      String.fromCharCode(0xd83c, 0xdde6 + c.charCodeAt(1) - 65)
-    );
+    if (!/^[A-Z]{2}$/.test(c)) return "🏳️";
+    try {
+      if (typeof String.fromCodePoint === "function") {
+        var code1 = 0x1f1e6 + c.charCodeAt(0) - 65;
+        var code2 = 0x1f1e6 + c.charCodeAt(1) - 65;
+        return String.fromCodePoint(code1, code2);
+      }
+    } catch (e) {}
+    return "[" + c + "]";
   }
 
   function asnText(asn) {
@@ -91,13 +78,13 @@
     return a ? "AS" + a.replace(/^AS/i, "") : "";
   }
 
-  // Normalize supported API responses into one common structure.
-  // Returns null when the response does not represent a successful lookup.
+  /*
+   * 歸一化 API 回應數據
+   */
   function normalize(d) {
     if (!d || typeof d !== "object") return null;
 
     // ip-api.com
-    // { status, query, country, countryCode, regionName, city, isp, org, as, timezone }
     if ("status" in d && "query" in d) {
       if (d.status !== "success") return null;
       var m = str(d.as).match(/^AS(\d+)\s*(.*)$/);
@@ -105,7 +92,8 @@
         ip: d.query,
         cc: d.countryCode,
         country: d.country,
-        region: d.regionName,
+        // 優先取 regionName，若為空（如部分城市國家）則降級使用 region 代碼
+        region: str(d.regionName) || str(d.region),
         city: d.city,
         isp: d.isp,
         org: d.org || (m ? m[2] : ""),
@@ -116,8 +104,6 @@
     }
 
     // ipwho.is
-    // { success, ip, country, country_code, region, city, timezone: { id },
-    //   connection: { asn, org, isp } }
     if ("success" in d) {
       if (d.success !== true) return null;
       var c = d.connection || {};
@@ -136,8 +122,6 @@
     }
 
     // api.ip.sb/geoip
-    // { ip, country, country_code, region, city, isp, organization, asn,
-    //   asn_organization, timezone }
     if ("ip" in d && ("country_code" in d || "asn" in d)) {
       return {
         ip: d.ip,
@@ -156,9 +140,6 @@
     return null;
   }
 
-  // Classify unsuccessful API responses.
-  //   limited:  rate limit / quota exceeded (HTTP 429/403 or a message saying so)
-  //   refused:  API answered but returned no usable location (e.g. reserved range)
   function failureKind(status, d) {
     if (status === 429 || status === 403) return "limited";
     if (d && typeof d === "object" && (d.status === "fail" || d.success === false)) {
@@ -169,8 +150,6 @@
     return null;
   }
 
-  // One plain provider name ("HKT Limited" + "HKT" -> "HKT Limited");
-  // the organisation, if different, is listed in the details.
   function provider(g) {
     var isp = str(g.isp);
     var org = str(g.org);
@@ -205,16 +184,14 @@
       data = null;
     }
 
-    // 1. Successful HTTP response + recognized geo data.
     var g = status >= 200 && status < 300 ? normalize(data) : null;
 
     if (g) {
       var country = str(g.country) || str(g.cc) || TEXT.unknown;
+      // 城市國家相容逐級降級：city -> region -> country
       var place = str(g.city) || str(g.region) || country;
       var org = str(g.org);
 
-      // Title: flag + city. Subtitle: one plain name (composite subtitles
-      // are avoided for Quantumult X).
       $done({
         title: flag(g.cc) + " " + place,
         subtitle: provider(g) || TEXT.unknown,
@@ -236,11 +213,10 @@
       return;
     }
 
-    // 2. The API responded, but reported a known failure.
     var kind = failureKind(status, data);
     if (kind) {
       $done({
-        title: "\u2705 " + TEXT.ok,
+        title: "✅ " + TEXT.ok,
         subtitle: kind === "limited" ? TEXT.limited : TEXT.refused,
         ip: (data && str(data.query || data.ip)) || "",
         description: lines([
@@ -252,18 +228,14 @@
       return;
     }
 
-    // 3. The API responded, but the response was not recognized
-    //    (e.g. an HTML error page). Still proof the request got through.
     $done({
-      title: "\u2705 " + TEXT.ok,
+      title: "✅ " + TEXT.ok,
       subtitle: TEXT.badData,
       ip: "",
       description: lines([TEXT.badDataHint, httpLine(status), "GeoCheck " + VERSION])
     });
   }
 
-  // Entry point. "Node OK" is only ever reported when an HTTP response
-  // actually arrived (status > 0); without one, the node may really be down.
   var hasResponse = typeof $response !== "undefined" && $response;
   var STATUS = Number((hasResponse && $response.statusCode) || 0);
   var BODY = hasResponse && $response.body ? String($response.body) : "";
@@ -272,7 +244,7 @@
 
   if (!STATUS) {
     $done({
-      title: "\u274C " + TEXT.noResponse,
+      title: "❌ " + TEXT.noResponse,
       subtitle: TEXT.noResponse,
       ip: "",
       description: TEXT.noResponseHint + "\nGeoCheck " + VERSION
@@ -285,7 +257,7 @@
   } catch (e) {
     log("error: " + (e && e.stack ? e.stack : e));
     $done({
-      title: "\u2705 " + TEXT.ok,
+      title: "✅ " + TEXT.ok,
       subtitle: TEXT.badData,
       ip: "",
       description: lines([TEXT.badDataHint, httpLine(STATUS), String(e), "GeoCheck " + VERSION])

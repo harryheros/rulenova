@@ -288,9 +288,9 @@ The script understands three APIs — switch the URL without changing the script
 | `https://api.ip.sb/geoip` | 100 requests / minute | HTTPS, but often has no city data for proxy/datacenter IPs (the title then falls back to the country) |
 | `https://ipwho.is/` | 1,000 requests / day, 24 h block if exceeded | Not recommended for shared nodes |
 
-If a result stays blank, test the connection with the minimal diagnostic script `extras/quantumult-x/Probe.js` (same URL, file name `Probe.js`): its details show the raw API response.
+Tap a node's location to see the details, including the GeoCheck version — useful when reporting a problem.
 
-GeoCheck is plain ES5 JavaScript on purpose — Quantumult X's script engine does not accept all modern syntax, and a script it cannot parse shows nothing. `test_geocheck.js` enforces this in CI.
+GeoCheck follows a few structure rules verified on Quantumult X: `$done()` is called exactly once at the top level of the script (calling it from inside a function left the result blank), the code is plain ES5, and all global names start with `__gc_`. `sources/scripts/test_geocheck.js` enforces these rules in CI.
 
 The script is served through jsDelivr, which is reachable in many networks where raw.githubusercontent.com is blocked or slow — important because Quantumult X fetches it before any proxy is up. The geo data comes from the respective API providers; their free tiers are for non-commercial use.
 

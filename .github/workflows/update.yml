@@ -41,7 +41,7 @@ jobs:
       - name: Run tests
         run: |
           python3 sources/scripts/test_offline.py
-          node extras/quantumult-x/test_geocheck.js
+          node sources/scripts/test_geocheck.js
 
       - name: Build rule sets
         run: |

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * Tests for extras/quantumult-x/GeoCheck.js
+ * Tests for extras/quantumult-x/geocheck.js
  *   node sources/scripts/test_geocheck.js
  *
  * 1. Structure rules learned the hard way on Quantumult X (behaviour tests in
@@ -14,10 +14,36 @@
 const fs = require("fs"), vm = require("vm"), path = require("path");
 const { execFileSync } = require("child_process");
 
-const FILE = path.join(__dirname, "..", "..", "extras", "quantumult-x", "GeoCheck.js");
-const src = fs.readFileSync(FILE, "utf8");
+const ROOT = path.join(__dirname, "..", "..");
+const EXTRAS = path.join(ROOT, "extras", "quantumult-x");
+const FILE = path.join(EXTRAS, "geocheck.js");
 let failed = 0;
 const fail = (msg) => { failed++; console.log("FAIL " + msg); };
+
+// ---- 0. every script URL in the README / script header must match a real
+//         file EXACTLY (URLs are case-sensitive on GitHub and jsDelivr).
+//         Catches renames like GeoCheck.js -> geocheck.js that leave users
+//         with a dead link and a blank result.
+const existing = fs.readdirSync(EXTRAS);
+for (const doc of [path.join(ROOT, "README.md"), FILE]) {
+  if (!fs.existsSync(doc)) continue;
+  const text = fs.readFileSync(doc, "utf8");
+  const refs = text.match(/extras\/quantumult-x\/[A-Za-z0-9_.-]+\.js/g) || [];
+  for (const ref of new Set(refs)) {
+    const name = ref.split("/").pop();
+    if (!existing.includes(name)) {
+      const near = existing.find((f) => f.toLowerCase() === name.toLowerCase());
+      fail(`${path.basename(doc)} links to ${name}, which does not exist` + (near ? ` (the file is ${near} - URLs are case-sensitive)` : ""));
+    }
+  }
+}
+
+if (!fs.existsSync(FILE)) {
+  fail("extras/quantumult-x/geocheck.js is missing");
+  console.log(`\n${failed} check(s) FAILED`);
+  process.exit(1);
+}
+const src = fs.readFileSync(FILE, "utf8");
 
 // ---- 1. structure (AST via the acorn parser bundled with Node, ES5 mode)
 let ast;
@@ -105,4 +131,4 @@ const shared = vm.createContext({});
 for (let round = 1; round <= 2; round++) for (const [name, resp, check] of CASES) run(shared, name, resp, check, `[shared #${round}]`);
 
 if (failed) { console.log(`\n${failed} check(s) FAILED`); process.exit(1); }
-console.log(`GeoCheck: structure OK (ES5, one top-level $done, __gc_ names); ${CASES.length * 3} behaviour checks passed.`);
+console.log(`geocheck.js: links OK, structure OK (ES5, one top-level $done, __gc_ names); ${CASES.length * 3} behaviour checks passed.`);

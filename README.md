@@ -265,7 +265,7 @@ python3 sources/scripts/validate_output.py
 Shows each node's exit country, city, ISP and ASN in Quantumult X. Add to the `[general]` section:
 
 ```ini
-geo_location_checker=http://ip-api.com/json/?lang=en, https://cdn.jsdelivr.net/gh/harryheros/rulenova@main/extras/quantumult-x/GeoCheck.js
+geo_location_checker=http://ip-api.com/json/?lang=en, https://cdn.jsdelivr.net/gh/harryheros/rulenova@main/extras/quantumult-x/geocheck.js
 ```
 
 **Why another geo script?** The lookup is sent *through* each node, from the node's exit IP — which airport nodes share between many users. Free geo APIs limit requests per IP, so on popular nodes other scripts often show nothing, which looks exactly like a dead node. GeoCheck treats any answer from the API as proof the node works:
@@ -288,9 +288,14 @@ The script understands three APIs — switch the URL without changing the script
 | `https://api.ip.sb/geoip` | 100 requests / minute | HTTPS, but often has no city data for proxy/datacenter IPs (the title then falls back to the country) |
 | `https://ipwho.is/` | 1,000 requests / day, 24 h block if exceeded | Not recommended for shared nodes |
 
-Tap a node's location to see the details, including the GeoCheck version — useful when reporting a problem.
+Tap a node's location to see the details, including the GeoCheck version on the last line — useful when reporting a problem.
 
-GeoCheck follows a few structure rules verified on Quantumult X: `$done()` is called exactly once at the top level of the script (calling it from inside a function left the result blank), the code is plain ES5, and all global names start with `__gc_`. `sources/scripts/test_geocheck.js` enforces these rules in CI.
+**If results stay blank or look outdated:**
+
+- The URL is case-sensitive: the file name is `geocheck.js` (all lowercase).
+- Quantumult X keeps its own copy of remote scripts. After an update, restart Quantumult X and check the version in the details. A brand-new URL always forces a fresh download.
+
+GeoCheck uses the conservative structure of long-established Quantumult X scripts: plain ES5, a single `$done()` call at the top level, and `__gc_`-prefixed global names. `sources/scripts/test_geocheck.js` checks this, the behaviour for every response type, and that every script URL in this README matches a real file, in CI.
 
 The script is served through jsDelivr, which is reachable in many networks where raw.githubusercontent.com is blocked or slow — important because Quantumult X fetches it before any proxy is up. The geo data comes from the respective API providers; their free tiers are for non-commercial use.
 

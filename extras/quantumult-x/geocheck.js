@@ -3,7 +3,7 @@
  * https://github.com/harryheros/rulenova
  *
  * Usage ([general] section of Quantumult X):
- *   geo_location_checker=http://ip-api.com/json/?lang=en, https://cdn.jsdelivr.net/gh/harryheros/rulenova@main/extras/quantumult-x/GeoCheck.js
+ *   geo_location_checker=http://ip-api.com/json/?lang=en, https://cdn.jsdelivr.net/gh/harryheros/rulenova@main/extras/quantumult-x/geocheck.js
  *
  * What it shows:
  *   - location data       flag + city, ISP (details: IP, country, region, ASN, time zone)
@@ -22,12 +22,16 @@
  *   https://api.ip.sb/geoip           HTTPS, 100 req/min per IP, often no city data
  *   https://ipwho.is/                 1,000 req/day per IP
  *
- * Structure rules (verified on Quantumult X; enforced by test_geocheck.js):
- *   1. $done() is called exactly once, at the top level, at the very end.
- *      The logic only builds a result object. Calling $done() from inside
- *      a function (or an IIFE) left the result blank in Quantumult X.
+ * Structure (conservative, like long-established Quantumult X scripts;
+ * enforced by sources/scripts/test_geocheck.js):
+ *   1. $done() is called exactly once, at the top level, at the very end;
+ *      the logic only builds a result object.
  *   2. Plain ES5 only (var, function, string concatenation).
  *   3. Every global name starts with __gc_ to avoid clashing with the host.
+ *
+ * Updating: Quantumult X keeps its own copy of remote scripts. After a new
+ * version is released, restart Quantumult X; the version is shown on the
+ * last line of a node's location details.
  *
  * License: same as the RuleNova repository.
  */

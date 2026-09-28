@@ -39,7 +39,9 @@ jobs:
           python-version: "3.13"
 
       - name: Run tests
-        run: python3 sources/scripts/test_offline.py
+        run: |
+          python3 sources/scripts/test_offline.py
+          node extras/quantumult-x/test_geocheck.js
 
       - name: Build rule sets
         run: |

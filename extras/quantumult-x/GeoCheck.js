@@ -38,7 +38,7 @@
 (function () {
 "use strict";
 
-  const VERSION = "1.2.0";
+  const VERSION = "1.3.0";
 
 
   // Diagnostics go to the Quantumult X log, so a report of "nothing is
@@ -200,7 +200,7 @@
       if (a.includes(b) || b.includes(a)) {
         return isp.length >= org.length ? isp : org;
       }
-      return `${isp} / ${org}`;
+      return isp; // one plain name; the organisation is in the details
     }
 
     return isp || org || asnText(g.asn);
@@ -223,27 +223,25 @@
 
     if (g) {
       const country = g.country || g.cc || TEXT.unknown;
-      const who = provider(g) || TEXT.unknown;
+      const place = String(g.city || g.region || "").trim() || country;
 
-      // The title is the most visible line in the node list, so it shows the
-      // most distinguishing information: the city (or region). Several nodes
-      // in one country (Los Angeles / San Jose / Seattle) would otherwise all
-      // read "United States". City-states (Hong Kong, Singapore, Macau) where
-      // the city equals the country show the country once.
-      const place = String(g.city || g.region || "").trim();
-      const sameAsCountry =
-        !place || place.toLowerCase() === String(country).toLowerCase();
-
+      // Output mirrors the proven Quantumult X layout: flag + city in the
+      // title, a single plain name in the subtitle. Composite subtitles
+      // ("United States · ISP", "ISP / Org") left ip-api results blank in
+      // Quantumult X, while plain subtitles displayed fine.
       $done({
-        title: `${flag(g.cc)} ${sameAsCountry ? country : place}`,
-        subtitle: sameAsCountry ? who : `${country} · ${who}`,
+        title: `${flag(g.cc)} ${place}`,
+        subtitle: provider(g) || TEXT.unknown,
         ip: g.ip || "",
         description: [
-          `${TEXT.ok} ✅`,
+          `Status: ${TEXT.ok}`,
           `IP: ${g.ip || TEXT.unknown}`,
-          clean(g.country, g.region, g.city) || TEXT.unknown,
+          `Country: ${country}`,
+          g.region ? `Region: ${g.region}` : "",
+          g.city ? `City: ${g.city}` : "",
           `ISP: ${g.isp || TEXT.unknown}`,
-          g.asn ? `ASN: ${asnText(g.asn)} ${g.org || ""}`.trim() : "",
+          g.org && g.org !== g.isp ? `Org: ${g.org}` : "",
+          g.asn ? `ASN: ${asnText(g.asn)}` : "",
           g.tz ? `Time zone: ${g.tz}` : "",
           `API: ${g.source}`,
           `GeoCheck ${VERSION}`,

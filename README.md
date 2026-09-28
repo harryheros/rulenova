@@ -272,7 +272,7 @@ geo_location_checker=https://api.ip.sb/geoip, https://cdn.jsdelivr.net/gh/harryh
 
 | API answer | GeoCheck shows |
 |------------|----------------|
-| Location data | Flag + city (e.g. 🇺🇸 Los Angeles), then country · ISP; details: IP, ASN, time zone |
+| Location data | Flag + city (e.g. 🇺🇸 Los Angeles) and ISP; details: IP, country, region, ASN, time zone |
 | Rate limited (HTTP 429 / quota) | ✅ Node OK · Geo service rate-limited |
 | No location for this IP | ✅ Node OK · No location data |
 | Unreadable answer (e.g. an error page) | ✅ Node OK · Invalid geo data |

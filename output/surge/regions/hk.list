@@ -1,12 +1,11 @@
 # RuleNova — Hong Kong
 # Variant  : combined
 # Format   : Surge RULE-SET
-# Generated: 2026-09-28T13:20:14Z
+# Generated: 2026-10-05T14:03:14Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
 DOMAIN-SUFFIX,163.net
-DOMAIN-SUFFIX,321009.com
 DOMAIN-SUFFIX,3hk.hk
 DOMAIN-SUFFIX,99166.com
 DOMAIN-SUFFIX,aastocks.com
@@ -47,11 +46,9 @@ DOMAIN-SUFFIX,cxexpress.com
 DOMAIN-SUFFIX,cyflscb.com
 DOMAIN-SUFFIX,dahsing.com
 DOMAIN-SUFFIX,dbs.com.hk
-DOMAIN-SUFFIX,diagram.jd.com
 DOMAIN-SUFFIX,dimbuy.com
 DOMAIN-SUFFIX,discuss.com.hk
 DOMAIN-SUFFIX,dragonfly.fm
-DOMAIN-SUFFIX,dtstudyclub.cn
 DOMAIN-SUFFIX,edb.gov.hk
 DOMAIN-SUFFIX,eduhk.hk
 DOMAIN-SUFFIX,fanuc.com.cn
@@ -105,13 +102,14 @@ DOMAIN-SUFFIX,hyab.gov.hk
 DOMAIN-SUFFIX,icac.org.hk
 DOMAIN-SUFFIX,info.gov.hk
 DOMAIN-SUFFIX,isd.gov.hk
+DOMAIN-SUFFIX,item-aws.jd.com
 DOMAIN-SUFFIX,item.m.jd.com
 DOMAIN-SUFFIX,jardines.com
 DOMAIN-SUFFIX,jcap.m.jd.com
 DOMAIN-SUFFIX,jd.hk
-DOMAIN-SUFFIX,jdme.jd.com
 DOMAIN-SUFFIX,jianhuasheng.com
 DOMAIN-SUFFIX,jiequ.art
+DOMAIN-SUFFIX,jmi.jd.com
 DOMAIN-SUFFIX,job853.com
 DOMAIN-SUFFIX,jobsdb.com
 DOMAIN-SUFFIX,joyspace.jd.com
@@ -121,7 +119,9 @@ DOMAIN-SUFFIX,lcsd.gov.hk
 DOMAIN-SUFFIX,lihkg.com
 DOMAIN-SUFFIX,list.jd.com
 DOMAIN-SUFFIX,ln.edu.hk
+DOMAIN-SUFFIX,logistics-mrd.jd.com
 DOMAIN-SUFFIX,lwb.gov.hk
+DOMAIN-SUFFIX,mapi.m.jd.com
 DOMAIN-SUFFIX,mars.jd.com
 DOMAIN-SUFFIX,mclcinema.com
 DOMAIN-SUFFIX,mggtech.vip
@@ -150,6 +150,7 @@ DOMAIN-SUFFIX,staticfile.org
 DOMAIN-SUFFIX,sth.org.hk
 DOMAIN-SUFFIX,stheadline.com
 DOMAIN-SUFFIX,stpaul.org.hk
+DOMAIN-SUFFIX,sunyuejiao.xyz
 DOMAIN-SUFFIX,takungpao.com
 DOMAIN-SUFFIX,three.com.hk
 DOMAIN-SUFFIX,tmall.hk
@@ -167,7 +168,11 @@ DOMAIN-SUFFIX,westkowloon.hk
 DOMAIN-SUFFIX,wharf.com.hk
 DOMAIN-SUFFIX,wheelockcompany.com
 DOMAIN-SUFFIX,winglungbank.com
+DOMAIN-SUFFIX,wnbsq.com
+DOMAIN-SUFFIX,www.sunyuejiao.xyz
+DOMAIN-SUFFIX,xckgq.com
 DOMAIN-SUFFIX,xmzgxcl.com
+DOMAIN-SUFFIX,xpcha.com
 DOMAIN-SUFFIX,yahoo.com.hk
 DOMAIN-SUFFIX,yata.hk
 DOMAIN-SUFFIX,yesstyle.com
@@ -177,7 +182,6 @@ DOMAIN-SUFFIX,za.group
 DOMAIN-SUFFIX,zgbywl.com
 DOMAIN-SUFFIX,zgwlwx.com
 DOMAIN-SUFFIX,zhjxwh.com
-DOMAIN-SUFFIX,zjgqt.org
 DOMAIN-SUFFIX,zoofon.com
 IP-CIDR,1.36.0.0/16,no-resolve
 IP-CIDR,1.64.0.0/15,no-resolve
@@ -1480,10 +1484,8 @@ IP-CIDR,154.220.192.0/19,no-resolve
 IP-CIDR,154.8.112.0/21,no-resolve
 IP-CIDR,154.8.124.0/22,no-resolve
 IP-CIDR,154.8.64.0/19,no-resolve
-IP-CIDR,154.81.16.0/20,no-resolve
-IP-CIDR,154.86.32.0/19,no-resolve
+IP-CIDR,154.86.32.0/20,no-resolve
 IP-CIDR,155.137.128.0/17,no-resolve
-IP-CIDR,156.230.40.0/21,no-resolve
 IP-CIDR,156.230.64.0/18,no-resolve
 IP-CIDR,156.240.128.0/18,no-resolve
 IP-CIDR,156.253.16.0/20,no-resolve
@@ -2621,7 +2623,6 @@ IP-CIDR,45.127.184.0/22,no-resolve
 IP-CIDR,45.127.36.0/22,no-resolve
 IP-CIDR,45.146.112.0/22,no-resolve
 IP-CIDR,45.158.180.0/22,no-resolve
-IP-CIDR,45.194.104.0/21,no-resolve
 IP-CIDR,45.202.128.0/19,no-resolve
 IP-CIDR,45.202.160.0/20,no-resolve
 IP-CIDR,45.202.184.0/21,no-resolve

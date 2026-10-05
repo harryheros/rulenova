@@ -4,7 +4,7 @@
     "label": "South Korea",
     "variant": "combined",
     "suggested_policy": "KR",
-    "generated": "2026-09-28T13:20:14Z",
+    "generated": "2026-10-05T14:03:14Z",
     "domains": 165,
     "cidrs": 1056,
     "source": "https://github.com/harryheros/rulenova"

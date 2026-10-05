@@ -1,7 +1,7 @@
 # RuleNova — Global (HK/TW/MO/JP/KR/SG)
 # Variant: domain
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-09-28T13:20:14Z
+# Generated: 2026-10-05T14:03:14Z
 payload:
   - 104.com.tw
   - 1111.com.tw
@@ -184,7 +184,6 @@ payload:
   - dcinside.com
   - dedeadmin.com
   - dgbas.gov.tw
-  - diagram.jd.com
   - dicj.gov.mo
   - digital.go.jp
   - dimbuy.com
@@ -205,7 +204,6 @@ payload:
   - dsscu.gov.mo
   - dssopt.gov.mo
   - dst.gov.mo
-  - dtstudyclub.cn
   - e-bill.com.tw
   - e-gov.go.jp
   - e-gov.mo
@@ -260,6 +258,7 @@ payload:
   - gaming-inspection.gov.mo
   - gcc.edu.hk
   - gcs.gov.mo
+  - gengfuwang.com
   - genie.co.kr
   - gigabyte.com
   - gmarket.co.kr
@@ -375,6 +374,7 @@ payload:
   - iras.gov.sg
   - isct.ac.jp
   - isd.gov.hk
+  - item-aws.jd.com
   - item.m.jd.com
   - iusm.edu.mo
   - iydu.net
@@ -388,12 +388,12 @@ payload:
   - jcb.co.jp
   - jcci.or.jp
   - jd.hk
-  - jdme.jd.com
   - jetro.go.jp
   - jftc.go.jp
   - jianhuasheng.com
   - jiequ.art
   - jma.go.jp
+  - jmi.jd.com
   - job853.com
   - jobkorea.co.kr
   - jobsdb.com
@@ -478,6 +478,7 @@ payload:
   - list.jd.com
   - livedoor.jp
   - ln.edu.hk
+  - logistics-mrd.jd.com
   - lolipop.jp
   - longzhu.com
   - lotte.co.kr
@@ -509,6 +510,7 @@ payload:
   - macautourism.gov.mo
   - maff.go.jp
   - mainichi.jp
+  - mapi.m.jd.com
   - mars.jd.com
   - mas.gov.sg
   - mastvnet.com
@@ -762,6 +764,7 @@ payload:
   - softbank.jp
   - sony.co.jp
   - sooplive.co.kr
+  - soso.com
   - souche.com
   - soumu.go.jp
   - spgroup.com.sg
@@ -780,6 +783,7 @@ payload:
   - stsp.gov.tw
   - suiyifa.com
   - suntory.co.jp
+  - sunyuejiao.xyz
   - sutd.edu.sg
   - suumo.jp
   - t-cat.com.tw
@@ -876,10 +880,14 @@ payload:
   - wheelockcompany.com
   - winglungbank.com
   - winkkie.com
+  - wnbsq.com
   - wooribank.com
+  - www.sunyuejiao.xyz
+  - xckgq.com
   - xiecheng.com
   - xmzgxcl.com
   - xn--fiqs8sr9ge7eb4b28vo92a.com
+  - xpcha.com
   - xserver.ne.jp
   - yahoo.co.jp
   - yahoo.com.hk
@@ -914,7 +922,6 @@ payload:
   - zgbywl.com
   - zgwlwx.com
   - zhjxwh.com
-  - zjgqt.org
   - zkzbkj.com
   - zoofon.com
   - zozo.jp

@@ -1,10 +1,9 @@
 # RuleNova — Hong Kong
 # Variant: domain
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-09-28T13:20:14Z
+# Generated: 2026-10-05T14:03:14Z
 payload:
   - 163.net
-  - 321009.com
   - 3hk.hk
   - 99166.com
   - aastocks.com
@@ -45,11 +44,9 @@ payload:
   - cyflscb.com
   - dahsing.com
   - dbs.com.hk
-  - diagram.jd.com
   - dimbuy.com
   - discuss.com.hk
   - dragonfly.fm
-  - dtstudyclub.cn
   - edb.gov.hk
   - eduhk.hk
   - fanuc.com.cn
@@ -103,13 +100,14 @@ payload:
   - icac.org.hk
   - info.gov.hk
   - isd.gov.hk
+  - item-aws.jd.com
   - item.m.jd.com
   - jardines.com
   - jcap.m.jd.com
   - jd.hk
-  - jdme.jd.com
   - jianhuasheng.com
   - jiequ.art
+  - jmi.jd.com
   - job853.com
   - jobsdb.com
   - joyspace.jd.com
@@ -119,7 +117,9 @@ payload:
   - lihkg.com
   - list.jd.com
   - ln.edu.hk
+  - logistics-mrd.jd.com
   - lwb.gov.hk
+  - mapi.m.jd.com
   - mars.jd.com
   - mclcinema.com
   - mggtech.vip
@@ -148,6 +148,7 @@ payload:
   - sth.org.hk
   - stheadline.com
   - stpaul.org.hk
+  - sunyuejiao.xyz
   - takungpao.com
   - three.com.hk
   - tmall.hk
@@ -165,7 +166,11 @@ payload:
   - wharf.com.hk
   - wheelockcompany.com
   - winglungbank.com
+  - wnbsq.com
+  - www.sunyuejiao.xyz
+  - xckgq.com
   - xmzgxcl.com
+  - xpcha.com
   - yahoo.com.hk
   - yata.hk
   - yesstyle.com
@@ -175,5 +180,4 @@ payload:
   - zgbywl.com
   - zgwlwx.com
   - zhjxwh.com
-  - zjgqt.org
   - zoofon.com

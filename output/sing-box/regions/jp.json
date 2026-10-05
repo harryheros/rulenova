@@ -4,9 +4,9 @@
     "label": "Japan",
     "variant": "combined",
     "suggested_policy": "JP",
-    "generated": "2026-09-28T13:20:14Z",
+    "generated": "2026-10-05T14:03:14Z",
     "domains": 163,
-    "cidrs": 3229,
+    "cidrs": 3228,
     "source": "https://github.com/harryheros/rulenova"
   },
   "rules": [
@@ -756,7 +756,6 @@
         "103.60.36.0/22",
         "103.61.151.0/24",
         "103.61.244.0/22",
-        "103.62.244.0/22",
         "103.64.132.0/22",
         "103.65.130.0/23",
         "103.65.208.0/22",

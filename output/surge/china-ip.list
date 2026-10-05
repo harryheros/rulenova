@@ -1,7 +1,7 @@
 # RuleNova — China Mainland
 # Variant  : ip
 # Format   : Surge RULE-SET
-# Generated: 2026-09-28T13:20:14Z
+# Generated: 2026-10-05T14:03:14Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -4990,6 +4990,7 @@ IP-CIDR,43.240.68.0/22,no-resolve
 IP-CIDR,43.240.72.0/21,no-resolve
 IP-CIDR,43.240.84.0/22,no-resolve
 IP-CIDR,43.241.0.0/20,no-resolve
+IP-CIDR,43.241.100.0/23,no-resolve
 IP-CIDR,43.241.112.0/22,no-resolve
 IP-CIDR,43.241.16.0/21,no-resolve
 IP-CIDR,43.241.168.0/21,no-resolve
@@ -5387,8 +5388,7 @@ IP-CIDR,45.255.64.0/19,no-resolve
 IP-CIDR,45.255.96.0/20,no-resolve
 IP-CIDR,45.40.192.0/18,no-resolve
 IP-CIDR,45.65.16.0/20,no-resolve
-IP-CIDR,47.246.156.0/22,no-resolve
-IP-CIDR,47.84.0.0/17,no-resolve
+IP-CIDR,47.237.0.0/16,no-resolve
 IP-CIDR,47.92.0.0/14,no-resolve
 IP-CIDR,47.96.0.0/11,no-resolve
 IP-CIDR,49.112.0.0/13,no-resolve

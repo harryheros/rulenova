@@ -2,7 +2,7 @@
 # Variant  : ip
 # Format   : Loon
 # Policy   : Global
-# Generated: 2026-09-28T13:20:14Z
+# Generated: 2026-10-05T14:03:14Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -372,6 +372,7 @@ IP-CIDR,103.124.72.0/22,Global,no-resolve
 IP-CIDR,103.125.108.0/22,Global,no-resolve
 IP-CIDR,103.125.115.0/24,Global,no-resolve
 IP-CIDR,103.125.124.0/22,Global,no-resolve
+IP-CIDR,103.125.224.0/24,Global,no-resolve
 IP-CIDR,103.125.228.0/22,Global,no-resolve
 IP-CIDR,103.125.32.0/22,Global,no-resolve
 IP-CIDR,103.125.64.0/22,Global,no-resolve
@@ -2350,7 +2351,6 @@ IP-CIDR,103.61.28.0/22,Global,no-resolve
 IP-CIDR,103.61.36.0/22,Global,no-resolve
 IP-CIDR,103.62.228.0/22,Global,no-resolve
 IP-CIDR,103.62.240.0/22,Global,no-resolve
-IP-CIDR,103.62.244.0/22,Global,no-resolve
 IP-CIDR,103.62.4.0/22,Global,no-resolve
 IP-CIDR,103.62.44.0/22,Global,no-resolve
 IP-CIDR,103.62.48.0/22,Global,no-resolve
@@ -4475,14 +4475,12 @@ IP-CIDR,154.8.112.0/21,Global,no-resolve
 IP-CIDR,154.8.124.0/22,Global,no-resolve
 IP-CIDR,154.8.48.0/20,Global,no-resolve
 IP-CIDR,154.8.64.0/19,Global,no-resolve
-IP-CIDR,154.81.16.0/20,Global,no-resolve
-IP-CIDR,154.86.32.0/19,Global,no-resolve
+IP-CIDR,154.86.32.0/20,Global,no-resolve
 IP-CIDR,155.137.128.0/17,Global,no-resolve
 IP-CIDR,155.160.0.0/16,Global,no-resolve
 IP-CIDR,155.230.0.0/16,Global,no-resolve
 IP-CIDR,155.69.0.0/16,Global,no-resolve
 IP-CIDR,156.147.0.0/16,Global,no-resolve
-IP-CIDR,156.230.40.0/21,Global,no-resolve
 IP-CIDR,156.230.64.0/18,Global,no-resolve
 IP-CIDR,156.232.16.0/20,Global,no-resolve
 IP-CIDR,156.240.128.0/18,Global,no-resolve
@@ -4943,7 +4941,6 @@ IP-CIDR,165.101.0.0/22,Global,no-resolve
 IP-CIDR,165.101.120.0/24,Global,no-resolve
 IP-CIDR,165.101.124.0/24,Global,no-resolve
 IP-CIDR,165.101.152.0/23,Global,no-resolve
-IP-CIDR,165.101.28.0/23,Global,no-resolve
 IP-CIDR,165.101.74.0/23,Global,no-resolve
 IP-CIDR,165.101.8.0/24,Global,no-resolve
 IP-CIDR,165.101.85.0/24,Global,no-resolve
@@ -8781,7 +8778,6 @@ IP-CIDR,45.127.36.0/22,Global,no-resolve
 IP-CIDR,45.129.228.0/22,Global,no-resolve
 IP-CIDR,45.146.112.0/22,Global,no-resolve
 IP-CIDR,45.158.180.0/22,Global,no-resolve
-IP-CIDR,45.194.104.0/21,Global,no-resolve
 IP-CIDR,45.202.128.0/19,Global,no-resolve
 IP-CIDR,45.202.160.0/20,Global,no-resolve
 IP-CIDR,45.202.184.0/21,Global,no-resolve
@@ -8834,7 +8830,7 @@ IP-CIDR,45.78.192.0/18,Global,no-resolve
 IP-CIDR,46.149.192.0/20,Global,no-resolve
 IP-CIDR,46.250.160.0/19,Global,no-resolve
 IP-CIDR,47.235.0.0/22,Global,no-resolve
-IP-CIDR,47.236.0.0/15,Global,no-resolve
+IP-CIDR,47.236.0.0/16,Global,no-resolve
 IP-CIDR,47.238.0.0/15,Global,no-resolve
 IP-CIDR,47.240.0.0/16,Global,no-resolve
 IP-CIDR,47.241.0.0/16,Global,no-resolve
@@ -8869,7 +8865,7 @@ IP-CIDR,47.82.0.0/18,Global,no-resolve
 IP-CIDR,47.82.128.0/17,Global,no-resolve
 IP-CIDR,47.82.64.0/18,Global,no-resolve
 IP-CIDR,47.83.0.0/16,Global,no-resolve
-IP-CIDR,47.84.128.0/17,Global,no-resolve
+IP-CIDR,47.84.0.0/16,Global,no-resolve
 IP-CIDR,47.86.0.0/16,Global,no-resolve
 IP-CIDR,47.87.192.0/22,Global,no-resolve
 IP-CIDR,47.87.196.0/22,Global,no-resolve

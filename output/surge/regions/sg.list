@@ -1,7 +1,7 @@
 # RuleNova — Singapore
 # Variant  : combined
 # Format   : Surge RULE-SET
-# Generated: 2026-09-28T13:20:14Z
+# Generated: 2026-10-05T14:03:14Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -9,6 +9,7 @@ DOMAIN-SUFFIX,13cr.com
 DOMAIN-SUFFIX,17qzx.com
 DOMAIN-SUFFIX,263.net
 DOMAIN-SUFFIX,3171688.com
+DOMAIN-SUFFIX,321009.com
 DOMAIN-SUFFIX,51credit.com
 DOMAIN-SUFFIX,6xw.com
 DOMAIN-SUFFIX,8world.com
@@ -41,6 +42,7 @@ DOMAIN-SUFFIX,enterprise.gov.sg
 DOMAIN-SUFFIX,eyoucms.com
 DOMAIN-SUFFIX,fairprice.com.sg
 DOMAIN-SUFFIX,foodpanda.sg
+DOMAIN-SUFFIX,gengfuwang.com
 DOMAIN-SUFFIX,go.gov.sg
 DOMAIN-SUFFIX,gov.sg
 DOMAIN-SUFFIX,grab.com
@@ -111,6 +113,7 @@ DOMAIN-SUFFIX,sistic.com.sg
 DOMAIN-SUFFIX,sit.edu.sg
 DOMAIN-SUFFIX,smrt.com.sg
 DOMAIN-SUFFIX,smu.edu.sg
+DOMAIN-SUFFIX,soso.com
 DOMAIN-SUFFIX,souche.com
 DOMAIN-SUFFIX,spgroup.com.sg
 DOMAIN-SUFFIX,starhub.com
@@ -1698,7 +1701,7 @@ IP-CIDR,45.65.0.0/22,no-resolve
 IP-CIDR,45.78.192.0/18,no-resolve
 IP-CIDR,46.250.160.0/19,no-resolve
 IP-CIDR,47.235.0.0/22,no-resolve
-IP-CIDR,47.236.0.0/15,no-resolve
+IP-CIDR,47.236.0.0/16,no-resolve
 IP-CIDR,47.241.0.0/16,no-resolve
 IP-CIDR,47.245.64.0/18,no-resolve
 IP-CIDR,47.246.104.0/22,no-resolve
@@ -1712,7 +1715,7 @@ IP-CIDR,47.79.48.0/20,no-resolve
 IP-CIDR,47.79.96.0/19,no-resolve
 IP-CIDR,47.82.0.0/18,no-resolve
 IP-CIDR,47.82.128.0/17,no-resolve
-IP-CIDR,47.84.128.0/17,no-resolve
+IP-CIDR,47.84.0.0/16,no-resolve
 IP-CIDR,47.87.196.0/22,no-resolve
 IP-CIDR,47.88.128.0/17,no-resolve
 IP-CIDR,47.89.72.0/22,no-resolve

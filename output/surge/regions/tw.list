@@ -1,7 +1,7 @@
 # RuleNova — Taiwan
 # Variant  : combined
 # Format   : Surge RULE-SET
-# Generated: 2026-09-28T13:20:14Z
+# Generated: 2026-10-05T14:03:14Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -229,6 +229,7 @@ IP-CIDR,103.124.176.0/22,no-resolve
 IP-CIDR,103.124.252.0/22,no-resolve
 IP-CIDR,103.124.40.0/22,no-resolve
 IP-CIDR,103.124.72.0/22,no-resolve
+IP-CIDR,103.125.224.0/24,no-resolve
 IP-CIDR,103.125.228.0/22,no-resolve
 IP-CIDR,103.125.64.0/22,no-resolve
 IP-CIDR,103.126.164.0/22,no-resolve
@@ -644,7 +645,6 @@ IP-CIDR,163.61.124.0/23,no-resolve
 IP-CIDR,163.61.184.0/23,no-resolve
 IP-CIDR,163.61.60.0/23,no-resolve
 IP-CIDR,165.101.152.0/23,no-resolve
-IP-CIDR,165.101.28.0/23,no-resolve
 IP-CIDR,165.101.86.0/23,no-resolve
 IP-CIDR,165.101.88.0/23,no-resolve
 IP-CIDR,165.99.112.0/23,no-resolve

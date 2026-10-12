@@ -1,7 +1,7 @@
 # RuleNova — Global (HK/TW/MO/JP/KR/SG)
 # Variant: domain
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-10-05T14:03:14Z
+# Generated: 2026-10-12T14:52:07Z
 payload:
   - 104.com.tw
   - 1111.com.tw
@@ -12,6 +12,7 @@ payload:
   - 263.net
   - 3171688.com
   - 321009.com
+  - 350abc.net
   - 3hk.hk
   - 518.com.tw
   - 51credit.com
@@ -374,8 +375,6 @@ payload:
   - iras.gov.sg
   - isct.ac.jp
   - isd.gov.hk
-  - item-aws.jd.com
-  - item.m.jd.com
   - iusm.edu.mo
   - iydu.net
   - izhangan.com
@@ -384,22 +383,18 @@ payload:
   - japanpost.jp
   - jardines.com
   - jasso.go.jp
-  - jcap.m.jd.com
   - jcb.co.jp
   - jcci.or.jp
   - jd.hk
   - jetro.go.jp
   - jftc.go.jp
-  - jianhuasheng.com
   - jiequ.art
   - jma.go.jp
-  - jmi.jd.com
   - job853.com
   - jobkorea.co.kr
   - jobsdb.com
   - jobstreet.com.sg
   - joongang.co.kr
-  - joyspace.jd.com
   - jp-bank.japanpost.jp
   - jpix.ad.jp
   - jpnap.net
@@ -475,12 +470,9 @@ payload:
   - line.me
   - linebank.com.tw
   - liontravel.com
-  - list.jd.com
   - livedoor.jp
   - ln.edu.hk
-  - logistics-mrd.jd.com
   - lolipop.jp
-  - longzhu.com
   - lotte.co.kr
   - lotte.com
   - lotteimall.com
@@ -509,9 +501,8 @@ payload:
   - macaupost.gov.mo
   - macautourism.gov.mo
   - maff.go.jp
+  - mail.qidan.com.cn
   - mainichi.jp
-  - mapi.m.jd.com
-  - mars.jd.com
   - mas.gov.sg
   - mastvnet.com
   - matsu.gov.tw
@@ -537,6 +528,7 @@ payload:
   - miaoli.gov.tw
   - mingpao.com
   - minimaxi.com
+  - missfresh.net
   - mitsubishielectric.co.jp
   - mizuho.co.jp
   - mizuhobank.co.jp
@@ -678,7 +670,6 @@ payload:
   - pref.osaka.lg.jp
   - pref.saitama.lg.jp
   - president.gov.tw
-  - pro.m.jd.com
   - propertyguru.com.sg
   - psa.sg
   - psc.go.jp
@@ -764,7 +755,6 @@ payload:
   - softbank.jp
   - sony.co.jp
   - sooplive.co.kr
-  - soso.com
   - souche.com
   - soumu.go.jp
   - spgroup.com.sg
@@ -783,7 +773,6 @@ payload:
   - stsp.gov.tw
   - suiyifa.com
   - suntory.co.jp
-  - sunyuejiao.xyz
   - sutd.edu.sg
   - suumo.jp
   - t-cat.com.tw
@@ -882,7 +871,6 @@ payload:
   - winkkie.com
   - wnbsq.com
   - wooribank.com
-  - www.sunyuejiao.xyz
   - xckgq.com
   - xiecheng.com
   - xmzgxcl.com

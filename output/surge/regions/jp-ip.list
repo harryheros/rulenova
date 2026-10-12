@@ -1,7 +1,7 @@
 # RuleNova — Japan
 # Variant  : ip
 # Format   : Surge RULE-SET
-# Generated: 2026-10-05T14:03:14Z
+# Generated: 2026-10-12T14:52:07Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -1986,11 +1986,13 @@ IP-CIDR,202.1.208.0/20,no-resolve
 IP-CIDR,202.1.4.0/24,no-resolve
 IP-CIDR,202.10.96.0/20,no-resolve
 IP-CIDR,202.11.0.0/16,no-resolve
+IP-CIDR,202.12.12.0/23,no-resolve
+IP-CIDR,202.12.14.0/24,no-resolve
 IP-CIDR,202.12.244.0/22,no-resolve
 IP-CIDR,202.12.26.0/23,no-resolve
 IP-CIDR,202.12.30.0/24,no-resolve
 IP-CIDR,202.12.64.0/22,no-resolve
-IP-CIDR,202.12.8.0/21,no-resolve
+IP-CIDR,202.12.8.0/22,no-resolve
 IP-CIDR,202.122.136.0/21,no-resolve
 IP-CIDR,202.122.176.0/20,no-resolve
 IP-CIDR,202.122.192.0/18,no-resolve

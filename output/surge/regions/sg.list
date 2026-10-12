@@ -1,7 +1,7 @@
 # RuleNova — Singapore
 # Variant  : combined
 # Format   : Surge RULE-SET
-# Generated: 2026-10-05T14:03:14Z
+# Generated: 2026-10-12T14:52:07Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -64,7 +64,6 @@ DOMAIN-SUFFIX,jslvzhigu.com
 DOMAIN-SUFFIX,judiciary.gov.sg
 DOMAIN-SUFFIX,kjw.cc
 DOMAIN-SUFFIX,lazada.sg
-DOMAIN-SUFFIX,longzhu.com
 DOMAIN-SUFFIX,lta.gov.sg
 DOMAIN-SUFFIX,m1.com.sg
 DOMAIN-SUFFIX,mas.gov.sg
@@ -113,7 +112,6 @@ DOMAIN-SUFFIX,sistic.com.sg
 DOMAIN-SUFFIX,sit.edu.sg
 DOMAIN-SUFFIX,smrt.com.sg
 DOMAIN-SUFFIX,smu.edu.sg
-DOMAIN-SUFFIX,soso.com
 DOMAIN-SUFFIX,souche.com
 DOMAIN-SUFFIX,spgroup.com.sg
 DOMAIN-SUFFIX,starhub.com
@@ -849,6 +847,7 @@ IP-CIDR,146.174.128.0/18,no-resolve
 IP-CIDR,146.88.128.0/21,no-resolve
 IP-CIDR,147.124.12.0/22,no-resolve
 IP-CIDR,147.136.128.0/18,no-resolve
+IP-CIDR,147.185.28.0/22,no-resolve
 IP-CIDR,148.145.128.0/17,no-resolve
 IP-CIDR,148.222.160.0/20,no-resolve
 IP-CIDR,148.222.64.0/20,no-resolve

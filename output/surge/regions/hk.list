@@ -1,11 +1,12 @@
 # RuleNova — Hong Kong
 # Variant  : combined
 # Format   : Surge RULE-SET
-# Generated: 2026-10-05T14:03:14Z
+# Generated: 2026-10-12T14:52:07Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
 DOMAIN-SUFFIX,163.net
+DOMAIN-SUFFIX,350abc.net
 DOMAIN-SUFFIX,3hk.hk
 DOMAIN-SUFFIX,99166.com
 DOMAIN-SUFFIX,aastocks.com
@@ -102,30 +103,22 @@ DOMAIN-SUFFIX,hyab.gov.hk
 DOMAIN-SUFFIX,icac.org.hk
 DOMAIN-SUFFIX,info.gov.hk
 DOMAIN-SUFFIX,isd.gov.hk
-DOMAIN-SUFFIX,item-aws.jd.com
-DOMAIN-SUFFIX,item.m.jd.com
 DOMAIN-SUFFIX,jardines.com
-DOMAIN-SUFFIX,jcap.m.jd.com
 DOMAIN-SUFFIX,jd.hk
-DOMAIN-SUFFIX,jianhuasheng.com
 DOMAIN-SUFFIX,jiequ.art
-DOMAIN-SUFFIX,jmi.jd.com
 DOMAIN-SUFFIX,job853.com
 DOMAIN-SUFFIX,jobsdb.com
-DOMAIN-SUFFIX,joyspace.jd.com
 DOMAIN-SUFFIX,jszlgjg.com
 DOMAIN-SUFFIX,klook.com
 DOMAIN-SUFFIX,lcsd.gov.hk
 DOMAIN-SUFFIX,lihkg.com
-DOMAIN-SUFFIX,list.jd.com
 DOMAIN-SUFFIX,ln.edu.hk
-DOMAIN-SUFFIX,logistics-mrd.jd.com
 DOMAIN-SUFFIX,lwb.gov.hk
-DOMAIN-SUFFIX,mapi.m.jd.com
-DOMAIN-SUFFIX,mars.jd.com
+DOMAIN-SUFFIX,mail.qidan.com.cn
 DOMAIN-SUFFIX,mclcinema.com
 DOMAIN-SUFFIX,mggtech.vip
 DOMAIN-SUFFIX,mingpao.com
+DOMAIN-SUFFIX,missfresh.net
 DOMAIN-SUFFIX,mtr.com.hk
 DOMAIN-SUFFIX,newhua.com
 DOMAIN-SUFFIX,nnsqr.com
@@ -136,7 +129,6 @@ DOMAIN-SUFFIX,on.cc
 DOMAIN-SUFFIX,openrice.com
 DOMAIN-SUFFIX,pccw.com
 DOMAIN-SUFFIX,polyu.edu.hk
-DOMAIN-SUFFIX,pro.m.jd.com
 DOMAIN-SUFFIX,rthk.hk
 DOMAIN-SUFFIX,sb.gov.hk
 DOMAIN-SUFFIX,sc.com
@@ -150,7 +142,6 @@ DOMAIN-SUFFIX,staticfile.org
 DOMAIN-SUFFIX,sth.org.hk
 DOMAIN-SUFFIX,stheadline.com
 DOMAIN-SUFFIX,stpaul.org.hk
-DOMAIN-SUFFIX,sunyuejiao.xyz
 DOMAIN-SUFFIX,takungpao.com
 DOMAIN-SUFFIX,three.com.hk
 DOMAIN-SUFFIX,tmall.hk
@@ -169,7 +160,6 @@ DOMAIN-SUFFIX,wharf.com.hk
 DOMAIN-SUFFIX,wheelockcompany.com
 DOMAIN-SUFFIX,winglungbank.com
 DOMAIN-SUFFIX,wnbsq.com
-DOMAIN-SUFFIX,www.sunyuejiao.xyz
 DOMAIN-SUFFIX,xckgq.com
 DOMAIN-SUFFIX,xmzgxcl.com
 DOMAIN-SUFFIX,xpcha.com
@@ -1484,8 +1474,10 @@ IP-CIDR,154.220.192.0/19,no-resolve
 IP-CIDR,154.8.112.0/21,no-resolve
 IP-CIDR,154.8.124.0/22,no-resolve
 IP-CIDR,154.8.64.0/19,no-resolve
-IP-CIDR,154.86.32.0/20,no-resolve
+IP-CIDR,154.81.16.0/20,no-resolve
+IP-CIDR,154.86.32.0/19,no-resolve
 IP-CIDR,155.137.128.0/17,no-resolve
+IP-CIDR,156.230.40.0/21,no-resolve
 IP-CIDR,156.230.64.0/18,no-resolve
 IP-CIDR,156.240.128.0/18,no-resolve
 IP-CIDR,156.253.16.0/20,no-resolve
@@ -2623,6 +2615,7 @@ IP-CIDR,45.127.184.0/22,no-resolve
 IP-CIDR,45.127.36.0/22,no-resolve
 IP-CIDR,45.146.112.0/22,no-resolve
 IP-CIDR,45.158.180.0/22,no-resolve
+IP-CIDR,45.194.104.0/21,no-resolve
 IP-CIDR,45.202.128.0/19,no-resolve
 IP-CIDR,45.202.160.0/20,no-resolve
 IP-CIDR,45.202.184.0/21,no-resolve

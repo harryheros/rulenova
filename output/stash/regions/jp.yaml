@@ -1,7 +1,7 @@
 # RuleNova — Japan
 # Variant: combined
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-10-05T14:03:14Z
+# Generated: 2026-10-26T12:31:57Z
 payload:
   - DOMAIN-SUFFIX,amazon.co.jp
   - DOMAIN-SUFFIX,ameba.jp
@@ -1748,6 +1748,7 @@ payload:
   - IP-CIDR,161.93.0.0/16,no-resolve
   - IP-CIDR,161.94.0.0/15,no-resolve
   - IP-CIDR,161.96.0.0/16,no-resolve
+  - IP-CIDR,162.35.64.0/19,no-resolve
   - IP-CIDR,162.4.180.0/23,no-resolve
   - IP-CIDR,162.4.194.0/23,no-resolve
   - IP-CIDR,162.4.238.0/24,no-resolve
@@ -2147,11 +2148,13 @@ payload:
   - IP-CIDR,202.1.4.0/24,no-resolve
   - IP-CIDR,202.10.96.0/20,no-resolve
   - IP-CIDR,202.11.0.0/16,no-resolve
+  - IP-CIDR,202.12.12.0/23,no-resolve
+  - IP-CIDR,202.12.14.0/24,no-resolve
   - IP-CIDR,202.12.244.0/22,no-resolve
   - IP-CIDR,202.12.26.0/23,no-resolve
   - IP-CIDR,202.12.30.0/24,no-resolve
   - IP-CIDR,202.12.64.0/22,no-resolve
-  - IP-CIDR,202.12.8.0/21,no-resolve
+  - IP-CIDR,202.12.8.0/22,no-resolve
   - IP-CIDR,202.122.136.0/21,no-resolve
   - IP-CIDR,202.122.176.0/20,no-resolve
   - IP-CIDR,202.122.192.0/18,no-resolve

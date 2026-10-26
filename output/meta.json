@@ -1,7 +1,7 @@
 {
   "schema_version": "2.1",
   "project": "rulenova",
-  "generated_at": "2026-10-05T14:03:14Z",
+  "generated_at": "2026-10-26T12:31:57Z",
   "policy_names": {
     "china": "China",
     "global": "Global",
@@ -24,16 +24,16 @@
   ],
   "regions": {
     "CN": {
-      "domains": 3429,
-      "cidrs": 5502
+      "domains": 3421,
+      "cidrs": 5506
     },
     "HK": {
-      "domains": 178,
-      "cidrs": 2564
+      "domains": 179,
+      "cidrs": 2567
     },
     "TW": {
       "domains": 170,
-      "cidrs": 758
+      "cidrs": 763
     },
     "MO": {
       "domains": 111,
@@ -41,19 +41,19 @@
     },
     "JP": {
       "domains": 163,
-      "cidrs": 3228
+      "cidrs": 3231
     },
     "KR": {
       "domains": 165,
-      "cidrs": 1056
+      "cidrs": 1057
     },
     "SG": {
-      "domains": 137,
-      "cidrs": 1660
+      "domains": 134,
+      "cidrs": 1661
     },
     "GLOBAL": {
-      "domains": 924,
-      "cidrs": 9297
+      "domains": 922,
+      "cidrs": 9310
     }
   },
   "global_regions": [

@@ -1,7 +1,7 @@
 # RuleNova — Singapore
 # Variant  : domain
 # Format   : Surge RULE-SET
-# Generated: 2026-10-05T14:03:14Z
+# Generated: 2026-10-26T12:31:57Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -15,7 +15,6 @@ DOMAIN-SUFFIX,6xw.com
 DOMAIN-SUFFIX,8world.com
 DOMAIN-SUFFIX,99.co
 DOMAIN-SUFFIX,acra.gov.sg
-DOMAIN-SUFFIX,aicoin.com
 DOMAIN-SUFFIX,bh568.com
 DOMAIN-SUFFIX,bianminwang.com
 DOMAIN-SUFFIX,biohyalux.com
@@ -34,7 +33,6 @@ DOMAIN-SUFFIX,cqjsaq.com
 DOMAIN-SUFFIX,csa.gov.sg
 DOMAIN-SUFFIX,ctsho.com
 DOMAIN-SUFFIX,dbs.com.sg
-DOMAIN-SUFFIX,dedeadmin.com
 DOMAIN-SUFFIX,dlsstax.com
 DOMAIN-SUFFIX,e-tecsun.com
 DOMAIN-SUFFIX,edb.gov.sg
@@ -43,6 +41,7 @@ DOMAIN-SUFFIX,eyoucms.com
 DOMAIN-SUFFIX,fairprice.com.sg
 DOMAIN-SUFFIX,foodpanda.sg
 DOMAIN-SUFFIX,gengfuwang.com
+DOMAIN-SUFFIX,gllshan.com
 DOMAIN-SUFFIX,go.gov.sg
 DOMAIN-SUFFIX,gov.sg
 DOMAIN-SUFFIX,grab.com
@@ -64,7 +63,6 @@ DOMAIN-SUFFIX,jslvzhigu.com
 DOMAIN-SUFFIX,judiciary.gov.sg
 DOMAIN-SUFFIX,kjw.cc
 DOMAIN-SUFFIX,lazada.sg
-DOMAIN-SUFFIX,longzhu.com
 DOMAIN-SUFFIX,lta.gov.sg
 DOMAIN-SUFFIX,m1.com.sg
 DOMAIN-SUFFIX,mas.gov.sg
@@ -96,7 +94,6 @@ DOMAIN-SUFFIX,pub.gov.sg
 DOMAIN-SUFFIX,qgwzjs.com
 DOMAIN-SUFFIX,qoo10.sg
 DOMAIN-SUFFIX,quzhuanxiang.com
-DOMAIN-SUFFIX,san-yang.com
 DOMAIN-SUFFIX,sbstransit.com.sg
 DOMAIN-SUFFIX,scdf.gov.sg
 DOMAIN-SUFFIX,segmentfault.com
@@ -113,7 +110,6 @@ DOMAIN-SUFFIX,sistic.com.sg
 DOMAIN-SUFFIX,sit.edu.sg
 DOMAIN-SUFFIX,smrt.com.sg
 DOMAIN-SUFFIX,smu.edu.sg
-DOMAIN-SUFFIX,soso.com
 DOMAIN-SUFFIX,souche.com
 DOMAIN-SUFFIX,spgroup.com.sg
 DOMAIN-SUFFIX,starhub.com
@@ -125,6 +121,7 @@ DOMAIN-SUFFIX,sutd.edu.sg
 DOMAIN-SUFFIX,tech.gov.sg
 DOMAIN-SUFFIX,tieyou.com
 DOMAIN-SUFFIX,todayonline.com
+DOMAIN-SUFFIX,ttppoo.com
 DOMAIN-SUFFIX,uhouzz.com
 DOMAIN-SUFFIX,ulife.com
 DOMAIN-SUFFIX,uob.com.sg

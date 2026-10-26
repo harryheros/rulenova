@@ -1,7 +1,7 @@
 # RuleNova — Global (HK/TW/MO/JP/KR/SG)
 # Variant: domain
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-10-05T14:03:14Z
+# Generated: 2026-10-26T12:31:57Z
 payload:
   - 104.com.tw
   - 1111.com.tw
@@ -12,6 +12,7 @@ payload:
   - 263.net
   - 3171688.com
   - 321009.com
+  - 350abc.net
   - 3hk.hk
   - 518.com.tw
   - 51credit.com
@@ -27,7 +28,6 @@ payload:
   - acer.com
   - acra.gov.sg
   - afreecatv.com
-  - aicoin.com
   - airport.kr
   - akmall.com
   - al.gov.mo
@@ -133,6 +133,7 @@ payload:
   - cm.gov.mo
   - cmab.gov.hk
   - cmc.edu.mo
+  - cmfwiper.com
   - cna.com.tw
   - cnyes.com
   - coldstorage.com.sg
@@ -182,8 +183,8 @@ payload:
   - dbs.com.sg
   - dcard.tw
   - dcinside.com
-  - dedeadmin.com
   - dgbas.gov.tw
+  - diagram.jd.com
   - dicj.gov.mo
   - digital.go.jp
   - dimbuy.com
@@ -261,6 +262,7 @@ payload:
   - gengfuwang.com
   - genie.co.kr
   - gigabyte.com
+  - gllshan.com
   - gmarket.co.kr
   - go.gov.sg
   - goo.ne.jp
@@ -388,12 +390,11 @@ payload:
   - jcb.co.jp
   - jcci.or.jp
   - jd.hk
+  - jdme.jd.com
   - jetro.go.jp
   - jftc.go.jp
-  - jianhuasheng.com
   - jiequ.art
   - jma.go.jp
-  - jmi.jd.com
   - job853.com
   - jobkorea.co.kr
   - jobsdb.com
@@ -475,12 +476,9 @@ payload:
   - line.me
   - linebank.com.tw
   - liontravel.com
-  - list.jd.com
   - livedoor.jp
   - ln.edu.hk
-  - logistics-mrd.jd.com
   - lolipop.jp
-  - longzhu.com
   - lotte.co.kr
   - lotte.com
   - lotteimall.com
@@ -537,6 +535,7 @@ payload:
   - miaoli.gov.tw
   - mingpao.com
   - minimaxi.com
+  - missfresh.net
   - mitsubishielectric.co.jp
   - mizuho.co.jp
   - mizuhobank.co.jp
@@ -605,6 +604,7 @@ payload:
   - nec.go.kr
   - neipark.nat.gov.tw
   - netmarble.com
+  - new6.art
   - newhua.com
   - newtaipei.gov.tw
   - nexon.com
@@ -756,6 +756,7 @@ payload:
   - smartone.com.mo
   - smbc-card.com
   - smbc.co.jp
+  - smc18.com
   - smilegate.com
   - smrt.com.sg
   - smtown.com
@@ -764,7 +765,6 @@ payload:
   - softbank.jp
   - sony.co.jp
   - sooplive.co.kr
-  - soso.com
   - souche.com
   - soumu.go.jp
   - spgroup.com.sg
@@ -783,7 +783,6 @@ payload:
   - stsp.gov.tw
   - suiyifa.com
   - suntory.co.jp
-  - sunyuejiao.xyz
   - sutd.edu.sg
   - suumo.jp
   - t-cat.com.tw
@@ -826,6 +825,7 @@ payload:
   - tokyogas.co.jp
   - tokyometro.jp
   - tom.com
+  - tongniguoji.com
   - toshiba.co.jp
   - toss.im
   - townwork.net
@@ -834,6 +834,7 @@ payload:
   - tsite.jp
   - tsmc.com
   - ttcg.gov.tw
+  - ttppoo.com
   - ttv.com.tw
   - tungwah.org.hk
   - tvb.com
@@ -882,7 +883,6 @@ payload:
   - winkkie.com
   - wnbsq.com
   - wooribank.com
-  - www.sunyuejiao.xyz
   - xckgq.com
   - xiecheng.com
   - xmzgxcl.com
@@ -910,7 +910,6 @@ payload:
   - yomiuri.co.jp
   - yonsei.ac.kr
   - youbike.com.tw
-  - yovyuan.com
   - yp.mo
   - yuantabank.com.tw
   - yuelvxing.com
@@ -923,7 +922,6 @@ payload:
   - zgwlwx.com
   - zhjxwh.com
   - zkzbkj.com
-  - zoofon.com
   - zozo.jp
   - zshandsome.com
   - zxkq022.com

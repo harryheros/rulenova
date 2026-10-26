@@ -1,11 +1,12 @@
 # RuleNova — Hong Kong
 # Variant  : domain
 # Format   : Surge RULE-SET
-# Generated: 2026-10-05T14:03:14Z
+# Generated: 2026-10-26T12:31:57Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
 DOMAIN-SUFFIX,163.net
+DOMAIN-SUFFIX,350abc.net
 DOMAIN-SUFFIX,3hk.hk
 DOMAIN-SUFFIX,99166.com
 DOMAIN-SUFFIX,aastocks.com
@@ -31,6 +32,7 @@ DOMAIN-SUFFIX,citibank.com.hk
 DOMAIN-SUFFIX,cityu.edu.hk
 DOMAIN-SUFFIX,clp.com.hk
 DOMAIN-SUFFIX,cmab.gov.hk
+DOMAIN-SUFFIX,cmfwiper.com
 DOMAIN-SUFFIX,craer.com
 DOMAIN-SUFFIX,crcbank.com
 DOMAIN-SUFFIX,crhk.com.hk
@@ -46,6 +48,7 @@ DOMAIN-SUFFIX,cxexpress.com
 DOMAIN-SUFFIX,cyflscb.com
 DOMAIN-SUFFIX,dahsing.com
 DOMAIN-SUFFIX,dbs.com.hk
+DOMAIN-SUFFIX,diagram.jd.com
 DOMAIN-SUFFIX,dimbuy.com
 DOMAIN-SUFFIX,discuss.com.hk
 DOMAIN-SUFFIX,dragonfly.fm
@@ -107,9 +110,8 @@ DOMAIN-SUFFIX,item.m.jd.com
 DOMAIN-SUFFIX,jardines.com
 DOMAIN-SUFFIX,jcap.m.jd.com
 DOMAIN-SUFFIX,jd.hk
-DOMAIN-SUFFIX,jianhuasheng.com
+DOMAIN-SUFFIX,jdme.jd.com
 DOMAIN-SUFFIX,jiequ.art
-DOMAIN-SUFFIX,jmi.jd.com
 DOMAIN-SUFFIX,job853.com
 DOMAIN-SUFFIX,jobsdb.com
 DOMAIN-SUFFIX,joyspace.jd.com
@@ -117,16 +119,16 @@ DOMAIN-SUFFIX,jszlgjg.com
 DOMAIN-SUFFIX,klook.com
 DOMAIN-SUFFIX,lcsd.gov.hk
 DOMAIN-SUFFIX,lihkg.com
-DOMAIN-SUFFIX,list.jd.com
 DOMAIN-SUFFIX,ln.edu.hk
-DOMAIN-SUFFIX,logistics-mrd.jd.com
 DOMAIN-SUFFIX,lwb.gov.hk
 DOMAIN-SUFFIX,mapi.m.jd.com
 DOMAIN-SUFFIX,mars.jd.com
 DOMAIN-SUFFIX,mclcinema.com
 DOMAIN-SUFFIX,mggtech.vip
 DOMAIN-SUFFIX,mingpao.com
+DOMAIN-SUFFIX,missfresh.net
 DOMAIN-SUFFIX,mtr.com.hk
+DOMAIN-SUFFIX,new6.art
 DOMAIN-SUFFIX,newhua.com
 DOMAIN-SUFFIX,nnsqr.com
 DOMAIN-SUFFIX,nowtv.now.com
@@ -138,6 +140,7 @@ DOMAIN-SUFFIX,pccw.com
 DOMAIN-SUFFIX,polyu.edu.hk
 DOMAIN-SUFFIX,pro.m.jd.com
 DOMAIN-SUFFIX,rthk.hk
+DOMAIN-SUFFIX,san-yang.com
 DOMAIN-SUFFIX,sb.gov.hk
 DOMAIN-SUFFIX,sc.com
 DOMAIN-SUFFIX,scmp.com
@@ -146,15 +149,16 @@ DOMAIN-SUFFIX,sfu.edu.hk
 DOMAIN-SUFFIX,sh1011.com
 DOMAIN-SUFFIX,singtao.com
 DOMAIN-SUFFIX,smartone.com
+DOMAIN-SUFFIX,smc18.com
 DOMAIN-SUFFIX,staticfile.org
 DOMAIN-SUFFIX,sth.org.hk
 DOMAIN-SUFFIX,stheadline.com
 DOMAIN-SUFFIX,stpaul.org.hk
-DOMAIN-SUFFIX,sunyuejiao.xyz
 DOMAIN-SUFFIX,takungpao.com
 DOMAIN-SUFFIX,three.com.hk
 DOMAIN-SUFFIX,tmall.hk
 DOMAIN-SUFFIX,tom.com
+DOMAIN-SUFFIX,tongniguoji.com
 DOMAIN-SUFFIX,tungwah.org.hk
 DOMAIN-SUFFIX,tvb.com
 DOMAIN-SUFFIX,twc.edu.hk
@@ -169,7 +173,6 @@ DOMAIN-SUFFIX,wharf.com.hk
 DOMAIN-SUFFIX,wheelockcompany.com
 DOMAIN-SUFFIX,winglungbank.com
 DOMAIN-SUFFIX,wnbsq.com
-DOMAIN-SUFFIX,www.sunyuejiao.xyz
 DOMAIN-SUFFIX,xckgq.com
 DOMAIN-SUFFIX,xmzgxcl.com
 DOMAIN-SUFFIX,xpcha.com
@@ -177,9 +180,7 @@ DOMAIN-SUFFIX,yahoo.com.hk
 DOMAIN-SUFFIX,yata.hk
 DOMAIN-SUFFIX,yesstyle.com
 DOMAIN-SUFFIX,ygym.org
-DOMAIN-SUFFIX,yovyuan.com
 DOMAIN-SUFFIX,za.group
 DOMAIN-SUFFIX,zgbywl.com
 DOMAIN-SUFFIX,zgwlwx.com
 DOMAIN-SUFFIX,zhjxwh.com
-DOMAIN-SUFFIX,zoofon.com

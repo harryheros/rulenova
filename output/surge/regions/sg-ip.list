@@ -1,7 +1,7 @@
 # RuleNova — Singapore
 # Variant  : ip
 # Format   : Surge RULE-SET
-# Generated: 2026-10-05T14:03:14Z
+# Generated: 2026-10-26T12:31:57Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -248,7 +248,7 @@ IP-CIDR,103.212.168.0/24,no-resolve
 IP-CIDR,103.212.170.0/23,no-resolve
 IP-CIDR,103.214.108.0/22,no-resolve
 IP-CIDR,103.214.252.0/22,no-resolve
-IP-CIDR,103.215.228.0/22,no-resolve
+IP-CIDR,103.215.230.0/23,no-resolve
 IP-CIDR,103.216.162.0/23,no-resolve
 IP-CIDR,103.216.84.0/23,no-resolve
 IP-CIDR,103.22.168.0/22,no-resolve
@@ -293,7 +293,6 @@ IP-CIDR,103.237.132.0/23,no-resolve
 IP-CIDR,103.237.142.0/23,no-resolve
 IP-CIDR,103.237.168.0/23,no-resolve
 IP-CIDR,103.237.80.0/24,no-resolve
-IP-CIDR,103.237.94.0/23,no-resolve
 IP-CIDR,103.239.220.0/22,no-resolve
 IP-CIDR,103.239.72.0/22,no-resolve
 IP-CIDR,103.24.156.0/22,no-resolve
@@ -370,7 +369,6 @@ IP-CIDR,103.31.24.0/23,no-resolve
 IP-CIDR,103.35.248.0/23,no-resolve
 IP-CIDR,103.35.250.0/24,no-resolve
 IP-CIDR,103.35.91.0/24,no-resolve
-IP-CIDR,103.36.90.0/23,no-resolve
 IP-CIDR,103.36.92.0/22,no-resolve
 IP-CIDR,103.37.196.0/22,no-resolve
 IP-CIDR,103.38.184.0/22,no-resolve
@@ -604,6 +602,7 @@ IP-CIDR,119.75.0.0/18,no-resolve
 IP-CIDR,119.75.192.0/20,no-resolve
 IP-CIDR,119.8.0.0/16,no-resolve
 IP-CIDR,119.81.0.0/16,no-resolve
+IP-CIDR,120.160.0.0/12,no-resolve
 IP-CIDR,120.50.32.0/20,no-resolve
 IP-CIDR,120.51.96.0/19,no-resolve
 IP-CIDR,121.100.32.0/20,no-resolve
@@ -631,7 +630,8 @@ IP-CIDR,122.252.24.0/21,no-resolve
 IP-CIDR,122.8.128.0/18,no-resolve
 IP-CIDR,123.100.235.0/24,no-resolve
 IP-CIDR,123.100.236.0/22,no-resolve
-IP-CIDR,123.100.240.0/22,no-resolve
+IP-CIDR,123.100.240.0/23,no-resolve
+IP-CIDR,123.100.243.0/24,no-resolve
 IP-CIDR,123.100.244.0/23,no-resolve
 IP-CIDR,123.100.248.0/21,no-resolve
 IP-CIDR,123.108.72.0/23,no-resolve
@@ -712,6 +712,7 @@ IP-CIDR,146.174.128.0/18,no-resolve
 IP-CIDR,146.88.128.0/21,no-resolve
 IP-CIDR,147.124.12.0/22,no-resolve
 IP-CIDR,147.136.128.0/18,no-resolve
+IP-CIDR,147.185.28.0/22,no-resolve
 IP-CIDR,148.145.128.0/17,no-resolve
 IP-CIDR,148.222.160.0/20,no-resolve
 IP-CIDR,148.222.64.0/20,no-resolve
@@ -1564,7 +1565,7 @@ IP-CIDR,45.65.0.0/22,no-resolve
 IP-CIDR,45.78.192.0/18,no-resolve
 IP-CIDR,46.250.160.0/19,no-resolve
 IP-CIDR,47.235.0.0/22,no-resolve
-IP-CIDR,47.236.0.0/16,no-resolve
+IP-CIDR,47.236.0.0/15,no-resolve
 IP-CIDR,47.241.0.0/16,no-resolve
 IP-CIDR,47.245.64.0/18,no-resolve
 IP-CIDR,47.246.104.0/22,no-resolve

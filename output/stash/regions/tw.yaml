@@ -1,7 +1,7 @@
 # RuleNova — Taiwan
 # Variant: combined
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-10-05T14:03:14Z
+# Generated: 2026-10-26T12:31:57Z
 payload:
   - DOMAIN-SUFFIX,104.com.tw
   - DOMAIN-SUFFIX,1111.com.tw
@@ -227,7 +227,6 @@ payload:
   - IP-CIDR,103.124.252.0/22,no-resolve
   - IP-CIDR,103.124.40.0/22,no-resolve
   - IP-CIDR,103.124.72.0/22,no-resolve
-  - IP-CIDR,103.125.224.0/24,no-resolve
   - IP-CIDR,103.125.228.0/22,no-resolve
   - IP-CIDR,103.125.64.0/22,no-resolve
   - IP-CIDR,103.126.164.0/22,no-resolve
@@ -358,6 +357,8 @@ payload:
   - IP-CIDR,103.190.168.0/23,no-resolve
   - IP-CIDR,103.191.181.0/24,no-resolve
   - IP-CIDR,103.191.20.0/22,no-resolve
+  - IP-CIDR,103.196.129.0/24,no-resolve
+  - IP-CIDR,103.196.131.0/24,no-resolve
   - IP-CIDR,103.196.172.0/23,no-resolve
   - IP-CIDR,103.197.158.0/23,no-resolve
   - IP-CIDR,103.197.172.0/22,no-resolve
@@ -428,6 +429,7 @@ payload:
   - IP-CIDR,103.38.146.0/23,no-resolve
   - IP-CIDR,103.4.104.0/22,no-resolve
   - IP-CIDR,103.42.112.0/23,no-resolve
+  - IP-CIDR,103.42.138.0/23,no-resolve
   - IP-CIDR,103.42.144.0/21,no-resolve
   - IP-CIDR,103.43.48.0/22,no-resolve
   - IP-CIDR,103.46.144.0/22,no-resolve
@@ -869,6 +871,8 @@ payload:
   - IP-CIDR,27.52.0.0/15,no-resolve
   - IP-CIDR,27.96.224.0/19,no-resolve
   - IP-CIDR,36.224.0.0/12,no-resolve
+  - IP-CIDR,36.255.244.0/24,no-resolve
+  - IP-CIDR,36.255.246.0/24,no-resolve
   - IP-CIDR,36.50.228.0/23,no-resolve
   - IP-CIDR,36.50.248.0/23,no-resolve
   - IP-CIDR,39.1.0.0/16,no-resolve
@@ -898,6 +902,7 @@ payload:
   - IP-CIDR,45.113.156.0/22,no-resolve
   - IP-CIDR,45.121.48.0/22,no-resolve
   - IP-CIDR,45.123.116.0/22,no-resolve
+  - IP-CIDR,45.248.118.0/23,no-resolve
   - IP-CIDR,45.64.228.0/22,no-resolve
   - IP-CIDR,45.64.232.0/22,no-resolve
   - IP-CIDR,45.64.28.0/22,no-resolve

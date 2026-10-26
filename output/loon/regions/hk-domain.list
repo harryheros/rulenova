@@ -2,11 +2,12 @@
 # Variant  : domain
 # Format   : Loon
 # Policy   : HK
-# Generated: 2026-10-05T14:03:14Z
+# Generated: 2026-10-26T12:31:57Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
 DOMAIN-SUFFIX,163.net,HK
+DOMAIN-SUFFIX,350abc.net,HK
 DOMAIN-SUFFIX,3hk.hk,HK
 DOMAIN-SUFFIX,99166.com,HK
 DOMAIN-SUFFIX,aastocks.com,HK
@@ -32,6 +33,7 @@ DOMAIN-SUFFIX,citibank.com.hk,HK
 DOMAIN-SUFFIX,cityu.edu.hk,HK
 DOMAIN-SUFFIX,clp.com.hk,HK
 DOMAIN-SUFFIX,cmab.gov.hk,HK
+DOMAIN-SUFFIX,cmfwiper.com,HK
 DOMAIN-SUFFIX,craer.com,HK
 DOMAIN-SUFFIX,crcbank.com,HK
 DOMAIN-SUFFIX,crhk.com.hk,HK
@@ -47,6 +49,7 @@ DOMAIN-SUFFIX,cxexpress.com,HK
 DOMAIN-SUFFIX,cyflscb.com,HK
 DOMAIN-SUFFIX,dahsing.com,HK
 DOMAIN-SUFFIX,dbs.com.hk,HK
+DOMAIN-SUFFIX,diagram.jd.com,HK
 DOMAIN-SUFFIX,dimbuy.com,HK
 DOMAIN-SUFFIX,discuss.com.hk,HK
 DOMAIN-SUFFIX,dragonfly.fm,HK
@@ -108,9 +111,8 @@ DOMAIN-SUFFIX,item.m.jd.com,HK
 DOMAIN-SUFFIX,jardines.com,HK
 DOMAIN-SUFFIX,jcap.m.jd.com,HK
 DOMAIN-SUFFIX,jd.hk,HK
-DOMAIN-SUFFIX,jianhuasheng.com,HK
+DOMAIN-SUFFIX,jdme.jd.com,HK
 DOMAIN-SUFFIX,jiequ.art,HK
-DOMAIN-SUFFIX,jmi.jd.com,HK
 DOMAIN-SUFFIX,job853.com,HK
 DOMAIN-SUFFIX,jobsdb.com,HK
 DOMAIN-SUFFIX,joyspace.jd.com,HK
@@ -118,16 +120,16 @@ DOMAIN-SUFFIX,jszlgjg.com,HK
 DOMAIN-SUFFIX,klook.com,HK
 DOMAIN-SUFFIX,lcsd.gov.hk,HK
 DOMAIN-SUFFIX,lihkg.com,HK
-DOMAIN-SUFFIX,list.jd.com,HK
 DOMAIN-SUFFIX,ln.edu.hk,HK
-DOMAIN-SUFFIX,logistics-mrd.jd.com,HK
 DOMAIN-SUFFIX,lwb.gov.hk,HK
 DOMAIN-SUFFIX,mapi.m.jd.com,HK
 DOMAIN-SUFFIX,mars.jd.com,HK
 DOMAIN-SUFFIX,mclcinema.com,HK
 DOMAIN-SUFFIX,mggtech.vip,HK
 DOMAIN-SUFFIX,mingpao.com,HK
+DOMAIN-SUFFIX,missfresh.net,HK
 DOMAIN-SUFFIX,mtr.com.hk,HK
+DOMAIN-SUFFIX,new6.art,HK
 DOMAIN-SUFFIX,newhua.com,HK
 DOMAIN-SUFFIX,nnsqr.com,HK
 DOMAIN-SUFFIX,nowtv.now.com,HK
@@ -139,6 +141,7 @@ DOMAIN-SUFFIX,pccw.com,HK
 DOMAIN-SUFFIX,polyu.edu.hk,HK
 DOMAIN-SUFFIX,pro.m.jd.com,HK
 DOMAIN-SUFFIX,rthk.hk,HK
+DOMAIN-SUFFIX,san-yang.com,HK
 DOMAIN-SUFFIX,sb.gov.hk,HK
 DOMAIN-SUFFIX,sc.com,HK
 DOMAIN-SUFFIX,scmp.com,HK
@@ -147,15 +150,16 @@ DOMAIN-SUFFIX,sfu.edu.hk,HK
 DOMAIN-SUFFIX,sh1011.com,HK
 DOMAIN-SUFFIX,singtao.com,HK
 DOMAIN-SUFFIX,smartone.com,HK
+DOMAIN-SUFFIX,smc18.com,HK
 DOMAIN-SUFFIX,staticfile.org,HK
 DOMAIN-SUFFIX,sth.org.hk,HK
 DOMAIN-SUFFIX,stheadline.com,HK
 DOMAIN-SUFFIX,stpaul.org.hk,HK
-DOMAIN-SUFFIX,sunyuejiao.xyz,HK
 DOMAIN-SUFFIX,takungpao.com,HK
 DOMAIN-SUFFIX,three.com.hk,HK
 DOMAIN-SUFFIX,tmall.hk,HK
 DOMAIN-SUFFIX,tom.com,HK
+DOMAIN-SUFFIX,tongniguoji.com,HK
 DOMAIN-SUFFIX,tungwah.org.hk,HK
 DOMAIN-SUFFIX,tvb.com,HK
 DOMAIN-SUFFIX,twc.edu.hk,HK
@@ -170,7 +174,6 @@ DOMAIN-SUFFIX,wharf.com.hk,HK
 DOMAIN-SUFFIX,wheelockcompany.com,HK
 DOMAIN-SUFFIX,winglungbank.com,HK
 DOMAIN-SUFFIX,wnbsq.com,HK
-DOMAIN-SUFFIX,www.sunyuejiao.xyz,HK
 DOMAIN-SUFFIX,xckgq.com,HK
 DOMAIN-SUFFIX,xmzgxcl.com,HK
 DOMAIN-SUFFIX,xpcha.com,HK
@@ -178,9 +181,7 @@ DOMAIN-SUFFIX,yahoo.com.hk,HK
 DOMAIN-SUFFIX,yata.hk,HK
 DOMAIN-SUFFIX,yesstyle.com,HK
 DOMAIN-SUFFIX,ygym.org,HK
-DOMAIN-SUFFIX,yovyuan.com,HK
 DOMAIN-SUFFIX,za.group,HK
 DOMAIN-SUFFIX,zgbywl.com,HK
 DOMAIN-SUFFIX,zgwlwx.com,HK
 DOMAIN-SUFFIX,zhjxwh.com,HK
-DOMAIN-SUFFIX,zoofon.com,HK

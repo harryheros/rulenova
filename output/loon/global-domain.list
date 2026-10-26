@@ -2,7 +2,7 @@
 # Variant  : domain
 # Format   : Loon
 # Policy   : Global
-# Generated: 2026-10-05T14:03:14Z
+# Generated: 2026-10-26T12:31:57Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -15,6 +15,7 @@ DOMAIN-SUFFIX,17qzx.com,Global
 DOMAIN-SUFFIX,263.net,Global
 DOMAIN-SUFFIX,3171688.com,Global
 DOMAIN-SUFFIX,321009.com,Global
+DOMAIN-SUFFIX,350abc.net,Global
 DOMAIN-SUFFIX,3hk.hk,Global
 DOMAIN-SUFFIX,518.com.tw,Global
 DOMAIN-SUFFIX,51credit.com,Global
@@ -30,7 +31,6 @@ DOMAIN-SUFFIX,abm.org.mo,Global
 DOMAIN-SUFFIX,acer.com,Global
 DOMAIN-SUFFIX,acra.gov.sg,Global
 DOMAIN-SUFFIX,afreecatv.com,Global
-DOMAIN-SUFFIX,aicoin.com,Global
 DOMAIN-SUFFIX,airport.kr,Global
 DOMAIN-SUFFIX,akmall.com,Global
 DOMAIN-SUFFIX,al.gov.mo,Global
@@ -136,6 +136,7 @@ DOMAIN-SUFFIX,clp.com.hk,Global
 DOMAIN-SUFFIX,cm.gov.mo,Global
 DOMAIN-SUFFIX,cmab.gov.hk,Global
 DOMAIN-SUFFIX,cmc.edu.mo,Global
+DOMAIN-SUFFIX,cmfwiper.com,Global
 DOMAIN-SUFFIX,cna.com.tw,Global
 DOMAIN-SUFFIX,cnyes.com,Global
 DOMAIN-SUFFIX,coldstorage.com.sg,Global
@@ -185,8 +186,8 @@ DOMAIN-SUFFIX,dbs.com.hk,Global
 DOMAIN-SUFFIX,dbs.com.sg,Global
 DOMAIN-SUFFIX,dcard.tw,Global
 DOMAIN-SUFFIX,dcinside.com,Global
-DOMAIN-SUFFIX,dedeadmin.com,Global
 DOMAIN-SUFFIX,dgbas.gov.tw,Global
+DOMAIN-SUFFIX,diagram.jd.com,Global
 DOMAIN-SUFFIX,dicj.gov.mo,Global
 DOMAIN-SUFFIX,digital.go.jp,Global
 DOMAIN-SUFFIX,dimbuy.com,Global
@@ -264,6 +265,7 @@ DOMAIN-SUFFIX,gcs.gov.mo,Global
 DOMAIN-SUFFIX,gengfuwang.com,Global
 DOMAIN-SUFFIX,genie.co.kr,Global
 DOMAIN-SUFFIX,gigabyte.com,Global
+DOMAIN-SUFFIX,gllshan.com,Global
 DOMAIN-SUFFIX,gmarket.co.kr,Global
 DOMAIN-SUFFIX,go.gov.sg,Global
 DOMAIN-SUFFIX,goo.ne.jp,Global
@@ -391,12 +393,11 @@ DOMAIN-SUFFIX,jcap.m.jd.com,Global
 DOMAIN-SUFFIX,jcb.co.jp,Global
 DOMAIN-SUFFIX,jcci.or.jp,Global
 DOMAIN-SUFFIX,jd.hk,Global
+DOMAIN-SUFFIX,jdme.jd.com,Global
 DOMAIN-SUFFIX,jetro.go.jp,Global
 DOMAIN-SUFFIX,jftc.go.jp,Global
-DOMAIN-SUFFIX,jianhuasheng.com,Global
 DOMAIN-SUFFIX,jiequ.art,Global
 DOMAIN-SUFFIX,jma.go.jp,Global
-DOMAIN-SUFFIX,jmi.jd.com,Global
 DOMAIN-SUFFIX,job853.com,Global
 DOMAIN-SUFFIX,jobkorea.co.kr,Global
 DOMAIN-SUFFIX,jobsdb.com,Global
@@ -478,12 +479,9 @@ DOMAIN-SUFFIX,lihkg.com,Global
 DOMAIN-SUFFIX,line.me,Global
 DOMAIN-SUFFIX,linebank.com.tw,Global
 DOMAIN-SUFFIX,liontravel.com,Global
-DOMAIN-SUFFIX,list.jd.com,Global
 DOMAIN-SUFFIX,livedoor.jp,Global
 DOMAIN-SUFFIX,ln.edu.hk,Global
-DOMAIN-SUFFIX,logistics-mrd.jd.com,Global
 DOMAIN-SUFFIX,lolipop.jp,Global
-DOMAIN-SUFFIX,longzhu.com,Global
 DOMAIN-SUFFIX,lotte.co.kr,Global
 DOMAIN-SUFFIX,lotte.com,Global
 DOMAIN-SUFFIX,lotteimall.com,Global
@@ -540,6 +538,7 @@ DOMAIN-SUFFIX,mhlw.go.jp,Global
 DOMAIN-SUFFIX,miaoli.gov.tw,Global
 DOMAIN-SUFFIX,mingpao.com,Global
 DOMAIN-SUFFIX,minimaxi.com,Global
+DOMAIN-SUFFIX,missfresh.net,Global
 DOMAIN-SUFFIX,mitsubishielectric.co.jp,Global
 DOMAIN-SUFFIX,mizuho.co.jp,Global
 DOMAIN-SUFFIX,mizuhobank.co.jp,Global
@@ -608,6 +607,7 @@ DOMAIN-SUFFIX,nec.co.jp,Global
 DOMAIN-SUFFIX,nec.go.kr,Global
 DOMAIN-SUFFIX,neipark.nat.gov.tw,Global
 DOMAIN-SUFFIX,netmarble.com,Global
+DOMAIN-SUFFIX,new6.art,Global
 DOMAIN-SUFFIX,newhua.com,Global
 DOMAIN-SUFFIX,newtaipei.gov.tw,Global
 DOMAIN-SUFFIX,nexon.com,Global
@@ -759,6 +759,7 @@ DOMAIN-SUFFIX,smartone.com,Global
 DOMAIN-SUFFIX,smartone.com.mo,Global
 DOMAIN-SUFFIX,smbc-card.com,Global
 DOMAIN-SUFFIX,smbc.co.jp,Global
+DOMAIN-SUFFIX,smc18.com,Global
 DOMAIN-SUFFIX,smilegate.com,Global
 DOMAIN-SUFFIX,smrt.com.sg,Global
 DOMAIN-SUFFIX,smtown.com,Global
@@ -767,7 +768,6 @@ DOMAIN-SUFFIX,snu.ac.kr,Global
 DOMAIN-SUFFIX,softbank.jp,Global
 DOMAIN-SUFFIX,sony.co.jp,Global
 DOMAIN-SUFFIX,sooplive.co.kr,Global
-DOMAIN-SUFFIX,soso.com,Global
 DOMAIN-SUFFIX,souche.com,Global
 DOMAIN-SUFFIX,soumu.go.jp,Global
 DOMAIN-SUFFIX,spgroup.com.sg,Global
@@ -786,7 +786,6 @@ DOMAIN-SUFFIX,streetdirectory.com,Global
 DOMAIN-SUFFIX,stsp.gov.tw,Global
 DOMAIN-SUFFIX,suiyifa.com,Global
 DOMAIN-SUFFIX,suntory.co.jp,Global
-DOMAIN-SUFFIX,sunyuejiao.xyz,Global
 DOMAIN-SUFFIX,sutd.edu.sg,Global
 DOMAIN-SUFFIX,suumo.jp,Global
 DOMAIN-SUFFIX,t-cat.com.tw,Global
@@ -829,6 +828,7 @@ DOMAIN-SUFFIX,tokyo-np.co.jp,Global
 DOMAIN-SUFFIX,tokyogas.co.jp,Global
 DOMAIN-SUFFIX,tokyometro.jp,Global
 DOMAIN-SUFFIX,tom.com,Global
+DOMAIN-SUFFIX,tongniguoji.com,Global
 DOMAIN-SUFFIX,toshiba.co.jp,Global
 DOMAIN-SUFFIX,toss.im,Global
 DOMAIN-SUFFIX,townwork.net,Global
@@ -837,6 +837,7 @@ DOMAIN-SUFFIX,transmac.com.mo,Global
 DOMAIN-SUFFIX,tsite.jp,Global
 DOMAIN-SUFFIX,tsmc.com,Global
 DOMAIN-SUFFIX,ttcg.gov.tw,Global
+DOMAIN-SUFFIX,ttppoo.com,Global
 DOMAIN-SUFFIX,ttv.com.tw,Global
 DOMAIN-SUFFIX,tungwah.org.hk,Global
 DOMAIN-SUFFIX,tvb.com,Global
@@ -885,7 +886,6 @@ DOMAIN-SUFFIX,winglungbank.com,Global
 DOMAIN-SUFFIX,winkkie.com,Global
 DOMAIN-SUFFIX,wnbsq.com,Global
 DOMAIN-SUFFIX,wooribank.com,Global
-DOMAIN-SUFFIX,www.sunyuejiao.xyz,Global
 DOMAIN-SUFFIX,xckgq.com,Global
 DOMAIN-SUFFIX,xiecheng.com,Global
 DOMAIN-SUFFIX,xmzgxcl.com,Global
@@ -913,7 +913,6 @@ DOMAIN-SUFFIX,yodobashi.com,Global
 DOMAIN-SUFFIX,yomiuri.co.jp,Global
 DOMAIN-SUFFIX,yonsei.ac.kr,Global
 DOMAIN-SUFFIX,youbike.com.tw,Global
-DOMAIN-SUFFIX,yovyuan.com,Global
 DOMAIN-SUFFIX,yp.mo,Global
 DOMAIN-SUFFIX,yuantabank.com.tw,Global
 DOMAIN-SUFFIX,yuelvxing.com,Global
@@ -926,7 +925,6 @@ DOMAIN-SUFFIX,zgbywl.com,Global
 DOMAIN-SUFFIX,zgwlwx.com,Global
 DOMAIN-SUFFIX,zhjxwh.com,Global
 DOMAIN-SUFFIX,zkzbkj.com,Global
-DOMAIN-SUFFIX,zoofon.com,Global
 DOMAIN-SUFFIX,zozo.jp,Global
 DOMAIN-SUFFIX,zshandsome.com,Global
 DOMAIN-SUFFIX,zxkq022.com,Global

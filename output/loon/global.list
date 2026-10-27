@@ -2,7 +2,7 @@
 # Variant  : combined
 # Format   : Loon
 # Policy   : Global
-# Generated: 2026-10-26T12:31:57Z
+# Generated: 2026-10-27T21:28:04Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -53,7 +53,6 @@ DOMAIN-SUFFIX,baby-kingdom.com,Global
 DOMAIN-SUFFIX,baemin.com,Global
 DOMAIN-SUFFIX,bahamut.com.tw,Global
 DOMAIN-SUFFIX,baixiang.com,Global
-DOMAIN-SUFFIX,baiyewang.com,Global
 DOMAIN-SUFFIX,band.us,Global
 DOMAIN-SUFFIX,bandainamco.co.jp,Global
 DOMAIN-SUFFIX,bankofchina.com.hk,Global
@@ -64,6 +63,7 @@ DOMAIN-SUFFIX,bcm.com.mo,Global
 DOMAIN-SUFFIX,beileimaoedu.com,Global
 DOMAIN-SUFFIX,bh568.com,Global
 DOMAIN-SUFFIX,bhc.co.kr,Global
+DOMAIN-SUFFIX,bhzx.ncwfcgw.cn,Global
 DOMAIN-SUFFIX,bianminwang.com,Global
 DOMAIN-SUFFIX,biccamera.com,Global
 DOMAIN-SUFFIX,bigbigchannel.com.hk,Global
@@ -170,6 +170,7 @@ DOMAIN-SUFFIX,cuhk.edu.hk,Global
 DOMAIN-SUFFIX,cuhkmc.hk,Global
 DOMAIN-SUFFIX,customs.go.kr,Global
 DOMAIN-SUFFIX,customs.gov.mo,Global
+DOMAIN-SUFFIX,cwa.gov.tw,Global
 DOMAIN-SUFFIX,cwb.gov.tw,Global
 DOMAIN-SUFFIX,cxexpress.com,Global
 DOMAIN-SUFFIX,cyberctm.com,Global
@@ -186,8 +187,8 @@ DOMAIN-SUFFIX,dbs.com.hk,Global
 DOMAIN-SUFFIX,dbs.com.sg,Global
 DOMAIN-SUFFIX,dcard.tw,Global
 DOMAIN-SUFFIX,dcinside.com,Global
+DOMAIN-SUFFIX,dedeadmin.com,Global
 DOMAIN-SUFFIX,dgbas.gov.tw,Global
-DOMAIN-SUFFIX,diagram.jd.com,Global
 DOMAIN-SUFFIX,dicj.gov.mo,Global
 DOMAIN-SUFFIX,digital.go.jp,Global
 DOMAIN-SUFFIX,dimbuy.com,Global
@@ -227,6 +228,7 @@ DOMAIN-SUFFIX,esunbank.com.tw,Global
 DOMAIN-SUFFIX,etmall.com.tw,Global
 DOMAIN-SUFFIX,etri.re.kr,Global
 DOMAIN-SUFFIX,ettoday.net,Global
+DOMAIN-SUFFIX,exam.gov.tw,Global
 DOMAIN-SUFFIX,exmoo.com,Global
 DOMAIN-SUFFIX,ey.gov.tw,Global
 DOMAIN-SUFFIX,eyoucms.com,Global
@@ -234,6 +236,7 @@ DOMAIN-SUFFIX,fairprice.com.sg,Global
 DOMAIN-SUFFIX,family.com.tw,Global
 DOMAIN-SUFFIX,familymart.com.tw,Global
 DOMAIN-SUFFIX,fanuc.com.cn,Global
+DOMAIN-SUFFIX,fareastone.com.tw,Global
 DOMAIN-SUFFIX,fastretailing.com,Global
 DOMAIN-SUFFIX,fdct.gov.mo,Global
 DOMAIN-SUFFIX,fetnet.net,Global
@@ -379,8 +382,6 @@ DOMAIN-SUFFIX,ipm.edu.mo,Global
 DOMAIN-SUFFIX,iras.gov.sg,Global
 DOMAIN-SUFFIX,isct.ac.jp,Global
 DOMAIN-SUFFIX,isd.gov.hk,Global
-DOMAIN-SUFFIX,item-aws.jd.com,Global
-DOMAIN-SUFFIX,item.m.jd.com,Global
 DOMAIN-SUFFIX,iusm.edu.mo,Global
 DOMAIN-SUFFIX,iydu.net,Global
 DOMAIN-SUFFIX,izhangan.com,Global
@@ -389,11 +390,9 @@ DOMAIN-SUFFIX,japan.go.jp,Global
 DOMAIN-SUFFIX,japanpost.jp,Global
 DOMAIN-SUFFIX,jardines.com,Global
 DOMAIN-SUFFIX,jasso.go.jp,Global
-DOMAIN-SUFFIX,jcap.m.jd.com,Global
 DOMAIN-SUFFIX,jcb.co.jp,Global
 DOMAIN-SUFFIX,jcci.or.jp,Global
 DOMAIN-SUFFIX,jd.hk,Global
-DOMAIN-SUFFIX,jdme.jd.com,Global
 DOMAIN-SUFFIX,jetro.go.jp,Global
 DOMAIN-SUFFIX,jftc.go.jp,Global
 DOMAIN-SUFFIX,jiequ.art,Global
@@ -403,7 +402,6 @@ DOMAIN-SUFFIX,jobkorea.co.kr,Global
 DOMAIN-SUFFIX,jobsdb.com,Global
 DOMAIN-SUFFIX,jobstreet.com.sg,Global
 DOMAIN-SUFFIX,joongang.co.kr,Global
-DOMAIN-SUFFIX,joyspace.jd.com,Global
 DOMAIN-SUFFIX,jp-bank.japanpost.jp,Global
 DOMAIN-SUFFIX,jpix.ad.jp,Global
 DOMAIN-SUFFIX,jpnap.net,Global
@@ -441,6 +439,7 @@ DOMAIN-SUFFIX,keidanren.or.jp,Global
 DOMAIN-SUFFIX,keio.ac.jp,Global
 DOMAIN-SUFFIX,kepco.co.jp,Global
 DOMAIN-SUFFIX,kepco.co.kr,Global
+DOMAIN-SUFFIX,kerrytj.com,Global
 DOMAIN-SUFFIX,kfb.or.kr,Global
 DOMAIN-SUFFIX,kgi.com,Global
 DOMAIN-SUFFIX,kia.com,Global
@@ -510,9 +509,8 @@ DOMAIN-SUFFIX,macaunews.mo,Global
 DOMAIN-SUFFIX,macaupost.gov.mo,Global
 DOMAIN-SUFFIX,macautourism.gov.mo,Global
 DOMAIN-SUFFIX,maff.go.jp,Global
+DOMAIN-SUFFIX,mail.qidan.com.cn,Global
 DOMAIN-SUFFIX,mainichi.jp,Global
-DOMAIN-SUFFIX,mapi.m.jd.com,Global
-DOMAIN-SUFFIX,mars.jd.com,Global
 DOMAIN-SUFFIX,mas.gov.sg,Global
 DOMAIN-SUFFIX,mastvnet.com,Global
 DOMAIN-SUFFIX,matsu.gov.tw,Global
@@ -527,11 +525,11 @@ DOMAIN-SUFFIX,megabox.co.kr,Global
 DOMAIN-SUFFIX,melon.com,Global
 DOMAIN-SUFFIX,mercari.com,Global
 DOMAIN-SUFFIX,meti.go.jp,Global
+DOMAIN-SUFFIX,metro.taipei,Global
 DOMAIN-SUFFIX,metro.tokyo.lg.jp,Global
 DOMAIN-SUFFIX,mext.go.jp,Global
 DOMAIN-SUFFIX,mfa.gov.sg,Global
 DOMAIN-SUFFIX,mfood.mo,Global
-DOMAIN-SUFFIX,mggtech.vip,Global
 DOMAIN-SUFFIX,mgto.gov.mo,Global
 DOMAIN-SUFFIX,mha.gov.sg,Global
 DOMAIN-SUFFIX,mhlw.go.jp,Global
@@ -587,6 +585,7 @@ DOMAIN-SUFFIX,muji.com,Global
 DOMAIN-SUFFIX,music.163.com,Global
 DOMAIN-SUFFIX,musinsa.com,Global
 DOMAIN-SUFFIX,must.edu.mo,Global
+DOMAIN-SUFFIX,mybank.com.tw,Global
 DOMAIN-SUFFIX,myfone.com.tw,Global
 DOMAIN-SUFFIX,myinfo.gov.sg,Global
 DOMAIN-SUFFIX,mylink.com.tw,Global
@@ -633,6 +632,7 @@ DOMAIN-SUFFIX,nsysu.edu.tw,Global
 DOMAIN-SUFFIX,nta.go.jp,Global
 DOMAIN-SUFFIX,ntct.gov.tw,Global
 DOMAIN-SUFFIX,nthu.edu.tw,Global
+DOMAIN-SUFFIX,ntnu.edu.tw,Global
 DOMAIN-SUFFIX,ntpc.gov.tw,Global
 DOMAIN-SUFFIX,nts.go.kr,Global
 DOMAIN-SUFFIX,ntt-east.co.jp,Global
@@ -681,7 +681,6 @@ DOMAIN-SUFFIX,pref.kanagawa.jp,Global
 DOMAIN-SUFFIX,pref.osaka.lg.jp,Global
 DOMAIN-SUFFIX,pref.saitama.lg.jp,Global
 DOMAIN-SUFFIX,president.gov.tw,Global
-DOMAIN-SUFFIX,pro.m.jd.com,Global
 DOMAIN-SUFFIX,propertyguru.com.sg,Global
 DOMAIN-SUFFIX,psa.sg,Global
 DOMAIN-SUFFIX,psc.go.jp,Global
@@ -693,6 +692,7 @@ DOMAIN-SUFFIX,qgwzjs.com,Global
 DOMAIN-SUFFIX,qoo10.sg,Global
 DOMAIN-SUFFIX,quanta.com.tw,Global
 DOMAIN-SUFFIX,quzhuanxiang.com,Global
+DOMAIN-SUFFIX,railway.gov.tw,Global
 DOMAIN-SUFFIX,rakuten.co.jp,Global
 DOMAIN-SUFFIX,reconstruction.go.jp,Global
 DOMAIN-SUFFIX,resona-gr.co.jp,Global
@@ -722,6 +722,7 @@ DOMAIN-SUFFIX,sc.gov.mo,Global
 DOMAIN-SUFFIX,scdf.gov.sg,Global
 DOMAIN-SUFFIX,scmp.com,Global
 DOMAIN-SUFFIX,scourt.go.kr,Global
+DOMAIN-SUFFIX,scsb.com.tw,Global
 DOMAIN-SUFFIX,sega.co.jp,Global
 DOMAIN-SUFFIX,segmentfault.com,Global
 DOMAIN-SUFFIX,sejong.go.kr,Global
@@ -797,6 +798,7 @@ DOMAIN-SUFFIX,taipei.gov.tw,Global
 DOMAIN-SUFFIX,taipower.com.tw,Global
 DOMAIN-SUFFIX,taishinbank.com.tw,Global
 DOMAIN-SUFFIX,taitung.gov.tw,Global
+DOMAIN-SUFFIX,taiwanlife.com,Global
 DOMAIN-SUFFIX,taiwanmobile.com,Global
 DOMAIN-SUFFIX,takashimaya.co.jp,Global
 DOMAIN-SUFFIX,takungpao.com,Global
@@ -886,6 +888,7 @@ DOMAIN-SUFFIX,winglungbank.com,Global
 DOMAIN-SUFFIX,winkkie.com,Global
 DOMAIN-SUFFIX,wnbsq.com,Global
 DOMAIN-SUFFIX,wooribank.com,Global
+DOMAIN-SUFFIX,wp.jun2020.com,Global
 DOMAIN-SUFFIX,xckgq.com,Global
 DOMAIN-SUFFIX,xiecheng.com,Global
 DOMAIN-SUFFIX,xmzgxcl.com,Global
@@ -2827,7 +2830,6 @@ IP-CIDR,103.27.220.0/22,Global,no-resolve
 IP-CIDR,103.27.228.0/22,Global,no-resolve
 IP-CIDR,103.27.244.0/22,Global,no-resolve
 IP-CIDR,103.27.254.0/24,Global,no-resolve
-IP-CIDR,103.27.40.0/22,Global,no-resolve
 IP-CIDR,103.27.68.0/22,Global,no-resolve
 IP-CIDR,103.27.80.0/22,Global,no-resolve
 IP-CIDR,103.28.144.0/22,Global,no-resolve
@@ -2920,6 +2922,7 @@ IP-CIDR,103.36.152.0/22,Global,no-resolve
 IP-CIDR,103.36.20.0/22,Global,no-resolve
 IP-CIDR,103.36.24.0/23,Global,no-resolve
 IP-CIDR,103.36.252.0/23,Global,no-resolve
+IP-CIDR,103.36.90.0/23,Global,no-resolve
 IP-CIDR,103.36.92.0/22,Global,no-resolve
 IP-CIDR,103.37.10.0/23,Global,no-resolve
 IP-CIDR,103.37.108.0/22,Global,no-resolve
@@ -5554,7 +5557,6 @@ IP-CIDR,160.192.0.0/13,Global,no-resolve
 IP-CIDR,160.20.12.0/22,Global,no-resolve
 IP-CIDR,160.20.122.0/24,Global,no-resolve
 IP-CIDR,160.20.140.0/23,Global,no-resolve
-IP-CIDR,160.20.142.0/24,Global,no-resolve
 IP-CIDR,160.20.44.0/22,Global,no-resolve
 IP-CIDR,160.20.52.0/22,Global,no-resolve
 IP-CIDR,160.20.56.0/21,Global,no-resolve
@@ -5594,7 +5596,6 @@ IP-CIDR,160.213.84.0/22,Global,no-resolve
 IP-CIDR,160.213.92.0/22,Global,no-resolve
 IP-CIDR,160.213.96.0/22,Global,no-resolve
 IP-CIDR,160.215.0.0/16,Global,no-resolve
-IP-CIDR,160.22.155.0/24,Global,no-resolve
 IP-CIDR,160.22.184.0/23,Global,no-resolve
 IP-CIDR,160.22.202.0/23,Global,no-resolve
 IP-CIDR,160.22.213.0/24,Global,no-resolve
@@ -5869,6 +5870,7 @@ IP-CIDR,165.101.0.0/22,Global,no-resolve
 IP-CIDR,165.101.120.0/24,Global,no-resolve
 IP-CIDR,165.101.124.0/24,Global,no-resolve
 IP-CIDR,165.101.152.0/23,Global,no-resolve
+IP-CIDR,165.101.28.0/23,Global,no-resolve
 IP-CIDR,165.101.74.0/23,Global,no-resolve
 IP-CIDR,165.101.8.0/24,Global,no-resolve
 IP-CIDR,165.101.85.0/24,Global,no-resolve
@@ -6595,6 +6597,7 @@ IP-CIDR,198.56.20.0/23,Global,no-resolve
 IP-CIDR,198.59.162.0/23,Global,no-resolve
 IP-CIDR,198.74.24.0/23,Global,no-resolve
 IP-CIDR,198.74.26.0/23,Global,no-resolve
+IP-CIDR,199.166.24.0/21,Global,no-resolve
 IP-CIDR,199.230.100.0/22,Global,no-resolve
 IP-CIDR,199.230.96.0/22,Global,no-resolve
 IP-CIDR,199.43.18.0/24,Global,no-resolve
@@ -9424,6 +9427,7 @@ IP-CIDR,43.243.216.0/22,Global,no-resolve
 IP-CIDR,43.243.220.0/22,Global,no-resolve
 IP-CIDR,43.243.224.0/22,Global,no-resolve
 IP-CIDR,43.243.240.0/22,Global,no-resolve
+IP-CIDR,43.243.250.0/23,Global,no-resolve
 IP-CIDR,43.243.252.0/22,Global,no-resolve
 IP-CIDR,43.243.28.0/22,Global,no-resolve
 IP-CIDR,43.243.44.0/22,Global,no-resolve

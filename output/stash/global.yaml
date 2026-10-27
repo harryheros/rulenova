@@ -1,7 +1,7 @@
 # RuleNova — Global (HK/TW/MO/JP/KR/SG)
 # Variant: combined
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-10-26T12:31:57Z
+# Generated: 2026-10-27T21:28:04Z
 payload:
   - DOMAIN-SUFFIX,104.com.tw
   - DOMAIN-SUFFIX,1111.com.tw
@@ -50,7 +50,6 @@ payload:
   - DOMAIN-SUFFIX,baemin.com
   - DOMAIN-SUFFIX,bahamut.com.tw
   - DOMAIN-SUFFIX,baixiang.com
-  - DOMAIN-SUFFIX,baiyewang.com
   - DOMAIN-SUFFIX,band.us
   - DOMAIN-SUFFIX,bandainamco.co.jp
   - DOMAIN-SUFFIX,bankofchina.com.hk
@@ -61,6 +60,7 @@ payload:
   - DOMAIN-SUFFIX,beileimaoedu.com
   - DOMAIN-SUFFIX,bh568.com
   - DOMAIN-SUFFIX,bhc.co.kr
+  - DOMAIN-SUFFIX,bhzx.ncwfcgw.cn
   - DOMAIN-SUFFIX,bianminwang.com
   - DOMAIN-SUFFIX,biccamera.com
   - DOMAIN-SUFFIX,bigbigchannel.com.hk
@@ -167,6 +167,7 @@ payload:
   - DOMAIN-SUFFIX,cuhkmc.hk
   - DOMAIN-SUFFIX,customs.go.kr
   - DOMAIN-SUFFIX,customs.gov.mo
+  - DOMAIN-SUFFIX,cwa.gov.tw
   - DOMAIN-SUFFIX,cwb.gov.tw
   - DOMAIN-SUFFIX,cxexpress.com
   - DOMAIN-SUFFIX,cyberctm.com
@@ -183,8 +184,8 @@ payload:
   - DOMAIN-SUFFIX,dbs.com.sg
   - DOMAIN-SUFFIX,dcard.tw
   - DOMAIN-SUFFIX,dcinside.com
+  - DOMAIN-SUFFIX,dedeadmin.com
   - DOMAIN-SUFFIX,dgbas.gov.tw
-  - DOMAIN-SUFFIX,diagram.jd.com
   - DOMAIN-SUFFIX,dicj.gov.mo
   - DOMAIN-SUFFIX,digital.go.jp
   - DOMAIN-SUFFIX,dimbuy.com
@@ -224,6 +225,7 @@ payload:
   - DOMAIN-SUFFIX,etmall.com.tw
   - DOMAIN-SUFFIX,etri.re.kr
   - DOMAIN-SUFFIX,ettoday.net
+  - DOMAIN-SUFFIX,exam.gov.tw
   - DOMAIN-SUFFIX,exmoo.com
   - DOMAIN-SUFFIX,ey.gov.tw
   - DOMAIN-SUFFIX,eyoucms.com
@@ -231,6 +233,7 @@ payload:
   - DOMAIN-SUFFIX,family.com.tw
   - DOMAIN-SUFFIX,familymart.com.tw
   - DOMAIN-SUFFIX,fanuc.com.cn
+  - DOMAIN-SUFFIX,fareastone.com.tw
   - DOMAIN-SUFFIX,fastretailing.com
   - DOMAIN-SUFFIX,fdct.gov.mo
   - DOMAIN-SUFFIX,fetnet.net
@@ -376,8 +379,6 @@ payload:
   - DOMAIN-SUFFIX,iras.gov.sg
   - DOMAIN-SUFFIX,isct.ac.jp
   - DOMAIN-SUFFIX,isd.gov.hk
-  - DOMAIN-SUFFIX,item-aws.jd.com
-  - DOMAIN-SUFFIX,item.m.jd.com
   - DOMAIN-SUFFIX,iusm.edu.mo
   - DOMAIN-SUFFIX,iydu.net
   - DOMAIN-SUFFIX,izhangan.com
@@ -386,11 +387,9 @@ payload:
   - DOMAIN-SUFFIX,japanpost.jp
   - DOMAIN-SUFFIX,jardines.com
   - DOMAIN-SUFFIX,jasso.go.jp
-  - DOMAIN-SUFFIX,jcap.m.jd.com
   - DOMAIN-SUFFIX,jcb.co.jp
   - DOMAIN-SUFFIX,jcci.or.jp
   - DOMAIN-SUFFIX,jd.hk
-  - DOMAIN-SUFFIX,jdme.jd.com
   - DOMAIN-SUFFIX,jetro.go.jp
   - DOMAIN-SUFFIX,jftc.go.jp
   - DOMAIN-SUFFIX,jiequ.art
@@ -400,7 +399,6 @@ payload:
   - DOMAIN-SUFFIX,jobsdb.com
   - DOMAIN-SUFFIX,jobstreet.com.sg
   - DOMAIN-SUFFIX,joongang.co.kr
-  - DOMAIN-SUFFIX,joyspace.jd.com
   - DOMAIN-SUFFIX,jp-bank.japanpost.jp
   - DOMAIN-SUFFIX,jpix.ad.jp
   - DOMAIN-SUFFIX,jpnap.net
@@ -438,6 +436,7 @@ payload:
   - DOMAIN-SUFFIX,keio.ac.jp
   - DOMAIN-SUFFIX,kepco.co.jp
   - DOMAIN-SUFFIX,kepco.co.kr
+  - DOMAIN-SUFFIX,kerrytj.com
   - DOMAIN-SUFFIX,kfb.or.kr
   - DOMAIN-SUFFIX,kgi.com
   - DOMAIN-SUFFIX,kia.com
@@ -507,9 +506,8 @@ payload:
   - DOMAIN-SUFFIX,macaupost.gov.mo
   - DOMAIN-SUFFIX,macautourism.gov.mo
   - DOMAIN-SUFFIX,maff.go.jp
+  - DOMAIN-SUFFIX,mail.qidan.com.cn
   - DOMAIN-SUFFIX,mainichi.jp
-  - DOMAIN-SUFFIX,mapi.m.jd.com
-  - DOMAIN-SUFFIX,mars.jd.com
   - DOMAIN-SUFFIX,mas.gov.sg
   - DOMAIN-SUFFIX,mastvnet.com
   - DOMAIN-SUFFIX,matsu.gov.tw
@@ -524,11 +522,11 @@ payload:
   - DOMAIN-SUFFIX,melon.com
   - DOMAIN-SUFFIX,mercari.com
   - DOMAIN-SUFFIX,meti.go.jp
+  - DOMAIN-SUFFIX,metro.taipei
   - DOMAIN-SUFFIX,metro.tokyo.lg.jp
   - DOMAIN-SUFFIX,mext.go.jp
   - DOMAIN-SUFFIX,mfa.gov.sg
   - DOMAIN-SUFFIX,mfood.mo
-  - DOMAIN-SUFFIX,mggtech.vip
   - DOMAIN-SUFFIX,mgto.gov.mo
   - DOMAIN-SUFFIX,mha.gov.sg
   - DOMAIN-SUFFIX,mhlw.go.jp
@@ -584,6 +582,7 @@ payload:
   - DOMAIN-SUFFIX,music.163.com
   - DOMAIN-SUFFIX,musinsa.com
   - DOMAIN-SUFFIX,must.edu.mo
+  - DOMAIN-SUFFIX,mybank.com.tw
   - DOMAIN-SUFFIX,myfone.com.tw
   - DOMAIN-SUFFIX,myinfo.gov.sg
   - DOMAIN-SUFFIX,mylink.com.tw
@@ -630,6 +629,7 @@ payload:
   - DOMAIN-SUFFIX,nta.go.jp
   - DOMAIN-SUFFIX,ntct.gov.tw
   - DOMAIN-SUFFIX,nthu.edu.tw
+  - DOMAIN-SUFFIX,ntnu.edu.tw
   - DOMAIN-SUFFIX,ntpc.gov.tw
   - DOMAIN-SUFFIX,nts.go.kr
   - DOMAIN-SUFFIX,ntt-east.co.jp
@@ -678,7 +678,6 @@ payload:
   - DOMAIN-SUFFIX,pref.osaka.lg.jp
   - DOMAIN-SUFFIX,pref.saitama.lg.jp
   - DOMAIN-SUFFIX,president.gov.tw
-  - DOMAIN-SUFFIX,pro.m.jd.com
   - DOMAIN-SUFFIX,propertyguru.com.sg
   - DOMAIN-SUFFIX,psa.sg
   - DOMAIN-SUFFIX,psc.go.jp
@@ -690,6 +689,7 @@ payload:
   - DOMAIN-SUFFIX,qoo10.sg
   - DOMAIN-SUFFIX,quanta.com.tw
   - DOMAIN-SUFFIX,quzhuanxiang.com
+  - DOMAIN-SUFFIX,railway.gov.tw
   - DOMAIN-SUFFIX,rakuten.co.jp
   - DOMAIN-SUFFIX,reconstruction.go.jp
   - DOMAIN-SUFFIX,resona-gr.co.jp
@@ -719,6 +719,7 @@ payload:
   - DOMAIN-SUFFIX,scdf.gov.sg
   - DOMAIN-SUFFIX,scmp.com
   - DOMAIN-SUFFIX,scourt.go.kr
+  - DOMAIN-SUFFIX,scsb.com.tw
   - DOMAIN-SUFFIX,sega.co.jp
   - DOMAIN-SUFFIX,segmentfault.com
   - DOMAIN-SUFFIX,sejong.go.kr
@@ -794,6 +795,7 @@ payload:
   - DOMAIN-SUFFIX,taipower.com.tw
   - DOMAIN-SUFFIX,taishinbank.com.tw
   - DOMAIN-SUFFIX,taitung.gov.tw
+  - DOMAIN-SUFFIX,taiwanlife.com
   - DOMAIN-SUFFIX,taiwanmobile.com
   - DOMAIN-SUFFIX,takashimaya.co.jp
   - DOMAIN-SUFFIX,takungpao.com
@@ -883,6 +885,7 @@ payload:
   - DOMAIN-SUFFIX,winkkie.com
   - DOMAIN-SUFFIX,wnbsq.com
   - DOMAIN-SUFFIX,wooribank.com
+  - DOMAIN-SUFFIX,wp.jun2020.com
   - DOMAIN-SUFFIX,xckgq.com
   - DOMAIN-SUFFIX,xiecheng.com
   - DOMAIN-SUFFIX,xmzgxcl.com
@@ -2824,7 +2827,6 @@ payload:
   - IP-CIDR,103.27.228.0/22,no-resolve
   - IP-CIDR,103.27.244.0/22,no-resolve
   - IP-CIDR,103.27.254.0/24,no-resolve
-  - IP-CIDR,103.27.40.0/22,no-resolve
   - IP-CIDR,103.27.68.0/22,no-resolve
   - IP-CIDR,103.27.80.0/22,no-resolve
   - IP-CIDR,103.28.144.0/22,no-resolve
@@ -2917,6 +2919,7 @@ payload:
   - IP-CIDR,103.36.20.0/22,no-resolve
   - IP-CIDR,103.36.24.0/23,no-resolve
   - IP-CIDR,103.36.252.0/23,no-resolve
+  - IP-CIDR,103.36.90.0/23,no-resolve
   - IP-CIDR,103.36.92.0/22,no-resolve
   - IP-CIDR,103.37.10.0/23,no-resolve
   - IP-CIDR,103.37.108.0/22,no-resolve
@@ -5551,7 +5554,6 @@ payload:
   - IP-CIDR,160.20.12.0/22,no-resolve
   - IP-CIDR,160.20.122.0/24,no-resolve
   - IP-CIDR,160.20.140.0/23,no-resolve
-  - IP-CIDR,160.20.142.0/24,no-resolve
   - IP-CIDR,160.20.44.0/22,no-resolve
   - IP-CIDR,160.20.52.0/22,no-resolve
   - IP-CIDR,160.20.56.0/21,no-resolve
@@ -5591,7 +5593,6 @@ payload:
   - IP-CIDR,160.213.92.0/22,no-resolve
   - IP-CIDR,160.213.96.0/22,no-resolve
   - IP-CIDR,160.215.0.0/16,no-resolve
-  - IP-CIDR,160.22.155.0/24,no-resolve
   - IP-CIDR,160.22.184.0/23,no-resolve
   - IP-CIDR,160.22.202.0/23,no-resolve
   - IP-CIDR,160.22.213.0/24,no-resolve
@@ -5866,6 +5867,7 @@ payload:
   - IP-CIDR,165.101.120.0/24,no-resolve
   - IP-CIDR,165.101.124.0/24,no-resolve
   - IP-CIDR,165.101.152.0/23,no-resolve
+  - IP-CIDR,165.101.28.0/23,no-resolve
   - IP-CIDR,165.101.74.0/23,no-resolve
   - IP-CIDR,165.101.8.0/24,no-resolve
   - IP-CIDR,165.101.85.0/24,no-resolve
@@ -6592,6 +6594,7 @@ payload:
   - IP-CIDR,198.59.162.0/23,no-resolve
   - IP-CIDR,198.74.24.0/23,no-resolve
   - IP-CIDR,198.74.26.0/23,no-resolve
+  - IP-CIDR,199.166.24.0/21,no-resolve
   - IP-CIDR,199.230.100.0/22,no-resolve
   - IP-CIDR,199.230.96.0/22,no-resolve
   - IP-CIDR,199.43.18.0/24,no-resolve
@@ -9421,6 +9424,7 @@ payload:
   - IP-CIDR,43.243.220.0/22,no-resolve
   - IP-CIDR,43.243.224.0/22,no-resolve
   - IP-CIDR,43.243.240.0/22,no-resolve
+  - IP-CIDR,43.243.250.0/23,no-resolve
   - IP-CIDR,43.243.252.0/22,no-resolve
   - IP-CIDR,43.243.28.0/22,no-resolve
   - IP-CIDR,43.243.44.0/22,no-resolve

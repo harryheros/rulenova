@@ -1,7 +1,7 @@
 # RuleNova — Hong Kong
 # Variant: domain
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-10-26T12:31:57Z
+# Generated: 2026-10-27T21:28:04Z
 payload:
   - 163.net
   - 350abc.net
@@ -13,10 +13,10 @@ payload:
   - asia.ccb.com
   - aswatson.com
   - baby-kingdom.com
-  - baiyewang.com
   - bankofchina.com.hk
   - bastillepost.com
   - beileimaoedu.com
+  - bhzx.ncwfcgw.cn
   - bigbigchannel.com.hk
   - boc.hk
   - bochk.com
@@ -46,7 +46,6 @@ payload:
   - cyflscb.com
   - dahsing.com
   - dbs.com.hk
-  - diagram.jd.com
   - dimbuy.com
   - discuss.com.hk
   - dragonfly.fm
@@ -103,26 +102,19 @@ payload:
   - icac.org.hk
   - info.gov.hk
   - isd.gov.hk
-  - item-aws.jd.com
-  - item.m.jd.com
   - jardines.com
-  - jcap.m.jd.com
   - jd.hk
-  - jdme.jd.com
   - jiequ.art
   - job853.com
   - jobsdb.com
-  - joyspace.jd.com
   - jszlgjg.com
   - klook.com
   - lcsd.gov.hk
   - lihkg.com
   - ln.edu.hk
   - lwb.gov.hk
-  - mapi.m.jd.com
-  - mars.jd.com
+  - mail.qidan.com.cn
   - mclcinema.com
-  - mggtech.vip
   - mingpao.com
   - missfresh.net
   - mtr.com.hk
@@ -136,7 +128,6 @@ payload:
   - openrice.com
   - pccw.com
   - polyu.edu.hk
-  - pro.m.jd.com
   - rthk.hk
   - san-yang.com
   - sb.gov.hk

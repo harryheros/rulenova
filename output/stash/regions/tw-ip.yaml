@@ -1,7 +1,7 @@
 # RuleNova — Taiwan
 # Variant: ip
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-10-26T12:31:57Z
+# Generated: 2026-10-27T21:28:04Z
 payload:
   - 1.160.0.0/12
   - 1.200.0.0/16
@@ -475,6 +475,7 @@ payload:
   - 163.61.184.0/23
   - 163.61.60.0/23
   - 165.101.152.0/23
+  - 165.101.28.0/23
   - 165.101.86.0/23
   - 165.101.88.0/23
   - 165.99.112.0/23

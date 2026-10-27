@@ -4,9 +4,9 @@
     "label": "Hong Kong",
     "variant": "ip",
     "suggested_policy": "HK",
-    "generated": "2026-10-26T12:31:57Z",
+    "generated": "2026-10-27T21:28:04Z",
     "domains": 0,
-    "cidrs": 2567,
+    "cidrs": 2568,
     "source": "https://github.com/harryheros/rulenova"
   },
   "rules": [
@@ -2295,6 +2295,7 @@
         "43.243.220.0/22",
         "43.243.224.0/22",
         "43.243.240.0/22",
+        "43.243.250.0/23",
         "43.243.28.0/22",
         "43.243.44.0/22",
         "43.243.52.0/22",

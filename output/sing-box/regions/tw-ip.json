@@ -4,9 +4,9 @@
     "label": "Taiwan",
     "variant": "ip",
     "suggested_policy": "TW",
-    "generated": "2026-10-26T12:31:57Z",
+    "generated": "2026-10-27T21:28:04Z",
     "domains": 0,
-    "cidrs": 763,
+    "cidrs": 764,
     "source": "https://github.com/harryheros/rulenova"
   },
   "rules": [
@@ -484,6 +484,7 @@
         "163.61.184.0/23",
         "163.61.60.0/23",
         "165.101.152.0/23",
+        "165.101.28.0/23",
         "165.101.86.0/23",
         "165.101.88.0/23",
         "165.99.112.0/23",

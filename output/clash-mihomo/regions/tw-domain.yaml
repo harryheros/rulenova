@@ -1,7 +1,7 @@
 # RuleNova — Taiwan
 # Variant: domain
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-10-26T12:31:57Z
+# Generated: 2026-10-27T21:28:04Z
 payload:
   - 104.com.tw
   - 1111.com.tw
@@ -34,6 +34,7 @@ payload:
   - ctbcbank.com
   - cto.org.tw
   - ctspp.gov.tw
+  - cwa.gov.tw
   - cwb.gov.tw
   - cycg.gov.tw
   - dcard.tw
@@ -45,9 +46,11 @@ payload:
   - esunbank.com.tw
   - etmall.com.tw
   - ettoday.net
+  - exam.gov.tw
   - ey.gov.tw
   - family.com.tw
   - familymart.com.tw
+  - fareastone.com.tw
   - fetnet.net
   - firstbank.com.tw
   - fju.edu.tw
@@ -76,6 +79,7 @@ payload:
   - kbro.com.tw
   - kcg.gov.tw
   - keelung.gov.tw
+  - kerrytj.com
   - kgi.com
   - kia.gov.tw
   - kinmen.gov.tw
@@ -90,6 +94,7 @@ payload:
   - matsu.gov.tw
   - mediatek.com
   - megabank.com.tw
+  - metro.taipei
   - miaoli.gov.tw
   - mobile01.com
   - moea.gov.tw
@@ -101,6 +106,7 @@ payload:
   - motc.gov.tw
   - mrt.taipei
   - msa.gov.tw
+  - mybank.com.tw
   - myfone.com.tw
   - mylink.com.tw
   - nantou.gov.tw
@@ -117,6 +123,7 @@ payload:
   - nsysu.edu.tw
   - ntct.gov.tw
   - nthu.edu.tw
+  - ntnu.edu.tw
   - ntpc.gov.tw
   - ntu.edu.tw
   - ntust.edu.tw
@@ -133,8 +140,10 @@ payload:
   - pts.org.tw
   - ptt.cc
   - quanta.com.tw
+  - railway.gov.tw
   - rti.org.tw
   - ruten.com.tw
+  - scsb.com.tw
   - setn.com
   - shopee.tw
   - sinica.edu.tw
@@ -149,6 +158,7 @@ payload:
   - taipower.com.tw
   - taishinbank.com.tw
   - taitung.gov.tw
+  - taiwanlife.com
   - taiwanmobile.com
   - tami.org.tw
   - taoyuan-airport.com

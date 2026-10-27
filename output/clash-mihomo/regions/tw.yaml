@@ -1,7 +1,7 @@
 # RuleNova — Taiwan
 # Variant: combined
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-10-26T12:31:57Z
+# Generated: 2026-10-27T21:28:04Z
 payload:
   - DOMAIN-SUFFIX,104.com.tw
   - DOMAIN-SUFFIX,1111.com.tw
@@ -34,6 +34,7 @@ payload:
   - DOMAIN-SUFFIX,ctbcbank.com
   - DOMAIN-SUFFIX,cto.org.tw
   - DOMAIN-SUFFIX,ctspp.gov.tw
+  - DOMAIN-SUFFIX,cwa.gov.tw
   - DOMAIN-SUFFIX,cwb.gov.tw
   - DOMAIN-SUFFIX,cycg.gov.tw
   - DOMAIN-SUFFIX,dcard.tw
@@ -45,9 +46,11 @@ payload:
   - DOMAIN-SUFFIX,esunbank.com.tw
   - DOMAIN-SUFFIX,etmall.com.tw
   - DOMAIN-SUFFIX,ettoday.net
+  - DOMAIN-SUFFIX,exam.gov.tw
   - DOMAIN-SUFFIX,ey.gov.tw
   - DOMAIN-SUFFIX,family.com.tw
   - DOMAIN-SUFFIX,familymart.com.tw
+  - DOMAIN-SUFFIX,fareastone.com.tw
   - DOMAIN-SUFFIX,fetnet.net
   - DOMAIN-SUFFIX,firstbank.com.tw
   - DOMAIN-SUFFIX,fju.edu.tw
@@ -76,6 +79,7 @@ payload:
   - DOMAIN-SUFFIX,kbro.com.tw
   - DOMAIN-SUFFIX,kcg.gov.tw
   - DOMAIN-SUFFIX,keelung.gov.tw
+  - DOMAIN-SUFFIX,kerrytj.com
   - DOMAIN-SUFFIX,kgi.com
   - DOMAIN-SUFFIX,kia.gov.tw
   - DOMAIN-SUFFIX,kinmen.gov.tw
@@ -90,6 +94,7 @@ payload:
   - DOMAIN-SUFFIX,matsu.gov.tw
   - DOMAIN-SUFFIX,mediatek.com
   - DOMAIN-SUFFIX,megabank.com.tw
+  - DOMAIN-SUFFIX,metro.taipei
   - DOMAIN-SUFFIX,miaoli.gov.tw
   - DOMAIN-SUFFIX,mobile01.com
   - DOMAIN-SUFFIX,moea.gov.tw
@@ -101,6 +106,7 @@ payload:
   - DOMAIN-SUFFIX,motc.gov.tw
   - DOMAIN-SUFFIX,mrt.taipei
   - DOMAIN-SUFFIX,msa.gov.tw
+  - DOMAIN-SUFFIX,mybank.com.tw
   - DOMAIN-SUFFIX,myfone.com.tw
   - DOMAIN-SUFFIX,mylink.com.tw
   - DOMAIN-SUFFIX,nantou.gov.tw
@@ -117,6 +123,7 @@ payload:
   - DOMAIN-SUFFIX,nsysu.edu.tw
   - DOMAIN-SUFFIX,ntct.gov.tw
   - DOMAIN-SUFFIX,nthu.edu.tw
+  - DOMAIN-SUFFIX,ntnu.edu.tw
   - DOMAIN-SUFFIX,ntpc.gov.tw
   - DOMAIN-SUFFIX,ntu.edu.tw
   - DOMAIN-SUFFIX,ntust.edu.tw
@@ -133,8 +140,10 @@ payload:
   - DOMAIN-SUFFIX,pts.org.tw
   - DOMAIN-SUFFIX,ptt.cc
   - DOMAIN-SUFFIX,quanta.com.tw
+  - DOMAIN-SUFFIX,railway.gov.tw
   - DOMAIN-SUFFIX,rti.org.tw
   - DOMAIN-SUFFIX,ruten.com.tw
+  - DOMAIN-SUFFIX,scsb.com.tw
   - DOMAIN-SUFFIX,setn.com
   - DOMAIN-SUFFIX,shopee.tw
   - DOMAIN-SUFFIX,sinica.edu.tw
@@ -149,6 +158,7 @@ payload:
   - DOMAIN-SUFFIX,taipower.com.tw
   - DOMAIN-SUFFIX,taishinbank.com.tw
   - DOMAIN-SUFFIX,taitung.gov.tw
+  - DOMAIN-SUFFIX,taiwanlife.com
   - DOMAIN-SUFFIX,taiwanmobile.com
   - DOMAIN-SUFFIX,tami.org.tw
   - DOMAIN-SUFFIX,taoyuan-airport.com
@@ -645,6 +655,7 @@ payload:
   - IP-CIDR,163.61.184.0/23,no-resolve
   - IP-CIDR,163.61.60.0/23,no-resolve
   - IP-CIDR,165.101.152.0/23,no-resolve
+  - IP-CIDR,165.101.28.0/23,no-resolve
   - IP-CIDR,165.101.86.0/23,no-resolve
   - IP-CIDR,165.101.88.0/23,no-resolve
   - IP-CIDR,165.99.112.0/23,no-resolve

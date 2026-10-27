@@ -1,7 +1,7 @@
 # RuleNova — Hong Kong
 # Variant: ip
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-10-26T12:31:57Z
+# Generated: 2026-10-27T21:28:04Z
 payload:
   - 1.36.0.0/16
   - 1.64.0.0/15
@@ -2286,6 +2286,7 @@ payload:
   - 43.243.220.0/22
   - 43.243.224.0/22
   - 43.243.240.0/22
+  - 43.243.250.0/23
   - 43.243.28.0/22
   - 43.243.44.0/22
   - 43.243.52.0/22

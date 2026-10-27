@@ -1,7 +1,7 @@
 # RuleNova — Singapore
 # Variant  : combined
 # Format   : Surge RULE-SET
-# Generated: 2026-10-26T12:31:57Z
+# Generated: 2026-10-27T21:28:04Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -33,6 +33,7 @@ DOMAIN-SUFFIX,cqjsaq.com
 DOMAIN-SUFFIX,csa.gov.sg
 DOMAIN-SUFFIX,ctsho.com
 DOMAIN-SUFFIX,dbs.com.sg
+DOMAIN-SUFFIX,dedeadmin.com
 DOMAIN-SUFFIX,dlsstax.com
 DOMAIN-SUFFIX,e-tecsun.com
 DOMAIN-SUFFIX,edb.gov.sg
@@ -130,6 +131,7 @@ DOMAIN-SUFFIX,visitsingapore.com
 DOMAIN-SUFFIX,weixinyunduan.com
 DOMAIN-SUFFIX,wellcee.com
 DOMAIN-SUFFIX,winkkie.com
+DOMAIN-SUFFIX,wp.jun2020.com
 DOMAIN-SUFFIX,xiecheng.com
 DOMAIN-SUFFIX,xn--fiqs8sr9ge7eb4b28vo92a.com
 DOMAIN-SUFFIX,yaozhizhu.com
@@ -503,6 +505,7 @@ IP-CIDR,103.31.24.0/23,no-resolve
 IP-CIDR,103.35.248.0/23,no-resolve
 IP-CIDR,103.35.250.0/24,no-resolve
 IP-CIDR,103.35.91.0/24,no-resolve
+IP-CIDR,103.36.90.0/23,no-resolve
 IP-CIDR,103.36.92.0/22,no-resolve
 IP-CIDR,103.37.196.0/22,no-resolve
 IP-CIDR,103.38.184.0/22,no-resolve

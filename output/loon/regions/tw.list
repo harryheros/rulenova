@@ -2,7 +2,7 @@
 # Variant  : combined
 # Format   : Loon
 # Policy   : TW
-# Generated: 2026-10-26T12:31:57Z
+# Generated: 2026-10-27T21:28:04Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -37,6 +37,7 @@ DOMAIN-SUFFIX,cpc.com.tw,TW
 DOMAIN-SUFFIX,ctbcbank.com,TW
 DOMAIN-SUFFIX,cto.org.tw,TW
 DOMAIN-SUFFIX,ctspp.gov.tw,TW
+DOMAIN-SUFFIX,cwa.gov.tw,TW
 DOMAIN-SUFFIX,cwb.gov.tw,TW
 DOMAIN-SUFFIX,cycg.gov.tw,TW
 DOMAIN-SUFFIX,dcard.tw,TW
@@ -48,9 +49,11 @@ DOMAIN-SUFFIX,eslite.com,TW
 DOMAIN-SUFFIX,esunbank.com.tw,TW
 DOMAIN-SUFFIX,etmall.com.tw,TW
 DOMAIN-SUFFIX,ettoday.net,TW
+DOMAIN-SUFFIX,exam.gov.tw,TW
 DOMAIN-SUFFIX,ey.gov.tw,TW
 DOMAIN-SUFFIX,family.com.tw,TW
 DOMAIN-SUFFIX,familymart.com.tw,TW
+DOMAIN-SUFFIX,fareastone.com.tw,TW
 DOMAIN-SUFFIX,fetnet.net,TW
 DOMAIN-SUFFIX,firstbank.com.tw,TW
 DOMAIN-SUFFIX,fju.edu.tw,TW
@@ -79,6 +82,7 @@ DOMAIN-SUFFIX,kaohsiung.gov.tw,TW
 DOMAIN-SUFFIX,kbro.com.tw,TW
 DOMAIN-SUFFIX,kcg.gov.tw,TW
 DOMAIN-SUFFIX,keelung.gov.tw,TW
+DOMAIN-SUFFIX,kerrytj.com,TW
 DOMAIN-SUFFIX,kgi.com,TW
 DOMAIN-SUFFIX,kia.gov.tw,TW
 DOMAIN-SUFFIX,kinmen.gov.tw,TW
@@ -93,6 +97,7 @@ DOMAIN-SUFFIX,ly.gov.tw,TW
 DOMAIN-SUFFIX,matsu.gov.tw,TW
 DOMAIN-SUFFIX,mediatek.com,TW
 DOMAIN-SUFFIX,megabank.com.tw,TW
+DOMAIN-SUFFIX,metro.taipei,TW
 DOMAIN-SUFFIX,miaoli.gov.tw,TW
 DOMAIN-SUFFIX,mobile01.com,TW
 DOMAIN-SUFFIX,moea.gov.tw,TW
@@ -104,6 +109,7 @@ DOMAIN-SUFFIX,mops.twse.com.tw,TW
 DOMAIN-SUFFIX,motc.gov.tw,TW
 DOMAIN-SUFFIX,mrt.taipei,TW
 DOMAIN-SUFFIX,msa.gov.tw,TW
+DOMAIN-SUFFIX,mybank.com.tw,TW
 DOMAIN-SUFFIX,myfone.com.tw,TW
 DOMAIN-SUFFIX,mylink.com.tw,TW
 DOMAIN-SUFFIX,nantou.gov.tw,TW
@@ -120,6 +126,7 @@ DOMAIN-SUFFIX,npa.gov.tw,TW
 DOMAIN-SUFFIX,nsysu.edu.tw,TW
 DOMAIN-SUFFIX,ntct.gov.tw,TW
 DOMAIN-SUFFIX,nthu.edu.tw,TW
+DOMAIN-SUFFIX,ntnu.edu.tw,TW
 DOMAIN-SUFFIX,ntpc.gov.tw,TW
 DOMAIN-SUFFIX,ntu.edu.tw,TW
 DOMAIN-SUFFIX,ntust.edu.tw,TW
@@ -136,8 +143,10 @@ DOMAIN-SUFFIX,pthg.gov.tw,TW
 DOMAIN-SUFFIX,pts.org.tw,TW
 DOMAIN-SUFFIX,ptt.cc,TW
 DOMAIN-SUFFIX,quanta.com.tw,TW
+DOMAIN-SUFFIX,railway.gov.tw,TW
 DOMAIN-SUFFIX,rti.org.tw,TW
 DOMAIN-SUFFIX,ruten.com.tw,TW
+DOMAIN-SUFFIX,scsb.com.tw,TW
 DOMAIN-SUFFIX,setn.com,TW
 DOMAIN-SUFFIX,shopee.tw,TW
 DOMAIN-SUFFIX,sinica.edu.tw,TW
@@ -152,6 +161,7 @@ DOMAIN-SUFFIX,taipei.gov.tw,TW
 DOMAIN-SUFFIX,taipower.com.tw,TW
 DOMAIN-SUFFIX,taishinbank.com.tw,TW
 DOMAIN-SUFFIX,taitung.gov.tw,TW
+DOMAIN-SUFFIX,taiwanlife.com,TW
 DOMAIN-SUFFIX,taiwanmobile.com,TW
 DOMAIN-SUFFIX,tami.org.tw,TW
 DOMAIN-SUFFIX,taoyuan-airport.com,TW
@@ -648,6 +658,7 @@ IP-CIDR,163.61.124.0/23,TW,no-resolve
 IP-CIDR,163.61.184.0/23,TW,no-resolve
 IP-CIDR,163.61.60.0/23,TW,no-resolve
 IP-CIDR,165.101.152.0/23,TW,no-resolve
+IP-CIDR,165.101.28.0/23,TW,no-resolve
 IP-CIDR,165.101.86.0/23,TW,no-resolve
 IP-CIDR,165.101.88.0/23,TW,no-resolve
 IP-CIDR,165.99.112.0/23,TW,no-resolve

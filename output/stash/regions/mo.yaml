@@ -1,7 +1,7 @@
 # RuleNova — Macau
 # Variant: combined
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-10-26T12:31:57Z
+# Generated: 2026-10-27T21:28:04Z
 payload:
   - DOMAIN-SUFFIX,abm.org.mo
   - DOMAIN-SUFFIX,al.gov.mo

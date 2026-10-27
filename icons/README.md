@@ -50,9 +50,9 @@ Other clients that support custom policy-group icons use the same URLs in their 
 
 ## Details
 
-- PNG, 208×208 px, RGBA. Solid icons have transparent rounded corners.
+- PNG, 108×108 px, RGBA. Solid icons have transparent rounded corners.
 - File names are lowercase; URLs are case-sensitive.
-- `sources/scripts/test_icons.py` checks in CI that both styles contain the same icons, every file is a valid 208×208 RGBA PNG, and every icon is listed here.
+- `sources/scripts/test_icons.py` checks in CI that both styles contain the same icons, every file is a valid 108×108 RGBA PNG, and every icon is listed here.
 - After adding or changing icons, regenerate the previews with `python3 sources/scripts/build_icon_preview.py` (requires Pillow).
 
 ## License

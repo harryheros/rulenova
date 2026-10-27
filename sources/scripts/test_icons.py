@@ -5,7 +5,7 @@
 
 - icons/solid and icons/transparent contain exactly the same file names
 - names are lowercase kebab-case .png
-- every file is a valid PNG, 208x208, 8-bit RGBA
+- every file is a valid PNG, 108x108, 8-bit RGBA
 - the preview images exist and every icon appears in icons/README.md
 - every local path referenced in icons/README.md exists (case-sensitive)
 """
@@ -17,7 +17,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 ICONS = ROOT / "icons"
-SIZE = 208
+SIZE = 108
 STYLES = ("solid", "transparent")
 errors = []
 

@@ -89,6 +89,26 @@ def unique_sorted(items: list[str]) -> list[str]:
     return sorted(dict.fromkeys(item.strip() for item in items if item and item.strip()))
 
 
+def drop_covered(domains: list[str]) -> list[str]:
+    """Remove domains whose parent is in the same list.
+
+    Every rule set matches by domain suffix, so with "taobao.com" listed,
+    "2car.taobao.com" in the same list never changes a routing decision —
+    it only makes the file larger (about 11% of the CN list in Oct 2026).
+    Only the SAME list is considered: a subdomain listed for a different
+    region than its parent (asia.ccb.com in HK, ccb.com in CN) is a real
+    exception and is kept.
+    """
+    present = set(domains)
+    out = []
+    for d in domains:
+        labels = d.split(".")
+        if any(".".join(labels[i:]) in present for i in range(1, len(labels) - 1)):
+            continue
+        out.append(d)
+    return out
+
+
 def strip_comment(line: str) -> str:
     # Keep it conservative: source files are one rule per line; inline comments are
     # not expected, but this makes local test fixtures safer.
@@ -181,7 +201,13 @@ def fetch_region(region: str) -> tuple[list[str], list[str]]:
 
     # Surface silent drops — if cleansing rejects >20% of upstream items,
     # upstream format likely changed and the rule set is degrading.
+    # (Measured before drop_covered: removing redundant subdomains is not loss.)
     _warn_drop_rate(region, "domains", len(raw_domains), len(domains))
+    before = len(domains)
+    domains = drop_covered(domains)
+    if before != len(domains):
+        LOG.info("  [%s] %d subdomains already covered by a listed parent removed",
+                 region, before - len(domains))
     _warn_drop_rate(region, "cidrs", len(raw_cidrs), len(cidrs))
 
     return domains, cidrs
@@ -476,7 +502,7 @@ def build(repo_root: Path, *, keep_output: bool = False,
     write_ruleset(out_root, "china", "China Mainland", POLICY_CHINA,
                   all_domains["CN"], all_cidrs["CN"], generated_at)
 
-    global_domains = unique_sorted([d for r in GLOBAL_REGIONS for d in all_domains[r]])
+    global_domains = drop_covered(unique_sorted([d for r in GLOBAL_REGIONS for d in all_domains[r]]))
     global_cidrs = unique_sorted([c for r in GLOBAL_REGIONS for c in all_cidrs[r]])
     stats["GLOBAL"] = {"domains": len(global_domains), "cidrs": len(global_cidrs)}
     write_ruleset(out_root, "global", "Global (HK/TW/MO/JP/KR/SG)", POLICY_GLOBAL,

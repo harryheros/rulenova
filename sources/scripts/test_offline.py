@@ -255,6 +255,31 @@ class TestNames(unittest.TestCase):
         self.assertTrue(all(len(REGION_POLICY[region]) <= 6 for region in REGIONS))
 
 
+class TestDropCovered(unittest.TestCase):
+    def test_same_list_subdomains_removed(self):
+        import build_rules as br
+        got = br.drop_covered(["12315.gov.cn", "2car.taobao.com", "a.b.example.cn",
+                               "example.cn", "gov.cn", "taobao.com", "unrelated.com"])
+        self.assertEqual(got, ["example.cn", "gov.cn", "taobao.com", "unrelated.com"])
+
+    def test_similar_names_are_not_parents(self):
+        import build_rules as br
+        # "ataobao.com" is not under "taobao.com"; a bare TLD is never a parent
+        self.assertEqual(br.drop_covered(["ataobao.com", "taobao.com"]), ["ataobao.com", "taobao.com"])
+        self.assertEqual(br.drop_covered(["example.cn"]), ["example.cn"])
+
+    def test_fetch_region_applies_it(self):
+        import build_rules as br
+        original = br.fetch_text
+        br.fetch_text = lambda url: (["qq.com", "im.qq.com", "weixin.qq.com", "baidu.com"]
+                                     if "domains_" in url else ["1.0.1.0/24"])
+        try:
+            domains, _ = br.fetch_region("CN")
+        finally:
+            br.fetch_text = original
+        self.assertEqual(domains, ["baidu.com", "qq.com"])
+
+
 if __name__ == "__main__":
     runner = unittest.TextTestRunner(verbosity=2)
     result = runner.run(unittest.defaultTestLoader.loadTestsFromModule(sys.modules[__name__]))

@@ -159,6 +159,12 @@ Global -> PROXY / Auto
 
 The rule files do not need to change when the user travels. Only the policy group mapping changes.
 
+### Rule order
+
+Clients use the **first** rule that matches, not the most specific one. A few subdomains are listed for a different region than their parent — for example `asia.ccb.com` (HK) while `ccb.com` is in CN. Put the **Global** (or per-region) rule set **before China**, as in the examples below, so these exceptions are reached first.
+
+Within one rule set, a subdomain whose parent is already listed is left out: suffix matching covers it, so the extra line would never change a routing decision.
+
 ---
 
 ## Client examples
@@ -206,15 +212,15 @@ rules:
 ### Surge
 
 ```txt
-RULE-SET,https://raw.githubusercontent.com/harryheros/rulenova/main/output/surge/china.list,China
 RULE-SET,https://raw.githubusercontent.com/harryheros/rulenova/main/output/surge/global.list,Global
+RULE-SET,https://raw.githubusercontent.com/harryheros/rulenova/main/output/surge/china.list,China
 ```
 
 ### Quantumult X
 
 ```txt
-filter_remote=https://raw.githubusercontent.com/harryheros/rulenova/main/output/quantumult-x/china.conf, tag=RuleNova China, enabled=true
 filter_remote=https://raw.githubusercontent.com/harryheros/rulenova/main/output/quantumult-x/global.conf, tag=RuleNova Global, enabled=true
+filter_remote=https://raw.githubusercontent.com/harryheros/rulenova/main/output/quantumult-x/china.conf, tag=RuleNova China, enabled=true
 ```
 
 Or override the embedded policy when needed:

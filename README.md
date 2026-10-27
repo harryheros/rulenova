@@ -254,6 +254,7 @@ filter_remote=https://raw.githubusercontent.com/harryheros/rulenova/main/output/
 python3 sources/scripts/test_offline.py
 node sources/scripts/test_geocheck.js
 node sources/scripts/test_parser.js
+python3 sources/scripts/test_icons.py
 python3 sources/scripts/build_rules.py --repo-root .
 python3 sources/scripts/validate_output.py
 ```
@@ -270,6 +271,17 @@ Besides the rule sets, RuleNova ships small client-specific tools in [`extras/`]
 |--------|------|------|
 | Quantumult X | GeoCheck — node location check | `extras/quantumult-x/geocheck.js` |
 | Quantumult X | RuleNova Parser — rule and module conversion | `extras/quantumult-x/parser.js` |
+
+## Icons
+
+16 original icons in two styles — solid and transparent — for policy groups in clients that support custom icons. See [`icons/README.md`](icons/README.md) for every icon and its URL.
+
+<img src="icons/preview-solid.png" alt="RuleNova icons" width="440">
+
+```text
+https://cdn.jsdelivr.net/gh/harryheros/rulenova@main/icons/solid/<name>.png
+https://cdn.jsdelivr.net/gh/harryheros/rulenova@main/icons/transparent/<name>.png
+```
 
 ## Quantumult X: node location check (GeoCheck)
 

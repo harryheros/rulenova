@@ -43,6 +43,7 @@ jobs:
           python3 sources/scripts/test_offline.py
           node sources/scripts/test_geocheck.js
           node sources/scripts/test_parser.js
+          python3 sources/scripts/test_icons.py
 
       - name: Build rule sets
         run: |

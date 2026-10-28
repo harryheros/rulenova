@@ -4,8 +4,8 @@
     "label": "Japan",
     "variant": "domain",
     "suggested_policy": "JP",
-    "generated": "2026-10-27T21:28:04Z",
-    "domains": 163,
+    "generated": "2026-10-28T17:19:59Z",
+    "domains": 162,
     "cidrs": 0,
     "source": "https://github.com/harryheros/rulenova"
   },
@@ -64,7 +64,6 @@
         "jetro.go.jp",
         "jftc.go.jp",
         "jma.go.jp",
-        "jp-bank.japanpost.jp",
         "jpix.ad.jp",
         "jpnap.net",
         "jprs.jp",

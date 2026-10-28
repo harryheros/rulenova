@@ -1,7 +1,7 @@
 # RuleNova — Japan
 # Variant  : domain
 # Format   : Surge RULE-SET
-# Generated: 2026-10-27T21:28:04Z
+# Generated: 2026-10-28T17:19:59Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -57,7 +57,6 @@ DOMAIN-SUFFIX,jcci.or.jp
 DOMAIN-SUFFIX,jetro.go.jp
 DOMAIN-SUFFIX,jftc.go.jp
 DOMAIN-SUFFIX,jma.go.jp
-DOMAIN-SUFFIX,jp-bank.japanpost.jp
 DOMAIN-SUFFIX,jpix.ad.jp
 DOMAIN-SUFFIX,jpnap.net
 DOMAIN-SUFFIX,jprs.jp

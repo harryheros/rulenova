@@ -1,7 +1,7 @@
 # RuleNova — Japan
 # Variant: domain
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-10-27T21:28:04Z
+# Generated: 2026-10-28T17:19:59Z
 payload:
   - amazon.co.jp
   - ameba.jp
@@ -55,7 +55,6 @@ payload:
   - jetro.go.jp
   - jftc.go.jp
   - jma.go.jp
-  - jp-bank.japanpost.jp
   - jpix.ad.jp
   - jpnap.net
   - jprs.jp

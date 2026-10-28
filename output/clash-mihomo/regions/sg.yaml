@@ -1,7 +1,7 @@
 # RuleNova — Singapore
 # Variant: combined
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-10-27T21:28:04Z
+# Generated: 2026-10-28T17:19:59Z
 payload:
   - DOMAIN-SUFFIX,13cr.com
   - DOMAIN-SUFFIX,17qzx.com
@@ -12,13 +12,11 @@ payload:
   - DOMAIN-SUFFIX,6xw.com
   - DOMAIN-SUFFIX,8world.com
   - DOMAIN-SUFFIX,99.co
-  - DOMAIN-SUFFIX,acra.gov.sg
   - DOMAIN-SUFFIX,bh568.com
   - DOMAIN-SUFFIX,bianminwang.com
   - DOMAIN-SUFFIX,biohyalux.com
   - DOMAIN-SUFFIX,blueskystudy.com
   - DOMAIN-SUFFIX,booyu-import.com
-  - DOMAIN-SUFFIX,caas.gov.sg
   - DOMAIN-SUFFIX,carousell.com
   - DOMAIN-SUFFIX,carousell.sg
   - DOMAIN-SUFFIX,changfengsteeltube.com
@@ -26,22 +24,17 @@ payload:
   - DOMAIN-SUFFIX,channelnewsasia.com
   - DOMAIN-SUFFIX,coldstorage.com.sg
   - DOMAIN-SUFFIX,comfortdelgro.com
-  - DOMAIN-SUFFIX,cpf.gov.sg
   - DOMAIN-SUFFIX,cqjsaq.com
-  - DOMAIN-SUFFIX,csa.gov.sg
   - DOMAIN-SUFFIX,ctsho.com
   - DOMAIN-SUFFIX,dbs.com.sg
   - DOMAIN-SUFFIX,dedeadmin.com
   - DOMAIN-SUFFIX,dlsstax.com
   - DOMAIN-SUFFIX,e-tecsun.com
-  - DOMAIN-SUFFIX,edb.gov.sg
-  - DOMAIN-SUFFIX,enterprise.gov.sg
   - DOMAIN-SUFFIX,eyoucms.com
   - DOMAIN-SUFFIX,fairprice.com.sg
   - DOMAIN-SUFFIX,foodpanda.sg
   - DOMAIN-SUFFIX,gengfuwang.com
   - DOMAIN-SUFFIX,gllshan.com
-  - DOMAIN-SUFFIX,go.gov.sg
   - DOMAIN-SUFFIX,gov.sg
   - DOMAIN-SUFFIX,grab.com
   - DOMAIN-SUFFIX,gxpost.com
@@ -49,35 +42,18 @@ payload:
   - DOMAIN-SUFFIX,gxykjd.com
   - DOMAIN-SUFFIX,haibowh.com
   - DOMAIN-SUFFIX,haoranbio.com
-  - DOMAIN-SUFFIX,hdb.gov.sg
   - DOMAIN-SUFFIX,hsrjtk.com
-  - DOMAIN-SUFFIX,ica.gov.sg
-  - DOMAIN-SUFFIX,imda.gov.sg
   - DOMAIN-SUFFIX,imgbed.link
-  - DOMAIN-SUFFIX,iras.gov.sg
   - DOMAIN-SUFFIX,iydu.net
   - DOMAIN-SUFFIX,izhangan.com
   - DOMAIN-SUFFIX,jobstreet.com.sg
   - DOMAIN-SUFFIX,jslvzhigu.com
-  - DOMAIN-SUFFIX,judiciary.gov.sg
   - DOMAIN-SUFFIX,kjw.cc
   - DOMAIN-SUFFIX,lazada.sg
-  - DOMAIN-SUFFIX,lta.gov.sg
   - DOMAIN-SUFFIX,m1.com.sg
-  - DOMAIN-SUFFIX,mas.gov.sg
-  - DOMAIN-SUFFIX,mfa.gov.sg
-  - DOMAIN-SUFFIX,mha.gov.sg
   - DOMAIN-SUFFIX,minimaxi.com
-  - DOMAIN-SUFFIX,moe.gov.sg
   - DOMAIN-SUFFIX,moeyuuko.com
-  - DOMAIN-SUFFIX,mof.gov.sg
-  - DOMAIN-SUFFIX,moh.gov.sg
-  - DOMAIN-SUFFIX,mom.gov.sg
   - DOMAIN-SUFFIX,mothership.sg
-  - DOMAIN-SUFFIX,msf.gov.sg
-  - DOMAIN-SUFFIX,mti.gov.sg
-  - DOMAIN-SUFFIX,myinfo.gov.sg
-  - DOMAIN-SUFFIX,nea.gov.sg
   - DOMAIN-SUFFIX,ngacn.cc
   - DOMAIN-SUFFIX,ntu.edu.sg
   - DOMAIN-SUFFIX,nuomiphp.com
@@ -85,16 +61,14 @@ payload:
   - DOMAIN-SUFFIX,nx-sc.com
   - DOMAIN-SUFFIX,ocbc.com
   - DOMAIN-SUFFIX,pj39800.com
-  - DOMAIN-SUFFIX,police.gov.sg
   - DOMAIN-SUFFIX,posb.com.sg
   - DOMAIN-SUFFIX,propertyguru.com.sg
   - DOMAIN-SUFFIX,psa.sg
-  - DOMAIN-SUFFIX,pub.gov.sg
   - DOMAIN-SUFFIX,qgwzjs.com
   - DOMAIN-SUFFIX,qoo10.sg
   - DOMAIN-SUFFIX,quzhuanxiang.com
+  - DOMAIN-SUFFIX,san-yang.com
   - DOMAIN-SUFFIX,sbstransit.com.sg
-  - DOMAIN-SUFFIX,scdf.gov.sg
   - DOMAIN-SUFFIX,segmentfault.com
   - DOMAIN-SUFFIX,sentosa.com.sg
   - DOMAIN-SUFFIX,sgix.sg
@@ -102,13 +76,12 @@ payload:
   - DOMAIN-SUFFIX,sgx.com
   - DOMAIN-SUFFIX,shopee.sg
   - DOMAIN-SUFFIX,singaporeair.com
-  - DOMAIN-SUFFIX,singpass.gov.sg
-  - DOMAIN-SUFFIX,singstat.gov.sg
   - DOMAIN-SUFFIX,singtel.com
   - DOMAIN-SUFFIX,sistic.com.sg
   - DOMAIN-SUFFIX,sit.edu.sg
   - DOMAIN-SUFFIX,smrt.com.sg
   - DOMAIN-SUFFIX,smu.edu.sg
+  - DOMAIN-SUFFIX,soso.com
   - DOMAIN-SUFFIX,souche.com
   - DOMAIN-SUFFIX,spgroup.com.sg
   - DOMAIN-SUFFIX,starhub.com
@@ -117,14 +90,12 @@ payload:
   - DOMAIN-SUFFIX,streetdirectory.com
   - DOMAIN-SUFFIX,suiyifa.com
   - DOMAIN-SUFFIX,sutd.edu.sg
-  - DOMAIN-SUFFIX,tech.gov.sg
   - DOMAIN-SUFFIX,tieyou.com
   - DOMAIN-SUFFIX,todayonline.com
   - DOMAIN-SUFFIX,ttppoo.com
   - DOMAIN-SUFFIX,uhouzz.com
   - DOMAIN-SUFFIX,ulife.com
   - DOMAIN-SUFFIX,uob.com.sg
-  - DOMAIN-SUFFIX,ura.gov.sg
   - DOMAIN-SUFFIX,visitsingapore.com
   - DOMAIN-SUFFIX,weixinyunduan.com
   - DOMAIN-SUFFIX,wellcee.com

@@ -1,7 +1,7 @@
 # RuleNova — China Mainland
 # Variant  : ip
 # Format   : Clash/Mihomo/Stash text
-# Generated: 2026-10-27T21:28:04Z
+# Generated: 2026-10-28T17:19:59Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -4736,6 +4736,7 @@
 27.54.192.0/18
 27.54.72.0/21
 27.8.0.0/13
+27.98.202.0/23
 27.98.208.0/20
 27.98.224.0/19
 27.99.128.0/17

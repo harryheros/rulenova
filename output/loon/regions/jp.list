@@ -2,7 +2,7 @@
 # Variant  : combined
 # Format   : Loon
 # Policy   : JP
-# Generated: 2026-10-27T21:28:04Z
+# Generated: 2026-10-28T17:19:59Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -58,7 +58,6 @@ DOMAIN-SUFFIX,jcci.or.jp,JP
 DOMAIN-SUFFIX,jetro.go.jp,JP
 DOMAIN-SUFFIX,jftc.go.jp,JP
 DOMAIN-SUFFIX,jma.go.jp,JP
-DOMAIN-SUFFIX,jp-bank.japanpost.jp,JP
 DOMAIN-SUFFIX,jpix.ad.jp,JP
 DOMAIN-SUFFIX,jpnap.net,JP
 DOMAIN-SUFFIX,jprs.jp,JP

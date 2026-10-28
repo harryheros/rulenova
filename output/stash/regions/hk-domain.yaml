@@ -1,7 +1,7 @@
 # RuleNova — Hong Kong
 # Variant: domain
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-10-27T21:28:04Z
+# Generated: 2026-10-28T17:19:59Z
 payload:
   - 163.net
   - 350abc.net
@@ -22,22 +22,14 @@ payload:
   - bochk.com
   - cathaypacific.com
   - cbiec.net
-  - cedb.gov.hk
-  - centennialcollege.hku.hk
-  - ceo.gov.hk
-  - cepu.gov.hk
   - citibank.com.hk
   - cityu.edu.hk
   - clp.com.hk
-  - cmab.gov.hk
   - cmfwiper.com
   - craer.com
   - crcbank.com
   - crhk.com.hk
-  - csb.gov.hk
   - csl.com.hk
-  - cso.gov.hk
-  - cstb.gov.hk
   - ctfe.com
   - ctgoodjobs.hk
   - cuhk.edu.hk
@@ -49,19 +41,15 @@ payload:
   - dimbuy.com
   - discuss.com.hk
   - dragonfly.fm
-  - edb.gov.hk
   - eduhk.hk
   - fanuc.com.cn
   - find853.com
   - fortress.com.hk
-  - fso.gov.hk
-  - fstb.gov.hk
   - fwd.com.hk
   - gcc.edu.hk
   - gov.hk
   - ha.org.hk
   - hangseng.com
-  - hb.gov.hk
   - hgc.com.hk
   - hk01.com
   - hkairport.com
@@ -81,9 +69,7 @@ payload:
   - hkia.com.hk
   - hkirc.hk
   - hkjc.com
-  - hkma.gov.hk
   - hkmc.com.hk
-  - hko.gov.hk
   - hkoc.org.hk
   - hkpost.hk
   - hksh-hospital.com
@@ -98,10 +84,7 @@ payload:
   - hongkongpost.hk
   - hsbc.com.hk
   - huoche.net
-  - hyab.gov.hk
   - icac.org.hk
-  - info.gov.hk
-  - isd.gov.hk
   - jardines.com
   - jd.hk
   - jiequ.art
@@ -109,10 +92,8 @@ payload:
   - jobsdb.com
   - jszlgjg.com
   - klook.com
-  - lcsd.gov.hk
   - lihkg.com
   - ln.edu.hk
-  - lwb.gov.hk
   - mail.qidan.com.cn
   - mclcinema.com
   - mingpao.com
@@ -129,8 +110,6 @@ payload:
   - pccw.com
   - polyu.edu.hk
   - rthk.hk
-  - san-yang.com
-  - sb.gov.hk
   - sc.com
   - scmp.com
   - sfc.hk

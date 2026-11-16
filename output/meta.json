@@ -1,0 +1,85 @@
+{
+  "schema_version": "2.1",
+  "project": "rulenova",
+  "version": "2.3.0",
+  "generated_at": "2026-11-09T15:39:58Z",
+  "policy_names": {
+    "china": "China",
+    "global": "Global",
+    "regions": {
+      "CN": "China",
+      "HK": "HK",
+      "TW": "TW",
+      "MO": "MO",
+      "JP": "JP",
+      "KR": "KR",
+      "SG": "SG"
+    },
+    "note": "Short abstract names are intentional. Users map them to DIRECT, PROXY, Auto, or a node group."
+  },
+  "tiers": [
+    "combined",
+    "domain",
+    "ip",
+    "regions"
+  ],
+  "regions": {
+    "CN": {
+      "domains": 3885,
+      "cidrs": 5550,
+      "cidrs6": 2036
+    },
+    "HK": {
+      "domains": 145,
+      "cidrs": 2565,
+      "cidrs6": 921
+    },
+    "TW": {
+      "domains": 101,
+      "cidrs": 765,
+      "cidrs6": 319
+    },
+    "MO": {
+      "domains": 53,
+      "cidrs": 31,
+      "cidrs6": 11
+    },
+    "JP": {
+      "domains": 158,
+      "cidrs": 3242,
+      "cidrs6": 669
+    },
+    "KR": {
+      "domains": 165,
+      "cidrs": 1055,
+      "cidrs6": 142
+    },
+    "SG": {
+      "domains": 109,
+      "cidrs": 1661,
+      "cidrs6": 480
+    },
+    "GLOBAL": {
+      "domains": 731,
+      "cidrs": 9319,
+      "cidrs6": 2542
+    }
+  },
+  "global_regions": [
+    "HK",
+    "TW",
+    "MO",
+    "JP",
+    "KR",
+    "SG"
+  ],
+  "formats": [
+    "clash-mihomo",
+    "loon",
+    "quantumult-x",
+    "shadowrocket",
+    "sing-box",
+    "stash",
+    "surge"
+  ]
+}

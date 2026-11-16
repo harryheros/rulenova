@@ -1,0 +1,60 @@
+# RuleNova — Macau
+# Variant  : domain
+# Format   : Surge RULE-SET
+# Generated: 2026-11-09T15:39:58Z
+# Source   : https://github.com/harryheros/rulenova
+#
+
+DOMAIN-SUFFIX,abm.org.mo
+DOMAIN-SUFFIX,bcm.com.mo
+DOMAIN-SUFFIX,bnu.com.mo
+DOMAIN-SUFFIX,bocmacau.com
+DOMAIN-SUFFIX,ccac.org.mo
+DOMAIN-SUFFIX,cem-macau.com
+DOMAIN-SUFFIX,chengpou.com.mo
+DOMAIN-SUFFIX,cityu.edu.mo
+DOMAIN-SUFFIX,cotaiwaterjet.com
+DOMAIN-SUFFIX,cpttm.org.mo
+DOMAIN-SUFFIX,ctm.net
+DOMAIN-SUFFIX,cyberctm.com
+DOMAIN-SUFFIX,directel.com.mo
+DOMAIN-SUFFIX,exmoo.com
+DOMAIN-SUFFIX,galaxyentertainment.com
+DOMAIN-SUFFIX,galaxymacau.com
+DOMAIN-SUFFIX,gov.mo
+DOMAIN-SUFFIX,icbc.com.mo
+DOMAIN-SUFFIX,iftm.edu.mo
+DOMAIN-SUFFIX,ipm.edu.mo
+DOMAIN-SUFFIX,macaobbs.com
+DOMAIN-SUFFIX,macaodaily.com
+DOMAIN-SUFFIX,macaonews.org
+DOMAIN-SUFFIX,macaoticket.com
+DOMAIN-SUFFIX,macaowater.com
+DOMAIN-SUFFIX,macau-airport.com
+DOMAIN-SUFFIX,macau.com
+DOMAIN-SUFFIX,macaudaily.com
+DOMAIN-SUFFIX,macaudailytimes.com.mo
+DOMAIN-SUFFIX,macauhub.com
+DOMAIN-SUFFIX,macaumemory.mo
+DOMAIN-SUFFIX,macaupass.com
+DOMAIN-SUFFIX,mastvnet.com
+DOMAIN-SUFFIX,mfood.mo
+DOMAIN-SUFFIX,mlm.com.mo
+DOMAIN-SUFFIX,monic.mo
+DOMAIN-SUFFIX,mpu.edu.mo
+DOMAIN-SUFFIX,mtel.mo
+DOMAIN-SUFFIX,must.edu.mo
+DOMAIN-SUFFIX,ocbc.com.mo
+DOMAIN-SUFFIX,sands.com.mo
+DOMAIN-SUFFIX,sandschina.com
+DOMAIN-SUFFIX,smartone.com.mo
+DOMAIN-SUFFIX,taifungbank.com
+DOMAIN-SUFFIX,tcm.com.mo
+DOMAIN-SUFFIX,tdm.com.mo
+DOMAIN-SUFFIX,three.com.mo
+DOMAIN-SUFFIX,transmac.com.mo
+DOMAIN-SUFFIX,um.edu.mo
+DOMAIN-SUFFIX,umac.mo
+DOMAIN-SUFFIX,usj.edu.mo
+DOMAIN-SUFFIX,venetianmacao.com
+DOMAIN-SUFFIX,yp.mo

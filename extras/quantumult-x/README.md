@@ -83,6 +83,6 @@ In option values, write a literal `+` as `%2B`, `@` as `%40`, `&` as `%26` and `
 
 **Skipped, never guessed.** Rules and module features that Quantumult X cannot express are left out instead of being converted into something that behaves differently: for example `PROCESS-NAME`, logical rules (`AND` / `OR` / `NOT`), cron scripts, header rewrites and Map Local entries with custom data. The notification lists what was skipped. Scripts that use a module `argument` are converted, but the argument is not passed; the notification points this out.
 
-**Node subscriptions are left alone.** The parser does not convert server subscriptions; it returns them unchanged, so Quantumult X parses them itself. Quantumult X allows only one `resource_parser_url` — if you rely on another parser to convert your node subscriptions, keep using that one.
+**Server resources are left alone.** The parser does not convert `server_remote` resources; it returns them unchanged, so Quantumult X parses them itself. Quantumult X allows only one `resource_parser_url` — if you rely on another parser for server resources, keep using that one.
 
 The parser follows the same conservative structure as GeoCheck (plain ES5, a single top-level `$done()`, `__np_`-prefixed names). It uses no `eval`, makes no network requests and stores nothing. `sources/scripts/test_parser.js` checks the structure and every input format and option above in CI.

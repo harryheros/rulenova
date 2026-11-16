@@ -3,7 +3,7 @@
  * https://github.com/harryheros/rulenova
  *
  * Converts rule lists and Surge modules into Quantumult X format.
- * It does NOT handle server (node) subscriptions.
+ * It does NOT handle server resources (server_remote).
  *
  * Usage ([general] section of Quantumult X):
  *   resource_parser_url=https://cdn.jsdelivr.net/gh/harryheros/rulenova@main/extras/quantumult-x/parser.js
@@ -30,7 +30,7 @@
  *   Keywords are case-insensitive. Write a literal "+" as %2B, "@" as %40,
  *   "&" as %26 and "#" as %23.
  *
- * Server (node) subscriptions are returned unchanged, so Quantumult X
+ * Server resources (server_remote) are returned unchanged, so Quantumult X
  * parses them natively.
  *
  * Anything Quantumult X cannot express (PROCESS-NAME, logical rules, cron
@@ -625,9 +625,9 @@ function __np_isModule(lines) {
   return false;
 }
 
-// Server (node) subscriptions are not converted: they are returned as they
-// are, so Quantumult X parses them itself. Quantumult X allows only one
-// resource parser, and this keeps node subscriptions working when it is set.
+// Server resources (server_remote) are not converted: they are returned as
+// they are, so Quantumult X parses them itself. Quantumult X allows only one
+// resource parser, and this keeps server resources working when it is set.
 function __np_isServerList(lines) {
   var i, l, n = 0, hits = 0;
   for (i = 0; i < lines.length && n < 50; i++) {
@@ -638,7 +638,7 @@ function __np_isServerList(lines) {
     else if (/^(shadowsocks|vmess|vless|trojan|http|socks5|anytls)\s*=\s*[^,\s]+:\d+\s*,/i.test(l)) hits++;
     else if (/^(proxies|proxy-groups)\s*:/.test(l)) return true;
   }
-  if (n === 1 && /^[A-Za-z0-9+\/=_-]{40,}$/.test(lines.join("").replace(/\s/g, ""))) return true; // base64 subscription
+  if (n === 1 && /^[A-Za-z0-9+\/=_-]{40,}$/.test(lines.join("").replace(/\s/g, ""))) return true; // base64 server list
   return hits > 0 && hits * 2 >= n;
 }
 

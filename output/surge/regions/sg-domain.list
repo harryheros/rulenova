@@ -1,7 +1,7 @@
 # RuleNova — Singapore
 # Variant  : domain
 # Format   : Surge RULE-SET
-# Generated: 2026-11-09T15:39:58Z
+# Generated: 2026-11-16T15:15:24Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -13,6 +13,7 @@ DOMAIN-SUFFIX,321009.com
 DOMAIN-SUFFIX,6xw.com
 DOMAIN-SUFFIX,8world.com
 DOMAIN-SUFFIX,99.co
+DOMAIN-SUFFIX,bdwork.com
 DOMAIN-SUFFIX,bh568.com
 DOMAIN-SUFFIX,bianminwang.com
 DOMAIN-SUFFIX,biohyalux.com
@@ -84,7 +85,6 @@ DOMAIN-SUFFIX,sinovationmed.com
 DOMAIN-SUFFIX,sistic.com.sg
 DOMAIN-SUFFIX,smrt.com.sg
 DOMAIN-SUFFIX,smu.edu.sg
-DOMAIN-SUFFIX,soso.com
 DOMAIN-SUFFIX,souche.com
 DOMAIN-SUFFIX,spgroup.com.sg
 DOMAIN-SUFFIX,starhub.com

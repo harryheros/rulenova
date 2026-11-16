@@ -1,7 +1,7 @@
 # RuleNova — China Mainland
 # Variant: domain
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-11-09T15:39:58Z
+# Generated: 2026-11-16T15:15:24Z
 payload:
   - 0001000.xyz
   - 00063.caecp.cn
@@ -92,12 +92,25 @@ payload:
   - 0546dknk.com
   - 0551ysys.com
   - 0558job.com
+  - 0558jobs.com
+  - 056600.vip
+  - 0566rczp.com
+  - 0571bj.com
+  - 0574gps.com
+  - 0578shop.com
+  - 0579game.com
+  - 0594.ltd
+  - 05youxi.net
+  - 060193.top
+  - 06050.cn
+  - 065400.com
   - 0755dengbao.com
   - 0757jiafa.cn.alibaba.com
   - 07698388268.cn.alibaba.com
   - 0859qp.com
   - 0e5m1efueov.720yun.com
   - 0x9.me
+  - 1.805188.vip
   - 10000.com
   - 10010.com
   - 10086.cn
@@ -394,6 +407,9 @@ payload:
   - 51peptide.com
   - 51pla.com
   - 51pos.com
+  - 51shumi.cn
+  - 51shumi.com
+  - 51shumi.com.cn
   - 51ssl.com
   - 51tb.me
   - 51tjhr.com
@@ -428,6 +444,7 @@ payload:
   - 5k23rwfcxp.720yun.com
   - 5th.zone
   - 5twdfszeek.720yun.com
+  - 6.805188.vip
   - 618xz.com
   - 61ff0.myhard.com
   - 643777.com
@@ -451,6 +468,7 @@ payload:
   - 8378888.com
   - 843777.com
   - 86656.net
+  - 8686868.vip
   - 884358.com
   - 888255.com
   - 88gm.com
@@ -495,6 +513,7 @@ payload:
   - 9r37unqncg.720yun.com
   - 9shadow.com
   - 9vf.com
+  - a-amentor.com
   - a11y.alibaba.org
   - a15915428783.cn.alibaba.com
   - a20100817.cn.alibaba.com
@@ -523,6 +542,7 @@ payload:
   - acgvideo.com
   - acrylicdisplays.cn.alibaba.com
   - acryliceis.cn.alibaba.com
+  - act-protocol.com
   - activity-api.pinwan.cool
   - actscp.leiting.com
   - actscp01.leiting.com
@@ -571,6 +591,7 @@ payload:
   - ahwhyp.cn.alibaba.com
   - ahygzj.cn.alibaba.com
   - ahzyw.com
+  - ai-propeller.com
   - aiatelier.art
   - aicdn.com
   - aiden2012.cn.alibaba.com
@@ -579,6 +600,9 @@ payload:
   - aiduoyou.com
   - aidyjf.cn.alibaba.com
   - aieye8.com
+  - aif3.cn
+  - aif4.cn
+  - aif5.cn
   - aifang.com
   - aihuaju.com
   - aipage.com
@@ -615,9 +639,18 @@ payload:
   - alinotes.cn
   - alipan.com
   - alipan.top
+  - alipay-corp.com
+  - alipay-inc.com
+  - alipay.cn
   - alipay.com
+  - alipay.com.cn
   - alipay.net
+  - alipay.net.cn
+  - alipaydesign.com
+  - alipaydns.cn
   - alipaydns.com
+  - alipaylog.com
+  - alipayobjects.cn
   - alipayobjects.com
   - alipayplus.com
   - alitrip.com
@@ -667,11 +700,26 @@ payload:
   - annhe.net
   - anquanssl.com
   - ansteel.com.cn
+  - ant-financial.com
+  - ant-ling.com
+  - ant-open.com
   - ant.design
   - anta.com
+  - antafu.com
+  - antaq.com
+  - antcloudservice.com
+  - antdigital-static.com
+  - antfin-inc.com
   - antfin.com
+  - antfortune.com
+  - antgroup-inc.cn
+  - antgroup-inc.net
   - antgroup.com
   - antiquelearn.com
+  - antlingguang.com
+  - antmuse.com
+  - antopenhealth.com
+  - antresearch.com
   - anwgb.cn.alibaba.com
   - anxumachinery.cn.alibaba.com
   - anyuesh.cn.alibaba.com
@@ -709,6 +757,7 @@ payload:
   - app.yinxiangbiji.com
   - appchina.com
   - appnode.com
+  - appresource.xuexi.cn.w.alikunlun.com
   - apps.mishangwo.com
   - appsimg.com
   - appvipshop.com
@@ -818,7 +867,6 @@ payload:
   - bdimg.com
   - bds666.com
   - bdstatic.com
-  - bdwork.com
   - be6m4ff4lur.720yun.com
   - bear20.com
   - beautifulpicture.cn
@@ -912,6 +960,7 @@ payload:
   - booen.co
   - booking.watsonsvip.com.cn
   - bookschina.com
+  - boot-source.xuexi.cn.w.alikunlun.com
   - bootcdn.cn
   - booz88.com
   - borcci.com
@@ -939,8 +988,12 @@ payload:
   - buy.lenovovip.com.cn
   - buysun.net
   - bwie.net
+  - byd.cn
   - byd.com
+  - byd.com.cn
+  - bydauto.com
   - bydauto.com.cn
+  - bydenergy.com
   - bykszb.com
   - byshxx.zqedu.net
   - bytecdn.cn
@@ -1081,6 +1134,7 @@ payload:
   - chinafiber.com
   - chinafilm.com
   - chinagoods.com
+  - chinahighlights.com
   - chinaiol.com
   - chinajianbanji.com
   - chinalogo.cn
@@ -1098,6 +1152,7 @@ payload:
   - chinattl.com
   - chinaunicom.cn
   - chinaunicom.com
+  - chinaunicom.com.cn
   - chinawater.com
   - chinaz.com
   - chiphell.com
@@ -1124,10 +1179,13 @@ payload:
   - cloud-hebi.com
   - cloud.coreyuan.cn
   - cloud.i8-mc.cn
+  - cloudbaseapp.cn
   - cloudflare-cn.com
   - cloudflareprod.com
   - cloudlvs.com
   - cloudp.cc
+  - cloudrds.cn
+  - cloudstatic.cn
   - cloudtui.com
   - cls.cc
   - cmbc.com.cn
@@ -1179,6 +1237,7 @@ payload:
   - coconutpalm.com.cn
   - cocoon-data.com
   - code.minstreams.com
+  - codefuse.co
   - codercto.com
   - coding.net
   - codoon.com
@@ -1325,6 +1384,7 @@ payload:
   - dela.net.cn
   - deng88.com
   - denza.com
+  - deor.org.cn
   - depailed.com
   - desaysv-xxzx.com
   - desbgmr.cc
@@ -1349,6 +1409,7 @@ payload:
   - dict.cn
   - didialift.com
   - diditaxi.com.cn
+  - digital-engine.com
   - dingtalk.com
   - dinpay.com
   - dintek.com.cn
@@ -1511,7 +1572,6 @@ payload:
   - etoplive.com
   - etrade.china-invs.cn
   - etrade.epf.com.cn
-  - eul.zhihangwl.com
   - euromatl.com
   - evebattery.com
   - everbright.com
@@ -1539,6 +1599,7 @@ payload:
   - fang.com
   - fangan.elecfans.com
   - fangchengbao.com
+  - fanuc.com.cn
   - fanwenbin.gitcafe.com
   - fanyantao.com
   - fastcdn.com
@@ -1598,6 +1659,8 @@ payload:
   - fuhanziben.com
   - fullgoal.com.cn
   - fun.tv
+  - fund123-corp.cn
+  - fund123.cn
   - fuyunbj.com
   - fx678.com
   - fzcollege.org
@@ -1606,6 +1669,7 @@ payload:
   - g2.link
   - gac.com.cn
   - gaetausohyei.com
+  - galacean.com
   - game112233.com
   - gamersky.com
   - ganji.com
@@ -1737,7 +1801,6 @@ payload:
   - gxjlsc.com
   - gxjmzg.com
   - gxjsd56.com
-  - gxjyjs168.com
   - gxkefei.com
   - gxlcclean.com
   - gxlcjsjt.com
@@ -1760,6 +1823,7 @@ payload:
   - gxyiz.com
   - gxyxlx.com
   - gyouapp.com
+  - gz.xuexi.cn.w.alikunlun.com
   - gzbank.com.cn
   - gzbjmy.net
   - gzbycq.com
@@ -1775,6 +1839,7 @@ payload:
   - gzwyc.w36.mc-test.com
   - gzyowin.com
   - h3c.com
+  - h3c.com.cn
   - h5.umx.art
   - h5.vip.com.vipgslb.com
   - h5.zjsnews.cn
@@ -1782,7 +1847,6 @@ payload:
   - h5king.com
   - h5zhifu.com
   - haday.com.cn
-  - haha33.com
   - haicnh.com
   - haidegroup.com
   - haidilao.com
@@ -1939,6 +2003,7 @@ payload:
   - huamuwo.com
   - huanqiu.com
   - huanxian.art
+  - huanxu.tech
   - huashengdaili.com
   - huawei.com
   - huaweidevice.com
@@ -1986,6 +2051,7 @@ payload:
   - hzrmt.com
   - hzsdyfzfxxx.com
   - hzwaye.com
+  - hzyx.com.cn
   - hzzsfs.com
   - i.flyme.cn
   - iart.art
@@ -2008,6 +2074,7 @@ payload:
   - ictbda.com
   - ictehi.com
   - idaotuo.com
+  - idastore.cn
   - idcdoc.com
   - idgou.com
   - idmc.com.cn
@@ -2031,6 +2098,7 @@ payload:
   - imooc.com
   - imzhanghao.com
   - incake.net
+  - inclusionconf.com
   - infzm.com
   - ingping.com
   - inkonlife.com
@@ -2171,6 +2239,7 @@ payload:
   - joyoung.com
   - jpush.io
   - jrj.com.cn
+  - js.xuexi.cn.w.alikunlun.com
   - jsbank.com.cn
   - jshuafu.com
   - jsjgbxg.com
@@ -2229,6 +2298,7 @@ payload:
   - kelun.com
   - kesonic.com
   - kevinyoung.gitcafe.com
+  - kfp.cn
   - kimi.com
   - kimi.pub
   - kingcloudad.com
@@ -2293,6 +2363,8 @@ payload:
   - leader.cn
   - leadmedpharm.com
   - leathergoods.com.cn
+  - lebuding.com
+  - lecaiwang.live
   - lecloudapis.com
   - leduimg.com
   - leetcode.cn
@@ -2332,7 +2404,11 @@ payload:
   - linden.cn
   - linearmotor.net
   - lingdu.love
+  - lingguang.com
+  - lingguangcontent.com
+  - lingguangobjects.com
   - lingqi.art
+  - linguang.com
   - lining.cn
   - lining.com
   - linuxidc.com
@@ -2342,6 +2418,7 @@ payload:
   - lisp123.com
   - littleswan.com
   - liugong.com
+  - live-chats.cc
   - lixinpharm.com
   - lixunda.com.cn
   - liyanmobi.com
@@ -2351,7 +2428,6 @@ payload:
   - lizhennan.w36.cndns5.com
   - lizhi.fm
   - lizhiyu.w36.mc-test.com
-  - llsstt.dpdns.org
   - lmcw.art
   - lmjcc.com
   - ln.zaodianqi.com
@@ -2382,6 +2458,7 @@ payload:
   - lutonggxmbcdn.a081.ottcn.com
   - luyuan.cn
   - luzhou-laojiao.com.cn
+  - lvchongchonglianglun0810.com
   - lxlgood.w36.cndns5.com
   - ly.com
   - lysmjhb.com
@@ -2437,6 +2514,8 @@ payload:
   - masterkong.com.cn
   - matongxue.com
   - matrix.17usoft.com
+  - mayidake.com
+  - mayilingguang.com
   - mayima.net
   - mbaobao.com
   - mcheng.art
@@ -2485,12 +2564,14 @@ payload:
   - mingjiudu.com
   - mingmenshuizhi.com
   - minhe.bj.cn
+  - mini-code.com
   - minshuo.w36.mc-test.com
   - mint.gitcafe.com
   - mipay.com
   - mipush.com
   - missevan.com
   - misslele.com
+  - misuan.com
   - mitsubishielectric.com.cn
   - miwifi.com
   - miyorh.com
@@ -2624,6 +2705,7 @@ payload:
   - oalice.dpdns.org
   - obins.net
   - oceanaircorp.com
+  - oceanbase.com
   - oceanengine.com
   - oceanhood.com
   - ocfess.com
@@ -2799,9 +2881,12 @@ payload:
   - qixin.com
   - qiyi.com
   - qiyipic.com
+  - qiyukf.cn
   - qiyukf.com
   - qiyunwangluokeji.cn
   - qlogo.cn
+  - qmuse.cn
+  - qmusespace.com
   - qos.qno.cn
   - qp108.com
   - qpic.cn
@@ -2857,6 +2942,7 @@ payload:
   - rmbbk.com
   - rmrb.com.cn
   - robam.com
+  - robbyant.com
   - rockwell.com.cn
   - roewe.com.cn
   - rohm.com.cn
@@ -2880,7 +2966,6 @@ payload:
   - rypower.cn
   - rzfyu.com
   - s.yunresail-6.cn
-  - s.zylingxian.com
   - s3.javsee.cc
   - saas.jieyixin.com.cn
   - sac.net.cn
@@ -2923,6 +3008,7 @@ payload:
   - seaskyapp.com
   - sebastianprofessional.cn
   - seclover.com
+  - secretflow.org.cn
   - secure-www.cartier.cn
   - secure.thecorner.com.cn
   - secure.www.cartier.cn
@@ -2955,6 +3041,7 @@ payload:
   - shazc.com
   - shdmic.com
   - shejiedu.com
+  - shengxin.com
   - shenheyuan.net
   - shfe.com.cn
   - shifen.com
@@ -2973,6 +3060,8 @@ payload:
   - shsipo.com
   - shuanghancn.com
   - shucai001.com
+  - shumicdn.com
+  - shumiimg.com
   - shuntongtong.com
   - shuye.com
   - shuyeidc.com
@@ -2985,6 +3074,9 @@ payload:
   - shzgkjgscom.gotoip11.com
   - siemens-home.com.cn
   - siemens.com.cn
+  - siminfra-inc.com
+  - siminfra-standby.com
+  - siminfradns.com
   - sina.com
   - sina.com.cn
   - sinaimg.cn
@@ -3040,6 +3132,7 @@ payload:
   - sohucs.com
   - soicp.com
   - songcwh.com
+  - soso.com
   - southcn.com
   - southernmindict.net
   - sowang.com
@@ -3151,10 +3244,14 @@ payload:
   - tarsocial.com
   - tasly.com
   - tbcache.com
+  - tbox.cn
+  - tboxcontent.com
+  - tboxobjects.com
   - tbsjmail.tsingtao.com.cn
   - tcl.com
   - tcloudfamily.com
   - tclwxtwox.com
+  - tcorea.com
   - tdrffh.com
   - tdsjbj.com
   - teambition.com
@@ -3249,6 +3346,7 @@ payload:
   - trade2.cnht.com.cn
   - trip.shengjingbank.com.cn
   - truliva.com.cn
+  - trusple.com
   - tshmkj.com
   - tsingtao.com
   - tsk-fixture.com
@@ -3283,6 +3381,7 @@ payload:
   - umva-china.com
   - uni-power.com.cn
   - uni-president.com.cn
+  - uniocontent.com
   - unionpay.com
   - unishy.com
   - uniview.com
@@ -3530,6 +3629,7 @@ payload:
   - x821.com
   - x8sb.com
   - xadayangzl.com
+  - xaygddc.com
   - xayizhou.com
   - xbaodi.com
   - xcao.win
@@ -3572,6 +3672,7 @@ payload:
   - ximeigroup.com
   - ximuw.com
   - xin.net
+  - xin.xin
   - xinduoad.com
   - xingci.com.cn
   - xingpai.com
@@ -3608,6 +3709,7 @@ payload:
   - xpsup.com
   - xs8.cn
   - xsrm.com
+  - xt-gas.com
   - xtep.com
   - xthyjt.com
   - xuanshitou.com
@@ -3812,6 +3914,8 @@ payload:
   - zhimi.com
   - zhipin.com
   - zhirui.net
+  - zhisheng.com
+  - zhixiaobao.com
   - zhixin-semi.com
   - zhjd.org
   - zhld.com
@@ -3821,6 +3925,7 @@ payload:
   - zhongtaiedu.com.cn
   - zhongtong.com.cn
   - zhongzishiye.com
+  - zhouqinghuan.com
   - zhujiwanjia.com
   - zhuluyy.com
   - zhuneijs.com
@@ -3843,11 +3948,13 @@ payload:
   - zjtcjt.com
   - zjylgroup.com
   - zjzybiotech.com
+  - zkobjects.com
   - zlbqj.com
   - zmaxhotels.cc
   - zmclearing.com
   - zmnew349.v.evyun.cn
   - zmssh.com
+  - zmyueding.com
   - znelc.com
   - znkf.showcai.com.cn
   - zokogo.com

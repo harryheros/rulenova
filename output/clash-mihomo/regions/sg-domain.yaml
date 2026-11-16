@@ -1,7 +1,7 @@
 # RuleNova — Singapore
 # Variant: domain
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-11-09T15:39:58Z
+# Generated: 2026-11-16T15:15:24Z
 payload:
   - 13cr.com
   - 17qzx.com
@@ -11,6 +11,7 @@ payload:
   - 6xw.com
   - 8world.com
   - 99.co
+  - bdwork.com
   - bh568.com
   - bianminwang.com
   - biohyalux.com
@@ -82,7 +83,6 @@ payload:
   - sistic.com.sg
   - smrt.com.sg
   - smu.edu.sg
-  - soso.com
   - souche.com
   - spgroup.com.sg
   - starhub.com

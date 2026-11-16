@@ -2,7 +2,7 @@
 # Variant  : domain
 # Format   : Loon
 # Policy   : SG
-# Generated: 2026-11-09T15:39:58Z
+# Generated: 2026-11-16T15:15:24Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -14,6 +14,7 @@ DOMAIN-SUFFIX,321009.com,SG
 DOMAIN-SUFFIX,6xw.com,SG
 DOMAIN-SUFFIX,8world.com,SG
 DOMAIN-SUFFIX,99.co,SG
+DOMAIN-SUFFIX,bdwork.com,SG
 DOMAIN-SUFFIX,bh568.com,SG
 DOMAIN-SUFFIX,bianminwang.com,SG
 DOMAIN-SUFFIX,biohyalux.com,SG
@@ -85,7 +86,6 @@ DOMAIN-SUFFIX,sinovationmed.com,SG
 DOMAIN-SUFFIX,sistic.com.sg,SG
 DOMAIN-SUFFIX,smrt.com.sg,SG
 DOMAIN-SUFFIX,smu.edu.sg,SG
-DOMAIN-SUFFIX,soso.com,SG
 DOMAIN-SUFFIX,souche.com,SG
 DOMAIN-SUFFIX,spgroup.com.sg,SG
 DOMAIN-SUFFIX,starhub.com,SG

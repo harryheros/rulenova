@@ -1,7 +1,7 @@
 # RuleNova — Global: nearby regions (HK/TW/MO/JP/KR/SG)
 # Variant  : domain
 # Format   : Surge RULE-SET
-# Generated: 2026-11-09T15:39:58Z
+# Generated: 2026-11-16T15:15:24Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -14,7 +14,6 @@ DOMAIN-SUFFIX,17qzx.com
 DOMAIN-SUFFIX,263.net
 DOMAIN-SUFFIX,3171688.com
 DOMAIN-SUFFIX,321009.com
-DOMAIN-SUFFIX,350abc.net
 DOMAIN-SUFFIX,3hk.hk
 DOMAIN-SUFFIX,518.com.tw
 DOMAIN-SUFFIX,591.com.tw
@@ -53,6 +52,7 @@ DOMAIN-SUFFIX,banksalad.com
 DOMAIN-SUFFIX,bastillepost.com
 DOMAIN-SUFFIX,bcc.com.tw
 DOMAIN-SUFFIX,bcm.com.mo
+DOMAIN-SUFFIX,bdwork.com
 DOMAIN-SUFFIX,beileimaoedu.com
 DOMAIN-SUFFIX,bh568.com
 DOMAIN-SUFFIX,bhc.co.kr
@@ -122,7 +122,6 @@ DOMAIN-SUFFIX,cpc.com.tw
 DOMAIN-SUFFIX,cpttm.org.mo
 DOMAIN-SUFFIX,cqjsaq.com
 DOMAIN-SUFFIX,craer.com
-DOMAIN-SUFFIX,crcbank.com
 DOMAIN-SUFFIX,crhk.com.hk
 DOMAIN-SUFFIX,csl.com.hk
 DOMAIN-SUFFIX,ctbcbank.com
@@ -176,7 +175,6 @@ DOMAIN-SUFFIX,exmoo.com
 DOMAIN-SUFFIX,eyoucms.com
 DOMAIN-SUFFIX,fairprice.com.sg
 DOMAIN-SUFFIX,family.com.tw
-DOMAIN-SUFFIX,fanuc.com.cn
 DOMAIN-SUFFIX,fareastone.com.tw
 DOMAIN-SUFFIX,fastretailing.com
 DOMAIN-SUFFIX,fetnet.net
@@ -516,7 +514,6 @@ DOMAIN-SUFFIX,propertyguru.com.sg
 DOMAIN-SUFFIX,psa.sg
 DOMAIN-SUFFIX,pts.org.tw
 DOMAIN-SUFFIX,ptt.cc
-DOMAIN-SUFFIX,pythonheidong.com
 DOMAIN-SUFFIX,qgwzjs.com
 DOMAIN-SUFFIX,quanta.com.tw
 DOMAIN-SUFFIX,quzhuanxiang.com
@@ -580,6 +577,7 @@ DOMAIN-SUFFIX,smartone.com
 DOMAIN-SUFFIX,smartone.com.mo
 DOMAIN-SUFFIX,smbc-card.com
 DOMAIN-SUFFIX,smbc.co.jp
+DOMAIN-SUFFIX,smc18.com
 DOMAIN-SUFFIX,smilegate.com
 DOMAIN-SUFFIX,smrt.com.sg
 DOMAIN-SUFFIX,smtown.com
@@ -588,7 +586,6 @@ DOMAIN-SUFFIX,snu.ac.kr
 DOMAIN-SUFFIX,softbank.jp
 DOMAIN-SUFFIX,sony.co.jp
 DOMAIN-SUFFIX,sooplive.co.kr
-DOMAIN-SUFFIX,soso.com
 DOMAIN-SUFFIX,souche.com
 DOMAIN-SUFFIX,soumu.go.jp
 DOMAIN-SUFFIX,spgroup.com.sg
@@ -641,7 +638,6 @@ DOMAIN-SUFFIX,tokyo-gas.co.jp
 DOMAIN-SUFFIX,tokyo-np.co.jp
 DOMAIN-SUFFIX,tokyometro.jp
 DOMAIN-SUFFIX,tom.com
-DOMAIN-SUFFIX,tongniguoji.com
 DOMAIN-SUFFIX,toshiba.co.jp
 DOMAIN-SUFFIX,toss.im
 DOMAIN-SUFFIX,townwork.net
@@ -692,10 +688,8 @@ DOMAIN-SUFFIX,wharfholdings.com
 DOMAIN-SUFFIX,wheelockcompany.com
 DOMAIN-SUFFIX,winglungbank.com
 DOMAIN-SUFFIX,winkkie.com
-DOMAIN-SUFFIX,wnbsq.com
 DOMAIN-SUFFIX,wooribank.com
 DOMAIN-SUFFIX,wp.jun2020.com
-DOMAIN-SUFFIX,xaygddc.com
 DOMAIN-SUFFIX,xckgq.com
 DOMAIN-SUFFIX,xiecheng.com
 DOMAIN-SUFFIX,xmzgxcl.com

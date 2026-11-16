@@ -1,7 +1,7 @@
 # RuleNova — Global: nearby regions (HK/TW/MO/JP/KR/SG)
 # Variant: domain
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-11-09T15:39:58Z
+# Generated: 2026-11-16T15:15:24Z
 payload:
   - 104.com.tw
   - 1111.com.tw
@@ -12,7 +12,6 @@ payload:
   - 263.net
   - 3171688.com
   - 321009.com
-  - 350abc.net
   - 3hk.hk
   - 518.com.tw
   - 591.com.tw
@@ -51,6 +50,7 @@ payload:
   - bastillepost.com
   - bcc.com.tw
   - bcm.com.mo
+  - bdwork.com
   - beileimaoedu.com
   - bh568.com
   - bhc.co.kr
@@ -120,7 +120,6 @@ payload:
   - cpttm.org.mo
   - cqjsaq.com
   - craer.com
-  - crcbank.com
   - crhk.com.hk
   - csl.com.hk
   - ctbcbank.com
@@ -174,7 +173,6 @@ payload:
   - eyoucms.com
   - fairprice.com.sg
   - family.com.tw
-  - fanuc.com.cn
   - fareastone.com.tw
   - fastretailing.com
   - fetnet.net
@@ -514,7 +512,6 @@ payload:
   - psa.sg
   - pts.org.tw
   - ptt.cc
-  - pythonheidong.com
   - qgwzjs.com
   - quanta.com.tw
   - quzhuanxiang.com
@@ -578,6 +575,7 @@ payload:
   - smartone.com.mo
   - smbc-card.com
   - smbc.co.jp
+  - smc18.com
   - smilegate.com
   - smrt.com.sg
   - smtown.com
@@ -586,7 +584,6 @@ payload:
   - softbank.jp
   - sony.co.jp
   - sooplive.co.kr
-  - soso.com
   - souche.com
   - soumu.go.jp
   - spgroup.com.sg
@@ -639,7 +636,6 @@ payload:
   - tokyo-np.co.jp
   - tokyometro.jp
   - tom.com
-  - tongniguoji.com
   - toshiba.co.jp
   - toss.im
   - townwork.net
@@ -690,10 +686,8 @@ payload:
   - wheelockcompany.com
   - winglungbank.com
   - winkkie.com
-  - wnbsq.com
   - wooribank.com
   - wp.jun2020.com
-  - xaygddc.com
   - xckgq.com
   - xiecheng.com
   - xmzgxcl.com

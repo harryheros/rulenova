@@ -1,12 +1,11 @@
 # RuleNova — Hong Kong
 # Variant  : combined
 # Format   : Clash/Mihomo/Stash text
-# Generated: 2026-11-09T15:39:58Z
+# Generated: 2026-11-16T15:15:24Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
 DOMAIN-SUFFIX,163.net
-DOMAIN-SUFFIX,350abc.net
 DOMAIN-SUFFIX,3hk.hk
 DOMAIN-SUFFIX,99166.com
 DOMAIN-SUFFIX,aastocks.com
@@ -27,7 +26,6 @@ DOMAIN-SUFFIX,cityu.edu.hk
 DOMAIN-SUFFIX,clp.com.hk
 DOMAIN-SUFFIX,cmfwiper.com
 DOMAIN-SUFFIX,craer.com
-DOMAIN-SUFFIX,crcbank.com
 DOMAIN-SUFFIX,crhk.com.hk
 DOMAIN-SUFFIX,csl.com.hk
 DOMAIN-SUFFIX,ctfe.com
@@ -42,7 +40,6 @@ DOMAIN-SUFFIX,dimbuy.com
 DOMAIN-SUFFIX,discuss.com.hk
 DOMAIN-SUFFIX,dragonfly.fm
 DOMAIN-SUFFIX,eduhk.hk
-DOMAIN-SUFFIX,fanuc.com.cn
 DOMAIN-SUFFIX,find853.com
 DOMAIN-SUFFIX,fortress.com.hk
 DOMAIN-SUFFIX,fwd.com.hk
@@ -107,7 +104,6 @@ DOMAIN-SUFFIX,on.cc
 DOMAIN-SUFFIX,openrice.com
 DOMAIN-SUFFIX,pccw.com
 DOMAIN-SUFFIX,polyu.edu.hk
-DOMAIN-SUFFIX,pythonheidong.com
 DOMAIN-SUFFIX,rthk.hk
 DOMAIN-SUFFIX,sc.com
 DOMAIN-SUFFIX,scmp.com
@@ -115,6 +111,7 @@ DOMAIN-SUFFIX,sfc.hk
 DOMAIN-SUFFIX,sfu.edu.hk
 DOMAIN-SUFFIX,singtao.com
 DOMAIN-SUFFIX,smartone.com
+DOMAIN-SUFFIX,smc18.com
 DOMAIN-SUFFIX,staticfile.org
 DOMAIN-SUFFIX,sth.org.hk
 DOMAIN-SUFFIX,stheadline.com
@@ -124,7 +121,6 @@ DOMAIN-SUFFIX,taodocs.com
 DOMAIN-SUFFIX,three.com.hk
 DOMAIN-SUFFIX,tmall.hk
 DOMAIN-SUFFIX,tom.com
-DOMAIN-SUFFIX,tongniguoji.com
 DOMAIN-SUFFIX,tungwah.org.hk
 DOMAIN-SUFFIX,tvb.com
 DOMAIN-SUFFIX,twc.edu.hk
@@ -138,8 +134,6 @@ DOMAIN-SUFFIX,westkowloon.hk
 DOMAIN-SUFFIX,wharfholdings.com
 DOMAIN-SUFFIX,wheelockcompany.com
 DOMAIN-SUFFIX,winglungbank.com
-DOMAIN-SUFFIX,wnbsq.com
-DOMAIN-SUFFIX,xaygddc.com
 DOMAIN-SUFFIX,xckgq.com
 DOMAIN-SUFFIX,xmzgxcl.com
 DOMAIN-SUFFIX,xpcha.com
@@ -168,7 +162,8 @@ IP-CIDR,103.1.64.0/22,no-resolve
 IP-CIDR,103.10.12.0/22,no-resolve
 IP-CIDR,103.10.124.0/23,no-resolve
 IP-CIDR,103.10.172.0/22,no-resolve
-IP-CIDR,103.10.196.0/22,no-resolve
+IP-CIDR,103.10.196.0/23,no-resolve
+IP-CIDR,103.10.198.0/24,no-resolve
 IP-CIDR,103.10.236.0/22,no-resolve
 IP-CIDR,103.100.112.0/22,no-resolve
 IP-CIDR,103.100.138.0/23,no-resolve
@@ -1420,7 +1415,7 @@ IP-CIDR,146.196.76.0/22,no-resolve
 IP-CIDR,146.196.80.0/21,no-resolve
 IP-CIDR,146.196.88.0/22,no-resolve
 IP-CIDR,146.88.88.0/21,no-resolve
-IP-CIDR,147.139.0.0/17,no-resolve
+IP-CIDR,147.139.0.0/18,no-resolve
 IP-CIDR,147.161.32.0/19,no-resolve
 IP-CIDR,147.8.0.0/16,no-resolve
 IP-CIDR,147.92.32.0/20,no-resolve
@@ -2620,17 +2615,23 @@ IP-CIDR,45.65.32.0/22,no-resolve
 IP-CIDR,46.149.192.0/20,no-resolve
 IP-CIDR,47.238.0.0/15,no-resolve
 IP-CIDR,47.240.0.0/16,no-resolve
-IP-CIDR,47.244.0.0/16,no-resolve
-IP-CIDR,47.252.128.0/17,no-resolve
+IP-CIDR,47.244.0.0/18,no-resolve
+IP-CIDR,47.244.64.0/21,no-resolve
+IP-CIDR,47.244.72.0/24,no-resolve
+IP-CIDR,47.244.74.0/23,no-resolve
+IP-CIDR,47.244.76.0/22,no-resolve
+IP-CIDR,47.244.80.0/20,no-resolve
+IP-CIDR,47.244.96.0/19,no-resolve
 IP-CIDR,47.52.0.0/16,no-resolve
 IP-CIDR,47.75.0.0/16,no-resolve
-IP-CIDR,47.76.0.0/16,no-resolve
-IP-CIDR,47.79.64.0/20,no-resolve
-IP-CIDR,47.82.64.0/18,no-resolve
-IP-CIDR,47.83.0.0/16,no-resolve
-IP-CIDR,47.86.0.0/16,no-resolve
+IP-CIDR,47.79.16.0/20,no-resolve
+IP-CIDR,47.79.64.0/21,no-resolve
+IP-CIDR,47.82.96.0/19,no-resolve
+IP-CIDR,47.83.0.0/19,no-resolve
+IP-CIDR,47.83.128.0/17,no-resolve
+IP-CIDR,47.83.32.0/20,no-resolve
+IP-CIDR,47.83.64.0/18,no-resolve
 IP-CIDR,47.87.200.0/22,no-resolve
-IP-CIDR,47.89.0.0/18,no-resolve
 IP-CIDR,47.90.0.0/17,no-resolve
 IP-CIDR,47.91.128.0/17,no-resolve
 IP-CIDR,49.130.0.0/15,no-resolve
@@ -3446,6 +3447,7 @@ IP-CIDR6,2a01:f100::/29,no-resolve
 IP-CIDR6,2a02:810::/32,no-resolve
 IP-CIDR6,2a02:1620::/32,no-resolve
 IP-CIDR6,2a02:afc0::/29,no-resolve
+IP-CIDR6,2a02:c6c0::/29,no-resolve
 IP-CIDR6,2a02:c880::/29,no-resolve
 IP-CIDR6,2a03:5f40::/32,no-resolve
 IP-CIDR6,2a04:94c0::/30,no-resolve

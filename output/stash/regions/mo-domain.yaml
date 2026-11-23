@@ -1,7 +1,7 @@
 # RuleNova — Macau
 # Variant: domain
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-11-09T15:39:58Z
+# Generated: 2026-11-23T17:42:35Z
 payload:
   - abm.org.mo
   - bcm.com.mo
@@ -16,7 +16,9 @@ payload:
   - ctm.net
   - cyberctm.com
   - directel.com.mo
+  - esigntrust.com
   - exmoo.com
+  - freewifi.mo
   - galaxyentertainment.com
   - galaxymacau.com
   - gov.mo
@@ -35,14 +37,17 @@ payload:
   - macauhub.com
   - macaumemory.mo
   - macaupass.com
+  - macauspin.mo
   - mastvnet.com
   - mfood.mo
+  - mif.com.mo
   - mlm.com.mo
   - monic.mo
   - mpu.edu.mo
   - mtel.mo
   - must.edu.mo
   - ocbc.com.mo
+  - platformchinaplp.mo
   - sands.com.mo
   - sandschina.com
   - smartone.com.mo

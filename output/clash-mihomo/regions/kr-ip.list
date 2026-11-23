@@ -1,7 +1,7 @@
 # RuleNova — South Korea
 # Variant  : ip
 # Format   : Clash/Mihomo/Stash text
-# Generated: 2026-11-09T15:39:58Z
+# Generated: 2026-11-23T17:42:35Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -976,9 +976,7 @@
 45.64.144.0/22
 45.64.152.0/22
 45.64.172.0/22
-47.80.0.0/18
-47.80.128.0/17
-47.87.226.0/23
+47.80.0.0/19
 49.1.0.0/16
 49.128.192.0/19
 49.142.0.0/16

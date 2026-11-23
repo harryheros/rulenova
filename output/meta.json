@@ -2,7 +2,7 @@
   "schema_version": "2.1",
   "project": "rulenova",
   "version": "2.3.0",
-  "generated_at": "2026-11-09T15:39:58Z",
+  "generated_at": "2026-11-23T17:42:35Z",
   "policy_names": {
     "china": "China",
     "global": "Global",
@@ -25,44 +25,44 @@
   ],
   "regions": {
     "CN": {
-      "domains": 3885,
-      "cidrs": 5550,
-      "cidrs6": 2036
+      "domains": 3153,
+      "cidrs": 5607,
+      "cidrs6": 2038
     },
     "HK": {
-      "domains": 145,
-      "cidrs": 2565,
-      "cidrs6": 921
+      "domains": 166,
+      "cidrs": 2580,
+      "cidrs6": 924
     },
     "TW": {
-      "domains": 101,
-      "cidrs": 765,
+      "domains": 204,
+      "cidrs": 764,
       "cidrs6": 319
     },
     "MO": {
-      "domains": 53,
+      "domains": 58,
       "cidrs": 31,
       "cidrs6": 11
     },
     "JP": {
-      "domains": 158,
-      "cidrs": 3242,
+      "domains": 277,
+      "cidrs": 3239,
       "cidrs6": 669
     },
     "KR": {
-      "domains": 165,
-      "cidrs": 1055,
+      "domains": 832,
+      "cidrs": 1053,
       "cidrs6": 142
     },
     "SG": {
-      "domains": 109,
-      "cidrs": 1661,
-      "cidrs6": 480
+      "domains": 124,
+      "cidrs": 1666,
+      "cidrs6": 484
     },
     "GLOBAL": {
-      "domains": 731,
-      "cidrs": 9319,
-      "cidrs6": 2542
+      "domains": 1661,
+      "cidrs": 9333,
+      "cidrs6": 2549
     }
   },
   "global_regions": [

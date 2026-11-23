@@ -1,173 +1,840 @@
 # RuleNova — South Korea
 # Variant: combined
 # Format: Clash/Mihomo/Stash YAML rule-provider
-# Generated: 2026-11-09T15:39:58Z
+# Generated: 2026-11-23T17:42:35Z
 payload:
+  - DOMAIN-SUFFIX,110.go.kr
   - DOMAIN-SUFFIX,11st.co.kr
+  - DOMAIN-SUFFIX,120dasan.or.kr
+  - DOMAIN-SUFFIX,129.go.kr
+  - DOMAIN-SUFFIX,2028ulsanexpo.or.kr
+  - DOMAIN-SUFFIX,29sfilm.com
+  - DOMAIN-SUFFIX,50plus.or.kr
+  - DOMAIN-SUFFIX,518archives.go.kr
+  - DOMAIN-SUFFIX,ableservice.or.kr
+  - DOMAIN-SUFFIX,abllife.co.kr
+  - DOMAIN-SUFFIX,academyinfo.go.kr
+  - DOMAIN-SUFFIX,acc.go.kr
+  - DOMAIN-SUFFIX,acrc.go.kr
+  - DOMAIN-SUFFIX,affcensus.go.kr
   - DOMAIN-SUFFIX,afreecatv.com
   - DOMAIN-SUFFIX,airport.kr
   - DOMAIN-SUFFIX,akmall.com
   - DOMAIN-SUFFIX,aladin.co.kr
+  - DOMAIN-SUFFIX,alio.go.kr
+  - DOMAIN-SUFFIX,alioplus.go.kr
+  - DOMAIN-SUFFIX,animal.go.kr
+  - DOMAIN-SUFFIX,ansan.go.kr
+  - DOMAIN-SUFFIX,anseong.go.kr
+  - DOMAIN-SUFFIX,anyang.go.kr
+  - DOMAIN-SUFFIX,arte.co.kr
   - DOMAIN-SUFFIX,auction.co.kr
   - DOMAIN-SUFFIX,baemin.com
+  - DOMAIN-SUFFIX,bai.go.kr
   - DOMAIN-SUFFIX,band.us
   - DOMAIN-SUFFIX,banksalad.com
+  - DOMAIN-SUFFIX,better.go.kr
+  - DOMAIN-SUFFIX,bgdc.co.kr
+  - DOMAIN-SUFFIX,bgnmh.go.kr
   - DOMAIN-SUFFIX,bhc.co.kr
+  - DOMAIN-SUFFIX,bikeseoul.com
+  - DOMAIN-SUFFIX,bitgaram.go.kr
+  - DOMAIN-SUFFIX,bitown.or.kr
+  - DOMAIN-SUFFIX,bizinfo.go.kr
+  - DOMAIN-SUFFIX,boho.or.kr
+  - DOMAIN-SUFFIX,bojo.go.kr
+  - DOMAIN-SUFFIX,bokjiro.go.kr
+  - DOMAIN-SUFFIX,bucheon.go.kr
   - DOMAIN-SUFFIX,bunjang.co.kr
+  - DOMAIN-SUFFIX,bus.go.kr
   - DOMAIN-SUFFIX,busan.go.kr
+  - DOMAIN-SUFFIX,car365.go.kr
+  - DOMAIN-SUFFIX,cartuning.kr
+  - DOMAIN-SUFFIX,ccourt.go.kr
+  - DOMAIN-SUFFIX,ccrs.or.kr
+  - DOMAIN-SUFFIX,cct.go.kr
+  - DOMAIN-SUFFIX,census.go.kr
   - DOMAIN-SUFFIX,cgv.co.kr
+  - DOMAIN-SUFFIX,cheongwon.go.kr
+  - DOMAIN-SUFFIX,chest.or.kr
+  - DOMAIN-SUFFIX,childcare.go.kr
   - DOMAIN-SUFFIX,chosun.com
+  - DOMAIN-SUFFIX,chosunhnb.com
+  - DOMAIN-SUFFIX,chungbuk.go.kr
+  - DOMAIN-SUFFIX,chungnam.go.kr
+  - DOMAIN-SUFFIX,cio.go.kr
+  - DOMAIN-SUFFIX,ciss.go.kr
+  - DOMAIN-SUFFIX,civicedu.go.kr
   - DOMAIN-SUFFIX,cjlogistics.com
+  - DOMAIN-SUFFIX,cjonstyle.com
+  - DOMAIN-SUFFIX,clean.go.kr
+  - DOMAIN-SUFFIX,cleanbudongsan.go.kr
+  - DOMAIN-SUFFIX,cleaneye.go.kr
   - DOMAIN-SUFFIX,clien.net
+  - DOMAIN-SUFFIX,cnmh.go.kr
+  - DOMAIN-SUFFIX,codil.or.kr
+  - DOMAIN-SUFFIX,comwel.or.kr
+  - DOMAIN-SUFFIX,consumer.go.kr
+  - DOMAIN-SUFFIX,contentsfeed.com
+  - DOMAIN-SUFFIX,coop.go.kr
   - DOMAIN-SUFFIX,coupang.com
   - DOMAIN-SUFFIX,coupangplay.com
+  - DOMAIN-SUFFIX,crms.go.kr
+  - DOMAIN-SUFFIX,cuk.edu
+  - DOMAIN-SUFFIX,curlysue.co.kr
   - DOMAIN-SUFFIX,customs.go.kr
   - DOMAIN-SUFFIX,daangn.com
   - DOMAIN-SUFFIX,daegu.go.kr
   - DOMAIN-SUFFIX,daejeon.go.kr
+  - DOMAIN-SUFFIX,daitda.or.kr
   - DOMAIN-SUFFIX,danawa.com
+  - DOMAIN-SUFFIX,dapa.go.kr
+  - DOMAIN-SUFFIX,data.go.kr
   - DOMAIN-SUFFIX,daum.net
+  - DOMAIN-SUFFIX,daumcorp.com
+  - DOMAIN-SUFFIX,dcinside.co.kr
   - DOMAIN-SUFFIX,dcinside.com
+  - DOMAIN-SUFFIX,ddc.go.kr
+  - DOMAIN-SUFFIX,ddm.go.kr
+  - DOMAIN-SUFFIX,ddp.or.kr
+  - DOMAIN-SUFFIX,debates.go.kr
+  - DOMAIN-SUFFIX,debc.or.kr
+  - DOMAIN-SUFFIX,dgmif.re.kr
+  - DOMAIN-SUFFIX,dmgj.kr
+  - DOMAIN-SUFFIX,dmzcamp131.or.kr
+  - DOMAIN-SUFFIX,dobong.go.kr
   - DOMAIN-SUFFIX,donga.com
+  - DOMAIN-SUFFIX,donggu.kr
+  - DOMAIN-SUFFIX,dongjak.go.kr
+  - DOMAIN-SUFFIX,doosan-tesna.com
   - DOMAIN-SUFFIX,doosan.com
+  - DOMAIN-SUFFIX,doosaninvest.com
+  - DOMAIN-SUFFIX,doosanmagazine.com
+  - DOMAIN-SUFFIX,dothome.co.kr
+  - DOMAIN-SUFFIX,e-gen.or.kr
+  - DOMAIN-SUFFIX,e-health.go.kr
+  - DOMAIN-SUFFIX,e-himart.co.kr
+  - DOMAIN-SUFFIX,e-inteco.co.kr
+  - DOMAIN-SUFFIX,e-policy.or.kr
+  - DOMAIN-SUFFIX,easylaw.go.kr
   - DOMAIN-SUFFIX,ebs.co.kr
+  - DOMAIN-SUFFIX,ecensus.go.kr
+  - DOMAIN-SUFFIX,ecmc.or.kr
+  - DOMAIN-SUFFIX,eco-g.or.kr
+  - DOMAIN-SUFFIX,eco-i.or.kr
+  - DOMAIN-SUFFIX,econedu.go.kr
   - DOMAIN-SUFFIX,edaily.co.kr
+  - DOMAIN-SUFFIX,edcfkorea.go.kr
+  - DOMAIN-SUFFIX,educar.co.kr
+  - DOMAIN-SUFFIX,ehaneul.go.kr
+  - DOMAIN-SUFFIX,ehistory.go.kr
+  - DOMAIN-SUFFIX,einfomax.co.kr
+  - DOMAIN-SUFFIX,elis.go.kr
+  - DOMAIN-SUFFIX,energy.or.kr
+  - DOMAIN-SUFFIX,ep.go.kr
+  - DOMAIN-SUFFIX,epeople.go.kr
+  - DOMAIN-SUFFIX,eseoul.go.kr
   - DOMAIN-SUFFIX,etri.re.kr
+  - DOMAIN-SUFFIX,eum.go.kr
+  - DOMAIN-SUFFIX,evaluation.go.kr
+  - DOMAIN-SUFFIX,ex.co.kr
+  - DOMAIN-SUFFIX,export119.go.kr
+  - DOMAIN-SUFFIX,fez.go.kr
+  - DOMAIN-SUFFIX,finnq.com
+  - DOMAIN-SUFFIX,fira.or.kr
+  - DOMAIN-SUFFIX,foodsafetykorea.go.kr
   - DOMAIN-SUFFIX,forest.go.kr
+  - DOMAIN-SUFFIX,fsc.go.kr
+  - DOMAIN-SUFFIX,fss.or.kr
+  - DOMAIN-SUFFIX,fta.go.kr
+  - DOMAIN-SUFFIX,ftc.go.kr
+  - DOMAIN-SUFFIX,g2b.go.kr
   - DOMAIN-SUFFIX,g9.co.kr
+  - DOMAIN-SUFFIX,gallup.co.kr
+  - DOMAIN-SUFFIX,gama.or.kr
+  - DOMAIN-SUFFIX,gangbuk.go.kr
+  - DOMAIN-SUFFIX,gangdong.go.kr
+  - DOMAIN-SUFFIX,ganghwa.go.kr
+  - DOMAIN-SUFFIX,gangnam.go.kr
+  - DOMAIN-SUFFIX,gangseo.seoul.kr
+  - DOMAIN-SUFFIX,gaok.or.kr
+  - DOMAIN-SUFFIX,garak.co.kr
+  - DOMAIN-SUFFIX,gb.go.kr
+  - DOMAIN-SUFFIX,gbis.go.kr
+  - DOMAIN-SUFFIX,gbsa.or.kr
+  - DOMAIN-SUFFIX,gccity.go.kr
+  - DOMAIN-SUFFIX,gcea.or.kr
+  - DOMAIN-SUFFIX,gcgf.or.kr
+  - DOMAIN-SUFFIX,gcidc.or.kr
+  - DOMAIN-SUFFIX,gcon.or.kr
+  - DOMAIN-SUFFIX,gdc.or.kr
+  - DOMAIN-SUFFIX,gdtp.or.kr
   - DOMAIN-SUFFIX,genie.co.kr
+  - DOMAIN-SUFFIX,geomdan.go.kr
+  - DOMAIN-SUFFIX,geps.or.kr
+  - DOMAIN-SUFFIX,geumcheon.go.kr
+  - DOMAIN-SUFFIX,gfgf.kr
+  - DOMAIN-SUFFIX,gfi.or.kr
+  - DOMAIN-SUFFIX,gfspi.or.kr
   - DOMAIN-SUFFIX,gg.go.kr
+  - DOMAIN-SUFFIX,ggac.or.kr
+  - DOMAIN-SUFFIX,ggc.go.kr
+  - DOMAIN-SUFFIX,ggcf.kr
+  - DOMAIN-SUFFIX,ggcf.or.kr
+  - DOMAIN-SUFFIX,ggeea.or.kr
+  - DOMAIN-SUFFIX,ggenergy.or.kr
+  - DOMAIN-SUFFIX,ggmaeul.or.kr
+  - DOMAIN-SUFFIX,ggn.or.kr
+  - DOMAIN-SUFFIX,ggpi.or.kr
+  - DOMAIN-SUFFIX,ggtour.or.kr
+  - DOMAIN-SUFFIX,ggtourmap.or.kr
+  - DOMAIN-SUFFIX,ggursc.or.kr
+  - DOMAIN-SUFFIX,ggwf.or.kr
+  - DOMAIN-SUFFIX,gh.or.kr
+  - DOMAIN-SUFFIX,gicon.or.kr
+  - DOMAIN-SUFFIX,gidcc.or.kr
+  - DOMAIN-SUFFIX,gie.kr
+  - DOMAIN-SUFFIX,gill.or.kr
+  - DOMAIN-SUFFIX,gimpo.go.kr
+  - DOMAIN-SUFFIX,giro.or.kr
+  - DOMAIN-SUFFIX,gis-heritage.go.kr
+  - DOMAIN-SUFFIX,giupsos.or.kr
+  - DOMAIN-SUFFIX,give.go.kr
+  - DOMAIN-SUFFIX,gj50plus.or.kr
+  - DOMAIN-SUFFIX,gjbizinfo.or.kr
+  - DOMAIN-SUFFIX,gjcb.or.kr
+  - DOMAIN-SUFFIX,gjcf.or.kr
+  - DOMAIN-SUFFIX,gjchild.kr
+  - DOMAIN-SUFFIX,gjcity.go.kr
+  - DOMAIN-SUFFIX,gjep.or.kr
+  - DOMAIN-SUFFIX,gjf.or.kr
+  - DOMAIN-SUFFIX,gji.re.kr
+  - DOMAIN-SUFFIX,gjjobgo.com
+  - DOMAIN-SUFFIX,gjlabor.org
+  - DOMAIN-SUFFIX,gjsinbo.or.kr
+  - DOMAIN-SUFFIX,gjtic.go.kr
+  - DOMAIN-SUFFIX,gjto.or.kr
+  - DOMAIN-SUFFIX,gjtp.or.kr
+  - DOMAIN-SUFFIX,gjtsc.com
+  - DOMAIN-SUFFIX,gjwf.or.kr
+  - DOMAIN-SUFFIX,gm.go.kr
   - DOMAIN-SUFFIX,gmarket.co.kr
+  - DOMAIN-SUFFIX,gmarket.com
+  - DOMAIN-SUFFIX,gmcc.co.kr
+  - DOMAIN-SUFFIX,gmhc.kr
+  - DOMAIN-SUFFIX,gmr.or.kr
+  - DOMAIN-SUFFIX,gongyoungshop.kr
+  - DOMAIN-SUFFIX,goodprice.go.kr
+  - DOMAIN-SUFFIX,gosi.go.kr
   - DOMAIN-SUFFIX,gov.kr
+  - DOMAIN-SUFFIX,goyang.go.kr
+  - DOMAIN-SUFFIX,gp.go.kr
+  - DOMAIN-SUFFIX,gpbfair.kr
+  - DOMAIN-SUFFIX,gppc.or.kr
+  - DOMAIN-SUFFIX,grandculture.net
+  - DOMAIN-SUFFIX,greeninet.or.kr
+  - DOMAIN-SUFFIX,gri.re.kr
+  - DOMAIN-SUFFIX,grtc.co.kr
+  - DOMAIN-SUFFIX,gseek.kr
+  - DOMAIN-SUFFIX,gsic.or.kr
   - DOMAIN-SUFFIX,gsshop.com
+  - DOMAIN-SUFFIX,gtci.or.kr
+  - DOMAIN-SUFFIX,gtp.or.kr
+  - DOMAIN-SUFFIX,gtrans.or.kr
+  - DOMAIN-SUFFIX,gunpo.go.kr
+  - DOMAIN-SUFFIX,guri.go.kr
+  - DOMAIN-SUFFIX,guro.go.kr
+  - DOMAIN-SUFFIX,gwanak.go.kr
+  - DOMAIN-SUFFIX,gwanbo.go.kr
+  - DOMAIN-SUFFIX,gwangjin.go.kr
   - DOMAIN-SUFFIX,gwangju.go.kr
+  - DOMAIN-SUFFIX,gwangjubiennale.org
+  - DOMAIN-SUFFIX,gwangjucfc.kr
+  - DOMAIN-SUFFIX,gwangjujob.org
+  - DOMAIN-SUFFIX,gwangjusports.org
+  - DOMAIN-SUFFIX,gwangsan.go.kr
+  - DOMAIN-SUFFIX,gwd.go.kr
+  - DOMAIN-SUFFIX,gwff.kr
+  - DOMAIN-SUFFIX,gyeongnam.go.kr
+  - DOMAIN-SUFFIX,gyeyang.go.kr
+  - DOMAIN-SUFFIX,haier.co.kr
+  - DOMAIN-SUFFIX,hana-aamc.com
+  - DOMAIN-SUFFIX,hana-nanum.com
+  - DOMAIN-SUFFIX,hana.hs.kr
+  - DOMAIN-SUFFIX,hana1qm.com
   - DOMAIN-SUFFIX,hanabank.com
+  - DOMAIN-SUFFIX,hanacapital.co.kr
+  - DOMAIN-SUFFIX,hanacard.co.kr
+  - DOMAIN-SUFFIX,hanacarecenter.or.kr
+  - DOMAIN-SUFFIX,hanaescrow.com
+  - DOMAIN-SUFFIX,hanafind.com
+  - DOMAIN-SUFFIX,hanafn.com
+  - DOMAIN-SUFFIX,hanafoundation.or.kr
+  - DOMAIN-SUFFIX,hanais.co.kr
+  - DOMAIN-SUFFIX,hanalife.co.kr
+  - DOMAIN-SUFFIX,hanam.go.kr
+  - DOMAIN-SUFFIX,hanamiso.org
+  - DOMAIN-SUFFIX,hanasavings.com
+  - DOMAIN-SUFFIX,hanati.co.kr
+  - DOMAIN-SUFFIX,hanatrust.com
+  - DOMAIN-SUFFIX,hanaw.com
   - DOMAIN-SUFFIX,hani.co.kr
   - DOMAIN-SUFFIX,hanjin.com
   - DOMAIN-SUFFIX,hankyung.com
   - DOMAIN-SUFFIX,hanmail.net
+  - DOMAIN-SUFFIX,hansaedreams.co.kr
+  - DOMAIN-SUFFIX,hanssem.com
   - DOMAIN-SUFFIX,hanwha.co.kr
   - DOMAIN-SUFFIX,hanyang.ac.kr
+  - DOMAIN-SUFFIX,hbrkorea.com
+  - DOMAIN-SUFFIX,hcinnovation.co.kr
+  - DOMAIN-SUFFIX,heemangstudio.org
+  - DOMAIN-SUFFIX,helloarchive.co.kr
+  - DOMAIN-SUFFIX,heritage.go.kr
+  - DOMAIN-SUFFIX,hgbus.co.kr
+  - DOMAIN-SUFFIX,hikorea.go.kr
+  - DOMAIN-SUFFIX,hiks.or.kr
+  - DOMAIN-SUFFIX,hira.or.kr
+  - DOMAIN-SUFFIX,hjit.co.kr
+  - DOMAIN-SUFFIX,hjnc.co.kr
+  - DOMAIN-SUFFIX,hknuri.co.kr
+  - DOMAIN-SUFFIX,hkphil.com
+  - DOMAIN-SUFFIX,hkseminar.co.kr
+  - DOMAIN-SUFFIX,hmall.com
+  - DOMAIN-SUFFIX,hnsmall.com
   - DOMAIN-SUFFIX,homeplus.co.kr
+  - DOMAIN-SUFFIX,hometax.go.kr
+  - DOMAIN-SUFFIX,hrdkorea.or.kr
+  - DOMAIN-SUFFIX,hsad.co.kr
+  - DOMAIN-SUFFIX,hscity.go.kr
+  - DOMAIN-SUFFIX,humanrights.go.kr
   - DOMAIN-SUFFIX,hybecorp.com
+  - DOMAIN-SUFFIX,hyotown.or.kr
   - DOMAIN-SUFFIX,hyundai.com
   - DOMAIN-SUFFIX,hyundaihmall.com
+  - DOMAIN-SUFFIX,i-award.or.kr
+  - DOMAIN-SUFFIX,i-nuri.go.kr
+  - DOMAIN-SUFFIX,i-se.co.kr
+  - DOMAIN-SUFFIX,i-sh.co.kr
+  - DOMAIN-SUFFIX,iacstatic.co.kr
+  - DOMAIN-SUFFIX,iapc.or.kr
   - DOMAIN-SUFFIX,ibk.co.kr
+  - DOMAIN-SUFFIX,icbp.go.kr
+  - DOMAIN-SUFFIX,icdonggu.go.kr
+  - DOMAIN-SUFFIX,icheon.go.kr
+  - DOMAIN-SUFFIX,icl.go.kr
+  - DOMAIN-SUFFIX,icmc.or.kr
+  - DOMAIN-SUFFIX,icouncil.go.kr
+  - DOMAIN-SUFFIX,icsinbo.or.kr
+  - DOMAIN-SUFFIX,ictr.or.kr
+  - DOMAIN-SUFFIX,idrc.or.kr
+  - DOMAIN-SUFFIX,iendc.go.kr
+  - DOMAIN-SUFFIX,ifac.or.kr
+  - DOMAIN-SUFFIX,ifez.go.kr
+  - DOMAIN-SUFFIX,ifwf.or.kr
+  - DOMAIN-SUFFIX,igc.or.kr
+  - DOMAIN-SUFFIX,ih.co.kr
+  - DOMAIN-SUFFIX,ii.re.kr
+  - DOMAIN-SUFFIX,ilovegohyang.go.kr
   - DOMAIN-SUFFIX,incheon.go.kr
   - DOMAIN-SUFFIX,incheonairport.kr
+  - DOMAIN-SUFFIX,incheonlib.go.kr
+  - DOMAIN-SUFFIX,index.go.kr
+  - DOMAIN-SUFFIX,industryland.or.kr
+  - DOMAIN-SUFFIX,innovation.go.kr
+  - DOMAIN-SUFFIX,insiseol.or.kr
   - DOMAIN-SUFFIX,interpark.com
+  - DOMAIN-SUFFIX,investseoul.kr
+  - DOMAIN-SUFFIX,ips.go.kr
+  - DOMAIN-SUFFIX,ismartcity.co.kr
+  - DOMAIN-SUFFIX,isms-p.or.kr
+  - DOMAIN-SUFFIX,isplus.com
+  - DOMAIN-SUFFIX,itle.or.kr
+  - DOMAIN-SUFFIX,ito.or.kr
+  - DOMAIN-SUFFIX,itp.or.kr
+  - DOMAIN-SUFFIX,itservice.or.kr
+  - DOMAIN-SUFFIX,jeju.go.kr
+  - DOMAIN-SUFFIX,jemulpo.go.kr
+  - DOMAIN-SUFFIX,jeonbuk.go.kr
+  - DOMAIN-SUFFIX,jeonnam-gwangju.go.kr
+  - DOMAIN-SUFFIX,jeonnam.go.kr
+  - DOMAIN-SUFFIX,jis.go.kr
+  - DOMAIN-SUFFIX,jobaba.net
+  - DOMAIN-SUFFIX,jobcnt.or.kr
   - DOMAIN-SUFFIX,jobkorea.co.kr
+  - DOMAIN-SUFFIX,jongno.go.kr
   - DOMAIN-SUFFIX,joongang.co.kr
   - DOMAIN-SUFFIX,jtbc.co.kr
+  - DOMAIN-SUFFIX,juminegov.go.kr
+  - DOMAIN-SUFFIX,junggu.seoul.kr
+  - DOMAIN-SUFFIX,jungnang.go.kr
   - DOMAIN-SUFFIX,jype.com
+  - DOMAIN-SUFFIX,k-his.or.kr
+  - DOMAIN-SUFFIX,k-medi.or.kr
+  - DOMAIN-SUFFIX,k-pis.go.kr
+  - DOMAIN-SUFFIX,k-stat.go.kr
+  - DOMAIN-SUFFIX,kaia.re.kr
   - DOMAIN-SUFFIX,kaist.ac.kr
   - DOMAIN-SUFFIX,kakao.com
   - DOMAIN-SUFFIX,kakaobank.com
+  - DOMAIN-SUFFIX,kakaocdn.net
   - DOMAIN-SUFFIX,kakaot.com
   - DOMAIN-SUFFIX,kakaotalk.com
+  - DOMAIN-SUFFIX,kapid.org
+  - DOMAIN-SUFFIX,kasa.go.kr
+  - DOMAIN-SUFFIX,kats.go.kr
   - DOMAIN-SUFFIX,kbanknow.com
   - DOMAIN-SUFFIX,kbcard.com
+  - DOMAIN-SUFFIX,kbci.co.kr
+  - DOMAIN-SUFFIX,kbei.org
+  - DOMAIN-SUFFIX,kbic.co.kr
+  - DOMAIN-SUFFIX,kbinsure.co.kr
+  - DOMAIN-SUFFIX,kbiohealth.kr
+  - DOMAIN-SUFFIX,kblife.co.kr
+  - DOMAIN-SUFFIX,kbret.co.kr
   - DOMAIN-SUFFIX,kbs.co.kr
+  - DOMAIN-SUFFIX,kbsec.co.kr
   - DOMAIN-SUFFIX,kbstar.com
+  - DOMAIN-SUFFIX,kca.go.kr
   - DOMAIN-SUFFIX,kcar.com
+  - DOMAIN-SUFFIX,kcarbon.or.kr
+  - DOMAIN-SUFFIX,kcc.go.kr
+  - DOMAIN-SUFFIX,kcg.go.kr
+  - DOMAIN-SUFFIX,kcmf.or.kr
+  - DOMAIN-SUFFIX,kcpass.or.kr
+  - DOMAIN-SUFFIX,kdca.go.kr
+  - DOMAIN-SUFFIX,kdissw.or.kr
+  - DOMAIN-SUFFIX,kead.or.kr
+  - DOMAIN-SUFFIX,kebhana.com
+  - DOMAIN-SUFFIX,kedglobal.com
+  - DOMAIN-SUFFIX,kedindex.com
+  - DOMAIN-SUFFIX,keei.re.kr
+  - DOMAIN-SUFFIX,keit.re.kr
   - DOMAIN-SUFFIX,kepco.co.kr
+  - DOMAIN-SUFFIX,kesco.or.kr
   - DOMAIN-SUFFIX,kfb.or.kr
+  - DOMAIN-SUFFIX,kfcpi.or.kr
+  - DOMAIN-SUFFIX,kgcbrand.com
+  - DOMAIN-SUFFIX,kgeu.org
+  - DOMAIN-SUFFIX,kgs.or.kr
+  - DOMAIN-SUFFIX,khcert.or.kr
+  - DOMAIN-SUFFIX,khealth.or.kr
+  - DOMAIN-SUFFIX,khidi.or.kr
+  - DOMAIN-SUFFIX,khiss.go.kr
+  - DOMAIN-SUFFIX,khnp.co.kr
+  - DOMAIN-SUFFIX,khs.go.kr
   - DOMAIN-SUFFIX,kia.com
+  - DOMAIN-SUFFIX,kiat.or.kr
+  - DOMAIN-SUFFIX,kic.kr
+  - DOMAIN-SUFFIX,kicet.re.kr
+  - DOMAIN-SUFFIX,kicox.or.kr
+  - DOMAIN-SUFFIX,kidp.or.kr
+  - DOMAIN-SUFFIX,kihasa.re.kr
+  - DOMAIN-SUFFIX,kintex.com
+  - DOMAIN-SUFFIX,kinxcdn.com
+  - DOMAIN-SUFFIX,kipo.go.kr
+  - DOMAIN-SUFFIX,kips.kr
+  - DOMAIN-SUFFIX,kisa.kr
   - DOMAIN-SUFFIX,kisa.or.kr
+  - DOMAIN-SUFFIX,kisia.or.kr
   - DOMAIN-SUFFIX,kist.re.kr
+  - DOMAIN-SUFFIX,kjscf.or.kr
+  - DOMAIN-SUFFIX,klac.or.kr
   - DOMAIN-SUFFIX,kma.go.kr
+  - DOMAIN-SUFFIX,kmcc.go.kr
+  - DOMAIN-SUFFIX,knmh.go.kr
+  - DOMAIN-SUFFIX,knoc.co.kr
+  - DOMAIN-SUFFIX,knto.or.kr
+  - DOMAIN-SUFFIX,koas.or.kr
+  - DOMAIN-SUFFIX,kocef.org
+  - DOMAIN-SUFFIX,kocoal.or.kr
+  - DOMAIN-SUFFIX,koda1458.kr
+  - DOMAIN-SUFFIX,koddi.or.kr
   - DOMAIN-SUFFIX,kofia.or.kr
+  - DOMAIN-SUFFIX,kogas-tech.or.kr
+  - DOMAIN-SUFFIX,kogas.or.kr
+  - DOMAIN-SUFFIX,kogl.or.kr
+  - DOMAIN-SUFFIX,kohi.or.kr
+  - DOMAIN-SUFFIX,koiha.or.kr
+  - DOMAIN-SUFFIX,kolsa.or.kr
+  - DOMAIN-SUFFIX,komir.or.kr
+  - DOMAIN-SUFFIX,konos.go.kr
+  - DOMAIN-SUFFIX,kopico.go.kr
   - DOMAIN-SUFFIX,korail.com
+  - DOMAIN-SUFFIX,korcham.net
+  - DOMAIN-SUFFIX,kordi.or.kr
   - DOMAIN-SUFFIX,korea.ac.kr
   - DOMAIN-SUFFIX,korea.kr
+  - DOMAIN-SUFFIX,koreaexim.go.kr
+  - DOMAIN-SUFFIX,korean.go.kr
   - DOMAIN-SUFFIX,koreanair.com
+  - DOMAIN-SUFFIX,koreancenter.or.kr
+  - DOMAIN-SUFFIX,koreanextweb.kr
+  - DOMAIN-SUFFIX,koreapost.go.kr
+  - DOMAIN-SUFFIX,koreasmartcard.com
+  - DOMAIN-SUFFIX,koroad.or.kr
+  - DOMAIN-SUFFIX,kosha.or.kr
+  - DOMAIN-SUFFIX,koshahub.or.kr
+  - DOMAIN-SUFFIX,kosis.kr
   - DOMAIN-SUFFIX,kostat.go.kr
+  - DOMAIN-SUFFIX,kosti.or.kr
+  - DOMAIN-SUFFIX,kotra.or.kr
+  - DOMAIN-SUFFIX,kotsa.or.kr
+  - DOMAIN-SUFFIX,kpetro.or.kr
+  - DOMAIN-SUFFIX,kptb.kr
   - DOMAIN-SUFFIX,krafton.com
+  - DOMAIN-SUFFIX,krcert.or.kr
   - DOMAIN-SUFFIX,krx.co.kr
+  - DOMAIN-SUFFIX,kscagg.or.kr
+  - DOMAIN-SUFFIX,ksecurity.or.kr
+  - DOMAIN-SUFFIX,ksp.go.kr
+  - DOMAIN-SUFFIX,kssefair.kr
+  - DOMAIN-SUFFIX,ksure.or.kr
   - DOMAIN-SUFFIX,kt.com
+  - DOMAIN-SUFFIX,ktc.go.kr
+  - DOMAIN-SUFFIX,ktl.re.kr
+  - DOMAIN-SUFFIX,ktv.go.kr
+  - DOMAIN-SUFFIX,kuksiwon.or.kr
   - DOMAIN-SUFFIX,kurly.com
+  - DOMAIN-SUFFIX,kvoting.go.kr
+  - DOMAIN-SUFFIX,kwacc.or.kr
   - DOMAIN-SUFFIX,kwater.or.kr
+  - DOMAIN-SUFFIX,kwdi.re.kr
+  - DOMAIN-SUFFIX,kyobobook.co.kr
+  - DOMAIN-SUFFIX,labors.or.kr
+  - DOMAIN-SUFFIX,laiis.go.kr
+  - DOMAIN-SUFFIX,law.go.kr
+  - DOMAIN-SUFFIX,lfmall.co.kr
   - DOMAIN-SUFFIX,lg.co.kr
+  - DOMAIN-SUFFIX,lgbr.co.kr
   - DOMAIN-SUFFIX,lge.co.kr
   - DOMAIN-SUFFIX,lguplus.com
+  - DOMAIN-SUFFIX,library.kr
+  - DOMAIN-SUFFIX,librarygo.kr
+  - DOMAIN-SUFFIX,lllcard.kr
+  - DOMAIN-SUFFIX,loasis.co.kr
+  - DOMAIN-SUFFIX,lofin365.go.kr
+  - DOMAIN-SUFFIX,logger.co.kr
+  - DOMAIN-SUFFIX,loginside.co.kr
+  - DOMAIN-SUFFIX,longtermcare.or.kr
   - DOMAIN-SUFFIX,lotte.co.kr
   - DOMAIN-SUFFIX,lotte.com
   - DOMAIN-SUFFIX,lotteeatz.com
   - DOMAIN-SUFFIX,lotteimall.com
   - DOMAIN-SUFFIX,lotteon.com
+  - DOMAIN-SUFFIX,lx.or.kr
+  - DOMAIN-SUFFIX,mafra.go.kr
+  - DOMAIN-SUFFIX,makeshop.co.kr
+  - DOMAIN-SUFFIX,malltail.com
+  - DOMAIN-SUFFIX,mapo.go.kr
   - DOMAIN-SUFFIX,mbc.co.kr
+  - DOMAIN-SUFFIX,mbn.co.kr
+  - DOMAIN-SUFFIX,mcee.go.kr
+  - DOMAIN-SUFFIX,mci1.co.kr
+  - DOMAIN-SUFFIX,mcst.go.kr
+  - DOMAIN-SUFFIX,medical.or.kr
   - DOMAIN-SUFFIX,megabox.co.kr
+  - DOMAIN-SUFFIX,megadata.co.kr
+  - DOMAIN-SUFFIX,melon.co.kr
   - DOMAIN-SUFFIX,melon.com
+  - DOMAIN-SUFFIX,mfds.go.kr
+  - DOMAIN-SUFFIX,michuhol.go.kr
+  - DOMAIN-SUFFIX,minimumwage.go.kr
   - DOMAIN-SUFFIX,mk.co.kr
+  - DOMAIN-SUFFIX,mkhealth.co.kr
+  - DOMAIN-SUFFIX,mma.go.kr
+  - DOMAIN-SUFFIX,mnd.go.kr
+  - DOMAIN-SUFFIX,mods.go.kr
   - DOMAIN-SUFFIX,moe.go.kr
   - DOMAIN-SUFFIX,moef.go.kr
   - DOMAIN-SUFFIX,moel.go.kr
+  - DOMAIN-SUFFIX,mof.go.kr
   - DOMAIN-SUFFIX,mofa.go.kr
+  - DOMAIN-SUFFIX,mofat.go.kr
+  - DOMAIN-SUFFIX,mofe.go.kr
+  - DOMAIN-SUFFIX,mogef.go.kr
+  - DOMAIN-SUFFIX,mogefdatacontest.co.kr
   - DOMAIN-SUFFIX,mohw.go.kr
+  - DOMAIN-SUFFIX,moip.go.kr
   - DOMAIN-SUFFIX,mois.go.kr
+  - DOMAIN-SUFFIX,moj.go.kr
+  - DOMAIN-SUFFIX,moleg.go.kr
   - DOMAIN-SUFFIX,molit.go.kr
+  - DOMAIN-SUFFIX,money-plus.co.kr
   - DOMAIN-SUFFIX,motie.go.kr
+  - DOMAIN-SUFFIX,motir.go.kr
+  - DOMAIN-SUFFIX,mpb.go.kr
+  - DOMAIN-SUFFIX,mpm.go.kr
+  - DOMAIN-SUFFIX,mpva.go.kr
   - DOMAIN-SUFFIX,msit.go.kr
+  - DOMAIN-SUFFIX,mss.go.kr
   - DOMAIN-SUFFIX,mt.co.kr
   - DOMAIN-SUFFIX,musinsa.com
+  - DOMAIN-SUFFIX,myangel.co.kr
+  - DOMAIN-SUFFIX,na.go.kr
+  - DOMAIN-SUFFIX,naacc.go.kr
+  - DOMAIN-SUFFIX,najumh.go.kr
+  - DOMAIN-SUFFIX,namdong.go.kr
   - DOMAIN-SUFFIX,namu.wiki
+  - DOMAIN-SUFFIX,naqs.go.kr
+  - DOMAIN-SUFFIX,narastat.kr
   - DOMAIN-SUFFIX,nate.com
   - DOMAIN-SUFFIX,naver.com
+  - DOMAIN-SUFFIX,naver.me
+  - DOMAIN-SUFFIX,naver.net
+  - DOMAIN-SUFFIX,ncc.re.kr
+  - DOMAIN-SUFFIX,ncmh.go.kr
+  - DOMAIN-SUFFIX,ncrc.or.kr
   - DOMAIN-SUFFIX,ncsoft.com
+  - DOMAIN-SUFFIX,nctc.go.kr
+  - DOMAIN-SUFFIX,ndmi.go.kr
   - DOMAIN-SUFFIX,nec.go.kr
+  - DOMAIN-SUFFIX,neca.re.kr
+  - DOMAIN-SUFFIX,nesdc.go.kr
   - DOMAIN-SUFFIX,netmarble.com
   - DOMAIN-SUFFIX,nexon.com
+  - DOMAIN-SUFFIX,nfa.go.kr
   - DOMAIN-SUFFIX,nhbank.com
   - DOMAIN-SUFFIX,nhis.or.kr
+  - DOMAIN-SUFFIX,nibp.kr
+  - DOMAIN-SUFFIX,nikom.or.kr
+  - DOMAIN-SUFFIX,nis.go.kr
+  - DOMAIN-SUFFIX,nlobbygo.kr
+  - DOMAIN-SUFFIX,nmc.or.kr
+  - DOMAIN-SUFFIX,nmhc.go.kr
   - DOMAIN-SUFFIX,nonghyup.com
+  - DOMAIN-SUFFIX,nosmokeguide.go.kr
+  - DOMAIN-SUFFIX,nowon.kr
   - DOMAIN-SUFFIX,nps.or.kr
+  - DOMAIN-SUFFIX,npsonair.kr
+  - DOMAIN-SUFFIX,nrc.go.kr
+  - DOMAIN-SUFFIX,nsmall.com
+  - DOMAIN-SUFFIX,nssc.go.kr
+  - DOMAIN-SUFFIX,nst.re.kr
   - DOMAIN-SUFFIX,nts.go.kr
+  - DOMAIN-SUFFIX,nyj.go.kr
+  - DOMAIN-SUFFIX,oico.co.kr
+  - DOMAIN-SUFFIX,oka.go.kr
   - DOMAIN-SUFFIX,oliveyoung.co.kr
+  - DOMAIN-SUFFIX,oneshot.or.kr
+  - DOMAIN-SUFFIX,ongjin.go.kr
+  - DOMAIN-SUFFIX,open.go.kr
+  - DOMAIN-SUFFIX,opm.go.kr
+  - DOMAIN-SUFFIX,osan.go.kr
+  - DOMAIN-SUFFIX,osmb.go.kr
+  - DOMAIN-SUFFIX,paju.go.kr
+  - DOMAIN-SUFFIX,pasthistory.go.kr
+  - DOMAIN-SUFFIX,pharm114.or.kr
+  - DOMAIN-SUFFIX,pipc.go.kr
+  - DOMAIN-SUFFIX,pocheon.go.kr
   - DOMAIN-SUFFIX,police.go.kr
   - DOMAIN-SUFFIX,posco.co.kr
   - DOMAIN-SUFFIX,postech.ac.kr
   - DOMAIN-SUFFIX,ppomppu.co.kr
+  - DOMAIN-SUFFIX,pps.go.kr
+  - DOMAIN-SUFFIX,prism.go.kr
+  - DOMAIN-SUFFIX,privacy.go.kr
+  - DOMAIN-SUFFIX,psg.or.kr
+  - DOMAIN-SUFFIX,pss.go.kr
+  - DOMAIN-SUFFIX,pstatic.net
+  - DOMAIN-SUFFIX,pyeongtaek.go.kr
+  - DOMAIN-SUFFIX,rda.go.kr
+  - DOMAIN-SUFFIX,reb.or.kr
+  - DOMAIN-SUFFIX,recycling-info.or.kr
+  - DOMAIN-SUFFIX,redcross.or.kr
+  - DOMAIN-SUFFIX,redwhistle.org
   - DOMAIN-SUFFIX,ruliweb.com
+  - DOMAIN-SUFFIX,saemangeum.go.kr
+  - DOMAIN-SUFFIX,safe182.go.kr
+  - DOMAIN-SUFFIX,safekorea.go.kr
+  - DOMAIN-SUFFIX,safemap.go.kr
+  - DOMAIN-SUFFIX,safetv.go.kr
+  - DOMAIN-SUFFIX,safetyreport.go.kr
+  - DOMAIN-SUFFIX,saif.or.kr
   - DOMAIN-SUFFIX,samsung.co.kr
   - DOMAIN-SUFFIX,samsung.com
   - DOMAIN-SUFFIX,samsungsds.com
+  - DOMAIN-SUFFIX,sanghun.go.kr
   - DOMAIN-SUFFIX,saramin.co.kr
+  - DOMAIN-SUFFIX,sb.go.kr
+  - DOMAIN-SUFFIX,sba.kr
+  - DOMAIN-SUFFIX,sba.seoul.kr
   - DOMAIN-SUFFIX,sbs.co.kr
+  - DOMAIN-SUFFIX,sciencestation.or.kr
   - DOMAIN-SUFFIX,scourt.go.kr
+  - DOMAIN-SUFFIX,sd.go.kr
+  - DOMAIN-SUFFIX,sdm.go.kr
+  - DOMAIN-SUFFIX,seec.or.kr
   - DOMAIN-SUFFIX,sejong.go.kr
+  - DOMAIN-SUFFIX,sejongpac.or.kr
+  - DOMAIN-SUFFIX,seniorro.or.kr
+  - DOMAIN-SUFFIX,seocho.go.kr
+  - DOMAIN-SUFFIX,seohae.go.kr
+  - DOMAIN-SUFFIX,seongnam.go.kr
   - DOMAIN-SUFFIX,seoul.go.kr
+  - DOMAIN-SUFFIX,seoul1366.or.kr
+  - DOMAIN-SUFFIX,seoulaihub.kr
+  - DOMAIN-SUFFIX,seoulbiennale.org
+  - DOMAIN-SUFFIX,seoulbiohub.kr
+  - DOMAIN-SUFFIX,seoulchildrensmuseum.org
+  - DOMAIN-SUFFIX,seouldesign.or.kr
+  - DOMAIN-SUFFIX,seoulfc.or.kr
+  - DOMAIN-SUFFIX,seoulfoodstartup.org
+  - DOMAIN-SUFFIX,seoulfuture.or.kr
+  - DOMAIN-SUFFIX,seoulhanbumo.or.kr
+  - DOMAIN-SUFFIX,seoulmc.or.kr
+  - DOMAIN-SUFFIX,seoulmetro.co.kr
+  - DOMAIN-SUFFIX,seoulnoin.or.kr
+  - DOMAIN-SUFFIX,seoulphil.or.kr
+  - DOMAIN-SUFFIX,seoulsbdc.or.kr
+  - DOMAIN-SUFFIX,seoulshinbo.co.kr
+  - DOMAIN-SUFFIX,seoulsports.or.kr
+  - DOMAIN-SUFFIX,seoulwomanup.or.kr
+  - DOMAIN-SUFFIX,seoulwomen.or.kr
+  - DOMAIN-SUFFIX,sfac.or.kr
   - DOMAIN-SUFFIX,shinhan.com
   - DOMAIN-SUFFIX,shinsegae.com
+  - DOMAIN-SUFFIX,shinsegaetvshopping.com
+  - DOMAIN-SUFFIX,shjw.or.kr
+  - DOMAIN-SUFFIX,si.re.kr
+  - DOMAIN-SUFFIX,siheung.go.kr
+  - DOMAIN-SUFFIX,simpan.go.kr
+  - DOMAIN-SUFFIX,sinmungo.go.kr
+  - DOMAIN-SUFFIX,sinunse.com
+  - DOMAIN-SUFFIX,sisul.or.kr
+  - DOMAIN-SUFFIX,sjarip.or.kr
+  - DOMAIN-SUFFIX,sk-inc.com
   - DOMAIN-SUFFIX,sk.co.kr
   - DOMAIN-SUFFIX,sk.com
   - DOMAIN-SUFFIX,skbroadband.com
   - DOMAIN-SUFFIX,skku.ac.kr
   - DOMAIN-SUFFIX,skplanet.com
+  - DOMAIN-SUFFIX,skstoa.com
   - DOMAIN-SUFFIX,sktelecom.com
+  - DOMAIN-SUFFIX,smc.seoul.kr
+  - DOMAIN-SUFFIX,smile.seoul.kr
   - DOMAIN-SUFFIX,smilegate.com
+  - DOMAIN-SUFFIX,smpa.go.kr
   - DOMAIN-SUFFIX,smtown.com
+  - DOMAIN-SUFFIX,smtownandstore.com
   - DOMAIN-SUFFIX,snu.ac.kr
+  - DOMAIN-SUFFIX,snu.or.kr
+  - DOMAIN-SUFFIX,snua.or.kr
+  - DOMAIN-SUFFIX,snumall.com
+  - DOMAIN-SUFFIX,snumoa.org
+  - DOMAIN-SUFFIX,socialservice.or.kr
+  - DOMAIN-SUFFIX,songpa.go.kr
   - DOMAIN-SUFFIX,sooplive.co.kr
+  - DOMAIN-SUFFIX,sooplive.com
+  - DOMAIN-SUFFIX,sorokdo.go.kr
+  - DOMAIN-SUFFIX,sos1379.go.kr
+  - DOMAIN-SUFFIX,sotong.go.kr
+  - DOMAIN-SUFFIX,spatic.go.kr
+  - DOMAIN-SUFFIX,spo.go.kr
+  - DOMAIN-SUFFIX,ssc.go.kr
   - DOMAIN-SUFFIX,ssg.com
+  - DOMAIN-SUFFIX,ssis.or.kr
+  - DOMAIN-SUFFIX,startup-plus.kr
+  - DOMAIN-SUFFIX,stj.or.kr
+  - DOMAIN-SUFFIX,sto.or.kr
+  - DOMAIN-SUFFIX,suwanenergy.co.kr
+  - DOMAIN-SUFFIX,suwon.go.kr
+  - DOMAIN-SUFFIX,swr.or.kr
+  - DOMAIN-SUFFIX,tesat.or.kr
+  - DOMAIN-SUFFIX,thehyundai.com
+  - DOMAIN-SUFFIX,themusical.co.kr
   - DOMAIN-SUFFIX,theqoo.net
   - DOMAIN-SUFFIX,tistory.com
   - DOMAIN-SUFFIX,tmon.co.kr
   - DOMAIN-SUFFIX,tmoney.co.kr
+  - DOMAIN-SUFFIX,toast.com
   - DOMAIN-SUFFIX,toss.im
   - DOMAIN-SUFFIX,tving.com
   - DOMAIN-SUFFIX,tvn.co.kr
+  - DOMAIN-SUFFIX,ubpi.or.kr
+  - DOMAIN-SUFFIX,uctf.or.kr
+  - DOMAIN-SUFFIX,uepa.or.kr
+  - DOMAIN-SUFFIX,uhdc.kr
+  - DOMAIN-SUFFIX,ui4u.go.kr
+  - DOMAIN-SUFFIX,uic.or.kr
+  - DOMAIN-SUFFIX,uipa.or.kr
+  - DOMAIN-SUFFIX,uiwang.go.kr
   - DOMAIN-SUFFIX,ulsan.go.kr
+  - DOMAIN-SUFFIX,ulsan1365.or.kr
+  - DOMAIN-SUFFIX,ulsanculture.kr
+  - DOMAIN-SUFFIX,ulsannamgu.go.kr
+  - DOMAIN-SUFFIX,ulsanshinbo.co.kr
+  - DOMAIN-SUFFIX,ultari.go.kr
+  - DOMAIN-SUFFIX,ultrade.kr
+  - DOMAIN-SUFFIX,umca.co.kr
+  - DOMAIN-SUFFIX,unhyeongung.or.kr
+  - DOMAIN-SUFFIX,unikorea.go.kr
+  - DOMAIN-SUFFIX,unipluscenter.go.kr
+  - DOMAIN-SUFFIX,uos.ac.kr
+  - DOMAIN-SUFFIX,upa.or.kr
+  - DOMAIN-SUFFIX,uri.re.kr
+  - DOMAIN-SUFFIX,usfr.or.kr
+  - DOMAIN-SUFFIX,ushg.co.kr
+  - DOMAIN-SUFFIX,usjahwal.or.kr
+  - DOMAIN-SUFFIX,usrc.kr
+  - DOMAIN-SUFFIX,usw.or.kr
+  - DOMAIN-SUFFIX,utp.or.kr
   - DOMAIN-SUFFIX,visitkorea.or.kr
+  - DOMAIN-SUFFIX,visitseoul.net
+  - DOMAIN-SUFFIX,w-shopping.co.kr
+  - DOMAIN-SUFFIX,w1.or.kr
+  - DOMAIN-SUFFIX,wa.or.kr
   - DOMAIN-SUFFIX,wadiz.kr
+  - DOMAIN-SUFFIX,weather.go.kr
+  - DOMAIN-SUFFIX,webtoons.com
+  - DOMAIN-SUFFIX,webwatch.or.kr
+  - DOMAIN-SUFFIX,welfare.seoul.kr
   - DOMAIN-SUFFIX,wemakeprice.com
+  - DOMAIN-SUFFIX,wetax.go.kr
+  - DOMAIN-SUFFIX,whataulsan.com
+  - DOMAIN-SUFFIX,wiseuser.go.kr
+  - DOMAIN-SUFFIX,wooriam.kr
+  - DOMAIN-SUFFIX,wooriat.com
   - DOMAIN-SUFFIX,wooribank.com
+  - DOMAIN-SUFFIX,wooricard.com
+  - DOMAIN-SUFFIX,wooricredit.com
+  - DOMAIN-SUFFIX,woorifcapital.com
+  - DOMAIN-SUFFIX,woorifg.com
+  - DOMAIN-SUFFIX,woorifis.com
+  - DOMAIN-SUFFIX,woorifoundation.or.kr
+  - DOMAIN-SUFFIX,woorifs.co.kr
+  - DOMAIN-SUFFIX,wooriib.com
+  - DOMAIN-SUFFIX,woorimiso.or.kr
+  - DOMAIN-SUFFIX,wooripe.com
+  - DOMAIN-SUFFIX,woorisavingsbank.com
+  - DOMAIN-SUFFIX,wooriwonmobile.com
+  - DOMAIN-SUFFIX,work.go.kr
+  - DOMAIN-SUFFIX,work24.go.kr
+  - DOMAIN-SUFFIX,wowtv.co.kr
+  - DOMAIN-SUFFIX,xn--oy2b29bd3a601b.kr
+  - DOMAIN-SUFFIX,yangju.go.kr
   - DOMAIN-SUFFIX,yanolja.com
+  - DOMAIN-SUFFIX,ydp.go.kr
+  - DOMAIN-SUFFIX,yeoju.go.kr
+  - DOMAIN-SUFFIX,yeoncheon.go.kr
+  - DOMAIN-SUFFIX,yeongjong.go.kr
+  - DOMAIN-SUFFIX,yeonsu.go.kr
+  - DOMAIN-SUFFIX,yeosun1019.go.kr
   - DOMAIN-SUFFIX,yes24.com
+  - DOMAIN-SUFFIX,yessign.or.kr
+  - DOMAIN-SUFFIX,yestrade.go.kr
   - DOMAIN-SUFFIX,ygentertainment.com
   - DOMAIN-SUFFIX,ygfamily.com
   - DOMAIN-SUFFIX,ygselect.com
   - DOMAIN-SUFFIX,yna.co.kr
+  - DOMAIN-SUFFIX,yongin.go.kr
+  - DOMAIN-SUFFIX,yongsan.go.kr
+  - DOMAIN-SUFFIX,yonhapnewstv.co.kr
   - DOMAIN-SUFFIX,yonsei.ac.kr
+  - DOMAIN-SUFFIX,youthculturepass.or.kr
+  - DOMAIN-SUFFIX,yp21.go.kr
+  - DOMAIN-SUFFIX,zeus.go.kr
+  - DOMAIN-SUFFIX,zinemoa.co.kr
   - IP-CIDR,1.11.0.0/16,no-resolve
   - IP-CIDR,1.16.0.0/14,no-resolve
   - IP-CIDR,1.176.0.0/15,no-resolve
@@ -1139,9 +1806,7 @@ payload:
   - IP-CIDR,45.64.144.0/22,no-resolve
   - IP-CIDR,45.64.152.0/22,no-resolve
   - IP-CIDR,45.64.172.0/22,no-resolve
-  - IP-CIDR,47.80.0.0/18,no-resolve
-  - IP-CIDR,47.80.128.0/17,no-resolve
-  - IP-CIDR,47.87.226.0/23,no-resolve
+  - IP-CIDR,47.80.0.0/19,no-resolve
   - IP-CIDR,49.1.0.0/16,no-resolve
   - IP-CIDR,49.128.192.0/19,no-resolve
   - IP-CIDR,49.142.0.0/16,no-resolve

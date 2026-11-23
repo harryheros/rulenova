@@ -1,7 +1,7 @@
 # RuleNova — Macau
 # Variant  : combined
 # Format   : Clash/Mihomo/Stash text
-# Generated: 2026-11-09T15:39:58Z
+# Generated: 2026-11-23T17:42:35Z
 # Source   : https://github.com/harryheros/rulenova
 #
 
@@ -18,7 +18,9 @@ DOMAIN-SUFFIX,cpttm.org.mo
 DOMAIN-SUFFIX,ctm.net
 DOMAIN-SUFFIX,cyberctm.com
 DOMAIN-SUFFIX,directel.com.mo
+DOMAIN-SUFFIX,esigntrust.com
 DOMAIN-SUFFIX,exmoo.com
+DOMAIN-SUFFIX,freewifi.mo
 DOMAIN-SUFFIX,galaxyentertainment.com
 DOMAIN-SUFFIX,galaxymacau.com
 DOMAIN-SUFFIX,gov.mo
@@ -37,14 +39,17 @@ DOMAIN-SUFFIX,macaudailytimes.com.mo
 DOMAIN-SUFFIX,macauhub.com
 DOMAIN-SUFFIX,macaumemory.mo
 DOMAIN-SUFFIX,macaupass.com
+DOMAIN-SUFFIX,macauspin.mo
 DOMAIN-SUFFIX,mastvnet.com
 DOMAIN-SUFFIX,mfood.mo
+DOMAIN-SUFFIX,mif.com.mo
 DOMAIN-SUFFIX,mlm.com.mo
 DOMAIN-SUFFIX,monic.mo
 DOMAIN-SUFFIX,mpu.edu.mo
 DOMAIN-SUFFIX,mtel.mo
 DOMAIN-SUFFIX,must.edu.mo
 DOMAIN-SUFFIX,ocbc.com.mo
+DOMAIN-SUFFIX,platformchinaplp.mo
 DOMAIN-SUFFIX,sands.com.mo
 DOMAIN-SUFFIX,sandschina.com
 DOMAIN-SUFFIX,smartone.com.mo

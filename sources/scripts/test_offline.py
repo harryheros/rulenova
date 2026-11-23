@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 import tempfile
 import unittest
@@ -25,6 +26,7 @@ from build_rules import (  # noqa: E402
     write_singbox,
     write_surge,
 )
+from build_rules import __version__ as BUILD_VERSION
 
 SAMPLE_DOMAINS = ["example.com", "test.org"]
 SAMPLE_CIDRS = ["1.2.3.0/24", "10.0.0.0/8"]
@@ -341,6 +343,29 @@ class TestDropCovered(unittest.TestCase):
             br.fetch_text = original
         self.assertEqual(domains, ["baidu.com", "qq.com"])
 
+
+
+class TestChangelog(unittest.TestCase):
+    """Release history lives in CHANGELOG.md, like the other Nova projects:
+    `## X.Y.Z (YYYY-MM-DD)` per release, newest first, after an optional
+    `## Unreleased`; the README only links to it."""
+
+    ROOT = Path(__file__).resolve().parents[2]
+
+    def test_changelog_has_a_dated_entry_for_this_version(self):
+        text = (self.ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
+        heads = [line for line in text.splitlines() if line.startswith("## ")]
+        if heads and heads[0] == "## Unreleased":
+            heads = heads[1:]
+        pattern = re.compile(r"^## (\d+\.\d+\.\d+) \(\d{4}-\d{2}-\d{2}\)$")
+        self.assertTrue(heads)
+        self.assertEqual([h for h in heads if not pattern.match(h)], [])
+        self.assertEqual(pattern.match(heads[0]).group(1), BUILD_VERSION)
+
+    def test_readme_links_to_it(self):
+        readme = (self.ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("(./CHANGELOG.md)", readme)
+        self.assertNotIn("### v2.3.0", readme)
 
 if __name__ == "__main__":
     runner = unittest.TextTestRunner(verbosity=2)

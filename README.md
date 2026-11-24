@@ -1,16 +1,12 @@
-<div align="center">
-
 # RuleNova
 
-**Region-based rule sets built from IPNova and DomainNova data, updated weekly.**
+> Region-based rule sets built from IPNova and DomainNova data, updated weekly.
 
 [![Version](https://img.shields.io/github/v/release/harryheros/rulenova?label=version&color=blue)](https://github.com/harryheros/rulenova/releases)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](#license)
 [![Weekly update](https://img.shields.io/github/actions/workflow/status/harryheros/rulenova/update.yml?label=weekly%20update)](https://github.com/harryheros/rulenova/actions/workflows/update.yml)
 
 [Rule sets](#rule-sets) · [Policy mapping](#policy-mapping) · [URLs](#urls) · [Examples](#examples) · [Changelog](./CHANGELOG.md) · [License](#license)
-
-</div>
 
 Region-based routing rule sets for Clash / Mihomo, Stash, Surge, Shadowrocket, Quantumult X, Loon and sing-box: match traffic by the region a domain or IP address belongs to, and send each region to the exit you choose. Updated weekly.
 
@@ -23,13 +19,11 @@ RuleNova never hard-codes `DIRECT` or `PROXY`. Rules use short region policy nam
 
 ## Rule sets
 
-| Rule set | Contents | Policy |
-|---|---|---|
-| `regions/{cn,hk,tw,mo,jp,kr,sg}` | One region each, also with `-domain` / `-ip` variants | `China`, `HK`, `TW`, `MO`, `JP`, `KR`, `SG` |
-| `china` | Combination: CN domains + CN IPv4 / IPv6 | `China` |
-| `global` | Combination: HK / TW / MO / JP / KR / SG | `Global` |
-| `china-domain`, `global-domain` | Domains only — safest choice, good for DNS-based setups | |
-| `china-ip`, `global-ip` | IPv4 + IPv6 CIDRs only | |
+- `regions/{cn,hk,tw,mo,jp,kr,sg}`: one region each, also with `-domain` and `-ip` variants. Policies `China`, `HK`, `TW`, `MO`, `JP`, `KR`, `SG`.
+- `china`: CN domains + CN IPv4 / IPv6. Policy `China`.
+- `global`: HK, TW, MO, JP, KR and SG combined. Policy `Global`.
+- `china-domain`, `global-domain`: domains only. The safest choice, and good for DNS-based setups.
+- `china-ip`, `global-ip`: IPv4 + IPv6 CIDRs only.
 
 The per-region sets are the building blocks; `china` and `global` are ready-made combinations of them. `global` covers only the six regions listed, not the whole world. Anything outside the covered regions falls through to your client's final rule (`MATCH` / `FINAL`).
 
@@ -40,9 +34,9 @@ If something is misrouted, disable the `*-ip` rule first and keep `*-domain`.
 Map each policy to the exit that fits where you are:
 
 ```txt
-Traffic for the region you are in:        DIRECT
-Traffic for another covered region:       a node in or near that region (e.g. JP -> Japan node)
-Everything else:                          your client's final rule
+Traffic for the region you are in:    DIRECT
+Traffic for another covered region:   a node in or near that region (JP -> Japan node)
+Everything else:                      your client's final rule
 ```
 
 A common case is reaching services back home while abroad: map `China` to a node in or near China, and keep everything else as usual. The rule files stay the same when you travel; only the mapping changes.
@@ -57,13 +51,15 @@ https://raw.githubusercontent.com/harryheros/rulenova/main/output/<client>/<rule
 
 | Client | `<client>` | `<ext>` | Policy in file |
 |---|---|---|---|
-| Clash / Mihomo | `clash-mihomo` | `.list`, `.yaml` | No — bind with `RULE-SET` |
+| Clash / Mihomo | `clash-mihomo` | `.list`, `.yaml` | No |
 | Stash | `stash` | `.list`, `.yaml` | No |
-| Surge | `surge` | `.list` | No — bind with `RULE-SET` |
-| sing-box | `sing-box` | `.json` (source rule-set) | No — bind in route rules |
+| Surge | `surge` | `.list` | No |
+| sing-box | `sing-box` | `.json` | No |
 | Shadowrocket | `shadowrocket` | `.conf` | Yes |
-| Quantumult X | `quantumult-x` | `.conf` | Yes — or override with `force-policy` |
+| Quantumult X | `quantumult-x` | `.conf` | Yes |
 | Loon | `loon` | `.list` | Yes |
+
+Where the file has no policy, bind it in your config: `RULE-SET` in Clash / Mihomo and Surge, route rules in sing-box (the `.json` files are source rule-sets). In Quantumult X, `force-policy` overrides the policy in the file.
 
 Example: `https://raw.githubusercontent.com/harryheros/rulenova/main/output/surge/china.list`
 

@@ -158,3 +158,5 @@ See [CHANGELOG.md](./CHANGELOG.md).
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/): free for non-commercial use with attribution. For what counts as commercial use and how to get permission, see [COMMERCIAL_LICENSE.md](./COMMERCIAL_LICENSE.md).
 
 Data powered by [IPNova](https://github.com/harryheros/ipnova) and [DomainNova](https://github.com/harryheros/domainnova).
+
+Part of the [Nova infrastructure toolkit](https://github.com/harryheros).

@@ -10,6 +10,7 @@ Releases, newest first. The weekly rule updates are the
 - Documentation: the Quantumult X parser describes `server_remote` resources by their Quantumult X name.
 - Documentation: the sing-box example routes to an outbound named `China`, like the policy names in the other examples, instead of `direct`.
 - Documentation: the changelog moved from the README to this file.
+- Documentation: the README ends with the Nova toolkit line, like the other projects.
 - No change to rule files, file names, URLs or policy names.
 
 ## 2.3.0 (2026-11-16)

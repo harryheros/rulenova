@@ -2,9 +2,9 @@
 
 > Region-based rule sets built from IPNova and DomainNova data, updated weekly.
 
-[![Version](https://img.shields.io/github/v/release/harryheros/rulenova?label=version&color=blue)](https://github.com/harryheros/rulenova/releases)
+[![Version](https://img.shields.io/badge/version-v2.3.0-blue.svg)](https://github.com/harryheros/rulenova/releases)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](#license)
-[![Weekly update](https://img.shields.io/github/actions/workflow/status/harryheros/rulenova/update.yml?label=weekly%20update)](https://github.com/harryheros/rulenova/actions/workflows/update.yml)
+[![Weekly update](https://github.com/harryheros/rulenova/actions/workflows/update.yml/badge.svg)](https://github.com/harryheros/rulenova/actions/workflows/update.yml)
 
 [Rule sets](#rule-sets) · [Policy mapping](#policy-mapping) · [URLs](#urls) · [Examples](#examples) · [Changelog](./CHANGELOG.md) · [License](#license)
 

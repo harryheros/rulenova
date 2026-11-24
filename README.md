@@ -1,8 +1,16 @@
+<div align="center">
+
 # RuleNova
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-![Version](https://img.shields.io/badge/version-2.3.0-blue)
-[![Update Rules](https://img.shields.io/github/actions/workflow/status/harryheros/rulenova/update.yml?label=weekly%20update)](https://github.com/harryheros/rulenova/actions/workflows/update.yml)
+**Region-based rule sets built from IPNova and DomainNova data, updated weekly.**
+
+[![Version](https://img.shields.io/github/v/release/harryheros/rulenova?label=version&color=blue)](https://github.com/harryheros/rulenova/releases)
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](#license)
+[![Weekly update](https://img.shields.io/github/actions/workflow/status/harryheros/rulenova/update.yml?label=weekly%20update)](https://github.com/harryheros/rulenova/actions/workflows/update.yml)
+
+[Rule sets](#rule-sets) · [Policy mapping](#policy-mapping) · [URLs](#urls) · [Examples](#examples) · [Changelog](./CHANGELOG.md) · [License](#license)
+
+</div>
 
 Region-based routing rule sets for Clash / Mihomo, Stash, Surge, Shadowrocket, Quantumult X, Loon and sing-box: match traffic by the region a domain or IP address belongs to, and send each region to the exit you choose. Updated weekly.
 
@@ -12,8 +20,6 @@ policy groups decide how to route
 ```
 
 RuleNova never hard-codes `DIRECT` or `PROXY`. Rules use short region policy names, such as `China`, `HK` or `JP`, which you map to any policy group.
-
----
 
 ## Rule sets
 
@@ -29,8 +35,6 @@ The per-region sets are the building blocks; `china` and `global` are ready-made
 
 If something is misrouted, disable the `*-ip` rule first and keep `*-domain`.
 
----
-
 ## Policy mapping
 
 Map each policy to the exit that fits where you are:
@@ -44,8 +48,6 @@ Everything else:                          your client's final rule
 A common case is reaching services back home while abroad: map `China` to a node in or near China, and keep everything else as usual. The rule files stay the same when you travel; only the mapping changes.
 
 **Rule order**: clients use the first rule that matches. A few subdomains belong to a different region than their parent (`asia.ccb.com` is HK, `ccb.com` is CN), so put **`global` before `china`**.
-
----
 
 ## URLs
 
@@ -64,8 +66,6 @@ https://raw.githubusercontent.com/harryheros/rulenova/main/output/<client>/<rule
 | Loon | `loon` | `.list` | Yes |
 
 Example: `https://raw.githubusercontent.com/harryheros/rulenova/main/output/surge/china.list`
-
----
 
 ## Examples
 
@@ -125,16 +125,12 @@ filter_remote=https://raw.githubusercontent.com/harryheros/rulenova/main/output/
 
 `China` here is the tag of an outbound you define, such as a `selector`, like the policy groups in the other clients.
 
----
-
 ## Extras
 
 - **Icons**: 16 original policy-group icons in solid and transparent styles — [`icons/`](icons/README.md).
 - **Quantumult X tools**: GeoCheck (node location check) and RuleNova Parser (rule and module conversion) — [`extras/`](extras/README.md).
 
 <img src="icons/preview-solid.png" alt="RuleNova icons" width="440">
-
----
 
 ## Updates and data
 
@@ -143,15 +139,7 @@ filter_remote=https://raw.githubusercontent.com/harryheros/rulenova/main/output/
 - Domain and IP data from [IPNova](https://github.com/harryheros/ipnova) and [DomainNova](https://github.com/harryheros/domainnova), based on public registry and routing data.
 - Rules reflect registration and routing data, not real-time traffic or exact service ownership.
 
-Development: `python3 sources/scripts/build_rules.py --repo-root .`, then `validate_output.py`; tests are in `sources/scripts/`.
-
----
-
-## Changelog
-
-See [CHANGELOG.md](./CHANGELOG.md).
-
----
+Development: `python3 sources/scripts/build_rules.py --repo-root .`, then `validate_output.py`; tests are in `sources/scripts/`. Release history: [CHANGELOG.md](./CHANGELOG.md).
 
 ## License
 

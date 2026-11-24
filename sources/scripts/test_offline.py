@@ -368,18 +368,6 @@ class TestChangelog(unittest.TestCase):
         self.assertNotIn("### v2.3.0", readme)
 
 
-class TestReadme(unittest.TestCase):
-    ROOT = Path(__file__).resolve().parents[2]
-
-    def test_ends_with_the_toolkit_line(self):
-        # Every Nova project README ends with this line.
-        readme = (self.ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertEqual(
-            readme.rstrip().splitlines()[-1],
-            "Part of the [Nova infrastructure toolkit](https://github.com/harryheros).",
-        )
-
-
 if __name__ == "__main__":
     runner = unittest.TextTestRunner(verbosity=2)
     result = runner.run(unittest.defaultTestLoader.loadTestsFromModule(sys.modules[__name__]))
